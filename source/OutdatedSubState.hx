@@ -16,12 +16,11 @@ class OutdatedSubState extends MusicBeatState
 		super.create();
 		var bg:FlxSprite = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
 		add(bg);
-		var ver = "v" + Application.current.meta.get('version');
 		var txt:FlxText = new FlxText(0, 0, FlxG.width,
-			"HEY! You're running an outdated version of the game!\nCurrent version is "
-			+ ver
+			"HEY! You're running an outdated version of the game!\nCurrent version is v"
+			+ Application.current.meta.get('version')
 			+ " while the most recent version is "
-			+ NGio.GAME_VER
+			+ "v0.2.8" // might use the GitHub API later to check the version based on NinjaMuffin99's latest tag since I tore out the NG API
 			+ "! Press Space to go to itch.io, or ESCAPE to ignore this!!",
 			32);
 		txt.setFormat("VCR OSD Mono", 32, FlxColor.WHITE, CENTER);
