@@ -190,8 +190,12 @@ class PlayState extends MusicBeatState {
 					'If you can beat me here...',
 					'Only then I will even CONSIDER letting you\ndate my daughter!'
 				];
-			case 'senpai' | 'roses' | 'thorns':
-				dialogue = Paths.getTextFileArray(Paths.txt('${SONG.song.toLowerCase()}/${SONG.song.toLowerCase()}Dialogue'));
+			case 'senpai':
+				dialogue = Paths.getTextFileArray(Paths.txt('dialouges/senpaiDialogue'));
+			case 'roses':
+				dialogue = Paths.getTextFileArray(Paths.txt('dialouges/rosesDialogue'));
+			case 'thorns':
+				dialogue = Paths.getTextFileArray(Paths.txt('dialouges/thornsDialogue'));								
 		}
 
 		#if discord_rpc

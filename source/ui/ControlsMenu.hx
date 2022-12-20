@@ -47,7 +47,7 @@ class ControlsMenu extends Page {
 		add(controlGrid);
 		if (FlxG.gamepads.numActiveGamepads > 0) {
 			var spr:FlxSprite = new FlxSprite();
-			spr.makeGraphic(FlxG.width, 100, 0xFFFAFD6D);
+			spr.makeGraphic(FlxG.width, 100, 0xFF525252);
 			add(spr);
 			deviceList = new TextMenuList(Horizontal, None);
 			add(deviceList);
@@ -108,7 +108,7 @@ class ControlsMenu extends Page {
 		});
 		prompt = new Prompt('\nPress any key to rebind\n\n\n\n    Escape to cancel', None);
 		prompt.create();
-		prompt.createBgFromMargin(100, 0xFFFAFD6D);
+		prompt.createBgFromMargin(100, 0xFF454545);
 		prompt.back.scrollFactor.set(0, 0);
 		prompt.exists = false;
 		add(prompt);

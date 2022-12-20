@@ -1,7 +1,11 @@
 package;
 
+import flash.media.Sound;
 import flixel.FlxG;
+import flixel.graphics.FlxGraphic;
 import flixel.graphics.frames.FlxAtlasFrames;
+import openfl.Assets;
+import openfl.display.BitmapData;
 import openfl.utils.AssetType;
 import openfl.utils.Assets as OpenFlAssets;
 
@@ -9,6 +13,8 @@ class Paths {
 	inline public static var SOUND_EXT = #if web 'mp3' #else 'ogg' #end;
 
 	static var currentLevel:String;
+
+	public static var currentMod:Null<String>;
 
 	inline static public function setCurrentLevel(name:String)
 		currentLevel = name.toLowerCase();
@@ -38,6 +44,19 @@ class Paths {
 		return '$library:assets/$library/$file';
 	}
 
+	static public function exists(path:String):Bool
+		{
+			var doesIt:Bool = false;
+	
+			#if FILESYSTEM
+			doesIt = FileSystem.exists(Sys.getCwd() + path);
+			#else
+			doesIt = Assets.exists(path);
+			#end
+	
+			return doesIt;
+		}	
+
 	inline static function getPreloadPath(file:String) {
 		return 'assets/$file';
 	}
@@ -61,6 +80,16 @@ class Paths {
 	inline static public function sound(key:String, ?library:String) {
 		return getPath('sounds/$key.$SOUND_EXT', SOUND, library);
 	}
+
+	inline static public function characterJson(key:String)
+		{
+			return 'assets/data/character-data/chars/$key.json';
+		}
+
+		inline static public function modFile(file:String)
+			{
+				return 'mods/$currentMod/assets/$file';
+			}
 
 	inline static public function soundRandom(key:String, min:Int, max:Int, ?library:String) {
 		return sound(key + FlxG.random.int(min, max), library);
@@ -94,6 +123,12 @@ class Paths {
 	inline static public function video(key:String, ?library:String) {
 		return getPath('music/$key.mp4', TEXT, library);
 	}
+
+	inline static public function songjson(key:String,?container:String, ?library:String)
+		{
+			if(container==null)container=key;
+			return getPath('songs/$container/$key.json', TEXT, library);
+		}	
 
 	inline static public function getSparrowAtlas(key:String, ?library:String) {
 		return FlxAtlasFrames.fromSparrow(image(key, library), file('images/$key.xml', library));

@@ -29,15 +29,16 @@ class FreeplayState extends MusicBeatState {
 	var intendedScore:Int = 0;
 
 	private var grpSongs:FlxTypedGroup<Alphabet>;
+
 	private var coolColors = [
+		0xFFF65353,
 		0xFF9271FD,
-		0xFF9271FD,
-		0xFF223344,
-		0xFF941653,
+		0xFFFF5900,
+		0xFF287E1C,
 		0xFFFC96D7,
-		0xFFA0D1FF,
-		0xFFFF78BF,
-		0xFFF6B604
+		0xFF9655FF,
+		0xFFFFA14E,
+		0xFF424241
 	];
 
 	private var curPlaying:Bool = false;
@@ -50,14 +51,6 @@ class FreeplayState extends MusicBeatState {
 		for (i in 0...initSonglist.length) {
 			songs.push(new SongMetadata(initSonglist[i], 1, 'gf'));
 		}
-
-		/* 
-			if (FlxG.sound.music != null)
-			{
-				if (!FlxG.sound.music.playing)
-					FlxG.sound.playMusic(Paths.music('freakyMenu'));
-			}
-		 */
 
 		#if dicord_rpc
 		// Updating Discord Rich Presence
@@ -93,7 +86,7 @@ class FreeplayState extends MusicBeatState {
 
 		// LOAD CHARACTERS
 
-		bg = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
+		bg = new FlxSprite().loadGraphic(Paths.image('menuUI/menuDesat'));
 		add(bg);
 
 		grpSongs = new FlxTypedGroup<Alphabet>();

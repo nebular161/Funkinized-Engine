@@ -176,7 +176,7 @@ class AlphaCharacter extends FlxSprite {
 
 	public function new(x:Float, y:Float) {
 		super(x, y);
-		frames = Paths.getSparrowAtlas('alphabet');
+		frames = Paths.getSparrowAtlas('alphabet/alphabet_sheet');
 	}
 
 	public function createBold(letter:String) {

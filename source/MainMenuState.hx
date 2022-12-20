@@ -26,7 +26,13 @@ import lime.app.Application;
 class MainMenuState extends MusicBeatState {
 	var menuItems:MainMenuList;
 
-	var optionShit:Array<String> = ['story mode', 'freeplay', 'donate', 'options'];
+	var optionShit:Array<String> = 
+	[
+		'story mode', 
+		'freeplay', 
+		'donate', 
+		'options'
+	];
 
 	var magenta:FlxSprite;
 	var camFollow:FlxObject;
@@ -41,7 +47,7 @@ class MainMenuState extends MusicBeatState {
 
 		persistentUpdate = persistentDraw = true;
 
-		var bg:FlxSprite = new FlxSprite(null, null, Paths.image('menuBG'));
+		var bg:FlxSprite = new FlxSprite(null, null, Paths.image('menuUI/menuBG'));
 		bg.scrollFactor.set(0, 0.17);
 		bg.setGraphicSize(Std.int(bg.width * 1.2));
 		bg.updateHitbox();
@@ -51,7 +57,7 @@ class MainMenuState extends MusicBeatState {
 		camFollow = new FlxObject(0, 0, 1, 1);
 		add(camFollow);
 
-		magenta = new FlxSprite(null, null, Paths.image('menuDesat'));
+		magenta = new FlxSprite(null, null, Paths.image('menuUI/menuDesat'));
 		magenta.scrollFactor.set(bg.scrollFactor.x, bg.scrollFactor.y);
 		magenta.setGraphicSize(Std.int(bg.width));
 		magenta.updateHitbox();
@@ -66,13 +72,9 @@ class MainMenuState extends MusicBeatState {
 		add(menuItems);
 		menuItems.onChange.add(onMenuItemChange);
 		menuItems.onAcceptPress.add(function(item:MenuItem) FlxFlicker.flicker(magenta, 1.1, 0.15, false, true));
+
 		menuItems.createItem(null, null, 'story mode', function() startExitState(new StoryMenuState()));
 		menuItems.createItem(null, null, 'freeplay', function() startExitState(new FreeplayState()));
-
-		if (VideoState.seenVideo)
-			menuItems.createItem(null, null, 'kickstarter', selectDonate, true);
-		else
-			menuItems.createItem(null, null, 'donate', selectDonate, true);
 
 		menuItems.createItem(0, 0, 'options', function() startExitState(new OptionsState()));
 
@@ -157,7 +159,7 @@ class MainMenuList extends MenuTypedList<MainMenuItem> {
 	var atlas:FlxAtlasFrames;
 
 	public function new() {
-		atlas = Paths.getSparrowAtlas('main_menu');
+		atlas = Paths.getSparrowAtlas('menuUI/main_menu');
 		super(Vertical);
 	}
 

@@ -83,8 +83,11 @@
 	<assets path="assets/week7"    library="week7"    exclude="*.mp3|*.mp4" unless="web"/>
 	
 	<assets path='example_mods' rename='mods' embed='false'/>
-	<assets path='art/readme.txt' rename='do NOT readme.txt' />
-	
+	<assets path='art/readme.txt' rename='do NOT readme.txt' embed='true' />
+
+	<!-- windows only for now -->
+	<assets path='crash-dialog' rename='crash-dialog' embed='false' if="windows"/>	
+
 	<assets path="CHANGELOG.md" rename='changelog.txt'/>
 
 	<!-- ______________________________ Defines _____________________________ -->
@@ -99,11 +102,13 @@
 
 	<!-- _______________________________ Libraries ______________________________ -->
 
-	<!-- funny optimized flixel `haxelib git flixel-leather https://github.com/Leather128/flixel.git` -->
-	<haxelib name="flixel-leather" />
+	<!-- optimized flixel `haxelib git flixel-nebulazone https://github.com/NebulaZone1/flixel.git` -->
+	<haxelib name="flixel-nebulazone" />
 
 	<haxelib name="hscript" />
 	<define name="hscriptPos" />
+
+	<haxelib name="hscript-improved" />
 	
 	<haxelib name="away3d" />
 

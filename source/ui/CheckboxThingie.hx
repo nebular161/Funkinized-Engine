@@ -8,7 +8,7 @@ class CheckboxThingie extends FlxSprite {
 	override public function new(x:Float, y:Float, state:Bool = false) {
 		super(x, y);
 
-		frames = Paths.getSparrowAtlas('checkboxThingie');
+		frames = Paths.getSparrowAtlas('menuUI/checkboxThingie');
 		animation.addByPrefix('static', 'Check Box unselected', 24, false);
 		animation.addByPrefix('checked', 'Check Box selecting animation', 24, false);
 		
@@ -21,7 +21,7 @@ class CheckboxThingie extends FlxSprite {
 		super.update(elapsed);
 		switch (animation.curAnim.name) {
 			case 'checked':
-				offset.set(17, 70);
+				offset.set();
 			case 'static':
 				offset.set();
 		}

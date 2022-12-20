@@ -44,7 +44,16 @@ class StoryMenuState extends MusicBeatState {
 		['tankman', 'bf', 'gf']
 	];
 
-	var weekNames:Array<String> = ';Daddy Dearest;Spooky Month;PICO;MOMMY MUST MURDER;RED SNOW;hating simulator ft. moawling;TANKMAN'.split(';');
+	var weekNames:Array<String> = [
+		"Tutorial",
+		"Daddy Dearest",
+		"Spooky Month",
+		"PICO",
+		"MOMMY MUST MURDER",
+		"RED SNOW",
+		"hating simulator ft. moawling",
+		"Tankman"
+	];
 
 	var txtWeekTitle:FlxText;
 
@@ -86,7 +95,7 @@ class StoryMenuState extends MusicBeatState {
 		rankText.size = scoreText.size;
 		rankText.screenCenter(X);
 
-		var ui_tex = Paths.getSparrowAtlas('campaign_menu_UI_assets');
+		var ui_tex = Paths.getSparrowAtlas('menuUI/campaign_menu_UI_assets');
 		var yellowBG:FlxSprite = new FlxSprite(0, 56).makeGraphic(FlxG.width, 400, 0xFFF9CF51);
 
 		grpWeekText = new FlxTypedGroup<MenuItem>();
