@@ -86,7 +86,7 @@ class GameOverSubstate extends MusicBeatSubstate {
 				playingDeathSound = true;
 				bf.startedDeath = true;
 				coolStartDeath(0.2);
-				FlxG.sound.play(Paths.sound('jeffGameover/jeffGameover-' + randomGameover), 1, false, null, true, function() {
+				FlxG.sound.play(Paths.sound('tankZone/jeffGameover/jeffGameover-' + randomGameover), 1, false, null, true, function() {
 					FlxG.sound.music.fadeIn(4, 0.2, 1);
 				});
 			}

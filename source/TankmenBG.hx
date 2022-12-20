@@ -3,7 +3,8 @@ package;
 import flixel.FlxG;
 import flixel.FlxSprite;
 
-class TankmenBG extends FlxSprite {
+class TankmenBG extends FlxSprite
+{
 	public static var animationNotes:Array<Dynamic> = [];
 
 	public var strumTime:Float = 0;
@@ -12,20 +13,22 @@ class TankmenBG extends FlxSprite {
 
 	var endingOffset:Float;
 
-	override public function new(x:Float, y:Float, uhh:Bool) {
+	override public function new(x:Float, y:Float, uhh:Bool)
+	{
 		super(x, y);
-
-		frames = Paths.getSparrowAtlas('tankmanKilled1');
+		frames = Paths.getSparrowAtlas('stage_assets/week7/tankmanKilled1', 'shared');
+		antialiasing = true;
 		animation.addByPrefix('run', 'tankman running', 24, true);
 		animation.addByPrefix('shot', 'John Shot ' + FlxG.random.int(1, 2), 24, false);
 		animation.play('run');
 		animation.curAnim.curFrame = FlxG.random.int(0, animation.curAnim.frames.length - 1);
-		
-		scale.set(0.8, 0.8);
+		updateHitbox();
+		setGraphicSize(Std.int(width * 0.8));
 		updateHitbox();
 	}
 
-	public function resetShit(x:Float, y:Float, goRight:Bool) {
+	public function resetShit(x:Float, y:Float, goRight:Bool)
+	{
 		setPosition(x, y);
 		goingRight = goRight;
 		endingOffset = FlxG.random.float(50, 200);
@@ -34,33 +37,43 @@ class TankmenBG extends FlxSprite {
 			flipX = true;
 	}
 
-	override public function update(elapsed:Float) {
+	override public function update(elapsed:Float)
+	{
 		super.update(elapsed);
-
-		if (x >= FlxG.width * 1.2 || x <= FlxG.width * -0.5) {
+		
+		if (x >= FlxG.width * 1.2 || x <= FlxG.width * -0.5)
+		{
 			visible = false;
-		} else {
+		}
+		else
+		{
 			visible = true;
 		}
 
-		if (animation.curAnim.name == 'run') {
+		if (animation.curAnim.name == 'run')
+		{
 			var wackyShit:Float = FlxG.width * 0.74 + endingOffset;
-			if (goingRight) {
+			if (goingRight)
+			{
 				wackyShit = FlxG.width * 0.02 - endingOffset;
 				x = wackyShit + (Conductor.songPosition - strumTime) * tankSpeed;
-			} else {
+			}
+			else
+			{
 				x = wackyShit - (Conductor.songPosition - strumTime) * tankSpeed;
 			}
 		}
-
-		if (Conductor.songPosition > strumTime) {
+		
+		if (Conductor.songPosition > strumTime)
+		{
 			animation.play('shot');
-			if (goingRight) {
+			if (goingRight)
+			{
 				offset.y = 200;
 				offset.x = 300;
 			}
 		}
-
+		
 		if (animation.curAnim.name == 'shot' && animation.curAnim.curFrame >= animation.curAnim.frames.length - 1)
 			kill();
 	}

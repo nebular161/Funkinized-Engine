@@ -104,7 +104,7 @@ class ChartingState extends MusicBeatState
 
 	override function create()
 	{
-		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('ui/menuDesat')); // bg on chart editor, credits to ShadowMario for da bg code
+		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuUI/menuDesat')); // bg on chart editor, credits to ShadowMario for da bg code
 		bg.scrollFactor.set();
 		bg.color = 0xFF3B1247;
 		add(bg);

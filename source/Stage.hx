@@ -35,7 +35,7 @@ class Stage
 
 	public function new(file:String, ?group:GroupSprites)
 	{
-		var target:Dynamic = states.PlayState.current;
+		var target:Dynamic = PlayState.current;
 		if (group != null)
 			target = group;
 

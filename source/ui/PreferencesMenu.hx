@@ -31,6 +31,7 @@ class PreferencesMenu extends Page
 		createPrefItem('Camera Zooming on Beat', 'camera-zoom', true);
 		createPrefItem('FPS Counter', 'fps-counter', true);
 		createPrefItem('Auto Pause', 'auto-pause', false);
+		createPrefItem('Glow Opponent Strums', 'glow-strums', true);
 		camFollow = new FlxObject(FlxG.width / 2, 0, 140, 70);
 		if (items != null)
 		{
@@ -105,6 +106,15 @@ class PreferencesMenu extends Page
 		{
 			preferenceCheck('auto-pause', false);
 		}	
+
+		if(FlxG.save.data.glowStrums != null)
+			{
+				preferenceCheck('glow-strums', FlxG.save.data.glowStrums);
+			}
+			else
+			{
+				preferenceCheck('glow-strums', true);
+			}			
 
 		if (!getPref('fps-counter'))
 		{

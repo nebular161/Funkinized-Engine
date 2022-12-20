@@ -1,32 +1,37 @@
 package;
 
-class BGSprite extends flixel.FlxSprite {
+import flixel.FlxSprite;
+
+class BGSprite extends FlxSprite
+{
 	public var idleAnim:String = null;
 
-	override public function new(image:String, x:Float = 0, y:Float = 0, ?scrollFactor:Vector2, animations:Array<String> = null, loopAnims:Bool = false,
-			?scale:Vector2, antialiasing:Bool = true) {
+	override public function new(image:String, x:Float = 0, y:Float = 0, scrollX:Float = 1, scrollY:Float = 1, animations:Array<String> = null, loopAnims:Bool = false)
+	{
 		super(x, y);
-
-		if (animations != null) {
+		
+		if (animations != null)
+		{
 			frames = Paths.getSparrowAtlas(image);
-
-			for (anim in animations) {
+			for (anim in animations)
+			{
 				animation.addByPrefix(anim, anim, 24, loopAnims);
 				animation.play(anim);
 				if (idleAnim == null)
 					idleAnim = anim;
 			}
-		} else
+		}
+		else
+		{
 			loadGraphic(Paths.image(image));
-
-		if (scrollFactor != null)
-			this.scrollFactor.set(scrollFactor.x, scrollFactor.y);
-		if (scale != null)
-			this.scale.set(scale.x, scale.y);
-		this.antialiasing = antialiasing;
+			active = false;
+		}
+		scrollFactor.set(scrollX, scrollY);
+		antialiasing = true;
 	}
 
-	public function dance() {
+	public function dance()
+	{
 		if (idleAnim != null)
 			animation.play(idleAnim);
 	}

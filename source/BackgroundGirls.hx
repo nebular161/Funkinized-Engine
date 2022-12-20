@@ -1,27 +1,39 @@
 package;
 
-class BackgroundGirls extends flixel.FlxSprite {
-	public var danceRight:Bool = false;
+import flixel.FlxSprite;
+import flixel.graphics.frames.FlxAtlasFrames;
 
-	public function new(x:Float, y:Float) {
+class BackgroundGirls extends FlxSprite
+{
+	public function new(x:Float, y:Float)
+	{
 		super(x, y);
 
-		frames = Paths.getSparrowAtlas('weeb/bgFreaks');
-		playAnims('girls group');
+		// BG fangirls dissuaded
+		frames = Paths.getSparrowAtlas('stage_assets/week6/bgFreaks','shared');
+
+		animation.addByIndices('danceLeft', 'BG girls group', CoolUtil.numberArray(14), "", 24, false);
+		animation.addByIndices('danceRight', 'BG girls group', CoolUtil.numberArray(30, 15), "", 24, false);
+
+		animation.play('danceLeft');
 	}
 
-	public function getScared():Void {
-		playAnims('fangirls dissuaded');
-	}
+	var danceDir:Bool = false;
 
-	public function playAnims(suffix:String):Void {
-		animation.addByIndices('danceLeft', 'BG {suffix}', MathFunctions.numberArray(14), '', 24, false);
-		animation.addByIndices('danceRight', 'BG ${suffix}', MathFunctions.numberArray(30, 15), '', 24, false);
+	public function getScared():Void
+	{
+		animation.addByIndices('danceLeft', 'BG fangirls dissuaded', CoolUtil.numberArray(14), "", 24, false);
+		animation.addByIndices('danceRight', 'BG fangirls dissuaded', CoolUtil.numberArray(30, 15), "", 24, false);
 		dance();
-		animation.finish();
 	}
 
-	public function dance():Void {
-		animation.play((danceRight = !danceRight) ? 'danceRight' : 'danceLeft', true);
+	public function dance():Void
+	{
+		danceDir = !danceDir;
+
+		if (danceDir)
+			animation.play('danceRight', true);
+		else
+			animation.play('danceLeft', true);
 	}
 }

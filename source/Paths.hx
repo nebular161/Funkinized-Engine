@@ -14,8 +14,6 @@ class Paths {
 
 	static var currentLevel:String;
 
-	public static var currentMod:Null<String>;
-
 	inline static public function setCurrentLevel(name:String)
 		currentLevel = name.toLowerCase();
 
@@ -81,15 +79,11 @@ class Paths {
 		return getPath('sounds/$key.$SOUND_EXT', SOUND, library);
 	}
 
-	inline static public function characterJson(key:String)
+	inline static public function video(key:String, ?library:String)
 		{
-			return 'assets/data/character-data/chars/$key.json';
-		}
-
-		inline static public function modFile(file:String)
-			{
-				return 'mods/$currentMod/assets/$file';
-			}
+			trace('assets/videos/$key.mp4');
+			return getPath('videos/$key.mp4', BINARY, library);
+		}	
 
 	inline static public function soundRandom(key:String, min:Int, max:Int, ?library:String) {
 		return sound(key + FlxG.random.int(min, max), library);
@@ -118,10 +112,6 @@ class Paths {
 
 	inline static public function font(key:String) {
 		return 'assets/fonts/$key';
-	}
-
-	inline static public function video(key:String, ?library:String) {
-		return getPath('music/$key.mp4', TEXT, library);
 	}
 
 	inline static public function songjson(key:String,?container:String, ?library:String)
