@@ -1,7 +1,6 @@
 package ui;
 
-enum AtlasFont
-{
+enum AtlasFont {
 	Default;
 	Bold;
 }

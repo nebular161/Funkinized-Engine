@@ -1,7 +1,6 @@
 package ui;
 
-enum NavControls
-{
+enum NavControls {
 	Horizontal;
 	Vertical;
 	Both;

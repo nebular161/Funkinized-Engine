@@ -11,13 +11,11 @@ import flixel.FlxG;
 import lime.utils.Assets;
 import haxe.Json;
 
-class FlxAnimate extends FlxSymbol
-{
+class FlxAnimate extends FlxSymbol {
 	var playingAnim:Bool = false;
 	var frameTickTypeShit:Float = 0;
 
-	override public function new(x:Float, y:Float)
-	{
+	override public function new(x:Float, y:Float) {
 		coolParse = Json.parse(Assets.getText(Paths.getPath('images/tightBars/Animation.json', TEXT, null)));
 		coolParse.AN.TL.L.reverse();
 		super(x, y, coolParse);
@@ -33,8 +31,7 @@ class FlxAnimate extends FlxSymbol
 	 *                        Or you can just pass a path to the JSON file in the assets directory.
 	 * @return  Newly created `FlxAtlasFrames` collection.
 	 */
-	 public static function fromAnimate(Source:FlxGraphicAsset, Description:String):FlxAtlasFrames
-	{
+	public static function fromAnimate(Source:FlxGraphicAsset, Description:String):FlxAtlasFrames {
 		var graphic:FlxGraphic = FlxG.bitmap.add(Source);
 		if (graphic == null)
 			return null;
@@ -55,8 +52,7 @@ class FlxAnimate extends FlxSymbol
 
 		var data:AnimateAtlas = Json.parse(Description);
 
-		for (sprites in data.ATLAS.SPRITES)
-		{
+		for (sprites in data.ATLAS.SPRITES) {
 			var spr:AnimateSpriteData = sprites.SPRITE;
 
 			var rect:FlxRect = FlxRect.get(spr.x, spr.y, spr.w, spr.h);
@@ -71,18 +67,14 @@ class FlxAnimate extends FlxSymbol
 		return frames;
 	}
 
-	override function draw()
-	{
+	override function draw() {
 		super.draw();
 
 		renderFrame(coolParse.AN.TL, coolParse, true);
-		
-		if (FlxG.keys.justPressed.E)
-		{
-			for (key in FlxSymbol.nestedShit.keys())
-			{
-				for (symbol in FlxSymbol.nestedShit.get(key))
-				{
+
+		if (FlxG.keys.justPressed.E) {
+			for (key in FlxSymbol.nestedShit.keys()) {
+				for (symbol in FlxSymbol.nestedShit.get(key)) {
 					symbol.draw();
 				}
 			}
@@ -90,54 +82,44 @@ class FlxAnimate extends FlxSymbol
 		}
 	}
 
-	override function update(elapsed:Float)
-	{
+	override function update(elapsed:Float) {
 		super.update(elapsed);
 
-		if (FlxG.keys.justPressed.SPACE)
-		{
+		if (FlxG.keys.justPressed.SPACE) {
 			playingAnim = !playingAnim;
 		}
 
-		if (playingAnim)
-		{
+		if (playingAnim) {
 			frameTickTypeShit += elapsed;
-			
-			if (frameTickTypeShit >= 1 / 24)
-			{
+
+			if (frameTickTypeShit >= 1 / 24) {
 				changeFrame(1);
 				frameTickTypeShit = 0;
 			}
 		}
 
-		if (FlxG.keys.justPressed.RIGHT)
-		{
+		if (FlxG.keys.justPressed.RIGHT) {
 			changeFrame(1);
 		}
-		if (FlxG.keys.justPressed.LEFT)
-		{
+		if (FlxG.keys.justPressed.LEFT) {
 			changeFrame(-1);
 		}
 	}
 }
 
-typedef AnimateAtlas =
-{
+typedef AnimateAtlas = {
 	var ATLAS:AnimateSprites;
 };
 
-typedef AnimateSprites =
-{
+typedef AnimateSprites = {
 	var SPRITES:Array<AnimateSprite>;
 };
 
-typedef AnimateSprite =
-{
+typedef AnimateSprite = {
 	var SPRITE:AnimateSpriteData;
 };
 
-typedef AnimateSpriteData =
-{
+typedef AnimateSpriteData = {
 	var name:String;
 	var x:Float;
 	var y:Float;

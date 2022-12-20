@@ -12,12 +12,9 @@ bf-christmas
 gf-christmas
 monster
 bf-pixel
-bf-pixel-opponent
 senpai
 senpai-angry
 spirit
 tankman
 pico-speaker
-bf-gf
-bf-opponent
-pico-player
+bf-holding-gf

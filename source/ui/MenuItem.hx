@@ -2,8 +2,7 @@ package ui;
 
 import flixel.FlxSprite;
 
-class MenuItem extends FlxSprite
-{
+class MenuItem extends FlxSprite {
 	public var fireInstantly:Bool = false;
 	public var name:String;
 	public var callback:Dynamic;
@@ -12,43 +11,33 @@ class MenuItem extends FlxSprite
 	function get_selected()
 		return alpha == 1;
 
-	public function new(?x:Float = 0, ?y:Float = 0, name:String, ?callback:Dynamic)
-	{
+	public function new(?x:Float = 0, ?y:Float = 0, name:String, ?callback:Dynamic) {
 		super(x, y);
-		antialiasing = true;
 		setData(name, callback);
 		idle();
 	}
 
-	public function setData(name:String, ?callback:Dynamic)
-	{
+	public function setData(name:String, ?callback:Dynamic) {
 		this.name = name;
-		if (callback != null)
-		{
+		if (callback != null) {
 			this.callback = callback;
 		}
 	}
 
-	public function setItem(name:String, ?callback:Dynamic)
-	{
+	public function setItem(name:String, ?callback:Dynamic) {
 		setData(name, callback);
-		if (selected)
-		{
+		if (selected) {
 			select();
-		}
-		else
-		{
+		} else {
 			idle();
 		}
 	}
 
-	public function idle()
-	{
+	public function idle() {
 		alpha = 0.6;
 	}
 
-	public function select()
-	{
+	public function select() {
 		alpha = 1;
 	}
 }

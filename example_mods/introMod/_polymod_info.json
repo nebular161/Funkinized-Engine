@@ -1,0 +1,14 @@
+{
+	"title":"introMod",
+	"description":"Adds a new line to introText.txt",
+	"homepage": "https://github.com/ninjamuffin99/Funkin/tree/master/example_mods/introMod",
+	"contributors": [
+		{
+			"name": "ninjamuffin99",
+			"role": "Developer"
+		}
+	],
+	"api_version":"0.2.6",
+	"mod_version":"1.0.0",
+	"license":"Apache 2.0"
+}

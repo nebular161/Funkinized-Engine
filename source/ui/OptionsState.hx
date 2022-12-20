@@ -4,8 +4,7 @@ import flixel.FlxG;
 import flixel.FlxSprite;
 import haxe.ds.EnumValueMap;
 
-class OptionsState extends MusicBeatState
-{
+class OptionsState extends MusicBeatState {
 	public var pages:EnumValueMap<PageName, Page> = new EnumValueMap();
 	public var currentName:PageName = Options;
 	public var currentPage(get, never):Page;
@@ -13,8 +12,7 @@ class OptionsState extends MusicBeatState
 	inline function get_currentPage()
 		return pages.get(currentName);
 
-	override function create()
-	{
+	override function create() {
 		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
 		bg.color = 0xFFEA71FD;
 		bg.setGraphicSize(Std.int(bg.width * 1.1));
@@ -25,20 +23,15 @@ class OptionsState extends MusicBeatState
 		var optionsmenu:OptionsMenu = addPage(Options, new OptionsMenu(false));
 		var preferencesmenu:PreferencesMenu = addPage(Preferences, new PreferencesMenu());
 		var controlsmenu:ControlsMenu = addPage(Controls, new ControlsMenu());
-		if (optionsmenu.hasMultipleOptions())
-		{
+		if (optionsmenu.hasMultipleOptions()) {
 			optionsmenu.onExit.add(exitToMainMenu);
-			controlsmenu.onExit.add(function()
-			{
+			controlsmenu.onExit.add(function() {
 				switchPage(Options);
 			});
-			preferencesmenu.onExit.add(function()
-			{
+			preferencesmenu.onExit.add(function() {
 				switchPage(Options);
 			});
-		}
-		else
-		{
+		} else {
 			controlsmenu.onExit.add(exitToMainMenu);
 			setPage(Controls);
 		}
@@ -46,8 +39,7 @@ class OptionsState extends MusicBeatState
 		super.create();
 	}
 
-	function addPage(name:PageName, page:Page):Dynamic
-	{
+	function addPage(name:PageName, page:Page):Dynamic {
 		page.onSwitch.add(switchPage);
 		pages.set(name, page);
 		add(page);
@@ -55,32 +47,26 @@ class OptionsState extends MusicBeatState
 		return page;
 	}
 
-	function setPage(name:PageName)
-	{
-		if (pages.exists(currentName))
-		{
+	function setPage(name:PageName) {
+		if (pages.exists(currentName)) {
 			currentPage.exists = false;
 		}
 		currentName = name;
-		if (pages.exists(currentName))
-		{
+		if (pages.exists(currentName)) {
 			currentPage.exists = true;
 		}
 	}
 
-	override function finishTransIn()
-	{
+	override function finishTransIn() {
 		super.finishTransIn();
 		currentPage.enabled = true;
 	}
 
-	function switchPage(name:PageName)
-	{
+	function switchPage(name:PageName) {
 		setPage(name);
 	}
 
-	function exitToMainMenu()
-	{
+	function exitToMainMenu() {
 		currentPage.enabled = false;
 		FlxG.switchState(new MainMenuState());
 	}

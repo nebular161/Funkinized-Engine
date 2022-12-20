@@ -2,24 +2,19 @@ package ui;
 
 import flixel.FlxG;
 
-class OptionsMenu extends Page
-{
+class OptionsMenu extends Page {
 	var items:TextMenuList;
 
-	override public function new(showDonate:Bool)
-	{
+	override public function new(showDonate:Bool) {
 		super();
 		add(items = new TextMenuList());
-		createItem('preferences', function()
-		{
+		createItem('preferences', function() {
 			onSwitch.dispatch(PageName.Preferences);
 		});
-		createItem('controls', function()
-		{
+		createItem('controls', function() {
 			onSwitch.dispatch(PageName.Controls);
 		});
-		if (showDonate)
-		{
+		if (showDonate) {
 			createItem('donate', selectDonate, true);
 		}
 		// if (NG.core != null && NG.core.loggedIn)
@@ -33,29 +28,25 @@ class OptionsMenu extends Page
 		createItem('exit', exit);
 	}
 
-	public function createItem(label:String, callback:Dynamic, ?fireInstantly:Bool = false)
-	{
+	public function createItem(label:String, callback:Dynamic, ?fireInstantly:Bool = false) {
 		var item:TextMenuItem = items.createItem(0, 100 + 100 * items.length, label, Bold, callback);
 		item.fireInstantly = fireInstantly;
 		item.screenCenter(X);
 		return item;
 	}
 
-	override function set_enabled(state:Bool)
-	{
+	override function set_enabled(state:Bool) {
 		items.enabled = state;
 		return super.set_enabled(state);
 	}
 
-	public function hasMultipleOptions()
-	{
+	public function hasMultipleOptions() {
 		return items.length > 2;
 	}
 
-	function selectDonate()
-	{
+	function selectDonate() {
 		#if linux
-		Sys.command('/usr/bin/xdg-open', ["https://ninja-muffin24.itch.io/funkin", "&"]);
+		Sys.command('/usr/bin/xdg-open', ['https://ninja-muffin24.itch.io/funkin', '&']);
 		#else
 		FlxG.openURL('https://ninja-muffin24.itch.io/funkin');
 		#end
@@ -65,12 +56,10 @@ class OptionsMenu extends Page
 	// {
 	// 	openNgPrompt(NgPrompt.showLogin());
 	// }
-
 	// function selectLogout()
 	// {
 	// 	openNgPrompt(NgPrompt.showLogout());
 	// }
-
 	// function openNgPrompt(prompt:Prompt, ?callback:Dynamic)
 	// {
 	// 	var func:Dynamic = checkLoginStatus();
@@ -84,7 +73,6 @@ class OptionsMenu extends Page
 	// 	}
 	// 	openPrompt(prompt, func);
 	// }
-
 	// function checkLoginStatus()
 	// {
 	// 	var hasLogout:Bool = items.has('logout');

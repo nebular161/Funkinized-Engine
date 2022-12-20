@@ -1,9 +1,8 @@
 package ui;
 
-enum WrapMode
-{
+enum WrapMode {
 	Horizontal;
 	Vertical;
 	Both;
-	None;	
+	None;
 }

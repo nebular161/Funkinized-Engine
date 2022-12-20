@@ -1,7 +1,6 @@
 package ui;
 
-enum Case
-{
+enum Case {
 	Both;
 	Upper;
 	Lower;

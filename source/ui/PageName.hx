@@ -1,7 +1,6 @@
 package ui;
 
-enum PageName
-{
+enum PageName {
 	Options;
 	Controls;
 	Colors;

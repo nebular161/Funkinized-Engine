@@ -1,7 +1,6 @@
 package ui;
 
-enum ButtonStyle
-{
+enum ButtonStyle {
 	Ok;
 	Yes_No;
 	Custom(yes:String, no:String);

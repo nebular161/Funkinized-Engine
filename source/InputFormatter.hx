@@ -4,14 +4,11 @@ import Controls.Device;
 import flixel.FlxG;
 import flixel.input.keyboard.FlxKey;
 
-class InputFormatter
-{
-	static var dirReg:EReg = new EReg("^(l|r).?-(left|right|down|up)$", "");
+class InputFormatter {
+	static var dirReg:EReg = new EReg('^(l|r).?-(left|right|down|up)$', '');
 
-	public static function format(input:Int, dev:Device):String
-	{
-		switch (dev)
-		{
+	public static function format(input:Int, dev:Device):String {
+		switch (dev) {
 			case Keys:
 				return getKeyName(input);
 			case Gamepad(id):
@@ -19,10 +16,8 @@ class InputFormatter
 		}
 	}
 
-	public static function getKeyName(key:FlxKey):String
-	{
-		switch (key)
-		{
+	public static function getKeyName(key:FlxKey):String {
+		switch (key) {
 			case FlxKey.BACKSPACE:
 				return 'BckSpc';
 			case FlxKey.CONTROL:
@@ -109,12 +104,11 @@ class InputFormatter
 		}
 	}
 
-	public static function shortenButtonName(button:String = '')
-	{
+	public static function shortenButtonName(button:String = '') {
 		button = button.toLowerCase();
-		if (button == '') return '[?]';
-		if (dirReg.match(button))
-		{
+		if (button == '')
+			return '[?]';
+		if (dirReg.match(button)) {
 			var a = dirReg.matched(1).toUpperCase() + ' ';
 			var b = dirReg.matched(2);
 			return a + (b.charAt(0).toUpperCase() + b.substr(1).toLowerCase());

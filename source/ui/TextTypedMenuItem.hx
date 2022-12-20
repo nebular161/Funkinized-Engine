@@ -1,11 +1,8 @@
 package ui;
 
-class TextTypedMenuItem extends MenuTypedItem
-{
-	override public function setItem(text:String, ?callback:Dynamic)
-	{
-		if (label != null)
-		{
+class TextTypedMenuItem extends MenuTypedItem {
+	override public function setItem(text:String, ?callback:Dynamic) {
+		if (label != null) {
 			label.text = text;
 			label.alpha = alpha;
 			width = label.width;
@@ -14,8 +11,7 @@ class TextTypedMenuItem extends MenuTypedItem
 		super.setItem(text, callback);
 	}
 
-	override function set_label(atlasText:AtlasText)
-	{
+	override function set_label(atlasText:AtlasText) {
 		super.set_label(atlasText);
 		setItem(name, callback);
 		return atlasText;

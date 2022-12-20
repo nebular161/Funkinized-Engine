@@ -4,20 +4,17 @@ import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.graphics.frames.FlxAtlasFrames;
 
-class GitarooPause extends MusicBeatState
-{
+class GitarooPause extends MusicBeatState {
 	var replayButton:FlxSprite;
 	var cancelButton:FlxSprite;
 
 	var replaySelect:Bool = false;
 
-	public function new():Void
-	{
+	public function new():Void {
 		super();
 	}
 
-	override function create()
-	{
+	override function create() {
 		if (FlxG.sound.music != null)
 			FlxG.sound.music.stop();
 
@@ -26,7 +23,7 @@ class GitarooPause extends MusicBeatState
 
 		var bf:FlxSprite = new FlxSprite(0, 30);
 		bf.frames = Paths.getSparrowAtlas('pauseAlt/bfLol');
-		bf.animation.addByPrefix('lol', "funnyThing", 13);
+		bf.animation.addByPrefix('lol', 'funnyThing', 13);
 		bf.animation.play('lol');
 		add(bf);
 		bf.screenCenter(X);
@@ -50,19 +47,14 @@ class GitarooPause extends MusicBeatState
 		super.create();
 	}
 
-	override function update(elapsed:Float)
-	{
+	override function update(elapsed:Float) {
 		if (controls.UI_LEFT_P || controls.UI_RIGHT_P)
 			changeThing();
 
-		if (controls.ACCEPT)
-		{
-			if (replaySelect)
-			{
+		if (controls.ACCEPT) {
+			if (replaySelect) {
 				FlxG.switchState(new PlayState());
-			}
-			else
-			{
+			} else {
 				FlxG.switchState(new MainMenuState());
 			}
 		}
@@ -70,17 +62,13 @@ class GitarooPause extends MusicBeatState
 		super.update(elapsed);
 	}
 
-	function changeThing():Void
-	{
+	function changeThing():Void {
 		replaySelect = !replaySelect;
 
-		if (replaySelect)
-		{
+		if (replaySelect) {
 			cancelButton.animation.curAnim.curFrame = 0;
 			replayButton.animation.curAnim.curFrame = 1;
-		}
-		else
-		{
+		} else {
 			cancelButton.animation.curAnim.curFrame = 1;
 			replayButton.animation.curAnim.curFrame = 0;
 		}
