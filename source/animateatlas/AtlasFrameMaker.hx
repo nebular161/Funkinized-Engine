@@ -21,6 +21,7 @@ import sys.io.File;
 import js.html.FileSystem;
 import js.html.File;
 #end
+import dependency.Paths;
 
 using StringTools;
 

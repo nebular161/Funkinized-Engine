@@ -1,6 +1,6 @@
 // Game Imports //
-import Paths;
-import ui.Alphabet;
+import dependency.Paths;
+import funkin.ui.Alphabet;
 
 // Flixel Imports //
 import flixel.math.FlxMath;
