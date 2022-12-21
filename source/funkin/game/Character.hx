@@ -243,18 +243,21 @@ class Character extends FlxSprite {
 
 				flipX = true;
 
-		case 'bf-dead':
-			tex = Paths.getSparrowAtlas('characters/bf/BOYFRIEND_DEAD');
-			quickAnimAdd('firstDeath', 'BF dies');
-			animation.addByPrefix('deathLoop', 'BF Dead Loop', 24, true);
-			quickAnimAdd('deathConfirm', 'BF Dead confirm');	
-			
-			playAnim('firstDeath');
+				loadOffsetFile(curCharacter);
 
-			loadOffsetFile(curCharacter);
-			flipX = true;
+		case 'bf-dead':
+				frames = Paths.getSparrowAtlas('characters/bf/BOYFRIEND_DEAD');
+				animation.addByPrefix('deathLoop', "BF Dead Loop", 24, true);
+				quickAnimAdd('firstDeath', "BF dies");
+				quickAnimAdd('deathConfirm', "BF Dead confirm");
+	
+				loadOffsetFile(curCharacter);
+	
+				playAnim('firstDeath');
+	
+				flipX = true;
 		
-			case 'bf-christmas':
+		case 'bf-christmas':
 				tex = Paths.getSparrowAtlas('characters/bf/bfChristmas');
 				frames = tex;
 				quickAnimAdd('idle', 'BF idle dance');

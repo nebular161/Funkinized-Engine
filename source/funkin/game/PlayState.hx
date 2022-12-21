@@ -1668,7 +1668,6 @@ class PlayState extends MusicBeatState
 
 				var center = strumLine.y + (Note.swagWidth / 2);
 
-				// i am so fucking sorry for these if conditions
 				if (PreferencesMenu.getPref('downscroll')) {
 					daNote.y = strumLine.y + 0.45 * (Conductor.songPosition - daNote.strumTime) * FlxMath.roundDecimal(SONG.speed, 2);
 
