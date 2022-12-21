@@ -336,7 +336,7 @@ class Character extends FlxSprite {
 				updateHitbox();
 				antialiasing = false;
 				flipX = true;
-			case 'bf-holding-gf':
+			case 'bf-gf':
 				frames = Paths.getSparrowAtlas('characters/bf/bfAndGF');
 				quickAnimAdd('idle', 'BF idle dance');
 				quickAnimAdd('singDOWN', 'BF NOTE DOWN0');
