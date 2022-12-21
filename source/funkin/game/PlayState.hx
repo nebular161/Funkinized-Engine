@@ -1547,10 +1547,12 @@ class PlayState extends MusicBeatState
 			#end
 		}
 
-		iconP1.scale.set(MathFunctions.fixedLerp(iconP1.scale.x, 1, 0.15), MathFunctions.fixedLerp(iconP1.scale.y, 1, 0.15));
-		iconP2.scale.set(MathFunctions.fixedLerp(iconP2.scale.x, 1, 0.15), MathFunctions.fixedLerp(iconP2.scale.y, 1, 0.15));
-
+		var mult:Float = FlxMath.lerp(1, iconP1.scale.x, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1));
+		iconP1.scale.set(mult, mult);
 		iconP1.updateHitbox();
+
+		var mult:Float = FlxMath.lerp(1, iconP2.scale.x, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1));
+		iconP2.scale.set(mult, mult);
 		iconP2.updateHitbox();
 
 		iconP1.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * 0.01) - iconOffset);
@@ -2147,7 +2149,7 @@ class PlayState extends MusicBeatState
 			} else
 				badNoteHit();
 		}
-		if (boyfriend.holdTimer > 0.004 * Conductor.stepCrochet
+		if (boyfriend.holdTimer > 0.007 * Conductor.stepCrochet
 			&& !holdingArray.contains(true)
 			&& boyfriend.animation.curAnim.name.startsWith('sing')
 			&& !boyfriend.animation.curAnim.name.endsWith('miss')) {
@@ -2212,6 +2214,8 @@ class PlayState extends MusicBeatState
 		var upP = controls.NOTE_UP_P;
 		var rightP = controls.NOTE_RIGHT_P;
 
+	if(PreferencesMenu.getPref('ghost-tap') == false)
+	{		
 		if (leftP)
 			noteMiss(0);
 		if (downP)
@@ -2220,7 +2224,8 @@ class PlayState extends MusicBeatState
 			noteMiss(2);
 		if (rightP)
 			noteMiss(3);
-	}
+	}	
+}
 
 	function goodNoteHit(note:Note):Void {
 		if (!note.wasGoodHit) {
@@ -2230,9 +2235,9 @@ class PlayState extends MusicBeatState
 			}
 
 			if (note.noteData >= 0)
-				health += 0.050;
+				health += 0.023;
 			else
-				health += 0.004;
+				health += 0.04;
 
 			switch (note.noteData) {
 				case 0:
@@ -2405,8 +2410,8 @@ class PlayState extends MusicBeatState
 			}
 		}
 
-		iconP1.setGraphicSize(Std.int(iconP1.width + 30));
-		iconP2.setGraphicSize(Std.int(iconP2.width + 30));
+		iconP1.scale.set(1.2, 1.2);
+		iconP2.scale.set(1.2, 1.2);
 
 		iconP1.updateHitbox();
 		iconP2.updateHitbox();

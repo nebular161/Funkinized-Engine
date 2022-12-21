@@ -1,6 +1,9 @@
 package funkin.game;
 
 import flixel.FlxSprite;
+import openfl.utils.Assets as OpenFlAssets;
+
+using StringTools;
 
 class HealthIcon extends FlxSprite
 {
@@ -18,6 +21,7 @@ class HealthIcon extends FlxSprite
 		scrollFactor.set();
 	}
 
+	private var iconOffsets:Array<Float> = [0, 0];
 	public function setIcon(char:String = 'bf', flipX:Bool = false)
 	{
 		var correctIcon = char; // To make the icons folder less cluttered with the same icon image but on a different file name
@@ -57,9 +61,13 @@ class HealthIcon extends FlxSprite
 				correctIcon = 'pico';
 		}
 		loadGraphic(Paths.data('character-data/icons/' + correctIcon), true, 150, 150);
+		
 		animation.add(char, [0, 1], 0, false, flipX);
 		animation.play(char);
 		curicon = char;
+
+		iconOffsets[0] = (width - 150) / 2;
+		iconOffsets[1] = (width - 150) / 2;
 	}
 
 	public function getIcon()

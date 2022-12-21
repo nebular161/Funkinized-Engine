@@ -20,7 +20,7 @@ class NoteSplash extends FlxSprite
         setupNoteSplash(x, y, note);
         antialiasing = true;
 
-        switch (PlayState.curStage)
+        /*switch (PlayState.curStage)
             {
                 case 'school' | 'schoolEvil':
                 super(x, y);
@@ -34,7 +34,7 @@ class NoteSplash extends FlxSprite
         
                 setupNoteSplash(x, y, note);
                 antialiasing = true;
-            }
+            }*/
     }
 
     public function setupNoteSplash(x:Float, y:Float, note:Int = 0)

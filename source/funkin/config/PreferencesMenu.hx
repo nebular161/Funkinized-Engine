@@ -35,6 +35,7 @@ class PreferencesMenu extends Page
 		createPrefItem('downscroll', 'downscroll', false);
 		createPrefItem('flashing menu', 'flashing-menu', true);
 		createPrefItem('Camera Zooming on Beat', 'camera-zoom', true);
+		createPrefItem('Ghost Tapping', 'ghost-tap', true);
 		createPrefItem('FPS Counter', 'fps-counter', true);
 		createPrefItem('Auto Pause', 'auto-pause', false);
 		createPrefItem('Glow Opponent Strums', 'glow-strums', true);
@@ -113,14 +114,23 @@ class PreferencesMenu extends Page
 			preferenceCheck('auto-pause', false);
 		}	
 
-		if(FlxG.save.data.glowStrums != null)
-			{
-				preferenceCheck('glow-strums', FlxG.save.data.glowStrums);
-			}
-			else
-			{
-				preferenceCheck('glow-strums', true);
-			}			
+	if(FlxG.save.data.glowStrums != null)
+		{
+			preferenceCheck('glow-strums', FlxG.save.data.glowStrums);
+		}
+		else
+		{
+			preferenceCheck('glow-strums', true);
+		}
+			
+	if(FlxG.save.data.ghostTap != null)
+		{
+			preferenceCheck('ghost-tap', FlxG.save.data.ghostTap);
+		}
+		else
+		{
+			preferenceCheck('ghost-tap', true);
+		}			
 
 		if (!getPref('fps-counter'))
 		{

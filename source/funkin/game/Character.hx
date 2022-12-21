@@ -236,6 +236,8 @@ class Character extends FlxSprite {
 				quickAnimAdd('singRIGHTmiss', 'BF NOTE RIGHT MISS');
 				quickAnimAdd('singDOWNmiss', 'BF NOTE DOWN MISS');
 				quickAnimAdd('hey', 'BF HEY');
+				
+				quickAnimAdd('scared', 'BF idle shaking');
 
 				loadOffsetFile(curCharacter);
 
