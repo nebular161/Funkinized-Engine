@@ -1,5 +1,5 @@
 # Everlast Engine
-A Friday Night Funkin' engine that will try to improve your modding experience. For now, this readme is a wip until the engines release.
+A Friday Night Funkin' engine that will try to improve your modding experience. For now, this readme is a wip until the engine's release.
 
 # Building
 To get started, you need the following programs:

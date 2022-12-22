@@ -114,7 +114,7 @@ class PreferencesMenu extends Page
 			preferenceCheck('auto-pause', false);
 		}	
 
-	if(FlxG.save.data.glowStrums != null)
+		if(FlxG.save.data.glowStrums != null)
 		{
 			preferenceCheck('glow-strums', FlxG.save.data.glowStrums);
 		}
@@ -123,7 +123,7 @@ class PreferencesMenu extends Page
 			preferenceCheck('glow-strums', true);
 		}
 			
-	if(FlxG.save.data.ghostTap != null)
+		if(FlxG.save.data.ghostTap != null)
 		{
 			preferenceCheck('ghost-tap', FlxG.save.data.ghostTap);
 		}
@@ -175,7 +175,6 @@ class PreferencesMenu extends Page
 		{
 			trace('swag');
 		}
-		trace(Type.typeof(value));
 	}
 
 	public function createCheckbox(identifier:String)

@@ -55,7 +55,7 @@ class Main extends Sprite
 
 			File.saveContent("crash-dialog/crash-logs/CRASHDUMP.txt", fileStr);
 			#if windows
-			var process = new Process('start .\\crash-dialog\\FizzyEngine-Crash.exe ".\\CRASHDUMP.txt"');
+			var process = new Process('start .\\crash-dialog\\Everlast-Engine-Crash.exe ".\\CRASHDUMP.txt"');
 			#else
 			Application.current.window.alert("FNF Crashed!\nCRASH REASON:" + e.message + "\nMORE INFO IN CRASHDUMP.TXT!", "FNF Crashed!");
 			#end

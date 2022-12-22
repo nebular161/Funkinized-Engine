@@ -5,4 +5,5 @@ haxelib install away3d
 haxelib install hxCodec
 haxelib install markdown
 haxelib install polymod
+haxelib install openfl
 haxelib git flxanimate https://github.com/Dot-Stuff/flxanimate/
