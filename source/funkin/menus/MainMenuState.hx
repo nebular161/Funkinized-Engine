@@ -46,6 +46,8 @@ class MainMenuState extends MusicBeatState {
 		DiscordClient.changePresence('In the Menus', null);
 		#end
 
+		FlxG.mouse.useSystemCursor = true;
+
 		if (!FlxG.sound.music.playing)
 			FlxG.sound.playMusic(Paths.music('freakyMenu'));
 

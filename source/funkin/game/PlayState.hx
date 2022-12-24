@@ -185,6 +185,8 @@ class PlayState extends MusicBeatState
 		if (FlxG.sound.music != null)
 			FlxG.sound.music.stop();
 
+		FlxG.mouse.useSystemCursor = true;
+
 		var instPath = Paths.inst(SONG.song.toLowerCase());
 		if (Assets.exists(instPath, SOUND) || Assets.exists(instPath, MUSIC))
 			Assets.getSound(instPath, true);

@@ -70,12 +70,14 @@ class TitleState extends MusicBeatState {
 		swagShader = new ColorSwap();
 		#end
 
+		FlxG.mouse.useSystemCursor = true;
+
 		curWacky = FlxG.random.getObject(getIntroTextShit());
 		FlxG.sound.muteKeys = [ZERO];
 
 		super.create();
 
-		FlxG.save.bind('funkin', 'ninjamuffin99');
+		FlxG.save.bind('everlast-engine', 'NebulaZone');
 
 		PreferencesMenu.initPrefs();
 		PlayerSettings.init();

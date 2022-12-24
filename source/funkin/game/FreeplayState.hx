@@ -52,6 +52,9 @@ class FreeplayState extends MusicBeatState {
 	private var iconArray:Array<HealthIcon> = [];
 
 	override function create() {
+
+		FlxG.mouse.useSystemCursor = true;
+
 		var initSonglist = Paths.getTextFileArray(Paths.txt('freeplaySonglist'));
 
 		for (i in 0...initSonglist.length) {
@@ -245,10 +248,6 @@ class FreeplayState extends MusicBeatState {
 		FlxG.sound.play(Paths.sound('scrollMenu'), 0.4);
 		curSelected = FlxMath.wrap(curSelected + change, 0, songs.length - 1);
 		intendedScore = Highscore.getScore(songs[curSelected].songName, curDifficulty);
-
-		#if PRELOAD_ALL
-		FlxG.sound.playMusic(Paths.inst(songs[curSelected].songName), 0);
-		#end
 
 		for (i in 0...iconArray.length) {
 			iconArray[i].alpha = 0.6;
