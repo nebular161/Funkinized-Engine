@@ -369,13 +369,6 @@ class PlayState extends MusicBeatState
 	
 						var overlayShit:FlxSprite = new FlxSprite(-500, -600).loadGraphic(Paths.image('stage_assets/week4/limoOverlay', 'shared'));
 						overlayShit.alpha = 0.5;
-						// add(overlayShit);
-	
-						// var shaderBullshit = new BlendModeEffect(new OverlayShader(), FlxColor.RED);
-	
-						// FlxG.camera.setFilters([new ShaderFilter(cast shaderBullshit.shader)]);
-	
-						// overlayShit.shader = shaderBullshit;
 	
 						var limoTex = Paths.getSparrowAtlas('stage_assets/week4/limoDrive', 'shared');
 	
@@ -884,7 +877,11 @@ class PlayState extends MusicBeatState
 		startingSong = true;
 
 		if (isStoryMode && !seenCutscene) {
+			
 			seenCutscene = true;
+
+			var video:MP4Handler = new MP4Handler();
+
 			switch (curSong.toLowerCase()) {
 				case 'winter-horrorland':
 					var blackScreen:FlxSprite = new FlxSprite(0, 0).makeGraphic(Std.int(FlxG.width * 2), Std.int(FlxG.height * 2), FlxColor.BLACK);
@@ -915,14 +912,12 @@ class PlayState extends MusicBeatState
 					if (curSong.toLowerCase() == 'roses')
 						FlxG.sound.play(Paths.sound('ANGRY'));
 					schoolIntro(newDialogueBox(dialogue, startCountdown, camHUD));
-				#if web
-				case 'ugh':
-					ughIntro();
-				case 'guns':
-					gunsIntro();
-				case 'stress':
-					stressIntro();
-				#end
+					case 'ugh':
+						video.playMP4(Paths.video('ughCutscene'), new PlayState()); 
+					case 'guns':
+						video.playMP4(Paths.video('gunsCutscene'), new PlayState()); 
+					case 'stress':
+						video.playMP4(Paths.video('stressCutscene'), new PlayState()); 
 				default:
 					startCountdown();
 			}
@@ -934,56 +929,6 @@ class PlayState extends MusicBeatState
 		}
 
 		super.create();
-	}
-
-	function ughIntro():Void {
-		inCutscene = true;
-		var black:FlxSprite = new FlxSprite(-200, -200).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.BLACK);
-		black.scrollFactor.set();
-		add(black);
-		new FlxVideo('music/ughCutscene.mp4').finishCallback = function() {
-			remove(black);
-			FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom}, (Conductor.stepCrochet / 1000) * 5, {ease: FlxEase.quadInOut});
-			startCountdown();
-			cameraMovement();
-		};
-		FlxG.camera.zoom = defaultCamZoom * 1.2;
-		camFollow.x += 100;
-		camFollow.y += 100;
-	}
-
-	function gunsIntro():Void {
-		inCutscene = true;
-		var black:FlxSprite = new FlxSprite(-200, -200).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.BLACK);
-		black.scrollFactor.set();
-		add(black);
-		new FlxVideo('music/gunsCutscene.mp4').finishCallback = function() {
-			remove(black);
-			FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom}, (Conductor.stepCrochet / 1000) * 5, {ease: FlxEase.quadInOut});
-			startCountdown();
-			cameraMovement();
-		};
-	}
-
-	function stressIntro():Void {
-		inCutscene = true;
-		var black:FlxSprite = new FlxSprite(-200, -200).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.BLACK);
-		black.scrollFactor.set();
-		add(black);
-		new FlxVideo('music/stressCutscene.mp4').finishCallback = function() {
-			remove(black);
-			FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom}, (Conductor.stepCrochet / 1000) * 5, {ease: FlxEase.quadInOut});
-			startCountdown();
-			cameraMovement();
-		};
-	}
-
-	function initDiscord() {
-		// Angel here.
-		// I have no idea what this function does.
-		// The function is still in the compiled code, but everything inside was ommited since it was compiled for the HTML target.
-		// Just leaving this here in case I ever figure out what it was used for.
-		// If I never find a use for this, sorry, but this is just staying here cause it's a part of v0.2.8's code lol.
 	}
 
 	function schoolIntro(?dialogueBox:DialogueBox):Void {

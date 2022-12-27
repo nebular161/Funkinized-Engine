@@ -188,18 +188,4 @@ class MP4Handler
 		else
 			LoadingState.loadAndSwitchState(new MainMenuState());
 	}
-
-	// old html5 player
-	/*
-		var nc:NetConnection = new NetConnection();
-		nc.connect(null);
-		var ns:NetStream = new NetStream(nc);
-		var myVideo:Video = new Video();
-		myVideo.width = FlxG.width;
-		myVideo.height = FlxG.height;
-		myVideo.attachNetStream(ns);
-		ns.play(path);
-		return myVideo;
-		ns.close();
-	 */
 }

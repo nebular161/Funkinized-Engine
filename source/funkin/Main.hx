@@ -7,6 +7,7 @@ import flixel.FlxState;
 import flixel.util.FlxColor;
 import sys.io.Process;
 import sys.io.File;
+import flixel.system.ui.FlxSoundTray;
 import sys.FileSystem;
 import haxe.Exception;
 import openfl.Assets;

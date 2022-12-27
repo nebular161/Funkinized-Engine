@@ -247,6 +247,26 @@ class Character extends FlxSprite {
 
 				loadOffsetFile(curCharacter);
 
+				case 'bf-opponent':
+					tex = Paths.getSparrowAtlas('characters/bf/BOYFRIEND');
+					frames = tex;
+					quickAnimAdd('idle', 'BF idle dance');
+					quickAnimAdd('singUP', 'BF NOTE UP0');
+					quickAnimAdd('singLEFT', 'BF NOTE RIGHT0');
+					quickAnimAdd('singRIGHT', 'BF NOTE LEFT0');
+					quickAnimAdd('singDOWN', 'BF NOTE DOWN0');
+					quickAnimAdd('hey', 'BF HEY');
+	
+					animation.addByPrefix('scared', 'BF idle shaking', 24, true);
+	
+					loadOffsetFile(curCharacter);
+	
+					playAnim('idle');
+	
+					flipX = true;
+					
+					loadOffsetFile(curCharacter);					
+
 		case 'bf-dead':
 				frames = Paths.getSparrowAtlas('characters/bf/BOYFRIEND_DEAD');
 				animation.addByPrefix('deathLoop', "BF Dead Loop", 24, true);
@@ -323,6 +343,32 @@ class Character extends FlxSprite {
 				antialiasing = false;
 
 				flipX = true;
+
+				case 'bf-pixel-opponent':
+					frames = Paths.getSparrowAtlas('characters/bf/bfPixel');
+					quickAnimAdd('idle', 'BF IDLE');
+					quickAnimAdd('singUP', 'BF UP NOTE');
+					quickAnimAdd('singLEFT', 'BF RIGHT NOTE');
+					quickAnimAdd('singRIGHT', 'BF LEFT NOTE');
+					quickAnimAdd('singDOWN', 'BF DOWN NOTE');
+					quickAnimAdd('singUPmiss', 'BF UP MISS');
+					quickAnimAdd('singLEFTmiss', 'BF LEFT MISS');
+					quickAnimAdd('singRIGHTmiss', 'BF RIGHT MISS');
+					quickAnimAdd('singDOWNmiss', 'BF DOWN MISS');
+	
+					loadOffsetFile(curCharacter);
+	
+					setGraphicSize(Std.int(width * 6));
+					updateHitbox();
+	
+					playAnim('idle');
+	
+					width -= 100;
+					height -= 100;
+	
+					antialiasing = false;
+	
+					flipX = true;					
 			case 'bf-pixel-dead':
 				frames = Paths.getSparrowAtlas('characters/bf/bfPixelsDEAD');
 				quickAnimAdd('singUP', 'BF Dies pixel');
