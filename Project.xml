@@ -2,7 +2,7 @@
 <project>
 	<!-- _________________________ Application Settings _________________________ -->
 
-	<app title="Friday Night Funkin': Everlast Engine" file="Everlast Engine" packageName="com.nebulazone.everlast-engine" package="com.nebulazone.everlast-engine" main="funkin.Main" version="0.0.1" company="NebulaZone" />
+	<app title="Friday Night Funkin': Everlast Engine" file="Everlast Engine" packageName="com.nebulazone.everlast-engine" package="com.nebulazone.everlast-engine" main="funkin.Main" version="0.1.0" company="NebulaZone" />
 
 	<app preloader="flixel.system.FlxPreloader" />
 	<set name="SWF_VERSION" value="11.8" />

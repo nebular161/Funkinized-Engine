@@ -79,6 +79,10 @@ class Paths {
 		return getPath('sounds/$key.$SOUND_EXT', SOUND, library);
 	}
 
+	inline static public function formatToSongPath(path:String) {
+		return path.toLowerCase().replace(' ', '-');
+	}
+
 	inline static public function video(key:String, ?library:String)
 		{
 			trace('assets/videos/$key.mp4');
