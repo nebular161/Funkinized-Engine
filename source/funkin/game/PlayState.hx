@@ -109,7 +109,7 @@ class PlayState extends MusicBeatState {
 
 	private var grpNoteSplashes:FlxTypedGroup<NoteSplash>;
 
-	private var camZooming:Bool = false;
+	private var camZooming:Bool = true;
 	private var curSong:String = '';
 
 	public var bg:BGSprite;
