@@ -1505,11 +1505,11 @@ class PlayState extends MusicBeatState {
 		else
 			iconP2.animation.curAnim.curFrame = 0;
 
-		if (FlxG.keys.justPressed.EIGHT)
+		/*if (FlxG.keys.justPressed.EIGHT)
 			FlxG.switchState(new CharacterEditor(SONG.player2));
 
 		if (FlxG.keys.justPressed.NINE)
-			FlxG.switchState(new CharacterEditor(SONG.player1));
+			FlxG.switchState(new CharacterEditor(SONG.player1));*/
 
 		if (generatedMusic && PlayState.SONG.notes[Std.int(curStep / 16)] != null) {
 			cameraRightSide = PlayState.SONG.notes[Std.int(curStep / 16)].mustHitSection;
