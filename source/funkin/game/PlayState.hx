@@ -826,7 +826,7 @@ class PlayState extends MusicBeatState {
 
 		FlxG.fixedTimestep = false;
 
-		healthBarBG = new FlxSprite(0, FlxG.height * 0.9).loadGraphic(Paths.image('gameUI/healthBar'));
+		healthBarBG = new FlxSprite(0, FlxG.height * 0.9).loadGraphic(Paths.image('gameObjects/healthbar/healthBar'));
 		healthBarBG.screenCenter(X);
 		healthBarBG.scrollFactor.set();
 		add(healthBarBG);
@@ -932,7 +932,7 @@ class PlayState extends MusicBeatState {
 		red.scrollFactor.set();
 
 		var senpaiEvil:FlxSprite = new FlxSprite();
-		senpaiEvil.frames = Paths.getSparrowAtlas('weeb/senpaiCrazy');
+		senpaiEvil.frames = Paths.getSparrowAtlas('characters/senpai/senpaiCrazy');
 		senpaiEvil.animation.addByPrefix('idle', 'Senpai Pre Explosion', 24, false);
 		senpaiEvil.setGraphicSize(Std.int(senpaiEvil.width * daPixelZoom));
 		senpaiEvil.scrollFactor.set();
@@ -1029,9 +1029,9 @@ class PlayState extends MusicBeatState {
 			}
 
 			var introAssets:Map<String, Array<String>> = new Map<String, Array<String>>();
-			introAssets.set('default', ['gameUI/ready', "gameUI/set", "gameUI/go"]);
-			introAssets.set('school', ['pixelUI/ready-pixel', 'pixelUI/set-pixel', 'pixelUI/date-pixel']);
-			introAssets.set('schoolEvil', ['pixelUI/ready-pixel', 'pixelUI/set-pixel', 'pixelUI/date-pixel']);
+			introAssets.set('default', ['gameObjects/countdowns/base/ready', "gameObjects/countdowns/base/set", "gameObjects/countdowns/base/go"]);
+			introAssets.set('school', ['gameObjects/countdowns/pixel/ready-pixel', 'gameObjects/countdowns/pixel/set-pixel', 'gameObjects/countdowns/pixel/date-pixel']);
+			introAssets.set('schoolEvil', ['gameObjects/countdowns/pixel/ready-pixel', 'gameObjects/countdowns/pixel/set-pixel', 'gameObjects/countdowns/pixel/date-pixel']);
 
 			var introAlts:Array<String> = introAssets.get('default');
 			var altSuffix:String = '';
@@ -1239,7 +1239,7 @@ class PlayState extends MusicBeatState {
 
 			switch (curStage) {
 				case 'school' | 'schoolEvil':
-					babyArrow.loadGraphic(Paths.image('pixelUI/arrows-pixels', 'shared'), true, 17, 17);
+					babyArrow.loadGraphic(Paths.image('gameObjects/notes/pixel/arrows-pixels'), true, 17, 17);
 					babyArrow.animation.add('green', [6]);
 					babyArrow.animation.add('red', [7]);
 					babyArrow.animation.add('blue', [5]);
@@ -1273,7 +1273,7 @@ class PlayState extends MusicBeatState {
 					}
 
 				default:
-					babyArrow.frames = Paths.getSparrowAtlas('gameUI/NOTE_assets', 'shared');
+					babyArrow.frames = Paths.getSparrowAtlas('gameObjects/notes/base/NOTE_assets');
 					babyArrow.animation.addByPrefix('green', 'arrowUP');
 					babyArrow.animation.addByPrefix('blue', 'arrowDOWN');
 					babyArrow.animation.addByPrefix('purple', 'arrowLEFT');

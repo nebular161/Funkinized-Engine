@@ -10,7 +10,7 @@ class NoteSplash extends FlxSprite
     {
         super(x, y);
 
-        frames = Paths.getSparrowAtlas('gameUI/noteSplashes', 'shared');
+        frames = Paths.getSparrowAtlas('gameObjects/notes/base/noteSplashes');
 
         animation.addByPrefix("splash-0", "note splash purple", 24, false);
         animation.addByPrefix("splash-1", "note splash blue", 24, false);
@@ -20,12 +20,12 @@ class NoteSplash extends FlxSprite
         setupNoteSplash(x, y, note);
         antialiasing = true;
 
-        /*switch (PlayState.curStage)
+       /* switch (PlayState.curStage)
             {
                 case 'school' | 'schoolEvil':
                 super(x, y);
 
-                frames = Paths.getSparrowAtlas('pixelUI/noteSplashesPixel', 'shared');
+                frames = Paths.getSparrowAtlas('gameObjects/notes/pixel/noteSplashesPixel');
         
                 animation.addByPrefix("splash-0", "note splash purple", 24, false);
                 animation.addByPrefix("splash-1", "note splash blue", 24, false);
@@ -43,9 +43,9 @@ class NoteSplash extends FlxSprite
 
         alpha = 0.9;
         animation.play('splash-' + note, false);
-        scale.set(0.8, 0.8);
+        scale.set(0.5, 0.5);
         updateHitbox();
-        offset.set(0.6 * width, 0.6 * height);
+        offset.set(1 * width, 1 * height);
     }
 
     override function update(elapsed:Float)

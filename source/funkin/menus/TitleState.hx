@@ -190,7 +190,7 @@ class TitleState extends MusicBeatState {
 	}
 
 	function getIntroTextShit():Array<Array<String>> {
-		var firstArray:Array<String> = Paths.getTextFileArray(Paths.txt('introText'));
+		var firstArray:Array<String> = Paths.getTextFileArray(Paths.txt('meta/introText'));
 		var swagGoodArray:Array<Array<String>> = [];
 
 		for (i in firstArray)

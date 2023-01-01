@@ -86,6 +86,8 @@ class StoryMenuState extends MusicBeatState {
 		transIn = FlxTransitionableState.defaultTransIn;
 		transOut = FlxTransitionableState.defaultTransOut;
 
+		FlxG.mouse.useSystemCursor = true;
+
 		if (FlxG.sound.music != null) {
 			if (!FlxG.sound.music.playing)
 				FlxG.sound.playMusic(Paths.music('freakyMenu'));
@@ -193,7 +195,7 @@ class StoryMenuState extends MusicBeatState {
 		sprDifficulty.animation.addByPrefix('hard', 'HARD');
 
 		sprDifficulty.animation.play('easy');
-		
+
 		sprDifficulty.antialiasing = true;
 		changeDifficulty();
 
