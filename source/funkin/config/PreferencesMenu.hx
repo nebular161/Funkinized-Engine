@@ -34,7 +34,7 @@ class PreferencesMenu extends Page
 		createPrefItem('naughtyness', 'censor-naughty', true);
 		createPrefItem('downscroll', 'downscroll', false);
 		createPrefItem('flashing menu', 'flashing-menu', true);
-		createPrefItem('Camera Zooming on Beat', 'camera-zoom', true);
+		//createPrefItem('Camera Zooming on Beat', 'camera-zoom', true);
 		createPrefItem('Ghost Tapping', 'ghost-tap', true);
 		createPrefItem('FPS Counter', 'fps-counter', true);
 		createPrefItem('Auto Pause', 'auto-pause', false);
@@ -85,15 +85,6 @@ class PreferencesMenu extends Page
 		else
 		{
 			preferenceCheck('flashing-menu', true);
-		}
-
-		if(FlxG.save.data.cameraZoom != null)
-		{
-			preferenceCheck('camera-zoom', FlxG.save.data.cameraZoom);
-		}
-		else
-		{
-			preferenceCheck('camera-zoom', true);
 		}
 
 		if(FlxG.save.data.fpsCounter != null)
@@ -194,7 +185,8 @@ class PreferencesMenu extends Page
 		FlxG.save.data.censorNaughty = getPref('censor-naughty');
 		FlxG.save.data.downscroll = getPref('downscroll');
 		FlxG.save.data.flashingMenu = getPref('flashing-menu');
-		FlxG.save.data.cameraZoom = getPref('camera-zoom');
+		FlxG.save.data.glowStrums = getPref('glow-strums');
+		FlxG.save.data.glowTap = getPref('ghost-tap');
 		FlxG.save.data.fpsCounter = getPref('fps-counter');
 		FlxG.save.data.autoPause = getPref('auto-pause');
 

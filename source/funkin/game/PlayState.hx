@@ -1816,10 +1816,11 @@ class PlayState extends MusicBeatState {
 		coolText.x = FlxG.width * 0.55;
 
 		var rating:FlxSprite = new FlxSprite();
-		var score:Int = 350;
+
+		var score:Int = 0;
 
 		var daRating:String = 'sick';
-		var doSplash:Bool = true;
+		var doSplash:Bool = false;
 
 		if (noteDiff > Conductor.safeZoneOffset * 0.9) {
 			daRating = 'shit';
@@ -1834,6 +1835,11 @@ class PlayState extends MusicBeatState {
 			score = 200;
 			doSplash = false;
 		}
+		else if (noteDiff > Conductor.safeZoneOffset * 0) {
+			daRating = 'sick';
+			score = 350;
+			doSplash = true;
+		}		
 
 		if (doSplash) {
 			var splash:NoteSplash = grpNoteSplashes.recycle(NoteSplash);
@@ -2305,8 +2311,6 @@ class PlayState extends MusicBeatState {
 				FlxG.log.add('CHANGED BPM!');
 			}
 		}
-
-		if (PreferencesMenu.getPref('camera-zoom')) {
 			// HARDCODING FOR MILF ZOOMS!
 			if (curSong.toLowerCase() == 'milf' && curBeat >= 168 && curBeat < 200 && camZooming && FlxG.camera.zoom < 1.35) {
 				FlxG.camera.zoom += 0.015;
@@ -2317,7 +2321,6 @@ class PlayState extends MusicBeatState {
 				FlxG.camera.zoom += 0.015;
 				camHUD.zoom += 0.03;
 			}
-		}
 
 		iconP1.scale.set(1.2, 1.2);
 		iconP2.scale.set(1.2, 1.2);
