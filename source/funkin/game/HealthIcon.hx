@@ -68,7 +68,15 @@ class HealthIcon extends FlxSprite
 
 		iconOffsets[0] = (width - 150) / 2;
 		iconOffsets[1] = (width - 150) / 2;
+		updateHitbox();
 	}
+
+	override function updateHitbox()
+		{
+			super.updateHitbox();
+			offset.x = iconOffsets[0];
+			offset.y = iconOffsets[1];
+		}
 
 	public function getIcon()
 	{

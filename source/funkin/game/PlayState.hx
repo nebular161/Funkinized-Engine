@@ -186,7 +186,7 @@ class PlayState extends MusicBeatState {
 		if (FlxG.sound.music != null)
 			FlxG.sound.music.stop();
 
-		FlxG.mouse.useSystemCursor = true;
+		FlxG.mouse.useSystemCursor = false;
 
 		var instPath = Paths.inst(SONG.song.toLowerCase());
 		if (Assets.exists(instPath, SOUND) || Assets.exists(instPath, MUSIC))
@@ -1420,7 +1420,7 @@ class PlayState extends MusicBeatState {
 	override public function update(elapsed:Float) {
 		if (startingSong) {
 			if (startedCountdown) {
-				Conductor.songPosition += FlxG.elapsed * 1000.0;
+				Conductor.songPosition += FlxG.elapsed * 1000;
 				if (Conductor.songPosition >= 0.0)
 					startSong();
 			}
@@ -1428,7 +1428,7 @@ class PlayState extends MusicBeatState {
 			#if USE_INST_TIME
 			Conductor.songPosition = FlxG.sound.music.time + Conductor.offset;
 			#else
-			Conductor.songPosition += FlxG.elapsed * 1000.0;
+			Conductor.songPosition += FlxG.elapsed * 1000;
 			#end
 		}
 
@@ -1487,9 +1487,11 @@ class PlayState extends MusicBeatState {
 		var mult:Float = FlxMath.lerp(1, iconP2.scale.x, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1));
 		iconP2.scale.set(mult, mult);
 		iconP2.updateHitbox();
+		
+		var iconOffset:Int = 26;
 
-		iconP1.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * 0.01) - iconOffset);
-		iconP2.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * 0.01)) - (iconP2.width - iconOffset);
+		iconP1.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * 0.01)) + (150 * iconP1.scale.x - 150) / 2 - iconOffset;
+		iconP2.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * 0.01)) - (150 * iconP2.scale.x) / 2 - iconOffset * 2;
 
 		health = FlxMath.bound(health, 0, 2);
 
@@ -1918,10 +1920,10 @@ class PlayState extends MusicBeatState {
 				add(numScore);
 
 			FlxTween.tween(numScore, {alpha: 0}, 0.2, {
-				onComplete: function(tween:FlxTween) {
-					numScore.kill();
+				onComplete: function(tween:FlxTween){
+					numScore.destroy();
 				},
-				startDelay: Conductor.crochet * 0.002
+				startDelay: Conductor.crochet * 0.00075
 			});
 
 			daLoop++;
@@ -1930,20 +1932,21 @@ class PlayState extends MusicBeatState {
 		coolText.text = Std.string(seperatedScore);
 
 		FlxTween.tween(rating, {alpha: 0}, 0.2, {
-			onComplete: function(tween:FlxTween) {
-				rating.kill();
+			onComplete: function(tween:FlxTween){
+				rating.destroy();
 			},
-			startDelay: Conductor.crochet * 0.00125
+			startDelay: Conductor.crochet * 0.00075
 		});
 
-		FlxTween.tween(comboSpr, {alpha: 0}, 0.09, {
+
+		FlxTween.tween(comboSpr, {alpha: 0}, 0.2, {
 			onComplete: function(tween:FlxTween) {
 				coolText.destroy();
 				comboSpr.destroy();
 
 				rating.destroy();
 			},
-			startDelay: Conductor.crochet * 0.001
+			startDelay: Conductor.crochet * 0.00075
 		});
 
 		curSection += 1;
@@ -2065,12 +2068,10 @@ class PlayState extends MusicBeatState {
 			} else
 				badNoteHit();
 		}
-		if (boyfriend.holdTimer > 0.007 * Conductor.stepCrochet
-			&& !holdingArray.contains(true)
-			&& boyfriend.animation.curAnim.name.startsWith('sing')
-			&& !boyfriend.animation.curAnim.name.endsWith('miss')) {
-			boyfriend.playAnim('idle');
-		}
+		if (boyfriend.holdTimer > Conductor.stepCrochet * (10 / 1000) && !holdingArray.contains(true) && boyfriend.animation.curAnim.name.startsWith('sing') && !boyfriend.animation.curAnim.name.endsWith('miss'))
+			{
+				boyfriend.playAnim('idle');
+			}
 		playerStrums.forEach(function(spr:FlxSprite) {
 			if (controlArray[spr.ID] && spr.animation.curAnim.name != 'confirm')
 				spr.animation.play('pressed');
@@ -2303,14 +2304,7 @@ class PlayState extends MusicBeatState {
 				Conductor.changeBPM(SONG.notes[Math.floor(curStep / 16)].bpm);
 				FlxG.log.add('CHANGED BPM!');
 			}
-			// else
-			// Conductor.changeBPM(SONG.bpm);
-
-			// Dad doesnt interupt his own notes
-			// if (SONG.notes[Math.floor(curStep / 16)].mustHitSection)
-			// 	dad.dance();
 		}
-		// FlxG.log.add('change bpm' + SONG.notes[Std.int(curStep / 16)].changeBPM);
 
 		if (PreferencesMenu.getPref('camera-zoom')) {
 			// HARDCODING FOR MILF ZOOMS!

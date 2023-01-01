@@ -1,4 +1,5 @@
 bf
+bf-opponent
 dad
 gf
 spooky
@@ -12,6 +13,7 @@ bf-christmas
 gf-christmas
 monster
 bf-pixel
+bf-pixel-opponent
 senpai
 senpai-angry
 spirit
