@@ -61,9 +61,6 @@
 	<assets path='example_mods' rename='mods' embed='false'/>
 	<assets path='art/readme.txt' rename='do NOT readme.txt' embed='true' />
 
-	<!-- windows only for now -->
-	<assets path='crash-dialog' rename='crash-dialog' embed='false' if="windows"/>	
-
 	<assets path="CHANGELOG.md" rename='changelog.txt'/>
 
 	<!-- ______________________________ Defines _____________________________ -->
@@ -78,10 +75,14 @@
 
 	<!-- _______________________________ Libraries ______________________________ -->
 
-	<!-- optimized flixel `haxelib git flixel-nebulazone https://github.com/NebulaZone1/flixel.git` -->
+	<haxelib name="flixel" />
+
 	<haxelib name="flixel-nebulazone" />
 
+	<haxelib name="flixel-addons" />
+
 	<haxelib name="hscript" />
+
 	<define name="hscriptPos" />
 
 	<haxelib name="hscript-improved" />
@@ -89,6 +90,7 @@
 	<haxelib name="away3d" />
 
 	<haxelib name="polymod" />
+
 	<haxelib name="linc_discord-rpc" if="desktop" />
 
 	<!-- _________________________________ Custom _______________________________ -->

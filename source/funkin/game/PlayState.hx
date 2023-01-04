@@ -92,7 +92,7 @@ class PlayState extends MusicBeatState {
 	private var notes:FlxTypedGroup<Note>;
 	private var unspawnNotes:Array<Note> = [];
 
-	private var songMisses:Int = 0;
+	public var songMisses:Int = 0;
 
 	private var strumLine:FlxSprite;
 	private var curSection:Int = 0;
@@ -118,7 +118,16 @@ class PlayState extends MusicBeatState {
 
 	private var gfSpeed:Int = 1;
 	private var health:Float = 1;
-	private var combo:Int = 0;
+	public var misses:Int = 0;
+	private var lerpHealth:Float = 1;
+	public static var sicks:Int = 0;
+	public static var goods:Int = 0;
+	public static var bads:Int = 0;
+	public static var shits:Int = 0;
+	public var accuracy:Float = 0.00;
+	private var totalNotesHit:Float = 0;
+	private var totalPlayed:Int = 0;
+	public var combo:Int = 0;
 
 	private var healthBarBG:FlxSprite;
 	private var healthBar:FlxBar;
@@ -131,7 +140,7 @@ class PlayState extends MusicBeatState {
 	public var camHUD:FlxCamera;
 	public var camGame:FlxCamera;
 
-	var dialogue:Array<String> = ['tesy', 'this is also a test'];
+	var dialogue:Array<String> = ['test', 'this is also a test'];
 
 	var halloweenBG:FlxSprite;
 	var isHalloween:Bool = false;
@@ -164,6 +173,8 @@ class PlayState extends MusicBeatState {
 
 	var talking:Bool = true;
 	var songScore:Int = 0;
+	private var songAccuracy:Float = 0.0;
+	private var totalHits:Int = 0;
 	var scoreTxt:FlxText;
 
 	public static var campaignScore:Int = 0;
@@ -195,7 +206,6 @@ class PlayState extends MusicBeatState {
 		if (Assets.exists(vocalsPath, SOUND) || Assets.exists(vocalsPath, MUSIC))
 			Assets.getSound(vocalsPath, true);
 
-		// var gameCam:FlxCamera = FlxG.camera;
 		camGame = new FlxCamera();
 		camHUD = new FlxCamera();
 		camHUD.bgColor.alpha = 0;
@@ -840,11 +850,6 @@ class PlayState extends MusicBeatState {
 		// healthBar
 		add(healthBar);
 
-		scoreTxt = new FlxText(healthBarBG.x + healthBarBG.width - 190, healthBarBG.y + 30, 0, '', 20);
-		scoreTxt.setFormat(Paths.font('vcr.ttf'), 16, FlxColor.WHITE, RIGHT, OUTLINE, FlxColor.BLACK);
-		scoreTxt.scrollFactor.set();
-		add(scoreTxt);
-
 		iconP1 = new HealthIcon(SONG.player1, true);
 		iconP1.y = healthBar.y - (iconP1.height / 2);
 		add(iconP1);
@@ -852,6 +857,19 @@ class PlayState extends MusicBeatState {
 		iconP2 = new HealthIcon(SONG.player2, false);
 		iconP2.y = healthBar.y - (iconP2.height / 2);
 		add(iconP2);
+
+		if (PreferencesMenu.getPref('accuracy'))
+			{	
+			  scoreTxt = new FlxText(0, healthBarBG.y + 36, FlxG.width, "", 20);
+			  scoreTxt.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, CENTER, OUTLINE, FlxColor.BLACK);
+			  scoreTxt.scrollFactor.set();
+			}
+			
+			scoreTxt = new FlxText(0, healthBarBG.y + 36, FlxG.width, "", 20);
+			scoreTxt.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, CENTER, OUTLINE, FlxColor.BLACK);
+			scoreTxt.scrollFactor.set();
+			scoreTxt.borderSize = 1.25;
+			add(scoreTxt);			
 
 		grpNoteSplashes.cameras = [camHUD];
 		strumLineNotes.cameras = [camHUD];
@@ -922,6 +940,17 @@ class PlayState extends MusicBeatState {
 
 		super.create();
 	}
+
+	function updateAccuracy()
+		{
+			totalPlayed += 1;
+			accuracy = totalNotesHit / totalPlayed * 100;
+			if (accuracy >= 100.00)
+			{
+					accuracy = 100.00;
+			}
+		
+		}
 
 	function schoolIntro(?dialogueBox:DialogueBox):Void {
 		var black:FlxSprite = new FlxSprite(-100, -100).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.BLACK);
@@ -1413,6 +1442,14 @@ class PlayState extends MusicBeatState {
 	private var paused:Bool = false;
 	var startedCountdown:Bool = false;
 	var canPause:Bool = true;
+
+	function truncateFloat( number : Float, precision : Int): Float {
+		var num = number;
+		num = num * Math.pow(10, precision);
+		num = Math.round( num ) / Math.pow(10, precision);
+		return num;
+		}
+
 	var cameraRightSide:Bool = false;
 
 	public static final iconOffset:Int = 26;
@@ -1450,6 +1487,106 @@ class PlayState extends MusicBeatState {
 		super.update(elapsed);
 
 		scoreTxt.text = 'Score:' + songScore;
+
+		if (PreferencesMenu.getPref('accuracy'))
+			{
+				function generateRanking():String //Code From Kade Engine 1.3.1 yayaya
+					{
+						var ranking:String = "?";
+						
+						if (misses == 0 && bads == 0 && shits == 0 && goods == 0) // Marvelous (SICK) Full Combo
+							ranking = "";
+						else if (misses == 0 && bads == 0 && shits == 0 && goods >= 1) // Good Full Combo (Nothing but Goods & Sicks)
+							ranking = "";
+						else if ((shits < 0 && shits != 0 || bads < 10 && bads != 0) && misses == 0) // Single Digit Combo Breaks
+							ranking = "";
+						else if (misses == 0 && (shits >= 0 || bads >= 0)) // Regular FC
+							ranking = "";
+						else if (misses >= 10 || (shits >= 10 || bads >= 10)) // Combo Breaks
+							ranking = "";
+						else
+							ranking = "";
+				
+				
+						var wifeConditions:Array<Bool> = [
+							accuracy >= 99.9935, // S
+							accuracy >= 99.980, // A
+							accuracy >= 99.970, // A
+							accuracy >= 99.955, // A
+							accuracy >= 99.90, // A
+							accuracy >= 99.80, // A
+							accuracy >= 99.70, // A
+							accuracy >= 99, // A
+							accuracy >= 96.50, // A
+							accuracy >= 93, // A
+							accuracy >= 90, // A
+							accuracy >= 90, // A
+							accuracy >= 90, // A
+							accuracy >= 80, // B
+							accuracy >= 70, // C
+							accuracy >= 60, // D
+							accuracy < 59.9935 // F
+						];
+				
+						for(i in 0...wifeConditions.length)
+						{
+							var b = wifeConditions[i];
+							if (b)
+							{
+								switch(i)
+								{
+									case 0:
+										ranking += "S";
+									case 1:
+										ranking += "A";
+									case 2:
+										ranking += "A";
+									case 3:
+										ranking += "A";
+									case 4:
+										ranking += "A";
+									case 5:
+										ranking += "A";
+									case 6:
+										ranking += "A";
+									case 7:
+										ranking += "A";
+									case 8:
+										ranking += "A";
+									case 9:
+										ranking += "A";
+									case 10:
+										ranking += "A";
+									case 11:
+										ranking += "A";
+									case 12:
+										ranking += "A";
+									case 13:
+										ranking += "B";
+									case 14:
+										ranking += "C";
+									case 15:
+										ranking += "D";
+									case 16:
+										ranking += "F";
+								}
+								break;
+							}
+						}
+				
+						if (accuracy == 0)
+							ranking = "?";
+				
+						return ranking;
+					}
+		
+					var accuracyAdds:Float = songAccuracy / (totalHits + songMisses);
+					if (Math.isNaN(accuracyAdds))
+						accuracyAdds = 0;
+					else
+						accuracyAdds = FlxMath.roundDecimal(accuracyAdds * 100, 2);		
+					scoreTxt.text = "Score: " + songScore + " • Combo Breaks: " + misses + " • Accuracy: " + truncateFloat(accuracy, 2) + "%" + " • Grade: " + generateRanking();	
+				}	
 
 		if (controls.PAUSE && startedCountdown && canPause) {
 			persistentUpdate = false;
@@ -1685,15 +1822,6 @@ class PlayState extends MusicBeatState {
 					daNote.destroy();
 				}
 
-				if (PreferencesMenu.getPref('glow-strums')) {
-					dadStrums.forEach(function(spr:FlxSprite) {
-						if (spr.animation.finished) {
-							spr.animation.play('static');
-							spr.centerOffsets();
-						}
-					});
-				}
-
 				var doKill = daNote.y < -daNote.height;
 				if (PreferencesMenu.getPref('downscroll'))
 					doKill = daNote.y > FlxG.height;
@@ -1712,6 +1840,15 @@ class PlayState extends MusicBeatState {
 					daNote.kill();
 					notes.remove(daNote, true);
 					daNote.destroy();
+				}
+			});
+		}
+
+		if (PreferencesMenu.getPref('glow-strums')) {
+			dadStrums.forEach(function(spr:FlxSprite) {
+				if (spr.animation.finished) {
+					spr.animation.play('static');
+					spr.centerOffsets();
 				}
 			});
 		}
@@ -1819,33 +1956,61 @@ class PlayState extends MusicBeatState {
 
 		var score:Int = 0;
 
+		var addedAccuracy:Float = 1;
+
 		var daRating:String = 'sick';
 		var doSplash:Bool = false;
 
-		if (noteDiff > Conductor.safeZoneOffset * 0.9) {
-			daRating = 'shit';
-			score = 50;
-			doSplash = false;
-		} else if (noteDiff > Conductor.safeZoneOffset * 0.75) {
-			daRating = 'bad';
-			score = 100;
-			doSplash = false;
-		} else if (noteDiff > Conductor.safeZoneOffset * 0.2) {
-			daRating = 'good';
-			score = 200;
-			doSplash = false;
-		}
-		else if (noteDiff > Conductor.safeZoneOffset * 0) {
-			daRating = 'sick';
-			score = 350;
-			doSplash = true;
-		}		
+		if (noteDiff > Conductor.safeZoneOffset * 0.9)
+			{
+				if(PreferencesMenu.getPref("accuracy")) {
+					totalNotesHit += 1 - Conductor.shitZone;
+			}			
+				daRating = 'shit';
+				score = 50;
+				addedAccuracy -= 0.25;
+				doSplash = false;
+			}
+			else if (noteDiff > Conductor.safeZoneOffset * 0.75)
+			{
+				if(PreferencesMenu.getPref("accuracy")) {
+					totalNotesHit += 1 - Conductor.goodZone;
+				}			
+				daRating = 'bad';		
+				score = 100;
+				addedAccuracy -= 0.50;
+				doSplash = false;
+			}
+			else if (noteDiff > Conductor.safeZoneOffset * 0.25)
+			{
+				if(PreferencesMenu.getPref("accuracy")) {
+					totalNotesHit += 1 - Conductor.goodZone;
+				}				
+				daRating = 'good';
+				score = 200;
+				addedAccuracy = 0.75;
+				doSplash = false;
+			}
+			else if (noteDiff > Conductor.safeZoneOffset * 0)
+				{			
+					totalNotesHit += 1;					
+					daRating = 'sick';
+					score = 350;			
+					addedAccuracy = 1;
+					doSplash = true;
+				}
 
-		if (doSplash) {
-			var splash:NoteSplash = grpNoteSplashes.recycle(NoteSplash);
-			splash.setupNoteSplash(daNote.x + 57, playerStrums.members[daNote.noteData].y + 50, daNote.noteData);
-			grpNoteSplashes.add(splash);
-		}
+				if (PreferencesMenu.getPref('notesplash'))
+					{	
+						if (doSplash) {
+							var splash:NoteSplash = grpNoteSplashes.recycle(NoteSplash);
+							splash.setupNoteSplash(daNote.x + 57, playerStrums.members[daNote.noteData].y + 50, daNote.noteData);
+							grpNoteSplashes.add(splash);
+						}
+					}	
+
+		songAccuracy += addedAccuracy;
+		totalHits += 1;
 
 		if (!practiceMode)
 			songScore += score;
@@ -2097,6 +2262,7 @@ class PlayState extends MusicBeatState {
 	function noteMiss(direction:Int = 1):Void {
 		if (!boyfriend.stunned) {
 			health -= 0.04;
+			misses++;
 			if (combo > 5 && gf.animOffsets.exists('sad')) {
 				gf.playAnim('sad');
 			}
@@ -2126,6 +2292,7 @@ class PlayState extends MusicBeatState {
 				case 3:
 					boyfriend.playAnim('singRIGHTmiss', true);
 			}
+			updateAccuracy();
 		}
 	}
 
@@ -2186,6 +2353,9 @@ class PlayState extends MusicBeatState {
 				notes.remove(note, true);
 				note.destroy();
 			}
+
+			updateAccuracy();
+
 		}
 	}
 
