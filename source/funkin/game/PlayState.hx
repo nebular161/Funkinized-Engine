@@ -226,23 +226,6 @@ class PlayState extends MusicBeatState {
 		foregroundSprites = new FlxTypedGroup<BGSprite>();
 
 		switch (SONG.song.toLowerCase()) {
-			case 'tutorial':
-				dialogue = ['Hey you\'re pretty cute.', 'Use the arrow keys to keep up \nwith me singing.'];
-			case 'bopeebo':
-				dialogue = [
-					'HEY!',
-					'You think you can just sing\nwith my daughter like that?',
-					'If you want to date her...',
-					'You\'re going to have to go \nthrough ME first!'
-				];
-			case 'fresh':
-				dialogue = ['Not too shabby boy.', ''];
-			case 'dadbattle':
-				dialogue = [
-					'gah you think you\'re hot stuff?',
-					'If you can beat me here...',
-					'Only then I will even CONSIDER letting you\ndate my daughter!'
-				];
 			case 'senpai':
 				dialogue = Paths.getTextFileArray(Paths.txt('dialouges/senpaiDialogue'));
 			case 'roses':
@@ -1974,7 +1957,7 @@ class PlayState extends MusicBeatState {
 			else if (noteDiff > Conductor.safeZoneOffset * 0.75)
 			{
 				if(PreferencesMenu.getPref("accuracy")) {
-					totalNotesHit += 1 - Conductor.goodZone;
+					totalNotesHit += 1 - Conductor.badZone;
 				}			
 				daRating = 'bad';		
 				score = 100;
