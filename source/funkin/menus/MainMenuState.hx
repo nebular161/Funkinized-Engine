@@ -115,11 +115,11 @@ class MainMenuState extends MusicBeatState {
 	function selectDonate() {
 		#if linux
 		Sys.command('/usr/bin/xdg-open', [
-			'https://www.kickstarter.com/projects/funkin/friday-night-funkin-the-full-ass-game/',
+			'https://ninja-muffin24.itch.io/funkin',
 			'&'
 		]);
 		#else
-		FlxG.openURL('https://www.kickstarter.com/projects/funkin/friday-night-funkin-the-full-ass-game/');
+		FlxG.openURL('https://ninja-muffin24.itch.io/funkin');
 		#end
 	}
 
