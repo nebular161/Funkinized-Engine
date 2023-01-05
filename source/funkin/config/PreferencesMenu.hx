@@ -37,7 +37,6 @@ class PreferencesMenu extends Page
 		createPrefItem('Note Splashes', 'notesplash', true);
 		createPrefItem('Ghost Tapping', 'ghost-tap', true);
 		createPrefItem('FPS Counter', 'fps-counter', true);
-		createPrefItem('Accuracy', 'accuracy', true);
 		createPrefItem('Auto Pause', 'auto-pause', false);
 		createPrefItem('Glow Opponent Strums', 'glow-strums', true);
 		camFollow = new FlxObject(FlxG.width / 2, 0, 140, 70);
@@ -97,15 +96,6 @@ class PreferencesMenu extends Page
 		{
 			preferenceCheck('flashing-menu', true);
 		}
-
-		if(FlxG.save.data.accuracy != null)
-			{
-				preferenceCheck('accuracy', FlxG.save.data.accuracy);
-			}
-			else
-			{
-				preferenceCheck('accuracy', true);
-			}		
 
 		if(FlxG.save.data.fpsCounter != null)
 		{
@@ -208,7 +198,6 @@ class PreferencesMenu extends Page
 		FlxG.save.data.glowStrums = getPref('glow-strums');
 		FlxG.save.data.notesplash = getPref('notesplash');
 		FlxG.save.data.glowTap = getPref('ghost-tap');
-		FlxG.save.data.accuracy = getPref('accuracy');
 		FlxG.save.data.fpsCounter = getPref('fps-counter');
 		FlxG.save.data.autoPause = getPref('auto-pause');
 
