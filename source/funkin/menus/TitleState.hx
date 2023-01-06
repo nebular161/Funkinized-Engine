@@ -33,7 +33,7 @@ import funkin.system.MusicBeatState;
 import funkin.menus.MainMenuState;
 import funkin.config.PlayerSettings;
 import funkin.system.Highscore;
-import funkin.mp4.VideoState;
+import funkin.cutscenes.VideoState;
 import funkin.game.Conductor;
 import funkin.cutscenes.CutsceneAnimTestState;
 

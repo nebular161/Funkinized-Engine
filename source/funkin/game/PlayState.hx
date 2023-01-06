@@ -44,9 +44,8 @@ import funkin.game.CoolUtil;
 import funkin.game.Section.SwagSection;
 import funkin.game.Song.SwagSong;
 import funkin.menus.StoryMenuState;
-import funkin.mp4.FlxVideo;
-import funkin.mp4.MP4Handler;
-import funkin.mp4.VideoState;
+import funkin.cutscenes.MP4Handler;
+import funkin.cutscenes.VideoState;
 import funkin.shaders.BuildingShaders;
 import funkin.shaders.ColorSwap;
 import funkin.system.GitarooPause;
@@ -1045,7 +1044,7 @@ class PlayState extends MusicBeatState {
 					ready.screenCenter();
 					add(ready);
 					FlxTween.tween(ready, {y: ready.y += 100, alpha: 0}, Conductor.crochet / 1000, {
-						ease: FlxEase.cubeInOut,
+						ease: FlxEase.elasticInOut,
 						onComplete: function(twn:FlxTween) {
 							ready.destroy();
 						}
@@ -1061,7 +1060,7 @@ class PlayState extends MusicBeatState {
 					set.screenCenter();
 					add(set);
 					FlxTween.tween(set, {y: set.y += 100, alpha: 0}, Conductor.crochet / 1000, {
-						ease: FlxEase.cubeInOut,
+						ease: FlxEase.elasticInOut,
 						onComplete: function(twn:FlxTween) {
 							set.destroy();
 						}
@@ -1079,7 +1078,7 @@ class PlayState extends MusicBeatState {
 					go.screenCenter();
 					add(go);
 					FlxTween.tween(go, {y: go.y += 100, alpha: 0}, Conductor.crochet / 1000, {
-						ease: FlxEase.cubeInOut,
+						ease: FlxEase.elasticInOut,
 						onComplete: function(twn:FlxTween) {
 							go.destroy();
 						}
@@ -1826,7 +1825,7 @@ class PlayState extends MusicBeatState {
 			daRating = 'bad';
 			score = 100;
 			doSplash = false;
-		} else if (noteDiff > Conductor.safeZoneOffset * 0.2) {
+		} else if (noteDiff > Conductor.safeZoneOffset * 0.25) {
 			daRating = 'good';
 			score = 200;
 			doSplash = false;
@@ -2034,9 +2033,11 @@ class PlayState extends MusicBeatState {
 						for (possibleNote in possibleNotes) {
 							if (possibleNote.noteData == daNote.noteData && Math.abs(daNote.strumTime - possibleNote.strumTime) < 10) {
 								removeList.push(daNote);
+								break;
 							} else if (possibleNote.noteData == daNote.noteData && daNote.strumTime < possibleNote.strumTime) {
 								possibleNotes.remove(possibleNote);
 								possibleNotes.push(daNote);
+								break;
 							}
 						}
 					} else {

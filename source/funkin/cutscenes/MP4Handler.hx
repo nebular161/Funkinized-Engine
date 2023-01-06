@@ -1,4 +1,4 @@
-package funkin.mp4;
+package funkin.cutscenes;
 
 import flixel.FlxG;
 import flixel.FlxSprite;

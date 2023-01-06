@@ -17,7 +17,7 @@ class Paths {
 	inline static public function setCurrentLevel(name:String)
 		currentLevel = name.toLowerCase();
 
-	static public function getPath(file:String, type:AssetType, library:Null<String>) {
+	static function getPath(file:String, type:AssetType, library:Null<String>) {
 		if (library != null)
 			return getLibraryPath(file, library);
 

@@ -1,4 +1,4 @@
-package funkin.mp4;
+package funkin.cutscenes;
 
 import openfl.Lib;
 import openfl.display.Sprite;

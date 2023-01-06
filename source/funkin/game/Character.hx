@@ -556,7 +556,7 @@ class Character extends FlxSprite {
 	}
 
 	function loadOffsetFile(char:String) {
-		var offsets:Array<String> = Paths.getTextFileArray(Paths.getPath('data/character-data/chars/' + char + '-data.json', TEXT, null));
+		var offsets:Array<String> = Paths.getTextFileArray(Paths.file('data/character-data/chars/' + char + '-data.json'));
 		for (i in offsets) {
 			var split = i.split(' ');
 			addOffset(split[0], Std.parseInt(split[1]), Std.parseInt(split[2]));
