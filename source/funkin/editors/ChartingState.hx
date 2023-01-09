@@ -114,9 +114,7 @@ class ChartingState extends MusicBeatState
 
 	override function create()
 	{
-		FlxG.mouse.useSystemCursor = true;
-
-		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuUI/menuDesat')); // bg on chart editor, credits to ShadowMario for da bg code
+		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuUI/main_menu/menuDesat')); // bg on chart editor, credits to ShadowMario for da bg code
 		bg.scrollFactor.set();
 		bg.color = 0xFF3B1247;
 		add(bg);
@@ -152,6 +150,7 @@ class ChartingState extends MusicBeatState
 		curRenderedNotes = new FlxTypedGroup<Note>();
 		curRenderedSustains = new FlxTypedGroup<FlxSprite>();
 
+		FlxG.mouse.useSystemCursor = true;
 		FlxG.save.bind('everlast-engine', 'NebulaZone');
 
 		tempBpm = _song.bpm;

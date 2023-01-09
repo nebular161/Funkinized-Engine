@@ -121,7 +121,7 @@ class GameOverSubstate extends MusicBeatSubstate
 
 	function coolStartDeath(startVol:Float = 1)
 	{
-		FlxG.sound.playMusic(Paths.music('gameOver' + stageSuffix), startVol);
+		FlxG.sound.playMusic(Paths.music('game-over/gameOver' + stageSuffix), startVol);
 	}
 
 	override function beatHit()

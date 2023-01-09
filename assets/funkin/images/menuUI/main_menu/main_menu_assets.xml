@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TextureAtlas imagePath="main_menu.png">
+<TextureAtlas imagePath="main_menu_assets.png">
 	<!-- Created with Adobe Animate version 18.0.1.115 -->
 	<!-- http://www.adobe.com/products/animate.html -->
 	<SubTexture name="credits idle0000" x="0" y="0" width="460" height="136" frameX="-8" frameY="0" frameWidth="475" frameHeight="137"/>

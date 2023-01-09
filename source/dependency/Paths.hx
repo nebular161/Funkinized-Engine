@@ -34,12 +34,12 @@ class Paths {
 		return getPreloadPath(file);
 	}
 
-	static public function getLibraryPath(file:String, library = 'preload') {
-		return if (library == 'preload' || library == 'default') getPreloadPath(file); else getLibraryPathForce(file, library);
+	static public function getLibraryPath(file:String, library = 'funkin') {
+		return if (library == 'funkin' || library == 'default') getPreloadPath(file); else getLibraryPathForce(file, library);
 	}
 
 	inline static function getLibraryPathForce(file:String, library:String) {
-		return '$library:assets/$library/$file';
+		return '$library:assets/funkin/$library/$file';
 	}
 
 	static public function exists(path:String):Bool
@@ -64,19 +64,19 @@ class Paths {
 	}
 
 	inline static public function txt(key:String, ?library:String) {
-		return getPath('data/$key.txt', TEXT, library);
+		return getPath('funkin/data/$key.txt', TEXT, library);
 	}
 
 	inline static public function xml(key:String, ?library:String) {
-		return getPath('data/$key.xml', TEXT, library);
+		return getPath('funkin/data/$key.xml', TEXT, library);
 	}
 
 	inline static public function json(key:String, ?library:String) {
-		return getPath('data/$key.json', TEXT, library);
+		return getPath('funkin/data/$key.json', TEXT, library);
 	}
 
 	inline static public function sound(key:String, ?library:String) {
-		return getPath('sounds/$key.$SOUND_EXT', SOUND, library);
+		return getPath('funkin/sounds/$key.$SOUND_EXT', SOUND, library);
 	}
 
 	inline static public function formatToSongPath(path:String) {
@@ -85,8 +85,8 @@ class Paths {
 
 	inline static public function video(key:String, ?library:String)
 		{
-			trace('assets/videos/$key.mp4');
-			return getPath('videos/$key.mp4', BINARY, library);
+			trace('assets/funkin/videos/$key.mp4');
+			return getPath('funkin/videos/$key.mp4', BINARY, library);
 		}	
 
 	inline static public function soundRandom(key:String, min:Int, max:Int, ?library:String) {
@@ -95,41 +95,41 @@ class Paths {
 
 	inline static public function data(key:String, ?library:String)
 		{
-			return getPath('data/$key.png', IMAGE, library);
+			return getPath('funkin/data/$key.png', IMAGE, library);
 		}	
 
 	inline static public function music(key:String, ?library:String) {
-		return getPath('music/$key.$SOUND_EXT', MUSIC, library);
+		return getPath('funkin/music/$key.$SOUND_EXT', MUSIC, library);
 	}
 
 	inline static public function voices(song:String) {
-		return 'songs:assets/songs/${song.toLowerCase()}/Voices.$SOUND_EXT';
+		return 'songs:assets/funkin/songs/${song.toLowerCase()}/Voices.$SOUND_EXT';
 	}
 
 	inline static public function inst(song:String) {
-		return 'songs:assets/songs/${song.toLowerCase()}/Inst.$SOUND_EXT';
+		return 'songs:assets/funkin/songs/${song.toLowerCase()}/Inst.$SOUND_EXT';
 	}
 
 	inline static public function image(key:String, ?library:String) {
-		return getPath('images/$key.png', IMAGE, library);
+		return getPath('funkin/images/$key.png', IMAGE, library);
 	}
 
 	inline static public function font(key:String) {
-		return 'assets/fonts/$key';
+		return 'assets/core/fonts/$key';
 	}
 
 	inline static public function songjson(key:String,?container:String, ?library:String)
 		{
 			if(container==null)container=key;
-			return getPath('songs/$container/$key.json', TEXT, library);
+			return getPath('funkin/songs/$container/$key.json', TEXT, library);
 		}	
 
 	inline static public function getSparrowAtlas(key:String, ?library:String) {
-		return FlxAtlasFrames.fromSparrow(image(key, library), file('images/$key.xml', library));
+		return FlxAtlasFrames.fromSparrow(image(key, library), file('funkin/images/$key.xml', library));
 	}
 
 	inline static public function getPackerAtlas(key:String, ?library:String) {
-		return FlxAtlasFrames.fromSpriteSheetPacker(image(key, library), file('images/$key.txt', library));
+		return FlxAtlasFrames.fromSpriteSheetPacker(image(key, library), file('funkin/images/$key.txt', library));
 	}
 
 	public static function getTextFileArray(path:String, delimeter:String = '\n'):Array<String> {

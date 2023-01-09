@@ -20,7 +20,7 @@ class OptionsState extends MusicBeatState {
 		return pages.get(currentName);
 
 	override function create() {
-		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuUI/menuDesat'));
+		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuUI/main_menu/menuDesat'));
 		bg.color = 0xFF404183;
 		bg.setGraphicSize(Std.int(bg.width * 1.1));
 		bg.updateHitbox();

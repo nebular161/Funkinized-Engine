@@ -41,28 +41,9 @@ class Main extends Sprite
 	// You can pretty much ignore everything from here on - your code should go in your states.
 
 	public static function main():Void
-	{
-		// quick checks
-		try {
-			Lib.current.addChild(new Main());
-		}
-		catch (e:Exception)
 		{
-			var fileStr:String = "";
-
-			fileStr += "CRASH REASON:" + e.message + "\n\n";
-
-			fileStr += e.stack.toString();
-
-			File.saveContent("crash-dialog/crash-logs/CRASHDUMP.txt", fileStr);
-			#if windows
-			var process = new Process('start .\\crash-dialog\\Everlast-Engine-Crash.exe ".\\CRASHDUMP.txt"');
-			#else
-			Application.current.window.alert("FNF Crashed!\nCRASH REASON:" + e.message + "\nMORE INFO IN CRASHDUMP.TXT!", "FNF Crashed!");
-			#end
-			Sys.exit(1);
-		}
-	}
+			Lib.current.addChild(new Main());
+		}	
 
 	public function new()
 	{
@@ -108,10 +89,6 @@ class Main extends Sprite
 			#if !mobile
 			Lib.current.stage.align = "tl";
 			Lib.current.stage.scaleMode = StageScaleMode.NO_SCALE;
-			#end
-	
-			#if CRASH_HANDLER
-			Lib.current.loaderInfo.uncaughtErrorEvents.addEventListener(UncaughtErrorEvent.UNCAUGHT_ERROR, onCrash);
 			#end
 		}
 
