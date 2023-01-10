@@ -13,7 +13,6 @@ import funkin.menus.StoryMenuState;
 import funkin.game.Boyfriend;
 import funkin.game.PlayState;
 import funkin.game.Conductor;
-
 class GameOverSubstate extends MusicBeatSubstate
 {
 	var bf:Boyfriend;
