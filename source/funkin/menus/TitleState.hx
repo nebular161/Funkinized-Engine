@@ -62,9 +62,9 @@ class TitleState extends MusicBeatState {
 	#end
 
 	override public function create():Void {
-		#if polymod
+		/*#if polymod
 		polymod.Polymod.init({modRoot: 'mods', dirs: ['introMod'], framework: OPENFL});
-		#end
+		#end*/
 
 		#if USE_SHADERS
 		swagShader = new ColorSwap();
