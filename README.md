@@ -25,3 +25,10 @@ Finally we're going to install only 2 components in VS Community 2019:
 - If you want to access debug mode, do lime build [target] -debug
 - You can find the debug version of the build by simply going to Everlast-Engine/export/debug/[target]/bin
 - Now you can make your own FNF mod, hope you enjoy!
+
+# Credits
+- NebulaZone: Creator, Programmer
+- ThatOneFoxHX: Programmer
+- AlexShadow: Additional Programmer
+- Yoshubs: Inspiration
+- YoshiCrafter: Inspiration, Hscript improved git
