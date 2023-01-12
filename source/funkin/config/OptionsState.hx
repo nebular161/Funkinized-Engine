@@ -5,7 +5,7 @@ import flixel.FlxSprite;
 import haxe.ds.EnumValueMap;
 import funkin.system.MusicBeatState;
 import funkin.config.OptionsMenu;
-import funkin.config.PreferencesMenu;
+import funkin.config.Options;
 import funkin.config.ControlsMenu;
 import funkin.menus.MainMenuState;
 import funkin.ui.PageName;
@@ -28,7 +28,7 @@ class OptionsState extends MusicBeatState {
 		bg.scrollFactor.set(0, 0);
 		add(bg);
 		var optionsmenu:OptionsMenu = addPage(Options, new OptionsMenu(false));
-		var preferencesmenu:PreferencesMenu = addPage(Preferences, new PreferencesMenu());
+		var preferencesmenu:Options = addPage(Preferences, new Options());
 		var controlsmenu:ControlsMenu = addPage(Controls, new ControlsMenu());
 		if (optionsmenu.hasMultipleOptions()) {
 			optionsmenu.onExit.add(exitToMainMenu);

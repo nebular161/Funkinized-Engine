@@ -3,7 +3,7 @@ package funkin.config;
 import flixel.FlxG;
 import funkin.ui.Page;
 import funkin.ui.TextMenuList;
-import funkin.config.PreferencesMenu;
+import funkin.config.Options;
 import funkin.config.Controls;
 import funkin.ui.PageName;
 import funkin.ui.TextMenuItem;

@@ -1,6 +1,6 @@
 package funkin.game;
 
-import funkin.config.PreferencesMenu;
+import funkin.config.Options;
 import funkin.shaders.ColorSwap;
 import flixel.FlxSprite;
 import flixel.graphics.frames.FlxAtlasFrames;
@@ -125,7 +125,7 @@ class Note extends FlxSprite {
 		if (isSustainNote && prevNote != null) {
 			alpha = 0.6;
 
-			if (PreferencesMenu.getPref('downscroll')) {
+			if (Options.getPref('downscroll')) {
 				angle = 180;
 			}
 

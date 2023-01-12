@@ -9,7 +9,7 @@ import funkin.ui.MenuItem;
 import funkin.ui.MenuTypedList;
 import funkin.ui.AtlasMenuItem;
 import funkin.config.OptionsState;
-import funkin.config.PreferencesMenu;
+import funkin.config.Options;
 import flixel.FlxG;
 import flixel.FlxObject;
 import flixel.FlxSprite;
@@ -70,9 +70,12 @@ class MainMenuState extends MusicBeatState {
 		magenta.setPosition(bg.x, bg.y);
 		magenta.visible = false;
 		magenta.color = 0xFFFD719B;
-		if (PreferencesMenu.preferences.get('flashing-menu'))
-			add(magenta);
 
+		if (Options.getPref('flashing-menu'))
+		{	
+			add(magenta);
+		}
+		
 		menuItems = new MainMenuList();
 		menuItems.enabled = false;
 		add(menuItems);

@@ -20,7 +20,7 @@ import openfl.display.Sprite;
 import openfl.display.StageScaleMode;
 import openfl.events.Event;
 import openfl.text.TextFormat;
-import funkin.config.PreferencesMenu;
+import funkin.config.Options;
 import funkin.game.CoolUtil;
 import funkin.menus.TitleState;
 

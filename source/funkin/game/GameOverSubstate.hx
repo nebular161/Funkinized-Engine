@@ -1,6 +1,6 @@
 package funkin.game;
 
-import funkin.config.PreferencesMenu;
+import funkin.config.Options;
 import flixel.FlxG;
 import flixel.FlxObject;
 import flixel.FlxSubState;
@@ -59,7 +59,7 @@ class GameOverSubstate extends MusicBeatSubstate
 		bf.playAnim('firstDeath');
 
 		var exclude = [];
-		if (PreferencesMenu.getPref('censor-naughty'))
+		if (Options.getPref('censor-naughty'))
 		{
 			exclude = [1, 3, 8, 13, 17, 21];
 		}

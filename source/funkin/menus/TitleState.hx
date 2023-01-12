@@ -15,7 +15,7 @@ import openfl.media.Video;
 import openfl.Lib;
 #end
 
-import funkin.config.PreferencesMenu;
+import funkin.config.Options;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.addons.transition.FlxTransitionSprite.GraphicTransTileDiamond;
@@ -79,7 +79,7 @@ class TitleState extends MusicBeatState {
 
 		FlxG.save.bind('everlast-engine', 'NebulaZone');
 
-		PreferencesMenu.initPrefs();
+		Options.initPrefs();
 		PlayerSettings.init();
 		Highscore.load();
 

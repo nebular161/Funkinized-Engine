@@ -36,7 +36,7 @@ import funkin.backgrounds.BGSprite;
 import funkin.backgrounds.BackgroundDancer;
 import funkin.backgrounds.BackgroundGirls;
 import funkin.backgrounds.TankmenBG;
-import funkin.config.PreferencesMenu;
+import funkin.config.Options;
 import funkin.editors.CharacterEditor;
 import funkin.editors.ChartingState;
 import funkin.game.Conductor;
@@ -108,7 +108,8 @@ class PlayState extends MusicBeatState {
 
 	private var grpNoteSplashes:FlxTypedGroup<NoteSplash>;
 
-	private var camZooming:Bool = true;
+	public var camZooming:Bool = true;
+
 	private var curSong:String = '';
 
 	public var bg:BGSprite;
@@ -783,7 +784,7 @@ class PlayState extends MusicBeatState {
 
 		Conductor.songPosition = -5000;
 
-		strumLine = new FlxSprite(0, PreferencesMenu.getPref('downscroll') ? FlxG.height - 150 : 50).makeGraphic(FlxG.width, 10);
+		strumLine = new FlxSprite(0, Options.getPref('downscroll') ? FlxG.height - 150 : 50).makeGraphic(FlxG.width, 10);
 		strumLineNotes = new FlxTypedGroup<FlxSprite>();
 		add(strumLineNotes);
 
@@ -818,7 +819,7 @@ class PlayState extends MusicBeatState {
 		healthBarBG.screenCenter(X);
 		healthBarBG.scrollFactor.set();
 		add(healthBarBG);
-		if (PreferencesMenu.getPref('downscroll'))
+		if (Options.getPref('downscroll'))
 			healthBarBG.y = FlxG.height * 0.1;
 
 		healthBar = new FlxBar(healthBarBG.x + 4, healthBarBG.y + 4, RIGHT_TO_LEFT, Std.int(healthBarBG.width - 8), Std.int(healthBarBG.height - 8), this,
@@ -1600,7 +1601,7 @@ class PlayState extends MusicBeatState {
 
 				var center = strumLine.y + (Note.swagWidth / 2);
 
-				if (PreferencesMenu.getPref('downscroll')) {
+				if (Options.getPref('downscroll')) {
 					daNote.y = strumLine.y + 0.45 * (Conductor.songPosition - daNote.strumTime) * FlxMath.roundDecimal(SONG.speed, 2);
 
 					if (daNote.isSustainNote) {
@@ -1645,7 +1646,7 @@ class PlayState extends MusicBeatState {
 					if (daNote.altNote)
 						altAnim = '-alt';
 
-					if (PreferencesMenu.getPref('glow-strums')) {
+					if (Options.getPref('glow-strums')) {
 						dadStrums.forEach(function(spr:FlxSprite) {
 							if (Math.abs(daNote.noteData) == spr.ID) {
 								spr.animation.play('confirm', true);
@@ -1681,7 +1682,7 @@ class PlayState extends MusicBeatState {
 				}
 
 				var doKill = daNote.y < -daNote.height;
-				if (PreferencesMenu.getPref('downscroll'))
+				if (Options.getPref('downscroll'))
 					doKill = daNote.y > FlxG.height;
 
 				if (doKill) {
@@ -1702,7 +1703,7 @@ class PlayState extends MusicBeatState {
 			});
 		}
 
-		if (PreferencesMenu.getPref('glow-strums')) {
+		if (Options.getPref('glow-strums')) {
 			dadStrums.forEach(function(spr:FlxSprite) {
 				if (spr.animation.finished) {
 					spr.animation.play('static');
@@ -2135,7 +2136,7 @@ class PlayState extends MusicBeatState {
 		var upP = controls.NOTE_UP_P;
 		var rightP = controls.NOTE_RIGHT_P;
 
-		if (PreferencesMenu.getPref('ghost-tap') == false) {
+		if (Options.getPref('ghost-tap') == false) {
 			if (leftP)
 				noteMiss(0);
 			if (downP)

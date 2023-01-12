@@ -14,7 +14,7 @@ import funkin.ui.TextMenuItem;
 import funkin.game.CoolUtil;
 import funkin.ui.MenuItem;
 
-class PreferencesMenu extends Page
+class Options extends Page
 {
 	public static var preferences:StringMap<Dynamic> = new StringMap<Dynamic>();
 
@@ -38,7 +38,7 @@ class PreferencesMenu extends Page
 		createPrefItem('Ghost Tapping', 'ghost-tap', true);
 		createPrefItem('FPS Counter', 'fps-counter', true);
 		createPrefItem('Auto Pause', 'auto-pause', false);
-		createPrefItem('Glow Opponent Strums', 'glow-strums', true);
+		createPrefItem('Glow Opponent Strums', 'glow-strums', false);
 		camFollow = new FlxObject(FlxG.width / 2, 0, 140, 70);
 		if (items != null)
 		{
