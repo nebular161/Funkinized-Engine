@@ -62,18 +62,14 @@ class TitleState extends MusicBeatState {
 	#end
 
 	override public function create():Void {
-		/*#if polymod
-		polymod.Polymod.init({modRoot: 'mods', dirs: ['introMod'], framework: OPENFL});
-		#end*/
+
+		FlxG.mouse.useSystemCursor = true;
 
 		#if USE_SHADERS
 		swagShader = new ColorSwap();
 		#end
 
-		FlxG.mouse.useSystemCursor = true;
-
 		curWacky = FlxG.random.getObject(getIntroTextShit());
-		FlxG.sound.muteKeys = [ZERO];
 
 		super.create();
 

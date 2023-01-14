@@ -190,10 +190,11 @@ class PlayState extends MusicBeatState {
 	var detailsPausedText:String = '';
 
 	override public function create() {
-		if (FlxG.sound.music != null)
-			FlxG.sound.music.stop();
 
 		FlxG.mouse.useSystemCursor = false;
+
+		if (FlxG.sound.music != null)
+			FlxG.sound.music.stop();
 
 		var instPath = Paths.inst(SONG.song.toLowerCase());
 		if (Assets.exists(instPath, SOUND) || Assets.exists(instPath, MUSIC))
