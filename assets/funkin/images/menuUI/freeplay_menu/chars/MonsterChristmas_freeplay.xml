@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:06ccae83e5cd8f3851018b323904bd04:a5f82cf6bfa1562f96c2fc3eb91cc015:a192f368c5862d59d6d06f17db133836$ -->
+<TextureAtlas imagePath="MonsterChristmas_freeplay.png" width="6949" height="709">
+    <SubTexture name="Monster Christmas Idle0001" x="6096" y="1" width="425" height="637" frameX="-45" frameY="-74" frameWidth="483" frameHeight="711"/>
+    <SubTexture name="Monster Christmas Idle0002" x="6523" y="1" width="425" height="637" frameX="-45" frameY="-74" frameWidth="483" frameHeight="711"/>
+    <SubTexture name="Monster Christmas Idle0003" x="4804" y="1" width="423" height="652" frameX="-48" frameY="-56" frameWidth="483" frameHeight="711"/>
+    <SubTexture name="Monster Christmas Idle0004" x="5229" y="1" width="423" height="652" frameX="-48" frameY="-56" frameWidth="483" frameHeight="711"/>
+    <SubTexture name="Monster Christmas Idle0005" x="5654" y="1" width="440" height="643" frameX="-37" frameY="-63" frameWidth="483" frameHeight="711"/>
+    <SubTexture name="Monster Christmas Idle0006" x="4362" y="1" width="440" height="665" frameX="-37" frameY="-41" frameWidth="483" frameHeight="711"/>
+    <SubTexture name="Monster Christmas Idle0007" x="3396" y="1" width="481" height="700" frameX="-2" frameY="-6" frameWidth="483" frameHeight="711"/>
+    <SubTexture name="Monster Christmas Idle0008" x="3879" y="1" width="481" height="700" frameX="-2" frameY="-6" frameWidth="483" frameHeight="711"/>
+    <SubTexture name="Monster Christmas Idle0009" x="2426" y="1" width="483" height="704" frameX="0" frameY="-3" frameWidth="483" frameHeight="711"/>
+    <SubTexture name="Monster Christmas Idle0010" x="2911" y="1" width="483" height="704" frameX="0" frameY="-3" frameWidth="483" frameHeight="711"/>
+    <SubTexture name="Monster Christmas Idle0011" x="1456" y="1" width="483" height="706" frameX="0" frameY="-1" frameWidth="483" frameHeight="711"/>
+    <SubTexture name="Monster Christmas Idle0012" x="1941" y="1" width="483" height="706" frameX="0" frameY="-1" frameWidth="483" frameHeight="711"/>
+    <SubTexture name="Monster Christmas Idle0013" x="1" y="1" width="483" height="707" frameX="0" frameY="0" frameWidth="483" frameHeight="711"/>
+    <SubTexture name="Monster Christmas Idle0014" x="486" y="1" width="483" height="707" frameX="0" frameY="0" frameWidth="483" frameHeight="711"/>
+    <SubTexture name="Monster Christmas Idle0015" x="971" y="1" width="483" height="707" frameX="0" frameY="0" frameWidth="483" frameHeight="711"/>
+</TextureAtlas>

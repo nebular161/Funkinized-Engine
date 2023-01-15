@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:cf6427b4f2a65a24c35f6b3270832e16:dc53c64c261196dbcd89c8023866bc75:aa264aa65020ba1dacfbb85211ad229b$ -->
+<TextureAtlas imagePath="Tankman_freeplay.png" width="861" height="1707">
+    <SubTexture name="Tankman Idle0001" x="1" y="1151" width="427" height="555" frameX="0" frameY="-18" frameWidth="431" frameHeight="573"/>
+    <SubTexture name="Tankman Idle0002" x="1" y="1151" width="427" height="555" frameX="0" frameY="-18" frameWidth="431" frameHeight="573"/>
+    <SubTexture name="Tankman Idle0003" x="432" y="576" width="428" height="557" frameX="0" frameY="-16" frameWidth="431" frameHeight="573"/>
+    <SubTexture name="Tankman Idle0004" x="432" y="576" width="428" height="557" frameX="0" frameY="-16" frameWidth="431" frameHeight="573"/>
+    <SubTexture name="Tankman Idle0005" x="432" y="1135" width="427" height="561" frameX="-3" frameY="-12" frameWidth="431" frameHeight="573"/>
+    <SubTexture name="Tankman Idle0006" x="432" y="1135" width="427" height="561" frameX="-3" frameY="-12" frameWidth="431" frameHeight="573"/>
+    <SubTexture name="Tankman Idle0007" x="432" y="1" width="428" height="573" frameX="-3" frameY="0" frameWidth="431" frameHeight="573"/>
+    <SubTexture name="Tankman Idle0008" x="1" y="1" width="429" height="573" frameX="-2" frameY="0" frameWidth="431" frameHeight="573"/>
+    <SubTexture name="Tankman Idle0009" x="1" y="576" width="429" height="573" frameX="-2" frameY="0" frameWidth="431" frameHeight="573"/>
+    <SubTexture name="Tankman Idle0010" x="1" y="576" width="429" height="573" frameX="-2" frameY="0" frameWidth="431" frameHeight="573"/>
+    <SubTexture name="Tankman Idle0011" x="1" y="576" width="429" height="573" frameX="-2" frameY="0" frameWidth="431" frameHeight="573"/>
+    <SubTexture name="Tankman Idle0012" x="1" y="576" width="429" height="573" frameX="-2" frameY="0" frameWidth="431" frameHeight="573"/>
+    <SubTexture name="Tankman Idle0013" x="1" y="576" width="429" height="573" frameX="-2" frameY="0" frameWidth="431" frameHeight="573"/>
+    <SubTexture name="Tankman Idle0014" x="1" y="576" width="429" height="573" frameX="-2" frameY="0" frameWidth="431" frameHeight="573"/>
+</TextureAtlas>
