@@ -852,11 +852,6 @@ class PlayState extends MusicBeatState {
 		iconP2.cameras = [camHUD];
 		scoreTxt.cameras = [camHUD];
 
-		// if (SONG.song == 'South')
-		// FlxG.camera.alpha = 0.7;
-		// UI_camera.zoom = 1;
-
-		// cameras = [FlxG.cameras.list[1]];
 		startingSong = true;
 
 		if (isStoryMode && !seenCutscene) {
@@ -1770,8 +1765,8 @@ class PlayState extends MusicBeatState {
 				trace('LOADING NEXT SONG');
 				trace(PlayState.storyPlaylist[0].toLowerCase() + difficulty);
 
-				FlxTransitionableState.skipNextTransIn = true;
-				FlxTransitionableState.skipNextTransOut = true;
+				//FlxTransitionableState.skipNextTransIn = true;
+				//FlxTransitionableState.skipNextTransOut = true;
 
 				FlxG.sound.music.stop();
 				vocals.stop();

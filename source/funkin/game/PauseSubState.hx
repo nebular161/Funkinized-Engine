@@ -16,7 +16,7 @@ import funkin.system.MusicBeatSubstate;
 import funkin.system.Highscore;
 import funkin.menus.StoryMenuState;
 import funkin.game.FreeplayState;
-
+import funkin.editors.ChartingState;
 class PauseSubState extends MusicBeatSubstate {
 	var grpMenuShit:FlxTypedGroup<Alphabet>;
 
@@ -25,6 +25,7 @@ class PauseSubState extends MusicBeatSubstate {
 		'Restart Song',
 		'Change Difficulty',
 		'Toggle Practice Mode',
+		'Chart Editor',
 		'Exit to menu'
 	];
 	var difficultyChoices:Array<String> = ['EASY', 'NORMAL', 'HARD', 'BACK'];
@@ -148,6 +149,8 @@ class PauseSubState extends MusicBeatSubstate {
 				case 'Toggle Practice Mode':
 					PlayState.practiceMode = !PlayState.practiceMode;
 					practiceText.visible = PlayState.practiceMode;
+				case 'Chart Editor':
+					FlxG.switchState(new ChartingState());
 				case 'Exit to menu':
 					PlayState.seenCutscene = false;
 					PlayState.deathCounter = 0;

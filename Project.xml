@@ -57,7 +57,6 @@
 	<assets path="dlls/" rename='' if="windows"/>
 
 	<assets path='example_mods' rename='mods' embed='false'/>
-	<assets path='art/readme.txt' rename='do NOT readme.txt' embed='true' />
 
 	<assets path="CHANGELOG.md" rename='changelog.txt'/>
 
@@ -93,9 +92,9 @@
 
 	<!-- _________________________________ Custom _______________________________ -->
 	
-	<icon path="art/icon16.png" size='16'/>
-	<icon path="art/icon32.png" size='32'/>
-	<icon path="art/icon64.png" size='64'/>
-	<icon path="art/iconOG.png" />
+	<icon path="assets/core/flixel-icons/icon16.png" size='16'/>
+	<icon path="assets/core/flixel-icons/icon32.png" size='32'/>
+	<icon path="assets/core/flixel-icons/icon64.png" size='64'/>
+	<icon path="assets/core/flixel-icons/iconOG.png" size='96'/>
 	
 </project>

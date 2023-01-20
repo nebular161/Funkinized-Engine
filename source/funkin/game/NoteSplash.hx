@@ -24,7 +24,6 @@ class NoteSplash extends FlxSprite
             {
                 case 'school' | 'schoolEvil':
                 super(x, y);
-
                 frames = Paths.getSparrowAtlas('gameObjects/notes/pixel/noteSplashesPixel');
         
                 animation.addByPrefix("splash-0", "note splash purple", 24, false);
