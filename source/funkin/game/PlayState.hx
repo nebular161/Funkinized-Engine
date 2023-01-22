@@ -187,7 +187,7 @@ class PlayState extends MusicBeatState {
 
 	override public function create() {
 
-		FlxG.mouse.useSystemCursor = false;
+		FlxG.mouse.visible = false;
 
 		if (FlxG.sound.music != null)
 			FlxG.sound.music.stop();
