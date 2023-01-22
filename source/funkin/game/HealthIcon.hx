@@ -33,13 +33,7 @@ class HealthIcon extends FlxSprite
 			case 'monster-christmas':
 				correctIcon = 'monster';
 
-			case 'bf-car':
-				correctIcon = 'bf';
-
-			case 'bf-opponent':
-				correctIcon = 'bf';				
-
-			case 'bf-christmas':
+			case 'bf-car' | 'bf-opponent' | 'bf-christmas':
 				correctIcon = 'bf';
 
 			case 'bf-pixel-opponent':
@@ -54,10 +48,7 @@ class HealthIcon extends FlxSprite
 			case 'bf-gf':
 				correctIcon = 'bf-gf';
 
-			case 'pico-speaker':
-				correctIcon = 'pico';
-
-			case 'pico-player':
+			case 'pico-speaker' | 'pico-player':
 				correctIcon = 'pico';
 		}
 		loadGraphic(Paths.data('character-data/icons/' + correctIcon), true, 150, 150);

@@ -115,7 +115,6 @@ class ChartingState extends MusicBeatState
 
 	override function create()
 	{
-		FlxG.mouse.useSystemCursor = true;
 
 		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuUI/main_menu/menuDesat')); // bg on chart editor, credits to ShadowMario for da bg code
 		bg.scrollFactor.set();
@@ -143,6 +142,11 @@ class ChartingState extends MusicBeatState
 				};
 			}
 
+			FlxG.mouse.visible = true;
+			FlxG.save.bind('everlast-engine', 'NebulaZone');
+			
+			tempBpm = _song.bpm;
+
 			gridBG = FlxGridOverlay.create(GRID_SIZE, GRID_SIZE * 12, GRID_SIZE * 16, true, 0xFFE7E7E7, 0xFFC5C5C5);
 			gridBGOverlay = FlxGridOverlay.create(GRID_SIZE * 4, GRID_SIZE * 4, GRID_SIZE * 8, GRID_SIZE * 16, true, 0xFFFFFFFF, 0xFFB5A5CE);
 			gridBGOverlay.blend = "multiply";
@@ -152,10 +156,6 @@ class ChartingState extends MusicBeatState
 
 		curRenderedNotes = new FlxTypedGroup<Note>();
 		curRenderedSustains = new FlxTypedGroup<FlxSprite>();
-
-		FlxG.save.bind('everlast-engine', 'NebulaZone');
-
-		tempBpm = _song.bpm;
 
 		addSection();
 

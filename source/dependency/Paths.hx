@@ -114,6 +114,10 @@ class Paths {
 		return getPath('funkin/images/$key.png', IMAGE, library);
 	}
 
+	inline static public function cursorImage(key:String, ?library:String) {
+		return getPath('core/cursors/$key.png', IMAGE, library);
+	}	
+
 	inline static public function font(key:String) {
 		return 'assets/core/fonts/$key';
 	}

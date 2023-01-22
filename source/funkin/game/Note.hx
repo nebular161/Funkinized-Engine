@@ -55,7 +55,7 @@ class Note extends FlxSprite {
 
 		switch (PlayState.curStage) {
 			case 'school' | 'schoolEvil':
-				loadGraphic(Paths.image('gameObjects/notes/pixel/arrows-pixels'), true, 17, 17);
+				loadGraphic(Paths.image('gameObjects/notes/pixel/pixel-arrows'), true, 17, 17);
 
 				animation.add('greenScroll', [6]);
 				animation.add('redScroll', [7]);
@@ -80,7 +80,7 @@ class Note extends FlxSprite {
 				updateHitbox();
 				antialiasing = false;
 			default:
-				frames = Paths.getSparrowAtlas('gameObjects/notes/base/NOTE_assets');
+				frames = Paths.getSparrowAtlas('gameObjects/notes/base/default');
 
 				animation.addByPrefix('greenScroll', 'green0');
 				animation.addByPrefix('redScroll', 'red0');

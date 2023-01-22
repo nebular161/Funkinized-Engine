@@ -117,13 +117,9 @@ class PlayState extends MusicBeatState {
 	public var stageCurtains:FlxSprite;
 
 	private var gfSpeed:Int = 1;
-	private var health:Float = 1;
+	public var health:Float = 1;
 	public var misses:Int = 0;
 	private var lerpHealth:Float = 1;
-	public static var sicks:Int = 0;
-	public static var goods:Int = 0;
-	public static var bads:Int = 0;
-	public static var shits:Int = 0;
 	public var combo:Int = 0;
 
 	private var healthBarBG:FlxSprite;
@@ -1223,11 +1219,11 @@ class PlayState extends MusicBeatState {
 
 			switch (curStage) {
 				case 'school' | 'schoolEvil':
-					babyArrow.loadGraphic(Paths.image('gameObjects/notes/pixel/arrows-pixels'), true, 17, 17);
-					babyArrow.animation.add('green', [6]);
-					babyArrow.animation.add('red', [7]);
-					babyArrow.animation.add('blue', [5]);
-					babyArrow.animation.add('purplel', [4]);
+					babyArrow.loadGraphic(Paths.image('gameObjects/notes/pixel/pixel-arrows'), true, 17, 17);
+					babyArrow.animation.add('greenScroll', [6]);
+					babyArrow.animation.add('redScroll', [7]);
+					babyArrow.animation.add('blueScroll', [5]);
+					babyArrow.animation.add('purpleScroll', [4]);
 
 					babyArrow.setGraphicSize(Std.int(babyArrow.width * daPixelZoom));
 					babyArrow.updateHitbox();
@@ -1257,7 +1253,7 @@ class PlayState extends MusicBeatState {
 					}
 
 				default:
-					babyArrow.frames = Paths.getSparrowAtlas('gameObjects/notes/base/NOTE_assets');
+					babyArrow.frames = Paths.getSparrowAtlas('gameObjects/notes/base/default');
 					babyArrow.animation.addByPrefix('green', 'arrowUP');
 					babyArrow.animation.addByPrefix('blue', 'arrowDOWN');
 					babyArrow.animation.addByPrefix('purple', 'arrowLEFT');
@@ -1919,7 +1915,7 @@ class PlayState extends MusicBeatState {
 
 			FlxTween.tween(numScore, {alpha: 0}, 0.2, {
 				onComplete: function(tween:FlxTween){
-					numScore.destroy();
+					numScore.kill();
 				},
 				startDelay: Conductor.crochet * 0.00075
 			});
@@ -1931,7 +1927,7 @@ class PlayState extends MusicBeatState {
 
 		FlxTween.tween(rating, {alpha: 0}, 0.2, {
 			onComplete: function(tween:FlxTween){
-				rating.destroy();
+				rating.kill();
 			},
 			startDelay: Conductor.crochet * 0.00075
 		});
@@ -1939,10 +1935,10 @@ class PlayState extends MusicBeatState {
 
 		FlxTween.tween(comboSpr, {alpha: 0}, 0.2, {
 			onComplete: function(tween:FlxTween) {
-				coolText.destroy();
-				comboSpr.destroy();
+				coolText.kill();
+				comboSpr.kill();
 
-				rating.destroy();
+				rating.kill();
 			},
 			startDelay: Conductor.crochet * 0.00075
 		});
