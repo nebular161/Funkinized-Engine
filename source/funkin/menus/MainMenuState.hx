@@ -43,10 +43,10 @@ class MainMenuState extends MusicBeatState {
 
 	override function create() {
 		#if discord_rpc
-		DiscordClient.changePresence('In the Menus', null);
+		DiscordClient.changePresence('Main Menu', null);
 		#end
 
-		FlxG.mouse.useSystemCursor = true;
+		FlxG.mouse.load(Paths.cursorImage("core/cursors/cursor"));
 
 		if (!FlxG.sound.music.playing)
 			FlxG.sound.playMusic(Paths.music('freakyMenu'));
