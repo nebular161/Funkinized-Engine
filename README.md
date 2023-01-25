@@ -1,6 +1,5 @@
 # Everlast Engine
-A Friday Night Funkin' engine that will try to improve your modding experience.
-
+A Friday Night Funkin' engine that makes using source code feel much more easier and will come with good ol' Hscript support!
 # Building
 To get started, you need the following programs:
 - Haxe 4.2.5
