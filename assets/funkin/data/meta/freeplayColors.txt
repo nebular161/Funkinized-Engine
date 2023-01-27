@@ -1,0 +1,26 @@
+--> Tutorial <--
+0xFF691818,
+
+--> Week 1 <--
+0xFF9271FD,
+
+--> Week 2 <--
+0xFFFF9900,
+
+--> Week 3 <--
+0xFF15B400,
+
+--> Week 4 <--
+0xFF96005F,
+
+--> Week 5 <--
+0xFF593074,
+
+--> Week 6 <--
+0xFFFFB96A,
+
+--> Week 7 <--
+0xFF5E5E5E,
+
+--> Test <--
+0xFF00DDFF

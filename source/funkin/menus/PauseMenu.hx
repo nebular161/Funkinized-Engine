@@ -1,4 +1,4 @@
-package funkin.game;
+package funkin.menus;
 
 import funkin.config.Controls.Control;
 import flixel.FlxG;
@@ -14,10 +14,13 @@ import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
 import funkin.system.MusicBeatSubstate;
 import funkin.system.Highscore;
-import funkin.menus.StoryMenuState;
-import funkin.game.FreeplayState;
+import funkin.menus.StoryMenu;
+import funkin.menus.FreeplayMenu;
 import funkin.editors.ChartingState;
-class PauseSubState extends MusicBeatSubstate {
+import funkin.game.PlayState;
+import funkin.game.Song;
+
+class PauseMenu extends MusicBeatSubstate {
 	var grpMenuShit:FlxTypedGroup<Alphabet>;
 
 	var pauseOG:Array<String> = [
@@ -155,9 +158,9 @@ class PauseSubState extends MusicBeatSubstate {
 					PlayState.seenCutscene = false;
 					PlayState.deathCounter = 0;
 					if (PlayState.isStoryMode)
-						FlxG.switchState(new StoryMenuState());
+						FlxG.switchState(new StoryMenu());
 					else
-						FlxG.switchState(new FreeplayState());
+						FlxG.switchState(new FreeplayMenu());
 
 				case 'EASY' | 'NORMAL' | 'HARD':
 					PlayState.SONG = Song.loadFromJson(Highscore.formatSong(PlayState.SONG.song.toLowerCase(), curSelected),

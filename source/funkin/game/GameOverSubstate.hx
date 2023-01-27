@@ -9,10 +9,11 @@ import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
 import funkin.system.MusicBeatSubstate;
 import funkin.system.LoadingState;
-import funkin.menus.StoryMenuState;
+import funkin.menus.StoryMenu;
 import funkin.game.Boyfriend;
 import funkin.game.PlayState;
 import funkin.game.Conductor;
+import funkin.menus.FreeplayMenu;
 class GameOverSubstate extends MusicBeatSubstate
 {
 	var bf:Boyfriend;
@@ -83,9 +84,9 @@ class GameOverSubstate extends MusicBeatSubstate
 			FlxG.sound.music.stop();
 
 			if (PlayState.isStoryMode)
-				FlxG.switchState(new StoryMenuState());
+				FlxG.switchState(new StoryMenu());
 			else
-				FlxG.switchState(new FreeplayState());
+				FlxG.switchState(new FreeplayMenu());
 		}
 
 		if (bf.animation.curAnim.name == 'firstDeath' && bf.animation.curAnim.curFrame == 12)

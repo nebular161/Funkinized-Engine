@@ -9,7 +9,7 @@ import openfl.net.NetConnection;
 import openfl.net.NetStream;
 import vlc.VlcBitmap;
 import funkin.system.LoadingState;
-import funkin.menus.MainMenuState;
+import funkin.menus.MainMenu;
 
 // THIS IS FOR TESTING
 // DONT STEAL MY CODE >:(
@@ -186,6 +186,6 @@ class MP4Handler
 			LoadingState.loadAndSwitchState(finishCallback);
 		}
 		else
-			LoadingState.loadAndSwitchState(new MainMenuState());
+			LoadingState.loadAndSwitchState(new MainMenu());
 	}
 }

@@ -43,7 +43,9 @@ import funkin.game.Conductor;
 import funkin.game.CoolUtil;
 import funkin.game.Section.SwagSection;
 import funkin.game.Song.SwagSong;
-import funkin.menus.StoryMenuState;
+import funkin.menus.StoryMenu;
+import funkin.menus.FreeplayMenu;
+import funkin.menus.PauseMenu;
 import funkin.cutscenes.MP4Handler;
 import funkin.cutscenes.VideoState;
 import funkin.shaders.BuildingShaders;
@@ -1450,7 +1452,7 @@ class PlayState extends MusicBeatState {
 				FlxG.switchState(new GitarooPause());
 			} else {
 				var screenPos:FlxPoint = boyfriend.getScreenPosition();
-				var pauseMenu:PauseSubState = new PauseSubState(screenPos.x, screenPos.y);
+				var pauseMenu:PauseMenu = new PauseMenu(screenPos.x, screenPos.y);
 				openSubState(pauseMenu);
 				pauseMenu.camera = camHUD;
 			}
@@ -1737,25 +1739,25 @@ class PlayState extends MusicBeatState {
 				if (storyWeek == 7)
 					FlxG.switchState(new VideoState());
 				else
-					FlxG.switchState(new StoryMenuState());
+					FlxG.switchState(new StoryMenu());
 
 				// if ()
-				StoryMenuState.weekUnlocked[Std.int(Math.min(storyWeek + 1, StoryMenuState.weekUnlocked.length - 1))] = true;
+				StoryMenu.weekUnlocked[Std.int(Math.min(storyWeek + 1, StoryMenu.weekUnlocked.length - 1))] = true;
 
 				if (SONG.validScore) {
 					Highscore.saveWeekScore(storyWeek, campaignScore, storyDifficulty);
 				}
 
-				FlxG.save.data.weekUnlocked = StoryMenuState.weekUnlocked;
+				FlxG.save.data.weekUnlocked = StoryMenu.weekUnlocked;
 				FlxG.save.flush();
 			} else {
 				var difficulty:String = '';
 
 				if (storyDifficulty == 0)
-					difficulty = '-easy';
+					difficulty = 'easy';
 
 				if (storyDifficulty == 2)
-					difficulty = '-hard';
+					difficulty = 'hard';
 
 				trace('LOADING NEXT SONG');
 				trace(PlayState.storyPlaylist[0].toLowerCase() + difficulty);
@@ -1787,7 +1789,7 @@ class PlayState extends MusicBeatState {
 			}
 		} else {
 			trace('WENT BACK TO FREEPLAY??');
-			FlxG.switchState(new FreeplayState());
+			FlxG.switchState(new FreeplayMenu());
 		}
 	}
 

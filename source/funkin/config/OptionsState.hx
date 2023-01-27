@@ -7,7 +7,7 @@ import funkin.system.MusicBeatState;
 import funkin.config.OptionsMenu;
 import funkin.config.Options;
 import funkin.config.ControlsMenu;
-import funkin.menus.MainMenuState;
+import funkin.menus.MainMenu;
 import funkin.ui.PageName;
 import funkin.ui.Page;
 
@@ -75,6 +75,6 @@ class OptionsState extends MusicBeatState {
 
 	function exitToMainMenu() {
 		currentPage.enabled = false;
-		FlxG.switchState(new MainMenuState());
+		FlxG.switchState(new MainMenu());
 	}
 }

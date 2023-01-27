@@ -3,9 +3,6 @@ package funkin.game;
 import funkin.game.Section.SwagSection;
 import haxe.Json;
 import haxe.format.JsonParser;
-#if sys
-import sys.io.File;
-#end
 import lime.utils.Assets;
 
 using StringTools;
@@ -46,35 +43,20 @@ class Song
 	}
 
 	public static function loadFromJson(jsonInput:String, ?folder:String):SwagSong
-	{
-		trace(jsonInput);
-
-		// pre lowercasing the folder name
-		var folderLowercase = StringTools.replace(folder, " ", "-").toLowerCase();
-		switch (folderLowercase)
 		{
-			case 'dad-battle':
-				folderLowercase = 'dadbattle';
-			case 'philly-nice':
-				folderLowercase = 'philly';
+			var rawJson = Assets.getText(Paths.songjson(folder.toLowerCase() + '/charts/' + jsonInput.toLowerCase(), true)).trim();
+	
+			while (!rawJson.endsWith("}"))
+			{
+				rawJson = rawJson.substr(0, rawJson.length - 1);
+				// LOL GOING THROUGH THE BULLSHIT TO CLEAN IDK WHATS STRANGE
+			}
+	
+			return parseJSONshit(rawJson);
 		}
-
-		trace('loading ' + folderLowercase + '/' + jsonInput.toLowerCase());
-
-		var rawJson = File.getContent(Paths.songjson(jsonInput.toLowerCase(),folder.toLowerCase())).trim(); //having the game to get the chart files in assets/songs
-
-		while (!rawJson.endsWith("}"))
+	
+		public static function parseJSONshit(rawJson:String):SwagSong
 		{
-			rawJson = rawJson.substr(0, rawJson.length - 1);
+			return cast Json.parse(rawJson).song;
 		}
-
-		return parseJSONshit(rawJson);
 	}
-
-	public static function parseJSONshit(rawJson:String):SwagSong
-	{
-		var swagShit:SwagSong = cast Json.parse(rawJson).song;
-		swagShit.validScore = true;
-		return swagShit;
-	}
-}

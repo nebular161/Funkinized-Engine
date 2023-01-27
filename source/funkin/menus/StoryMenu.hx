@@ -27,7 +27,7 @@ import funkin.system.Highscore;
 import funkin.system.MathFunctions;
 import funkin.game.Song;
 import flixel.graphics.FlxGraphic;
-class StoryMenuState extends MusicBeatState {
+class StoryMenu extends MusicBeatState {
 	var scoreText:FlxText;
 
 	var weekData:Array<Dynamic> = [
@@ -278,7 +278,7 @@ class StoryMenuState extends MusicBeatState {
 		if (controls.BACK && !movedBack && !selectedWeek) {
 			FlxG.sound.play(Paths.sound('cancelMenu'));
 			movedBack = true;
-			FlxG.switchState(new MainMenuState());
+			FlxG.switchState(new MainMenu());
 		}
 
 		super.update(elapsed);
@@ -306,9 +306,9 @@ class StoryMenuState extends MusicBeatState {
 
 			switch (curDifficulty) {
 				case 0:
-					diffic = '-easy';
+					diffic = 'easy';
 				case 2:
-					diffic = '-hard';
+					diffic = 'hard';
 			}
 
 			PlayState.storyDifficulty = curDifficulty;

@@ -30,7 +30,7 @@ import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
 import lime.app.Application;
 import funkin.system.MusicBeatState;
-import funkin.menus.MainMenuState;
+import funkin.menus.MainMenu;
 import funkin.config.PlayerSettings;
 import funkin.system.Highscore;
 import funkin.cutscenes.VideoState;
@@ -62,8 +62,8 @@ class TitleState extends MusicBeatState {
 	#end
 
 	override public function create():Void {
-
-		FlxG.mouse.load(Paths.cursorImage("core/cursors/cursor"));
+		
+		FlxG.mouse.load('assets/core/cursors/default.png');
 
 		#if USE_SHADERS
 		swagShader = new ColorSwap();
@@ -80,10 +80,10 @@ class TitleState extends MusicBeatState {
 		Highscore.load();
 
 		if (FlxG.save.data.weekUnlocked != null) { // QUICK PATCH OOPS!
-			if (StoryMenuState.weekUnlocked.length < 4)
-				StoryMenuState.weekUnlocked.insert(0, true);
-			if (!StoryMenuState.weekUnlocked[0])
-				StoryMenuState.weekUnlocked[0] = true;
+			if (StoryMenu.weekUnlocked.length < 4)
+				StoryMenu.weekUnlocked.insert(0, true);
+			if (!StoryMenu.weekUnlocked[0])
+				StoryMenu.weekUnlocked[0] = true;
 		}
 
 		if (FlxG.save.data.seenVideo != null)
@@ -211,7 +211,7 @@ class TitleState extends MusicBeatState {
 			FlxG.camera.flash(FlxColor.WHITE, 1);
 			FlxG.sound.play(Paths.sound('confirmMenu'), 0.7);
 			transitioning = true;
-			FlxG.switchState(new MainMenuState());
+			FlxG.switchState(new MainMenu());
 		}
 
 		if (pressedEnter && !skippedIntro && initialized)

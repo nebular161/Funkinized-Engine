@@ -23,11 +23,11 @@ import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
 import lime.app.Application;
 import funkin.system.MusicBeatState;
-import funkin.menus.StoryMenuState;
-import funkin.game.FreeplayState;
+import funkin.menus.StoryMenu;
+import funkin.menus.FreeplayMenu;
 import funkin.system.MathFunctions;
 
-class MainMenuState extends MusicBeatState {
+class MainMenu extends MusicBeatState {
 	var menuItems:MainMenuList;
 
 	var optionShit:Array<String> = 
@@ -46,7 +46,7 @@ class MainMenuState extends MusicBeatState {
 		DiscordClient.changePresence('Main Menu', null);
 		#end
 
-		FlxG.mouse.load(Paths.cursorImage("core/cursors/cursor"));
+		FlxG.mouse.load('assets/core/cursors/default.png');
 
 		if (!FlxG.sound.music.playing)
 			FlxG.sound.playMusic(Paths.music('freakyMenu'));
@@ -82,8 +82,8 @@ class MainMenuState extends MusicBeatState {
 		menuItems.onChange.add(onMenuItemChange);
 		menuItems.onAcceptPress.add(function(item:MenuItem) FlxFlicker.flicker(magenta, 1.1, 0.15, false, true));
 
-		menuItems.createItem(null, null, 'story mode', function() startExitState(new StoryMenuState()));
-		menuItems.createItem(null, null, 'freeplay', function() startExitState(new FreeplayState()));
+		menuItems.createItem(null, null, 'story mode', function() startExitState(new StoryMenu()));
+		menuItems.createItem(null, null, 'freeplay', function() startExitState(new FreeplayMenu()));
 
 		menuItems.createItem(0, 0, 'options', function() startExitState(new OptionsState()));
 

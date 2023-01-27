@@ -86,8 +86,6 @@
 	
 	<haxelib name="away3d" />
 
-	<haxelib name="polymod" />
-
 	<haxelib name="linc_discord-rpc" if="desktop" />
 
 	<!-- _________________________________ Custom _______________________________ -->

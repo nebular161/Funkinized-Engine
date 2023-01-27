@@ -122,10 +122,9 @@ class Paths {
 		return 'assets/core/fonts/$key';
 	}
 
-	inline static public function songjson(key:String,?container:String, ?library:String)
+	inline static public function songjson(key:String, isSong=false, ?library:String)
 		{
-			if(container==null)container=key;
-			return getPath('funkin/songs/$container/$key.json', TEXT, library);
+		return getPath('${isSong ? "songs" : "data"}/$key.json', TEXT, library);
 		}	
 
 	inline static public function getSparrowAtlas(key:String, ?library:String) {

@@ -5,7 +5,7 @@ import flixel.FlxSprite;
 import flixel.graphics.frames.FlxAtlasFrames;
 import funkin.system.MusicBeatState;
 import funkin.game.PlayState;
-import funkin.menus.MainMenuState;
+import funkin.menus.MainMenu;
 
 class GitarooPause extends MusicBeatState {
 	var replayButton:FlxSprite;
@@ -58,7 +58,7 @@ class GitarooPause extends MusicBeatState {
 			if (replaySelect) {
 				FlxG.switchState(new PlayState());
 			} else {
-				FlxG.switchState(new MainMenuState());
+				FlxG.switchState(new MainMenu());
 			}
 		}
 

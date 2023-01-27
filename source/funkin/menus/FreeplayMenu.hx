@@ -1,4 +1,4 @@
-package funkin.game;
+package funkin.menus;
 
 #if discord_rpc
 import dependency.Discord.DiscordClient;
@@ -13,15 +13,19 @@ import flixel.text.FlxText;
 import flixel.util.FlxColor;
 import lime.utils.Assets;
 import funkin.system.MusicBeatState;
-import funkin.menus.StoryMenuState;
+import funkin.menus.StoryMenu;
 import funkin.system.Highscore;
 import funkin.system.MathFunctions;
-import funkin.menus.MainMenuState;
+import funkin.menus.MainMenu;
 import funkin.system.LoadingState;
+import funkin.game.HealthIcon;
+import funkin.game.PlayState;
+import funkin.game.CoolUtil;
+import funkin.game.Song;
 
 using StringTools;
 
-class FreeplayState extends MusicBeatState
+class FreeplayMenu extends MusicBeatState
 {
 	var songs:Array<SongMetadata> = [];
 
@@ -54,25 +58,25 @@ class FreeplayState extends MusicBeatState
 
 		songs.push(new SongMetadata("Tutorial", 0, 'gf'));
 
-		if (StoryMenuState.weekUnlocked[1])
+		if (StoryMenu.weekUnlocked[1])
 			addWeek(['Bopeebo', 'Fresh', 'Dadbattle'], 1, ['dad']);
 
-		if (StoryMenuState.weekUnlocked[2])
+		if (StoryMenu.weekUnlocked[2])
 			addWeek(['Spookeez', 'South', 'Monster'], 2, ['spooky', 'spooky', 'monster']);
 
-		if (StoryMenuState.weekUnlocked[3])
+		if (StoryMenu.weekUnlocked[3])
 			addWeek(['Pico', 'Philly', 'Blammed'], 3, ['pico']);
 
-		if (StoryMenuState.weekUnlocked[4])
+		if (StoryMenu.weekUnlocked[4])
 			addWeek(['Satin-Panties', 'High', 'Milf'], 4, ['mom']);
 
-		if (StoryMenuState.weekUnlocked[5])
+		if (StoryMenu.weekUnlocked[5])
 			addWeek(['Cocoa', 'Eggnog', 'Winter-Horrorland'], 5, ['parents-christmas', 'parents-christmas', 'monster-christmas']);
 
-		if (StoryMenuState.weekUnlocked[6])
+		if (StoryMenu.weekUnlocked[6])
 			addWeek(['Senpai', 'Roses', 'Thorns'], 6, ['senpai', 'senpai-angry', 'spirit']);
 
-		if (StoryMenuState.weekUnlocked[7])
+		if (StoryMenu.weekUnlocked[7])
 			addWeek(['Ugh', 'Guns', 'Stress'], 7, ['tankman']);
 		
 		songs.push(new SongMetadata("Test", 8, 'bf-pixel'));
@@ -186,7 +190,7 @@ class FreeplayState extends MusicBeatState
 		if (controls.BACK)
 		{
 			FlxG.sound.play(Paths.sound("cancelMenu"));
-			FlxG.switchState(new MainMenuState());
+			FlxG.switchState(new MainMenu());
 		}
 
 		if (accepted)
