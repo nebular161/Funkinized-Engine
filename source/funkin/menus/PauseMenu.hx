@@ -31,7 +31,8 @@ class PauseMenu extends MusicBeatSubstate {
 		'Chart Editor',
 		'Exit to menu'
 	];
-	var difficultyChoices:Array<String> = ['EASY', 'NORMAL', 'HARD', 'BACK'];
+	/*var curDifficulty:Int = 1;
+	var curDifficultyArray:Array<String> = ['EASY', 'NORMAL', 'HARD', 'BACK'];*/
 
 	var menuItems:Array<String> = [];
 	var curSelected:Int = 0;
@@ -146,9 +147,9 @@ class PauseMenu extends MusicBeatSubstate {
 					close();
 				case 'Restart Song':
 					FlxG.resetState();
-				case 'Change Difficulty':
-					menuItems = difficultyChoices;
-					regenMenu();
+				/*case 'Change Difficulty':
+					menuItems = curDifficultyArray;
+					regenMenu();*/
 				case 'Toggle Practice Mode':
 					PlayState.practiceMode = !PlayState.practiceMode;
 					practiceText.visible = PlayState.practiceMode;
@@ -162,11 +163,10 @@ class PauseMenu extends MusicBeatSubstate {
 					else
 						FlxG.switchState(new FreeplayMenu());
 
-				case 'EASY' | 'NORMAL' | 'HARD':
-					PlayState.SONG = Song.loadFromJson(Highscore.formatSong(PlayState.SONG.song.toLowerCase(), curSelected),
-						PlayState.SONG.song.toLowerCase());
-					PlayState.storyDifficulty = curSelected;
-					FlxG.resetState();
+				/*case 'EASY' | 'NORMAL' | 'HARD':
+					PlayState.SONG = Song.loadFromJson(curDifficultyArray[curDifficulty].toLowerCase(), PlayState.storyPlaylist[0].toLowerCase());
+					PlayState.storyDifficulty2 = curDifficultyArray[curDifficulty].toLowerCase();
+					FlxG.resetState();*/
 				case 'BACK':
 					menuItems = pauseOG;
 					regenMenu();
@@ -174,8 +174,6 @@ class PauseMenu extends MusicBeatSubstate {
 		}
 
 		if (FlxG.keys.justPressed.J) {
-			// for reference later!
-			// PlayerSettings.player1.controls.replaceBinding(Control.LEFT, Keys, FlxKey.J, null);
 		}
 	}
 
@@ -201,11 +199,9 @@ class PauseMenu extends MusicBeatSubstate {
 			bullShit++;
 
 			item.alpha = 0.6;
-			// item.setGraphicSize(Std.int(item.width * 0.8));
 
 			if (item.targetY == 0) {
 				item.alpha = 1;
-				// item.setGraphicSize(Std.int(item.width));
 			}
 		}
 	}
