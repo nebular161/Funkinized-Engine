@@ -77,6 +77,7 @@ class PlayState extends MusicBeatState {
 	public static var storyWeek:Int = 0;
 	public static var storyPlaylist:Array<String> = [];
 	public static var storyDifficulty:Int = 1;
+	public static var storyDifficulty2:String = "Normal";
 	public static var deathCounter:Int = 0;
 	public static var practiceMode:Bool = false;
 	public static var seenCutscene:Bool = false;
@@ -1083,7 +1084,6 @@ class PlayState extends MusicBeatState {
 			}
 
 			swagCounter += 1;
-			// generateSong('fresh');
 		}, 4);
 	}
 
@@ -1514,41 +1514,12 @@ class PlayState extends MusicBeatState {
 		FlxG.watch.addQuick('beatShit', curBeat);
 		FlxG.watch.addQuick('stepShit', curStep);
 
-		if (curSong.toLowerCase() == 'fresh') {
-			switch (curBeat) {
-				case 16:
-					camZooming = true;
-					gfSpeed = 2;
-				case 48:
-					gfSpeed = 1;
-				case 80:
-					gfSpeed = 2;
-				case 112:
-					gfSpeed = 1;
-			}
-		}
-
-		if (curSong.toLowerCase() == 'bopeebo') {
-			switch (curBeat) {
-				case 128, 129, 130:
-					vocals.volume = 0;
-			}
-		}
-		// better streaming of shit
-
 		if (!inCutscene && !_exiting) {
 			// RESET = Quick Game Over Screen
 			if (controls.RESET) {
 				health = 0;
 				trace('RESET = True');
 			}
-
-			// CHEAT = brandon's a pussy
-			// if (controls.CHEAT)
-			// {
-			// 	health += 1;
-			// 	trace('User is cheating!');
-			// }
 
 			if (health <= 0 && !practiceMode) {
 				boyfriend.stunned = true;
@@ -1754,10 +1725,10 @@ class PlayState extends MusicBeatState {
 				var difficulty:String = '';
 
 				if (storyDifficulty == 0)
-					difficulty = '-easy';
+					difficulty = 'easy';
 
 				if (storyDifficulty == 2)
-					difficulty = '-hard';
+					difficulty = 'hard';
 
 				trace('LOADING NEXT SONG');
 				trace(PlayState.storyPlaylist[0].toLowerCase() + difficulty);

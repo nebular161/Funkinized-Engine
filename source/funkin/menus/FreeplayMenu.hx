@@ -32,6 +32,7 @@ class FreeplayMenu extends MusicBeatState
 	var selector:FlxText;
 	var curSelected:Int = 0;
 	var curDifficulty:Int = 1;
+	var curDifficultyArray:Array<String> = ["Easy", "Normal", "Hard"];
 
 	var bg:FlxSprite;
 	var scoreBG:FlxSprite;
@@ -195,12 +196,9 @@ class FreeplayMenu extends MusicBeatState
 
 		if (accepted)
 		{
-			var poop:String = Highscore.formatSong(songs[curSelected].songName.toLowerCase(), curDifficulty);
-
-			PlayState.SONG = Song.loadFromJson(poop, songs[curSelected].songName.toLowerCase());
+			PlayState.SONG = Song.loadFromJson(curDifficultyArray[curDifficulty], songs[curSelected].songName.toLowerCase());
 			PlayState.isStoryMode = false;
-			PlayState.storyDifficulty = curDifficulty;
-
+			PlayState.storyDifficulty2 = curDifficultyArray[curDifficulty].toLowerCase();
 			PlayState.storyWeek = songs[curSelected].week;
 			trace('CUR WEEK' + PlayState.storyWeek);
 			LoadingState.loadAndSwitchState(new PlayState());

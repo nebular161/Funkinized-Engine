@@ -41,7 +41,8 @@ class StoryMenu extends MusicBeatState {
 		['Ugh', 'Guns', 'Stress']
 	];
 	var curDifficulty:Int = 1;
-
+	var curDifficultyArray = ["Easy", "Normal", "Hard"];
+	
 	public static var weekUnlocked:Array<Bool> = [true, true, true, true, true, true, true, true];
 
 	var weekCharacters:Array<Dynamic> = [
@@ -306,14 +307,13 @@ class StoryMenu extends MusicBeatState {
 
 			switch (curDifficulty) {
 				case 0:
-					diffic = '-easy';
+					diffic = 'easy';
 				case 2:
-					diffic = '-hard';
+					diffic = 'hard';
 			}
 
-			PlayState.storyDifficulty = curDifficulty;
-
-			PlayState.SONG = Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase() + diffic, PlayState.storyPlaylist[0].toLowerCase());
+			PlayState.SONG = Song.loadFromJson(curDifficultyArray[curDifficulty].toLowerCase(), PlayState.storyPlaylist[0].toLowerCase());
+			PlayState.storyDifficulty2 = curDifficultyArray[curDifficulty].toLowerCase();
 			PlayState.storyWeek = curWeek;
 			PlayState.campaignScore = 0;
 			new FlxTimer().start(1, function(tmr:FlxTimer) {

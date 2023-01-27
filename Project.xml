@@ -56,8 +56,6 @@
 	<assets path="plugins/" rename='' if="windows"/>
 	<assets path="dlls/" rename='' if="windows"/>
 
-	<assets path='example_mods' rename='mods' embed='false'/>
-
 	<assets path="CHANGELOG.md" rename='changelog.txt'/>
 
 	<!-- ______________________________ Defines _____________________________ -->

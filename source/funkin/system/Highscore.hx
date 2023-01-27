@@ -10,7 +10,9 @@ class Highscore {
 	private static function get_difficultyString():String {
 		return difficultyArray[PlayState.storyDifficulty];
 	}
-
+	
+	public static var diffArray:Array<String> = ["easy", "normal", "hard"];
+	
 	public static var songScores:Map<String, Int> = new Map();
 
 	public static function saveScore(song:String, score:Int = 0, ?diff:Int = 0):Void {

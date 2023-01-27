@@ -122,11 +122,10 @@ class Paths {
 		return 'assets/core/fonts/$key';
 	}
 
-	inline static public function songjson(key:String,?container:String, ?library:String)
+	inline static public function songjson(key:String, isSong=false, ?library:String)
 		{
-			if(container==null)container=key;
-			return getPath('funkin/songs/$container/$key.json', TEXT, library);
-		}	
+			return getPath('${isSong ? "funkin/songs" : "data"}/$key.json', TEXT, library);
+		}
 
 	inline static public function getSparrowAtlas(key:String, ?library:String) {
 		return FlxAtlasFrames.fromSparrow(image(key, library), file('funkin/images/$key.xml', library));

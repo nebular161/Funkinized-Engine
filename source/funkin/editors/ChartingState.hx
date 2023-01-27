@@ -1,5 +1,6 @@
 package funkin.editors;
 
+import openfl.filesystem.File;
 import flixel.FlxCamera;
 import flixel.addons.ui.FlxUIText;
 import haxe.zip.Writer;
@@ -93,9 +94,9 @@ class ChartingState extends MusicBeatState
 	var _song:SwagSong;
 
 	var typingShit:FlxInputText;
-	/*
-	 * WILL BE THE CURRENT / LAST PLACED NOTE
-	**/
+	var diffStuff:FlxInputText;
+	var currentDiff:String;
+
 	var curSelectedNote:Array<Dynamic>;
 
 	var tempBpm:Float = 0;
@@ -141,6 +142,7 @@ class ChartingState extends MusicBeatState
 					validScore: false
 				};
 			}
+			currentDiff = PlayState.storyDifficulty2;
 
 			FlxG.mouse.visible = true;
 			FlxG.save.bind('everlast-engine', 'NebulaZone');
@@ -219,6 +221,8 @@ class ChartingState extends MusicBeatState
 	{
 		var UI_songTitle = new FlxUIInputText(10, 10, 70, _song.song, 8);
 		typingShit = UI_songTitle;
+		var UI_difficultyTitle = new FlxUIInputText(10, 25, 70, PlayState.storyDifficulty2);
+		diffStuff = UI_difficultyTitle;
 
 		var check_voices = new FlxUICheckBox(10, 25, null, null, "Has voice track", 100);
 		check_voices.checked = _song.needsVoices;
@@ -291,7 +295,6 @@ class ChartingState extends MusicBeatState
 		var stepperSongVol:FlxUINumericStepper = new FlxUINumericStepper(10, 110, 0.1, 1, 0.1, 10, 1);
 		stepperSongVol.value = FlxG.sound.music.volume;
 		stepperSongVol.name = 'song_instvol';
-
 
 		var hitsounds = new FlxUICheckBox(10, stepperSongVol.y + 60, null, null, "Play hitsounds", 100);
 		hitsounds.checked = false;
@@ -661,6 +664,7 @@ class ChartingState extends MusicBeatState
 
 		Conductor.songPosition = FlxG.sound.music.time;
 		_song.song = typingShit.text;
+		currentDiff = diffStuff.text;
 
 		var left = FlxG.keys.justPressed.ONE;
 		var down = FlxG.keys.justPressed.TWO;
@@ -1322,10 +1326,11 @@ class ChartingState extends MusicBeatState
 	}
 
 	function loadJson(song:String):Void
-	{
-		PlayState.SONG = Song.loadFromJson(song.toLowerCase(), song.toLowerCase());
-		LoadingState.loadAndSwitchState(new ChartingState());
-	}
+		{
+			PlayState.SONG = Song.loadFromJson(currentDiff, song.toLowerCase());
+			PlayState.storyDifficulty2 = currentDiff.toLowerCase();
+			LoadingState.loadAndSwitchState(new ChartingState());
+		}
 
 	function loadAutosave():Void
 	{
@@ -1335,6 +1340,7 @@ class ChartingState extends MusicBeatState
 
 	function autosaveSong():Void
 	{
+		_song.diff = currentDiff;
 		FlxG.save.data.autosave = Json.stringify({
 			"song": _song
 		});
@@ -1355,7 +1361,7 @@ class ChartingState extends MusicBeatState
 			_file.addEventListener(Event.COMPLETE, onSaveComplete);
 			_file.addEventListener(Event.CANCEL, onSaveCancel);
 			_file.addEventListener(IOErrorEvent.IO_ERROR, onSaveError);
-			_file.save(data.trim(), _song.song.toLowerCase() + ".json");
+			_file.save(data.trim(), 'assets/funkin/songs/${_song.song.toLowerCase()}/charts/${currentDiff.toLowerCase()}.json');
 		}
 	}
 
