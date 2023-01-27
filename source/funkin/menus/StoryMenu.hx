@@ -306,9 +306,9 @@ class StoryMenu extends MusicBeatState {
 
 			switch (curDifficulty) {
 				case 0:
-					diffic = 'easy';
+					diffic = '-easy';
 				case 2:
-					diffic = 'hard';
+					diffic = '-hard';
 			}
 
 			PlayState.storyDifficulty = curDifficulty;

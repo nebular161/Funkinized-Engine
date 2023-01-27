@@ -4,6 +4,9 @@ import funkin.game.Section.SwagSection;
 import haxe.Json;
 import haxe.format.JsonParser;
 import lime.utils.Assets;
+#if sys
+import sys.io.File;
+#end
 
 using StringTools;
 
@@ -42,21 +45,20 @@ class Song
 		this.bpm = bpm;
 	}
 
-	public static function loadFromJson(jsonInput:String, ?folder:String):SwagSong
-		{
-			var rawJson = Assets.getText(Paths.songjson(folder.toLowerCase() + '/charts/' + jsonInput.toLowerCase(), true)).trim();
-	
-			while (!rawJson.endsWith("}"))
-			{
-				rawJson = rawJson.substr(0, rawJson.length - 1);
-				// LOL GOING THROUGH THE BULLSHIT TO CLEAN IDK WHATS STRANGE
-			}
-	
-			return parseJSONshit(rawJson);
+	public static function loadFromJson(jsonInput:String, ?folder:String):SwagSong {
+		var rawJson = Assets.getText(Paths.json(folder.toLowerCase() + '/' + jsonInput.toLowerCase())).trim();
+
+		while (!rawJson.endsWith('}')) {
+			rawJson = rawJson.substr(0, rawJson.length - 1);
 		}
-	
-		public static function parseJSONshit(rawJson:String):SwagSong
-		{
-			return cast Json.parse(rawJson).song;
-		}
+
+
+		return parseJSONshit(rawJson);
 	}
+
+	public static function parseJSONshit(rawJson:String):SwagSong {
+		var swagShit:SwagSong = cast Json.parse(rawJson).song;
+		swagShit.validScore = true;
+		return swagShit;
+	}
+}
