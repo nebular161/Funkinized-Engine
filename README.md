@@ -1,5 +1,4 @@
 # Everlast Engine
-<<<<<<< HEAD
 A Friday Night Funkin' engine that makes using source code feel much more easier and will come with good ol' Hscript support! The engine also has organized assets making it easy to navigate them.
 
 # Features:
@@ -7,9 +6,7 @@ A Friday Night Funkin' engine that makes using source code feel much more easier
 - Hscript support
 - Softcoded weeks
 - Gamejolt achievements
-=======
-A Friday Night Funkin' engine that makes using source code feel much more easier and will come with good ol' Hscript support!
->>>>>>> 3cdca33bd7fa5cd6c4e78ce34d39ae1ec14308c9
+
 # Building
 To get started, you need the following programs:
 - Haxe 4.2.5
