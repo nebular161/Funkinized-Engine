@@ -77,8 +77,8 @@ class FreeplayMenu extends MusicBeatState
 		if (StoryMenu.weekUnlocked[6])
 			addWeek(['Senpai', 'Roses', 'Thorns'], 6, ['senpai', 'senpai-angry', 'spirit']);
 
-		if (StoryMenu.weekUnlocked[7])
-			addWeek(['Ugh', 'Guns', 'Stress'], 7, ['tankman']);
+		/*if (StoryMenu.weekUnlocked[7])
+			addWeek(['Ugh', 'Guns', 'Stress'], 7, ['tankman']);*/
 		
 		songs.push(new SongMetadata("Test", 8, 'bf-pixel'));
 

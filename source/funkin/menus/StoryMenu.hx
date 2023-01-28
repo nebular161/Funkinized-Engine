@@ -37,13 +37,13 @@ class StoryMenu extends MusicBeatState {
 		['Pico', 'Philly', 'Blammed'],
 		['Satin-Panties', 'High', 'Milf'],
 		['Cocoa', 'Eggnog', 'Winter-Horrorland'],
-		['Senpai', 'Roses', 'Thorns'],
-		['Ugh', 'Guns', 'Stress']
+		['Senpai', 'Roses', 'Thorns']
+		//['Ugh', 'Guns', 'Stress']
 	];
 	var curDifficulty:Int = 1;
 	var curDifficultyArray = ["Easy", "Normal", "Hard"];
 	
-	public static var weekUnlocked:Array<Bool> = [true, true, true, true, true, true, true, true];
+	public static var weekUnlocked:Array<Bool> = [true, true, true, true, true, true, true /*true*/];
 
 	var weekCharacters:Array<Dynamic> = [
 		['dad', 'bf', 'gf'],
@@ -52,8 +52,8 @@ class StoryMenu extends MusicBeatState {
 		['pico', 'bf', 'gf'],
 		['mom', 'bf', 'gf'],
 		['parents-christmas', 'bf', 'gf'],
-		['senpai', 'bf', 'gf'],
-		['tankman', 'bf', 'gf']
+		['senpai', 'bf', 'gf']
+		//['tankman', 'bf', 'gf']
 	];
 
 	var weekNames:Array<String> = [
