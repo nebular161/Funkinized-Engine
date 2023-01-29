@@ -48,9 +48,6 @@
 	<assets path="assets/funkin/songs"    library="songs"    exclude="*.ogg" if="web"/>
 	<assets path="assets/funkin/songs"    library="songs"    exclude="*.mp3|*.mp4" unless="web"/>
 	
-	<assets path="plugins/" rename='' if="windows"/>
-	<assets path="dlls/" rename='' if="windows"/>
-
 	<assets path="CHANGELOG.md" rename='changelog.txt'/>
 
 	<!-- ______________________________ Defines _____________________________ -->
