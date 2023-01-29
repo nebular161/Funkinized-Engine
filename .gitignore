@@ -1,2 +1,10 @@
+#VS Code
 export/
 .vscode/
+
+#FNF shit
+batchFiles/build_html-debug.bat
+batchFiles/build_html.bat
+batchFiles/build_x32.bat
+batchFiles/build_x64.bat
+batchFiles/test_x64-debug.bat
