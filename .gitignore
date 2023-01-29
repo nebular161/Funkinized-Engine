@@ -8,3 +8,6 @@ batchFiles/build_html.bat
 batchFiles/build_x32.bat
 batchFiles/build_x64.bat
 batchFiles/test_x64-debug.bat
+
+#Github
+.github/
