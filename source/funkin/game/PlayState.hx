@@ -46,7 +46,6 @@ import funkin.game.Song.SwagSong;
 import funkin.menus.StoryMenu;
 import funkin.menus.FreeplayMenu;
 import funkin.menus.PauseMenu;
-import funkin.cutscenes.MP4Handler;
 import funkin.cutscenes.VideoState;
 import funkin.shaders.BuildingShaders;
 import funkin.shaders.ColorSwap;
@@ -501,7 +500,7 @@ class PlayState extends MusicBeatState {
 
 					if (SONG.song.toLowerCase() == 'roses') {
 						bgGirls.getScared();
-					}
+					}		
 
 					bgGirls.setGraphicSize(Std.int(bgGirls.width * daPixelZoom));
 					bgGirls.updateHitbox();
@@ -855,7 +854,7 @@ class PlayState extends MusicBeatState {
 		if (isStoryMode && !seenCutscene) {
 			seenCutscene = true;
 
-			var video:MP4Handler = new MP4Handler();
+			//var video:MP4Handler = new MP4Handler();
 
 			switch (curSong.toLowerCase()) {
 				case 'winter-horrorland':
@@ -887,12 +886,12 @@ class PlayState extends MusicBeatState {
 					if (curSong.toLowerCase() == 'roses')
 						FlxG.sound.play(Paths.sound('ANGRY'));
 					schoolIntro(newDialogueBox(dialogue, startCountdown, camHUD));
-				case 'ugh':
+				/*case 'ugh':
 					video.playMP4(Paths.video('ughCutscene'), new PlayState());
 				case 'guns':
 					video.playMP4(Paths.video('gunsCutscene'), new PlayState());
 				case 'stress':
-					video.playMP4(Paths.video('stressCutscene'), new PlayState());
+					video.playMP4(Paths.video('stressCutscene'), new PlayState());*/
 				default:
 					startCountdown();
 			}

@@ -36,7 +36,7 @@ class Options extends Page
 		createPrefItem('flashing menu', 'flashing-menu', true);
 		createPrefItem('Note Splashes', 'notesplash', true);
 		createPrefItem('Ghost Tapping', 'ghost-tap', true);
-		createPrefItem('FPS Counter', 'fps-counter', true);
+		createPrefItem('Botplay', 'botplay', false);
 		createPrefItem('Auto Pause', 'auto-pause', false);
 		createPrefItem('Glow Opponent Strums', 'glow-strums', false);
 		camFollow = new FlxObject(FlxG.width / 2, 0, 140, 70);
@@ -97,13 +97,13 @@ class Options extends Page
 			preferenceCheck('flashing-menu', true);
 		}
 
-		if(FlxG.save.data.fpsCounter != null)
+		if(FlxG.save.data.botplay != null)
 		{
-			preferenceCheck('fps-counter', FlxG.save.data.fpsCounter);
+			preferenceCheck('botplay', FlxG.save.data.botplay);
 		}
 		else
 		{
-			preferenceCheck('fps-counter', true);
+			preferenceCheck('botplay', false);
 		}
 
 		if(FlxG.save.data.autoPause != null)
@@ -198,7 +198,7 @@ class Options extends Page
 		FlxG.save.data.glowStrums = getPref('glow-strums');
 		FlxG.save.data.notesplash = getPref('notesplash');
 		FlxG.save.data.glowTap = getPref('ghost-tap');
-		FlxG.save.data.fpsCounter = getPref('fps-counter');
+		FlxG.save.data.fpsCounter = getPref('botplay');
 		FlxG.save.data.autoPause = getPref('auto-pause');
 
 		FlxG.save.flush();

@@ -39,19 +39,14 @@
 	
 	<section if="PRELOAD_ALL">
 		<library name="songs"    preload="true" />
-		<library name="videos"   preload="true" />
 	</section>
 	
 	<section if="NO_PRELOAD_ALL">
 		<library name="songs"    preload="false" />
-		<library name="videos"   preload="false" />
 	</section>
 	
 	<assets path="assets/funkin/songs"    library="songs"    exclude="*.ogg" if="web"/>
 	<assets path="assets/funkin/songs"    library="songs"    exclude="*.mp3|*.mp4" unless="web"/>
-	
-	<assets path="assets/funkin/videos" exclude="*.mp3" if="web"/>
-	<assets path="assets/funkin/videos" exclude="*.ogg" unless="web"/>
 	
 	<assets path="plugins/" rename='' if="windows"/>
 	<assets path="dlls/" rename='' if="windows"/>
