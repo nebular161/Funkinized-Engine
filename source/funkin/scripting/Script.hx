@@ -1,8 +1,8 @@
-package funkin.hscript;
+package funkin.scripting;
 #if FEATURE_HSCRIPT
 
 import flixel.FlxBasic;
-import funkin.hscript.Interp;
+import funkin.scripting.Interp;
 import openfl.Lib;
 
 /**

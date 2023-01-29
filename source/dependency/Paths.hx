@@ -85,7 +85,7 @@ class Paths {
 
 	inline static public function video(key:String, ?library:String)
 		{
-			return getPath('assets/funkin/videos/$key.mp4', TEXT, library);
+			return getPath('funkin/videos/$key.mp4', TEXT, library);
 		}
 	
 	inline static public function soundRandom(key:String, min:Int, max:Int, ?library:String) {

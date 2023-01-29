@@ -19,10 +19,10 @@
  * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
  * DEALINGS IN THE SOFTWARE.
  */
-package funkin.hscript;
-import funkin.hscript.Expr.Error;
+package funkin.scripting;
+import funkin.scripting.Expr.Error;
 #if hscriptPos
-import funkin.hscript.Expr.ErrorDef;
+import funkin.scripting.Expr.ErrorDef;
 #end
 import haxe.macro.Expr;
 

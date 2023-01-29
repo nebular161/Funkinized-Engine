@@ -1,5 +1,5 @@
-package funkin.hscript;
-import funkin.hscript.Expr;
+package funkin.scripting;
+import funkin.scripting.Expr;
 
 /**
 	This is a special type that can be used in API.

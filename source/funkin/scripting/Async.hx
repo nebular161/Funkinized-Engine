@@ -20,7 +20,7 @@
  * DEALINGS IN THE SOFTWARE.
  */
 package funkin.hscript;
-import funkin.hscript.Expr;
+import funkin.scripting.Expr;
 
 
 enum VarMode {

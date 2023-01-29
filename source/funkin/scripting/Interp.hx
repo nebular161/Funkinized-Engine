@@ -19,12 +19,12 @@
  * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
  * DEALINGS IN THE SOFTWARE.
  */
-package funkin.hscript;
+package funkin.scripting;
 
 import haxe.EnumTools;
 import haxe.display.Protocol.InitializeResult;
 import haxe.PosInfos;
-import funkin.hscript.Expr;
+import funkin.scripting.Expr;
 import haxe.Constraints.IMap;
 
 using StringTools;

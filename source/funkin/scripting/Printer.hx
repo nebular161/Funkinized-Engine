@@ -19,8 +19,8 @@
  * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
  * DEALINGS IN THE SOFTWARE.
  */
-package funkin.hscript;
-import funkin.hscript.Expr;
+package funkin.scripting;
+import funkin.scripting.Expr;
 
 class Printer {
 

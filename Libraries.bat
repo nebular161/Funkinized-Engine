@@ -6,6 +6,7 @@ haxelib install flixel-addons
 haxelib install hscript
 haxelib install away3d
 haxelib install hxCodec
+haxelib install hxcpp-debug-server
 haxelib install markdown
 haxelib install openfl
 haxelib git flxanimate https://github.com/Dot-Stuff/flxanimate/

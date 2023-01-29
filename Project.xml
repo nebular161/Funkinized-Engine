@@ -74,6 +74,8 @@
 
 	<haxelib name="hscript-improved" />
 	
+	<haxelib name="hxcpp-debug-server" />
+
 	<haxelib name="away3d" />
 
 	<haxelib name="linc_discord-rpc" if="desktop" />

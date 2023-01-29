@@ -4,19 +4,19 @@ A Friday Night Funkin' engine that makes using source code feel much more easier
 # Features:
 - Organized assets and source code
 - Hscript support
-- Softcoded weeks
+- Higher framerate
 - Gamejolt achievements
 
 # Building
 To get started, you need the following programs:
 - Haxe 4.2.5
 - VS Community 2019
-(OPTIONAL) - VS Code
+- VS Code (Optional)
 
 Now we need to install some libraries, open up the 'Libraries' batch (.bat) file to make it install the required files.
 
 Then we need to install some gits:
-Git: https://git-scm.com/download
+- Git https://git-scm.com/download (For the git setup, leave everything to its default settings)
 - haxelib git faxe https://github.com/uhrobots/faxe
 - haxelib git linc_luajit https://github.com/nebulazorua/linc_luajit.git
 - haxelib git hxvm-luajit https://github.com/nebulazorua/hxvm-luajit
@@ -35,6 +35,6 @@ Finally we're going to install only 2 components in VS Community 2019:
 # Credits
 - NebulaZone: Creator, Programmer
 - ThatOneFoxHX: Programmer
-- AlexShadow: Additional Programmer
+- AlexShadow: Additional Programming Help
 - Yoshubs: Inspiration
 - YoshiCrafter: Inspiration, Hscript improved git
