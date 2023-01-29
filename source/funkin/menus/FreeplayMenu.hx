@@ -161,7 +161,7 @@ class FreeplayMenu extends MusicBeatState
 		lerpScore = CoolUtil.coolLerp(lerpScore, intendedScore, 0.4);
 		bg.color = FlxColor.interpolate(bg.color, coolColors[songs[curSelected].week % coolColors.length], CoolUtil.camLerpShit(0.045));
 
-		scoreText.text = "PERSONAL BEST:" + Math.round(lerpScore);
+		scoreText.text = "YOUR SCORE:" + Math.round(lerpScore);
 		positionHighscore();
 
 		var upP = controls.UI_UP_P;
