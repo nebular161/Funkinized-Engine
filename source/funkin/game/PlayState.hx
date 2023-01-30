@@ -222,11 +222,11 @@ class PlayState extends MusicBeatState {
 
 		switch (SONG.song.toLowerCase()) {
 			case 'senpai':
-				dialogue = Paths.getTextFileArray(Paths.txt('dialouges/senpaiDialogue'));
+				dialogue = Paths.getTextFileArray(Paths.txt('meta/dialouges/senpaiDialogue'));
 			case 'roses':
-				dialogue = Paths.getTextFileArray(Paths.txt('dialouges/rosesDialogue'));
+				dialogue = Paths.getTextFileArray(Paths.txt('meta/dialouges/rosesDialogue'));
 			case 'thorns':
-				dialogue = Paths.getTextFileArray(Paths.txt('dialouges/thornsDialogue'));
+				dialogue = Paths.getTextFileArray(Paths.txt('meta/dialouges/thornsDialogue'));
 		}
 
 		#if discord_rpc
