@@ -26,8 +26,8 @@ class PauseMenu extends MusicBeatSubstate {
 	var pauseOG:Array<String> = [
 		'Resume',
 		'Restart Song',
-		'Change Difficulty',
-		'Toggle Practice Mode',
+		//'Change Difficulty',
+		'Practice Mode',
 		'Chart Editor',
 		'Exit to menu'
 	];
@@ -150,7 +150,7 @@ class PauseMenu extends MusicBeatSubstate {
 				/*case 'Change Difficulty':
 					menuItems = curDifficultyArray;
 					regenMenu();*/
-				case 'Toggle Practice Mode':
+				case 'Practice Mode':
 					PlayState.practiceMode = !PlayState.practiceMode;
 					practiceText.visible = PlayState.practiceMode;
 				case 'Chart Editor':

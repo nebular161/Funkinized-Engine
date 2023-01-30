@@ -276,8 +276,8 @@ class Parser {
 		if( e == null ) return false;
 		return switch( expr(e) ) {
 		case EBlock(_), EObject(_), ESwitch(_): true;
-		case EFunction(_,e,_,_): isBlock(e);
-		case EVar(_, t, e): e != null ? isBlock(e) : t != null ? t.match(CTAnon(_)) : false;
+		case EFunction(_,e,_,_,_,_): isBlock(e);
+		case EVar(_, t, e, _,_): e != null ? isBlock(e) : t != null ? t.match(CTAnon(_)) : false;
 		case EIf(_,e1,e2): if( e2 != null ) isBlock(e2) else isBlock(e1);
 		case EBinop(_,_,e): isBlock(e);
 		case EUnop(_,prefix,e): !prefix && isBlock(e);
@@ -581,6 +581,8 @@ class Parser {
 		}
 	}
 
+	var nextIsStatic:Bool = false;
+	var nextIsPublic:Bool = false;
 	function parseStructure(id, ?oldPos:Int) {
 		#if hscriptPos
 		var p1 = tokenMin;
@@ -605,6 +607,48 @@ class Parser {
 				if( semic ) push(TSemicolon);
 			}
 			mk(EIf(cond,e1,e2),p1,(e2 == null) ? tokenMax : pmax(e2));
+		case "static":
+			nextIsStatic = true;
+			var nextToken = token();
+			switch(nextToken) {
+				case TId("public"):
+					var str = parseStructure("public"); // public attribute
+					nextIsStatic = false;
+					str;
+				case TId("function"):
+					var str = parseStructure("function"); // static function
+					nextIsStatic = false;
+					str;
+				case TId("var"):
+					var str = parseStructure("var"); // static var
+					nextIsStatic = false;
+					str;
+				default:
+					unexpected(TId("static"));
+					nextIsStatic = false;
+					null;
+			}
+		case "public":
+			nextIsPublic = true;
+			var nextToken = token();
+			switch(nextToken) {
+				case TId("static"):
+					var str = parseStructure("static"); // static attribute
+					nextIsPublic = false;
+					str;
+				case TId("function"):
+					var str = parseStructure("function"); // public function
+					nextIsPublic = false;
+					str;
+				case TId("var"):
+					var str = parseStructure("var"); // public var
+					nextIsPublic = false;
+					str;
+				default:
+					unexpected(TId("static"));
+					nextIsPublic = false;
+					null;
+			}
 		case "var":
 			var ident = getIdent();
 			var tk = token();
@@ -618,7 +662,7 @@ class Parser {
 				e = parseExpr();
 			else
 				push(tk);
-			mk(EVar(ident,t,e),p1,(e == null) ? tokenMax : pmax(e));
+			mk(EVar(ident,t,e,nextIsPublic,nextIsStatic),p1,(e == null) ? tokenMax : pmax(e));
 		case "while":
 			var econd = parseExpr();
 			var e = parseExpr();
@@ -655,7 +699,7 @@ class Parser {
 			default: push(tk);
 			}
 			var inf = parseFunctionDecl();
-			mk(EFunction(inf.args, inf.body, name, inf.ret),p1,pmax(inf.body));
+			mk(EFunction(inf.args, inf.body, name, inf.ret,nextIsPublic,nextIsStatic),p1,pmax(inf.body));
 		case "import":
 			var oldReadPos = readPos;
 			var tk = token();

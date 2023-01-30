@@ -19,8 +19,14 @@
  * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
  * DEALINGS IN THE SOFTWARE.
  */
+
+/*
+ * YoshiCrafter Engine fixes:
+ * - Added Error handler
+ */
 package funkin.scripting;
 
+import haxe.iterators.StringKeyValueIteratorUnicode;
 import haxe.EnumTools;
 import haxe.display.Protocol.InitializeResult;
 import haxe.PosInfos;
@@ -38,28 +44,36 @@ private enum Stop {
 class Interp {
 	public var scriptObject(default, set):Dynamic;
 	public function set_scriptObject(v:Dynamic) {
-		__instanceFields = Type.getInstanceFields(Type.getClass(v));
+		__instanceFields = (v == null) ? [] : Type.getInstanceFields(Type.getClass(v));
 		return scriptObject = v;
 	}
 	public var errorHandler:Error->Void;
 	#if haxe3
 	public var variables:Map<String, Dynamic>;
+	public var publicVariables:Map<String, Dynamic>;
+	public var staticVariables:Map<String, Dynamic>;
 
 	var locals:Map<String, {r:Dynamic, depth:Int}>;
 	var binops:Map<String, Expr->Expr->Dynamic>;
 	#else
 	public var variables:Hash<Dynamic>;
+	public var publicVariables:Hash<Dynamic>;
+	public var staticVariables:Hash<Dynamic>;
 
 	var locals:Hash<{r:Dynamic, depth:Int}>;
 	var binops:Hash<Expr->Expr->Dynamic>;
 	#end
 
-	var depth:Int;
+	var depth:Int = 0;
 	var inTry:Bool;
 	var declared:Array<{n:String, old:{r:Dynamic, depth:Int}, depth:Int}>;
 	var returnValue:Dynamic;
 
 	public var importEnabled:Bool = true;
+
+	public var allowStaticVariables:Bool = false;
+	public var allowPublicVariables:Bool = false;
+
 	public var importBlocklist:Array<String> = [
 		// "flixel.FlxG"
 	];
@@ -83,8 +97,12 @@ class Interp {
 	private function resetVariables() {
 		#if haxe3
 		variables = new Map<String, Dynamic>();
+		publicVariables = new Map<String, Dynamic>();
+		staticVariables = new Map<String, Dynamic>();
 		#else
 		variables = new Hash();
+		publicVariables = new Hash();
+		staticVariables = new Hash();
 		#end
 
 		variables.set("null", null);
@@ -154,7 +172,12 @@ class Interp {
 	}
 
 	function setVar(name:String, v:Dynamic) {
-		variables.set(name, v);
+		if (allowStaticVariables && staticVariables.exists(name))
+			staticVariables.set(name, v);
+		else if (allowPublicVariables && publicVariables.exists(name))
+			publicVariables.set(name, v);
+		else
+			variables.set(name, v);
 	}
 
 	function assign(e1:Expr, e2:Expr):Dynamic {
@@ -163,7 +186,7 @@ class Interp {
 			case EIdent(id):
 				var l = locals.get(id);
 				if (l == null) {
-					if (!variables.exists(id) && scriptObject != null) {
+					if (!variables.exists(id) && !staticVariables.exists(id) && !publicVariables.exists(id) && scriptObject != null) {
 						if (Type.typeof(scriptObject) == TObject) {
 							Reflect.setField(scriptObject, id, v);
 						} else {
@@ -312,20 +335,31 @@ class Interp {
 
 	function exprReturn(e):Dynamic {
 		try {
-			return expr(e);
-		} catch (e:Stop) {
-			switch (e) {
-				case SBreak:
-					throw "Invalid break";
-				case SContinue:
-					throw "Invalid continue";
-				case SReturn:
-					var v = returnValue;
-					returnValue = null;
-					return v;
+			try {
+				return expr(e);
+			} catch (e:Stop) {
+				switch (e) {
+					case SBreak:
+						throw "Invalid break";
+					case SContinue:
+						throw "Invalid continue";
+					case SReturn:
+						var v = returnValue;
+						returnValue = null;
+						return v;
+				}
+			} catch(e) {
+				error(ECustom('${e.toString()}'));
+				return null;
 			}
+		} catch(e:Error) {
+			if (errorHandler != null)
+				errorHandler(e);
+			else 
+				throw e;
+			return null;
 		} catch(e) {
-			error(ECustom('${e.toString()}'));
+			trace(e);
 		}
 		return null;
 	}
@@ -351,9 +385,7 @@ class Interp {
 	inline function error(e:#if hscriptPos ErrorDef #else Error #end, rethrow = false):Dynamic {
 		#if hscriptPos var e = new Error(e, curExpr.pmin, curExpr.pmax, curExpr.origin, curExpr.line); #end
 
-		if (errorHandler != null)
-			errorHandler(e);
-		else if (rethrow) {
+		if (rethrow) {
 			this.rethrow(e);
 		} else {
 			throw e;
@@ -373,9 +405,16 @@ class Interp {
 		var l = locals.get(id);
 		if (l != null)
 			return l.r;
-		var v = variables.get(id);
-		if (v == null && !variables.exists(id)) {
 
+		var v = variables.get(id);
+		//  !publicVariables.exists(id)
+		if (staticVariables.exists(id)) {
+			return staticVariables.get(id);
+		} else if (publicVariables.exists(id)) {
+			return publicVariables.get(id);
+		} else if (variables.exists(id)) {
+			return variables.get(id);
+		} else {
 			if (scriptObject != null) {
 				// search in object
 				if (id == "this") {
@@ -412,6 +451,9 @@ class Interp {
 				if (importBlocklist.contains(realClassName))
 					return null; 
 				var cl = Type.resolveClass(realClassName);
+				if (cl == null)
+					cl = Type.resolveClass('${realClassName}_HSC');
+
 				var en = Type.resolveEnum(realClassName);
 
 				if (cl == null && en == null) {
@@ -443,10 +485,10 @@ class Interp {
 				}
 			case EIdent(id):
 				return resolve(id);
-			case EVar(n, _, e):
+			case EVar(n, _, e, isPublic, isStatic):
 				declared.push({n: n, old: locals.get(n), depth: depth});
 				locals.set(n, {r: (e == null) ? null : expr(e), depth: depth});
-				if (depth == 0) variables.set(n, locals[n].r);
+				if (depth == 0) (isStatic == true ? staticVariables : (isPublic ? publicVariables : variables)).set(n, locals[n].r);
 				return null;
 			case EParent(e):
 				return expr(e);
@@ -515,7 +557,7 @@ class Interp {
 			case EReturn(e):
 				returnValue = e == null ? null : expr(e);
 				throw SReturn;
-			case EFunction(params, fexpr, name, _):
+			case EFunction(params, fexpr, name, _, isPublic, isStatic):
 				var __capturedLocals = duplicate(locals);
 				var capturedLocals:Map<String, {r:Dynamic, depth:Int}> = [];
 				for(k=>e in __capturedLocals)
@@ -582,7 +624,7 @@ class Interp {
 				if (name != null) {
 					if (depth == 0) {
 						// global function
-						variables.set(name, f);
+						((isStatic && allowStaticVariables) ? staticVariables : ((isPublic && allowPublicVariables) ? publicVariables : variables)).set(name, f);
 					} else {
 						// function-in-function is a local function
 						declared.push({n: name, old: locals.get(name), depth: depth});
@@ -813,6 +855,9 @@ class Interp {
 			};
 			if (getRedirects.exists(cl = Type.getClassName(Type.getClass(o))) && (redirect = getRedirects[cl]) != null) {
 				return redirect(o, f);
+			} else if (o is IHScriptCustomBehaviour) {
+				var obj = cast(o, IHScriptCustomBehaviour);
+				return obj.hget(f);
 			} else {
 				var v = null;
 				if ((v = Reflect.getProperty(o, f)) == null)
@@ -841,6 +886,10 @@ class Interp {
 		};
 		if (setRedirects.exists(cl = Type.getClassName(Type.getClass(o))) && (redirect = setRedirects[cl]) != null)
 			return redirect(o, f, v);
+		else if (o is IHScriptCustomBehaviour) {
+			var obj = cast(o, IHScriptCustomBehaviour);
+			return obj.hset(f, v);
+		} 
 
 		Reflect.setProperty(o, f, v);
 		return v;

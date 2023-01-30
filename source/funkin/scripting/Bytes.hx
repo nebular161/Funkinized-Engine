@@ -19,7 +19,7 @@
  * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
  * DEALINGS IN THE SOFTWARE.
  */
-package funkin.hscript;
+package funkin.scripting;
 import funkin.scripting.Expr;
 
 class Bytes {
@@ -140,6 +140,8 @@ class Bytes {
 		#end
 		bout.addByte(Type.enumIndex(e));
 		switch( e ) {
+		case EImport(c):
+			// TODO
 		case EConst(c):
 			doEncodeConst(c);
 		case EIdent(v):
