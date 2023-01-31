@@ -2,11 +2,11 @@
 <!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
 <!-- $TexturePacker:SmartUpdate:65f8b369fe047f1f07efe55542af3be4:a982ce4311924b2e50e3ff38c3c3d10b:0e731364ff75c92b1e02fb58bef3ffb0$ -->
 <TextureAtlas imagePath="noteSplashes.png" width="348" height="1920">
-    <SubTexture name="note splash blue.png0001" x="0" y="0" width="174" height="192"/>
-    <SubTexture name="note splash blue.png0002" x="174" y="0" width="174" height="192"/>
-    <SubTexture name="note splash blue.png0003" x="0" y="192" width="174" height="192"/>
-    <SubTexture name="note splash blue.png0004" x="174" y="192" width="174" height="192"/>
-    <SubTexture name="note splash blue.png0005" x="0" y="384" width="174" height="192"/>
+    <SubTexture name="note splash blue0001" x="0" y="0" width="174" height="192"/>
+    <SubTexture name="note splash blue0002" x="174" y="0" width="174" height="192"/>
+    <SubTexture name="note splash blue0003" x="0" y="192" width="174" height="192"/>
+    <SubTexture name="note splash blue0004" x="174" y="192" width="174" height="192"/>
+    <SubTexture name="note splash blue0005" x="0" y="384" width="174" height="192"/>
     <SubTexture name="note splash green0001" x="174" y="384" width="174" height="192"/>
     <SubTexture name="note splash green0002" x="0" y="576" width="174" height="192"/>
     <SubTexture name="note splash green0003" x="174" y="576" width="174" height="192"/>
