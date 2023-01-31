@@ -12,16 +12,9 @@ import flixel.math.FlxMath;
 import flixel.text.FlxText;
 import flixel.util.FlxColor;
 import lime.utils.Assets;
-import funkin.system.MusicBeatState;
-import funkin.menus.StoryMenu;
-import funkin.system.Highscore;
-import funkin.system.MathFunctions;
-import funkin.menus.MainMenu;
-import funkin.system.LoadingState;
-import funkin.game.HealthIcon;
-import funkin.game.PlayState;
-import funkin.game.CoolUtil;
-import funkin.game.Song;
+import funkin.menus.*;
+import funkin.system.*;
+import funkin.game.*;
 
 using StringTools;
 

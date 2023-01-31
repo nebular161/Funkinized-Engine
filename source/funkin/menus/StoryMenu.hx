@@ -18,14 +18,10 @@ import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
 import lime.net.curl.CURLCode;
 import haxe.xml.Access;
-import funkin.system.MusicBeatState;
+import funkin.system.*;
 import funkin.menus.MenuItem;
 import funkin.menus.MenuCharacter;
-import funkin.game.PlayState;
-import funkin.system.LoadingState;
-import funkin.system.Highscore;
-import funkin.system.MathFunctions;
-import funkin.game.Song;
+import funkin.game.*;
 import flixel.graphics.FlxGraphic;
 class StoryMenu extends MusicBeatState {
 	var scoreText:FlxText;

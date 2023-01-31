@@ -22,11 +22,8 @@ import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
 import lime.app.Application;
-import funkin.system.MusicBeatState;
-import funkin.menus.StoryMenu;
-import funkin.menus.FreeplayMenu;
-import funkin.system.MathFunctions;
-
+import funkin.system.*;
+import funkin.menus.*;
 class MainMenu extends MusicBeatState {
 	var menuItems:MainMenuList;
 

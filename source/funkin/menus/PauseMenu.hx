@@ -12,14 +12,10 @@ import flixel.text.FlxText;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
-import funkin.system.MusicBeatSubstate;
-import funkin.system.Highscore;
-import funkin.menus.StoryMenu;
-import funkin.menus.FreeplayMenu;
+import funkin.system.*;
+import funkin.menus.*;
 import funkin.editors.ChartingState;
-import funkin.game.PlayState;
-import funkin.game.Song;
-
+import funkin.game.*;
 class PauseMenu extends MusicBeatSubstate {
 	var grpMenuShit:FlxTypedGroup<Alphabet>;
 
