@@ -5,10 +5,11 @@ import flixel.FlxG;
 import flixel.FlxGame;
 import flixel.FlxState;
 import flixel.util.FlxColor;
-import sys.io.Process;
+#if sys
 import sys.io.File;
-import flixel.system.ui.FlxSoundTray;
 import sys.FileSystem;
+#end
+import flixel.system.ui.FlxSoundTray;
 import haxe.Exception;
 import openfl.Assets;
 import openfl.Lib;
@@ -23,7 +24,6 @@ import openfl.text.TextFormat;
 import funkin.config.Options;
 import funkin.game.CoolUtil;
 import funkin.menus.TitleState;
-
 class Main extends Sprite
 {
 	var gameWidth:Int = 1280; // Width of the game in pixels (might be less / more in actual pixels depending on your zoom).
@@ -37,6 +37,7 @@ class Main extends Sprite
 	public static var watermarks = true;
 	public static var fpsVar:FPS;
 	public static var fpsCounter:FPS;
+	static public var buildNumber:Int;
 
 	// You can pretty much ignore everything from here on - your code should go in your states.
 
@@ -64,7 +65,7 @@ class Main extends Sprite
 			if (hasEventListener(Event.ADDED_TO_STAGE))
 				removeEventListener(Event.ADDED_TO_STAGE, init);
 	
-			FlxG.save.bind('fizzy-engine', CoolUtil.getSavePath());
+			FlxG.save.bind('everlast-engine', CoolUtil.getSavePath());
 	
 			#if (flixel < "5.0.0")
 			var stageWidth:Int = Lib.current.stage.stageWidth;

@@ -54,6 +54,7 @@ import funkin.system.Highscore;
 import funkin.system.LoadingState;
 import funkin.system.MathFunctions;
 import funkin.system.MusicBeatState;
+import funkin.scripting.PlayStateWorkspace;
 import funkin.ui.DialogueBox;
 import haxe.Json;
 import lime.utils.Assets;
