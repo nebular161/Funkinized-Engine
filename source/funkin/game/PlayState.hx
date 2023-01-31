@@ -1012,9 +1012,9 @@ class PlayState extends MusicBeatState {
 			}
 
 			var introAssets:Map<String, Array<String>> = new Map<String, Array<String>>();
-			introAssets.set('default', ['gameObjects/countdowns/base/ready', "gameObjects/countdowns/base/set", "gameObjects/countdowns/base/go"]);
-			introAssets.set('school', ['gameObjects/countdowns/pixel/ready-pixel', 'gameObjects/countdowns/pixel/set-pixel', 'gameObjects/countdowns/pixel/date-pixel']);
-			introAssets.set('schoolEvil', ['gameObjects/countdowns/pixel/ready-pixel', 'gameObjects/countdowns/pixel/set-pixel', 'gameObjects/countdowns/pixel/date-pixel']);
+			introAssets.set('default', ['gameObjects/countdowns/base/ready', 'gameObjects/countdowns/base/get', "gameObjects/countdowns/base/set", "gameObjects/countdowns/base/go"]);
+			introAssets.set('school', ['gameObjects/countdowns/pixel/ready-pixel', 'gameObjects/countdowns/pixel/get-pixel', 'gameObjects/countdowns/pixel/set-pixel', 'gameObjects/countdowns/pixel/date-pixel']);
+			introAssets.set('schoolEvil', ['gameObjects/countdowns/pixel/ready-pixel', 'gameObjects/countdowns/pixel/get-pixel', 'gameObjects/countdowns/pixel/set-pixel', 'gameObjects/countdowns/pixel/date-pixel']);
 
 			var introAlts:Array<String> = introAssets.get('default');
 			var altSuffix:String = '';
@@ -1028,8 +1028,6 @@ class PlayState extends MusicBeatState {
 
 			switch (swagCounter) {
 				case 0:
-					FlxG.sound.play(Paths.sound('intro3' + altSuffix), 0.6);
-				case 1:
 					var ready:FlxSprite = new FlxSprite().loadGraphic(Paths.image(introAlts[0]));
 					ready.scrollFactor.set();
 					ready.updateHitbox();
@@ -1044,10 +1042,27 @@ class PlayState extends MusicBeatState {
 						onComplete: function(twn:FlxTween) {
 							ready.destroy();
 						}
+					});					
+					FlxG.sound.play(Paths.sound('intro3' + altSuffix), 0.6);
+				case 1:
+					var get:FlxSprite = new FlxSprite().loadGraphic(Paths.image(introAlts[1]));
+					get.scrollFactor.set();
+					get.updateHitbox();
+
+					if (curStage.startsWith('school'))
+						get.setGraphicSize(Std.int(get.width * daPixelZoom));
+
+					get.screenCenter();
+					add(get);
+					FlxTween.tween(get, {y: get.y += 100, alpha: 0}, Conductor.crochet / 1000, {
+						ease: FlxEase.elasticInOut,
+						onComplete: function(twn:FlxTween) {
+							get.destroy();
+						}
 					});
 					FlxG.sound.play(Paths.sound('intro2' + altSuffix), 0.6);
 				case 2:
-					var set:FlxSprite = new FlxSprite().loadGraphic(Paths.image(introAlts[1]));
+					var set:FlxSprite = new FlxSprite().loadGraphic(Paths.image(introAlts[2]));
 					set.scrollFactor.set();
 
 					if (curStage.startsWith('school'))
@@ -1063,7 +1078,7 @@ class PlayState extends MusicBeatState {
 					});
 					FlxG.sound.play(Paths.sound('intro1' + altSuffix), 0.6);
 				case 3:
-					var go:FlxSprite = new FlxSprite().loadGraphic(Paths.image(introAlts[2]));
+					var go:FlxSprite = new FlxSprite().loadGraphic(Paths.image(introAlts[3]));
 					go.scrollFactor.set();
 
 					if (curStage.startsWith('school'))

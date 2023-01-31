@@ -2,7 +2,6 @@ package funkin.game;
 
 import flixel.FlxG;
 import flixel.FlxSprite;
-import funkin.game.PlayState;
 
 class NoteSplash extends FlxSprite
 {
@@ -19,21 +18,6 @@ class NoteSplash extends FlxSprite
 
         setupNoteSplash(x, y, note);
         antialiasing = true;
-
-        /*switch (PlayState.curStage)
-            {
-                case 'school' | 'schoolEvil':
-                super(x, y);
-                frames = Paths.getSparrowAtlas('gameObjects/notes/pixel/noteSplashesPixel');
-        
-                animation.addByPrefix("splash-0", "note splash purple pixel", 24, false);
-                animation.addByPrefix("splash-1", "note splash blue pixel", 24, false);
-                animation.addByPrefix("splash-2", "note splash green pixel", 24, false);
-                animation.addByPrefix("splash-3", "note splash red pixel", 24, false);
-        
-                setupNoteSplash(x, y, note);
-                antialiasing = true;
-            }*/
     }
     public function setupNoteSplash(x:Float, y:Float, note:Int = 0)
     {
