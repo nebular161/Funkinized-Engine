@@ -1,9 +1,6 @@
 # Everlast Engine
 A Friday Night Funkin' engine that makes using source code feel much more easier and will come with good ol' Hscript support! The engine also has organized assets making it easy to navigate them.
 
-
-![Repo size](https://img.shields.io/github/repo-size/nebulazone1/Everlast-Engine)
-
 # Features (This section is not finished yet):
 - Organized assets and source code
 - Hscript support
@@ -40,3 +37,6 @@ Finally we're going to install only 2 components in VS Community 2019:
 - AlexShadow: Additional Programming Help
 - Yoshubs: Inspiration
 - YoshiCrafter: Inspiration, Hscript improved git
+
+#Repo Size
+![Repo size](https://img.shields.io/github/repo-size/nebulazone1/Everlast-Engine)
