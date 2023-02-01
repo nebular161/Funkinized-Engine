@@ -17,7 +17,7 @@ class TankmenBG extends FlxSprite
 	override public function new(x:Float, y:Float, uhh:Bool)
 	{
 		super(x, y);
-		frames = Paths.getSparrowAtlas('stage_assets/week7/tankmanKilled1', 'shared');
+		frames = Paths.getSparrowAtlas('gameObjects/stage_assets/week7/tankmanKilled1');
 		antialiasing = true;
 		animation.addByPrefix('run', 'tankman running', 24, true);
 		animation.addByPrefix('shot', 'John Shot ' + FlxG.random.int(1, 2), 24, false);

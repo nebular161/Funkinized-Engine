@@ -32,7 +32,10 @@ import flixel.util.FlxColor;
 import flixel.util.FlxSort;
 import flixel.util.FlxStringUtil;
 import flixel.util.FlxTimer;
-import funkin.backgrounds.*;
+import funkin.backgrounds.BackgroundDancer;
+import funkin.backgrounds.BackgroundGirls;
+import funkin.backgrounds.TankmenBG;
+import funkin.backgrounds.BGSprite;
 import funkin.config.Options;
 import funkin.editors.*;
 import funkin.game.*;
@@ -635,17 +638,19 @@ class PlayState extends MusicBeatState {
 
 		var gfVersion:String = 'gf';
 
-		switch (curStage) {
-			case 'limo':
+		switch (SONG.gfVersion) {
+			case 'gf-car':
 				gfVersion = 'gf-car';
-			case 'mall' | 'mallEvil':
+			case 'gf-christmas':
 				gfVersion = 'gf-christmas';
-			case 'school':
+			case 'gf-pixel':
 				gfVersion = 'gf-pixel';
-			case 'schoolEvil':
-				gfVersion = 'gf-pixel';
-			case 'tank':
+			case 'gf-tankmen':
 				gfVersion = 'gf-tankmen';
+			case 'pico-speaker':
+				gfVersion = 'pico-speaker';
+			default:
+				gfVersion = 'gf';
 		}
 
 		if (SONG.song.toLowerCase() == 'stress')

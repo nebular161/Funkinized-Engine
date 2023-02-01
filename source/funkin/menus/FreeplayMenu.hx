@@ -97,7 +97,11 @@ class FreeplayMenu extends MusicBeatState
 
 		songs.push(new SongMetadata("Thorns", 6, 'spirit'));
 
-		//songs.push(new SongMetadata("Ugh", "Guns", "Stress", 7, 'tankman'));
+		songs.push(new SongMetadata("Ugh", 7, 'tankman'));
+
+		songs.push(new SongMetadata( "Guns", 7, 'tankman'));
+
+		songs.push(new SongMetadata("Stress", 7, 'tankman'));
 		
 		songs.push(new SongMetadata("Test", 8, 'bf-pixel'));
 
