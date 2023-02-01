@@ -39,7 +39,15 @@ class StoryMenu extends MusicBeatState {
 	var curDifficulty:Int = 1;
 	var curDifficultyArray = ["Easy", "Normal", "Hard"];
 	
-	public static var weekUnlocked:Array<Bool> = [true, true, true, true, true, true, true /*true*/];
+	public static var weekUnlocked:Array<Bool> = [
+		true, // tutorial
+		true, // week 1
+		true, // week 2
+		true, // week 3
+		true, // week 4
+		true, // week 5
+		true  // week 6
+		/*true*/];
 
 	var weekCharacters:Array<Dynamic> = [
 		['dad', 'bf', 'gf'],

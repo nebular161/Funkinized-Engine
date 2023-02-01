@@ -72,25 +72,25 @@ class PlayState extends MusicBeatState {
 
 	var halloweenLevel:Bool = false;
 
-	private var vocals:FlxSound;
-	private var vocalsFinished = false;
+	public var vocals:FlxSound;
+	public var vocalsFinished = false;
 
-	private var dad:Character;
-	private var gf:Character;
-	private var boyfriend:Boyfriend;
+	public var dad:Character;
+	public var gf:Character;
+	public var boyfriend:Boyfriend;
 
-	private var notes:FlxTypedGroup<Note>;
-	private var unspawnNotes:Array<Note> = [];
+	public var notes:FlxTypedGroup<Note>;
+	public var unspawnNotes:Array<Note> = [];
 
 	public var songMisses:Int = 0;
 
 	public var strumLine:FlxSprite;
-	private var curSection:Int = 0;
+	public var curSection:Int = 0;
 
-	private var camFollow:FlxObject;
-	private var camPos:FlxPoint;
+	public var camFollow:FlxObject;
+	public var camPos:FlxPoint;
 
-	private static var prevCamFollow:FlxObject;
+	public static var prevCamFollow:FlxObject;
 
 	public var strumLineNotes:FlxTypedGroup<FlxSprite>;
 	public var playerStrums:FlxTypedGroup<FlxSprite>;
@@ -101,23 +101,23 @@ class PlayState extends MusicBeatState {
 
 	public var camZooming:Bool = true;
 
-	private var curSong:String = '';
+	public var curSong:String = '';
 
 	public var bg:BGSprite;
 	public var stageFront:FlxSprite;
 	public var stageCurtains:FlxSprite;
 
-	private var gfSpeed:Int = 1;
+	public var gfSpeed:Int = 1;
 	public var health:Float = 1;
 	public var misses:Int = 0;
 	private var lerpHealth:Float = 1;
 	public var combo:Int = 0;
 
-	private var healthBarBG:FlxSprite;
-	private var healthBar:FlxBar;
+	public var healthBarBG:FlxSprite;
+	public var healthBar:FlxBar;
 
-	private var generatedMusic:Bool = false;
-	private var startingSong:Bool = false;
+	public var generatedMusic:Bool = false;
+	public var startingSong:Bool = false;
 
 	public var iconP1:HealthIcon;
 	public var iconP2:HealthIcon;

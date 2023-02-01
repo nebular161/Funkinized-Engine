@@ -34,12 +34,12 @@ class FreeplayMenu extends MusicBeatState
 	var lerpScore:Float = 0;
 	var intendedScore:Int = 0;
 
-	private var grpSongs:FlxTypedGroup<Alphabet>;
-	private var coolColors = [0xFF691818, 0xFF9271FD, 0xFFFF9900, 0xFF15B400, 0xFF96005F, 0xFF593074, 0xFFFFB96A, 0xFF5E5E5E, 0xFF00DDFF];
+	public var grpSongs:FlxTypedGroup<Alphabet>;
+	public var coolColors = [0xFF691818, 0xFF9271FD, 0xFFFF9900, 0xFF15B400, 0xFF96005F, 0xFF593074, 0xFFFFB96A, 0xFF5E5E5E, 0xFF00DDFF];
 
-	private var curPlaying:Bool = false;
+	public var curPlaying:Bool = false;
 
-	private var iconArray:Array<HealthIcon> = [];
+	public var iconArray:Array<HealthIcon> = [];
 
 	override function create()
 	{
@@ -49,29 +49,46 @@ class FreeplayMenu extends MusicBeatState
 		{
 			FlxG.sound.playMusic(Paths.music('freakyMenu'));
 		}
-
+// This is god awful, idk how to make this shit easier, I'm shit at coding
 		songs.push(new SongMetadata("Tutorial", 0, 'gf'));
 
-		if (StoryMenu.weekUnlocked[1])
-			addWeek(['Bopeebo', 'Fresh', 'Dadbattle'], 1, ['dad']);
+		songs.push(new SongMetadata("Bopeebo", 1, 'dad'));
 
-		if (StoryMenu.weekUnlocked[2])
-			addWeek(['Spookeez', 'South', 'Monster'], 2, ['spooky', 'spooky', 'monster']);
+		songs.push(new SongMetadata("Fresh", 1, 'dad'));
 
-		if (StoryMenu.weekUnlocked[3])
-			addWeek(['Pico', 'Philly', 'Blammed'], 3, ['pico']);
+		songs.push(new SongMetadata("Dadbattle", 1, 'dad'));
 
-		if (StoryMenu.weekUnlocked[4])
-			addWeek(['Satin-Panties', 'High', 'Milf'], 4, ['mom']);
+		songs.push(new SongMetadata("Spookeez", 2, 'spooky'));
 
-		if (StoryMenu.weekUnlocked[5])
-			addWeek(['Cocoa', 'Eggnog', 'Winter-Horrorland'], 5, ['parents-christmas', 'parents-christmas', 'monster-christmas']);
+		songs.push(new SongMetadata("South", 2, 'spooky'));
 
-		if (StoryMenu.weekUnlocked[6])
-			addWeek(['Senpai', 'Roses', 'Thorns'], 6, ['senpai', 'senpai-angry', 'spirit']);
+		songs.push(new SongMetadata("Monster", 2, 'monster'));
 
-		/*if (StoryMenu.weekUnlocked[7])
-			addWeek(['Ugh', 'Guns', 'Stress'], 7, ['tankman']);*/
+		songs.push(new SongMetadata("Pico", 3, 'pico'));
+
+		songs.push(new SongMetadata("Philly", 3, 'pico'));
+
+		songs.push(new SongMetadata("Blammed", 3, 'pico'));
+
+		songs.push(new SongMetadata("Satin-Panties", 4, 'mom'));
+
+		songs.push(new SongMetadata("High", 4, 'mom'));
+
+		songs.push(new SongMetadata("Milf", 4, 'mom'));
+
+		songs.push(new SongMetadata("Cocoa", 5, 'parents-christmas'));
+
+		songs.push(new SongMetadata("Eggnog", 5, 'parents-christmas'));
+
+		songs.push(new SongMetadata("Winter-Horrorland", 5, 'monster-christmas'));
+
+		songs.push(new SongMetadata("Senpai", 6, 'senpai'));
+
+		songs.push(new SongMetadata("Roses", 6, 'senpai-angry'));
+
+		songs.push(new SongMetadata("Thorns", 6, 'spirit'));
+
+		//songs.push(new SongMetadata("Ugh", "Guns", "Stress", 7, 'tankman'));
 		
 		songs.push(new SongMetadata("Test", 8, 'bf-pixel'));
 
