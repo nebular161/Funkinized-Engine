@@ -35,7 +35,16 @@ class FreeplayMenu extends MusicBeatState
 	var intendedScore:Int = 0;
 
 	public var grpSongs:FlxTypedGroup<Alphabet>;
-	public var coolColors = [0xFF691818, 0xFF9271FD, 0xFFFF9900, 0xFF15B400, 0xFF96005F, 0xFF593074, 0xFFFFB96A, 0xFF5E5E5E, 0xFF00DDFF];
+	public var coolColors = [
+		0xFF691818, // Tutorial
+		0xFF9271FD, // Week 1
+		0xFFFF9900, // Week 2
+		0xFF15B400, // Week 3
+		0xFF96005F, // Week 4
+		0xFF593074, // Week 5
+		0xFFFFB96A, // Week 6
+		0xFF5E5E5E, // Week 7
+		0xFF00DDFF]; // Test
 
 	public var curPlaying:Bool = false;
 
