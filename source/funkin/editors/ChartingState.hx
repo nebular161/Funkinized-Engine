@@ -14,7 +14,7 @@ import flixel.addons.ui.FlxInputText;
 import flixel.addons.ui.FlxUI9SliceSprite;
 import flixel.addons.ui.FlxUI;
 import flixel.addons.ui.FlxUICheckBox;
-import flixel.addons.ui.FlxUIDropDownMenu;
+import funkin.system.FlxUIDropDownMenuCustom;
 import flixel.addons.ui.FlxUIInputText;
 import flixel.addons.ui.FlxUINumericStepper;
 import flixel.addons.ui.FlxUITabMenu;
@@ -324,7 +324,7 @@ class ChartingState extends MusicBeatState
 		var characters:Array<String> = CoolUtil.coolTextFile(Paths.txt('character-data/characterList'));
 		var stages:Array<String> = CoolUtil.coolTextFile(Paths.txt('meta/stages'));
 
-		var player1DropDown = new FlxUIDropDownMenu(10, 100, FlxUIDropDownMenu.makeStrIdLabelArray(characters, true), function(character:String)
+		var player1DropDown = new FlxUIDropDownMenuCustom(10, 100, FlxUIDropDownMenuCustom.makeStrIdLabelArray(characters, true), function(character:String)
 		{
 			_song.player1 = characters[Std.parseInt(character)];
 			updateHeads();
@@ -333,7 +333,7 @@ class ChartingState extends MusicBeatState
 
 		var player1Label = new FlxText(10,80,64,'Player 1');
 
-		var player2DropDown = new FlxUIDropDownMenu(140, 100, FlxUIDropDownMenu.makeStrIdLabelArray(characters, true), function(character:String)
+		var player2DropDown = new FlxUIDropDownMenuCustom(140, 100, FlxUIDropDownMenuCustom.makeStrIdLabelArray(characters, true), function(character:String)
 		{
 			_song.player2 = characters[Std.parseInt(character)];
 			updateHeads();
@@ -342,7 +342,7 @@ class ChartingState extends MusicBeatState
 
 		var player2Label = new FlxText(140,80,64,'Player 2');
 
-		var stageDropDown = new FlxUIDropDownMenu(140, 200, FlxUIDropDownMenu.makeStrIdLabelArray(stages, true), function(stage:String)
+		var stageDropDown = new FlxUIDropDownMenuCustom(140, 200, FlxUIDropDownMenuCustom.makeStrIdLabelArray(stages, true), function(stage:String)
 			{
 				_song.stage = stages[Std.parseInt(stage)];
 			});
@@ -464,7 +464,7 @@ class ChartingState extends MusicBeatState
 
 	var tab_group_note:FlxUI;
 
-	var typeDropDown:FlxUIDropDownMenu;
+	var typeDropDown:FlxUIDropDownMenuCustom;
 	
 	function addNoteUI():Void
 	{
