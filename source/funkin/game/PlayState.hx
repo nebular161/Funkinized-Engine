@@ -39,7 +39,7 @@ import funkin.game.*;
 import funkin.game.Section.SwagSection;
 import funkin.game.Song.SwagSong;
 import funkin.menus.*;
-import funkin.cutscenes.VideoState;
+import funkin.cutscenes.*;
 import funkin.shaders.*;
 import funkin.system.*;
 import funkin.scripting.PlayStateWorkspace;
