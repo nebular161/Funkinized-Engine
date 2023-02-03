@@ -1,12 +1,53 @@
 package funkin.scripting;
 
-interface PlayStateWorkspace 
+import funkin.system.MusicBeatState;
+import flixel.FlxG;
+import flixel.FlxGame;
+import hscript.Interp;
+import hscript.Parser;
+import hscript.ParserEx;
+import hscript.InterpEx;
+import hscript.ClassDeclEx;
+#if desktop
+import Sys;
+import sys.FileSystem;
+#end
+import funkin.game.Character;
+import funkin.game.Boyfriend;
+import funkin.game.PlayState;
+class PlayStateWorkspace extends MusicBeatState
 {
-    public function create():Void;
-    
-    public function update(elapsed:Float):Void;
+    /*To get Boyfriend*/
+    public var bf:Boyfriend;
 
-    public function beatHit(curBeat:Int):Void;
+    /* To get Dad*/
+    public var dad:Character;
 
-    public function stepHit(curBeat:Int):Void;
+    /* To get Girlfriend*/
+    public var gf:Character;
+
+    /* The notes strum lines*/
+    public var strumLineNotes:FlxTypedGroup<FlxSprite>;
+
+    /* The player strums (notes)*/
+	public var playerStrums:FlxTypedGroup<FlxSprite>;
+
+    /* The health bar background*/
+    public var healthBarBG:FlxSprite;
+
+    /* Healthbar*/
+	public var healthBar:FlxBar;
+
+    /* Player 1 icon*/
+    public var iconP1:HealthIcon;
+
+    /* Player 2 icon*/
+	public var iconP2:HealthIcon;
+
+    /* Camera HUD*/
+	public var camHUD:FlxCamera;
+
+    /* The games camera*/
+	public var camGame:FlxCamera;
+
 }
