@@ -75,6 +75,8 @@ class Main extends Sprite
 			addChild(new FlxGame(#if (flixel < "5.0.0") Math.ceil(stageWidth / zoom) #else gameWidth #end,
 				#if (flixel < "5.0.0") Math.ceil(stageHeight / zoom) #else gameHeight #end, initialState, #if (flixel < "5.0.0") zoom, #end framerate, framerate,
 				skipSplash, startFullscreen));
+
+			FlxG.mouse.load('assets/core/cursors/default.png');				
 	
 			fpsVar = new FPS(10, 3, 0xFFFFFF);
 			addChild(fpsVar);

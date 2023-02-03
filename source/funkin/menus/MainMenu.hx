@@ -43,7 +43,7 @@ class MainMenu extends MusicBeatState {
 		DiscordClient.changePresence('Main Menu', null);
 		#end
 
-		FlxG.mouse.load('assets/core/cursors/default.png');
+		FlxG.mouse.visible = true;
 
 		if (!FlxG.sound.music.playing)
 			FlxG.sound.playMusic(Paths.music('freakyMenu'));
