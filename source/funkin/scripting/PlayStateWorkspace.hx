@@ -5,9 +5,11 @@ import flixel.FlxG;
 import flixel.FlxGame;
 import hscript.Interp;
 import hscript.Parser;
-import hscript.ParserEx;
-import hscript.InterpEx;
-import hscript.ClassDeclEx;
+import flixel.group.FlxGroup.FlxTypedGroup;
+import flixel.FlxSprite;
+import flixel.ui.FlxBar;
+import funkin.game.HealthIcon;
+import flixel.FlxCamera;
 #if desktop
 import Sys;
 import sys.FileSystem;

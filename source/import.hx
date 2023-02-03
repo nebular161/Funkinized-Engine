@@ -6,5 +6,8 @@ import funkin.ui.Alphabet;
 import flixel.math.FlxMath;
 import flixel.FlxG;
 
+// Hscript Imports//
+import hscript.*;
+
 // StringTools //
 using StringTools;
