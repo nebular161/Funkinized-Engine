@@ -63,8 +63,6 @@ class TitleState extends MusicBeatState {
 
 	override public function create():Void {
 		
-		FlxG.mouse.load('assets/core/cursors/default.png');
-
 		#if USE_SHADERS
 		swagShader = new ColorSwap();
 		#end
