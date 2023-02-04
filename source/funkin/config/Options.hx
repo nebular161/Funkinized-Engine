@@ -35,6 +35,7 @@ class Options extends Page
 		createPrefItem('downscroll', 'downscroll', false);
 		createPrefItem('flashing menu', 'flashing-menu', true);
 		createPrefItem('Note Splashes', 'notesplash', true);
+		createPrefItem('Show Accuracy', 'accuracy', true);
 		createPrefItem('Ghost Tapping', 'ghost-tap', true);
 		createPrefItem('Botplay', 'botplay', false);
 		createPrefItem('Auto Pause', 'auto-pause', false);
@@ -87,6 +88,14 @@ class Options extends Page
 			preferenceCheck('notesplash', true);
 		}
 	
+		if(FlxG.save.data.accuracy != null)
+		{
+			preferenceCheck('accuracy', FlxG.save.data.accuracy);
+		}
+		else
+		{
+			preferenceCheck('accuracy', true);
+		}		
 
 		if(FlxG.save.data.flashingMenu != null)
 		{
@@ -197,6 +206,7 @@ class Options extends Page
 		FlxG.save.data.flashingMenu = getPref('flashing-menu');
 		FlxG.save.data.glowStrums = getPref('glow-strums');
 		FlxG.save.data.notesplash = getPref('notesplash');
+		FlxG.save.data.accuracy = getPref('accuracy');
 		FlxG.save.data.glowTap = getPref('ghost-tap');
 		FlxG.save.data.fpsCounter = getPref('botplay');
 		FlxG.save.data.autoPause = getPref('auto-pause');
