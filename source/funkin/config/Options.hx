@@ -38,6 +38,7 @@ class Options extends Page
 		createPrefItem('Show Accuracy', 'accuracy', true);
 		createPrefItem('Ghost Tapping', 'ghost-tap', true);
 		createPrefItem('Botplay', 'botplay', false);
+		createPrefItem('Show Judgement Counter', 'judgement-counter', false);
 		createPrefItem('Auto Pause', 'auto-pause', false);
 		createPrefItem('Glow Opponent Strums', 'glow-strums', false);
 		camFollow = new FlxObject(FlxG.width / 2, 0, 140, 70);
@@ -140,6 +141,15 @@ class Options extends Page
 		else
 		{
 			preferenceCheck('ghost-tap', true);
+		}	
+		
+		if(FlxG.save.data.judgementCounter != null)
+		{
+			preferenceCheck('judgement-counter', FlxG.save.data.judgementCounter);
+		}
+		else
+		{
+			preferenceCheck('judgement-counter', false);
 		}			
 
 		if (!getPref('fps-counter'))
@@ -208,8 +218,9 @@ class Options extends Page
 		FlxG.save.data.notesplash = getPref('notesplash');
 		FlxG.save.data.accuracy = getPref('accuracy');
 		FlxG.save.data.glowTap = getPref('ghost-tap');
-		FlxG.save.data.fpsCounter = getPref('botplay');
+		FlxG.save.data.botplay = getPref('botplay');
 		FlxG.save.data.autoPause = getPref('auto-pause');
+		FlxG.save.data.judgementCounter = getPref('judgement-counter');
 
 		FlxG.save.flush();
 
