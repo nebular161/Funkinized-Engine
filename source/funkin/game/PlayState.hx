@@ -1732,8 +1732,6 @@ if (Options.getPref('accuracy'))
 				}
 
 				if (!daNote.mustPress && daNote.wasGoodHit) {
-					if (SONG.song != 'Tutorial')
-						camZooming = true;
 
 					var altAnim:String = '';
 
@@ -1835,7 +1833,7 @@ if (Options.getPref('accuracy'))
 			storyPlaylist.remove(storyPlaylist[0]);
 
 			if (storyPlaylist.length <= 0) {
-				FlxG.sound.playMusic(Paths.music('freakyMenu'));
+				FlxG.sound.playMusic(Paths.music('menus/freakyMenu'));
 
 				transIn = FlxTransitionableState.defaultTransIn;
 				transOut = FlxTransitionableState.defaultTransOut;

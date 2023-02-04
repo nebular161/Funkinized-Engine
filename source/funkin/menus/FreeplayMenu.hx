@@ -56,7 +56,7 @@ class FreeplayMenu extends MusicBeatState
 
 		if (!FlxG.sound.music.playing)
 		{
-			FlxG.sound.playMusic(Paths.music('freakyMenu'));
+			FlxG.sound.playMusic(Paths.music('menus/freakyMenu'));
 		}
 // This is god awful, idk how to make this shit easier, I'm shit at coding
 		songs.push(new SongMetadata("Tutorial", 0, 'gf'));

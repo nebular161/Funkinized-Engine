@@ -30,7 +30,7 @@ class Character extends FlxSprite {
 
 		switch (curCharacter) {
 			case 'gf':
-				tex = Paths.getSparrowAtlas('gameObjects/characters/gf/GF_assets');
+				tex = Paths.getSparrowAtlas('gameObjects/characters/gf/Girlfriend');
 				frames = tex;
 				quickAnimAdd('cheer', 'GF Cheer');
 				quickAnimAdd('singLEFT', 'GF left note');
@@ -215,7 +215,7 @@ class Character extends FlxSprite {
 				loadMappedAnims();
 
 			case 'bf':
-				tex = Paths.getSparrowAtlas('gameObjects/characters/bf/BOYFRIEND');
+				tex = Paths.getSparrowAtlas('gameObjects/characters/bf/Boyfriend');
 				frames = tex;
 				quickAnimAdd('idle', 'BF idle dance');
 				quickAnimAdd('singUP', 'BF NOTE UP0');
@@ -239,7 +239,7 @@ class Character extends FlxSprite {
 				loadOffsetFile(curCharacter);
 
 				case 'bf-opponent':
-					tex = Paths.getSparrowAtlas('gameObjects/characters/bf/BOYFRIEND');
+					tex = Paths.getSparrowAtlas('gameObjects/characters/bf/Boyfriend');
 					frames = tex;
 					quickAnimAdd('idle', 'BF idle dance');
 					quickAnimAdd('singUP', 'BF NOTE UP0');
@@ -259,7 +259,7 @@ class Character extends FlxSprite {
 					loadOffsetFile(curCharacter);					
 
 		case 'bf-dead':
-				frames = Paths.getSparrowAtlas('gameObjects/characters/bf/BOYFRIEND_DEAD');
+				frames = Paths.getSparrowAtlas('gameObjects/characters/bf/Boyfriend_Dead');
 				animation.addByPrefix('deathLoop', "BF Dead Loop", 24, true);
 				quickAnimAdd('firstDeath', "BF dies");
 				quickAnimAdd('deathConfirm', "BF Dead confirm");
@@ -361,7 +361,7 @@ class Character extends FlxSprite {
 	
 					flipX = true;					
 			case 'bf-pixel-dead':
-				frames = Paths.getSparrowAtlas('gameObjects/characters/bf/bfPixelsDEAD');
+				frames = Paths.getSparrowAtlas('gameObjects/characters/bf/bfPixel_Dead');
 				quickAnimAdd('singUP', 'BF Dies pixel');
 				quickAnimAdd('firstDeath', 'BF Dies pixel');
 				animation.addByPrefix('deathLoop', 'Retry Loop', 24, true);
@@ -395,7 +395,7 @@ class Character extends FlxSprite {
 
 				flipX = true;
 			case 'bf-holding-gf-dead':
-				frames = Paths.getSparrowAtlas('gameObjects/characters/bf/bfHoldingGF-DEAD');
+				frames = Paths.getSparrowAtlas('gameObjects/characters/bf/bfHoldingGF_Dead');
 				quickAnimAdd('singUP', 'BF Dead with GF Loop');
 				quickAnimAdd('firstDeath', 'BF Dies with GF');
 				animation.addByPrefix('deathLoop', 'BF Dead with GF Loop', 24, true);

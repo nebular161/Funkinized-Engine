@@ -102,11 +102,11 @@ class Paths {
 	}
 
 	inline static public function voices(song:String) {
-		return 'songs:assets/funkin/songs/${song.toLowerCase()}/Voices.$SOUND_EXT';
+		return 'songs:assets/funkin/music/songs/${song.toLowerCase()}/songFiles/Voices.$SOUND_EXT';
 	}
 
 	inline static public function inst(song:String) {
-		return 'songs:assets/funkin/songs/${song.toLowerCase()}/Inst.$SOUND_EXT';
+		return 'songs:assets/funkin/music/songs/${song.toLowerCase()}/songFiles/Inst.$SOUND_EXT';
 	}
 
 	inline static public function image(key:String, ?library:String) {
@@ -123,7 +123,7 @@ class Paths {
 
 	inline static public function songjson(key:String, isSong=false, ?library:String)
 		{
-			return getPath('${isSong ? "funkin/songs" : "data"}/$key.json', TEXT, library);
+			return getPath('${isSong ? "funkin/music/songs" : "data"}/$key.json', TEXT, library);
 		}
 
 	inline static public function getSparrowAtlas(key:String, ?library:String) {

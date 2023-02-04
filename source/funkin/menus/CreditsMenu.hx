@@ -1,7 +1,7 @@
 package funkin.menus;
 
 import funkin.system.MusicBeatState;
-import funkin.menus.MainMenuState;
+import funkin.menus.MainMenu;
 import flixel.FlxG;
 import flixel.text.FlxText;
 import openfl.system.System;

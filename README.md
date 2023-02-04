@@ -1,5 +1,5 @@
 # Everlast Engine
-A Friday Night Funkin' engine that makes using source code feel much more easier and will come with good ol' Hscript support! The engine also has organized assets making it easy to navigate them.
+A FNF engine that makes using source code feel much more easier and will come with good ol' Hscript support! The engine also has organized assets making it easy to navigate them.
 
 # Features (This section is not finished yet):
 - Organized assets and source code

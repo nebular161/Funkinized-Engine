@@ -45,8 +45,8 @@
 		<library name="songs"    preload="false" />
 	</section>
 	
-	<assets path="assets/funkin/songs"    library="songs"    exclude="*.ogg" if="web"/>
-	<assets path="assets/funkin/songs"    library="songs"    exclude="*.mp3|*.mp4" unless="web"/>
+	<assets path="assets/funkin/music/songs"    library="songs"    exclude="*.ogg" if="web"/>
+	<assets path="assets/funkin/music/songs"    library="songs"    exclude="*.mp3|*.mp4" unless="web"/>
 	
 	<assets path="CHANGELOG.md" rename='changelog.txt'/>
 
