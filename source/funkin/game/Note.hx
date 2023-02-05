@@ -32,10 +32,10 @@ class Note extends FlxSprite {
 
 	public static var swagWidth:Float = 160 * 0.7;
 	public static var arrowColors = [1, 1, 1, 1];
-	public static var PURP_NOTE:Int = 0;
-	public static var GREEN_NOTE:Int = 2;
-	public static var BLUE_NOTE:Int = 1;
-	public static var RED_NOTE:Int = 3;
+	public static var PURPLE_RECEPTOR:Int = 0;
+	public static var GREEN_RECEPTOR:Int = 2;
+	public static var BLUE_RECEPTOR:Int = 1;
+	public static var RED_RECEPTOR:Int = 3;
 
 	public function new(strumTime:Float, noteData:Int, ?prevNote:Note, ?sustainNote:Bool = false) {
 		super();
@@ -47,7 +47,6 @@ class Note extends FlxSprite {
 		isSustainNote = sustainNote;
 
 		x += 50;
-		// MAKE SURE ITS DEFINITELY OFF SCREEN?
 		y -= 2000;
 		this.strumTime = strumTime;
 
@@ -119,8 +118,6 @@ class Note extends FlxSprite {
 				x += swagWidth * 3;
 				animation.play('redScroll');
 		}
-
-		// trace(prevNote);
 
 		if (isSustainNote && prevNote != null) {
 			alpha = 0.6;

@@ -139,7 +139,7 @@ class CoolUtil
 			}
 	
 			var maxCount = 0;
-			var maxKey:Int = 0; // after the loop this will store the max color
+			var maxKey:Int = 0;
 	
 			countByColor[flixel.util.FlxColor.BLACK] = 0;
 	

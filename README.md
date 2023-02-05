@@ -20,7 +20,7 @@ Then we need to install some gits:
 - haxelib git linc_luajit https://github.com/nebulazorua/linc_luajit.git
 - haxelib git hxvm-luajit https://github.com/nebulazorua/hxvm-luajit
 
-Finally we're going to install only 2 components in VS Community 2019:
+Finally we're going to install only 2 components in VS Community 2019 (Note: This will install 4GB in your system):
 - MSVC v142 - VS 2019 C++ x64/x86 build tools
 - Windows SDK (10.0.17763.0)
 
