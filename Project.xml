@@ -10,7 +10,7 @@
 	<!-- ____________________________ Window Settings ___________________________ -->
 
 	<!--These window settings apply to all targets-->
-	<window width="1280" height="720" fps="" background="#000000" hardware="true" vsync="false" />
+	<window width="1280" height="720" fps="200" background="#000000" hardware="true" vsync="false" />
 
 	<!--HTML5-specific-->
 	<window if="html5" resizable="true" />
@@ -80,7 +80,7 @@
 
 	<haxelib name="linc_discord-rpc" if="desktop" />
 
-	<!-- _________________________________ Custom _______________________________ -->
+	<!-- ______________________________ Flixel Logos _______________________________ -->
 	
 	<icon path="assets/core/flixel-icons/icon16.png" size='16'/>
 	<icon path="assets/core/flixel-icons/icon32.png" size='32'/>
