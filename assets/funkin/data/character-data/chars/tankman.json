@@ -1,0 +1,138 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "Tankman Idle Dance"
+		},
+		{
+			"offsets": [
+				48,
+				54
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": false,
+			"name": "Tankman UP note instance"
+		},
+		{
+			"offsets": [
+				76,
+				-101
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "Tankman DOWN note instance"
+		},
+		{
+			"offsets": [
+				84,
+				-14
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "Tankman Right Note instance"
+		},
+		{
+			"offsets": [
+				-21,
+				-31
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "Tankman Note Left instance"
+		},
+		{
+			"offsets": [
+				-15,
+				-8
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP-alt",
+			"loop": false,
+			"name": "TANKMAN UGH instance"
+		},
+		{
+			"offsets": [
+				1,
+				16
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN-alt",
+			"loop": false,
+			"name": "PRETTY GOOD tankman instance"
+		},
+		{
+			"offsets": [
+				48,
+				54
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUPmiss",
+			"loop": false,
+			"name": "Tankman UP note MISS"
+		},
+		{
+			"offsets": [
+				76,
+				-101
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"loop": false,
+			"name": "Tankman DOWN note MISS"
+		},
+		{
+			"offsets": [
+				84,
+				-14
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"loop": false,
+			"name": "Tankman Right Note MISS"
+		},
+		{
+			"offsets": [
+				-21,
+				-31
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"loop": false,
+			"name": "Tankman Note Left MISS"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "gameObjects/characters/tankman/tankmanCaptain",
+	"position": [
+		0,
+		240
+	],
+	"flip_x": true,
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

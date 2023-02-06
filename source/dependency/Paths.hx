@@ -17,16 +17,20 @@ class Paths {
 	inline static public function setCurrentLevel(name:String)
 		currentLevel = name.toLowerCase();
 
-	static function getPath(file:String, type:AssetType, library:Null<String>) {
+	public static function getPath(file:String, type:AssetType, library:Null<String>) {
 		if (library != null)
 			return getLibraryPath(file, library);
 
-		if (currentLevel != null) {
-			var levelPath = getLibraryPathForce(file, currentLevel);
-			if (OpenFlAssets.exists(levelPath, type))
-				return levelPath;
+		if (currentLevel != null)
+		{
+			var levelPath:String = '';
+			if(currentLevel != 'shared') {
+				levelPath = getLibraryPathForce(file, currentLevel);
+				if (OpenFlAssets.exists(levelPath, type))
+					return levelPath;
+			}
 
-			levelPath = getLibraryPathForce(file, 'shared');
+			levelPath = getLibraryPathForce(file, "shared");
 			if (OpenFlAssets.exists(levelPath, type))
 				return levelPath;
 		}
@@ -55,7 +59,7 @@ class Paths {
 			return doesIt;
 		}	
 
-	inline static function getPreloadPath(file:String) {
+	inline static public function getPreloadPath(file:String) {
 		return 'assets/$file';
 	}
 
@@ -129,7 +133,7 @@ class Paths {
 	inline static public function getSparrowAtlas(key:String, ?library:String) {
 		return FlxAtlasFrames.fromSparrow(image(key, library), file('funkin/images/$key.xml', library));
 	}
-
+	
 	inline static public function getPackerAtlas(key:String, ?library:String) {
 		return FlxAtlasFrames.fromSpriteSheetPacker(image(key, library), file('funkin/images/$key.txt', library));
 	}
