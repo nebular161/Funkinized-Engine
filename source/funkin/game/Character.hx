@@ -45,7 +45,7 @@ typedef AnimArray = {
 	var offsets:Array<Int>;
 }
 
-class Character extends FlxSprite
+class Character extends FlxSprite /* Credits to Shadow Mario for the Character Hx code */
 {
 	public var animOffsets:Map<String, Array<Dynamic>>;
 	public var debugMode:Bool = false;
@@ -96,7 +96,7 @@ class Character extends FlxSprite
 		switch (curCharacter)
 		{
 			// case 'your character that you want to hardcode':
-			case 'spirit':
+			case 'spirit': //spirit is staying hardcoded lol
 				frames = Paths.getPackerAtlas('gameObjects/characters/spirit/spirit');
 				quickAnimAdd('idle', 'idle spirit_');
 				quickAnimAdd('singUP', 'up_');
