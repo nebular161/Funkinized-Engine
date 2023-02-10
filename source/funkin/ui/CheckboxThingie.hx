@@ -18,21 +18,24 @@ class CheckboxThingie extends FlxSprite {
 		daValue = state;
 	}
 
-	override function update(elapsed:Float) {
-		super.update(elapsed);
-		switch (animation.curAnim.name) {
-			case 'checked':
-				offset.set();
-			case 'static':
-				offset.set();
+	override function update(elapsed:Float)
+		{
+			super.update(elapsed);
+			switch (animation.curAnim.name)
+			{
+				case 'checked':
+					offset.set(17, 70);
+				case 'static':
+					offset.set();
+			}
+		}
+	
+		function set_daValue(state:Bool)
+		{
+			if (state)
+				animation.play('checked', true);
+			else
+				animation.play('static');
+			return state;
 		}
 	}
-
-	function set_daValue(state:Bool) {
-		if (state)
-			animation.play('checked', true);
-		else
-			animation.play('static');
-		return state;
-	}
-}
