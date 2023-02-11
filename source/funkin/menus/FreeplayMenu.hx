@@ -15,6 +15,7 @@ import lime.utils.Assets;
 import funkin.menus.*;
 import funkin.system.*;
 import funkin.game.*;
+import funkin.game.objects.*;
 
 using StringTools;
 

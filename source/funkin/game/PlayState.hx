@@ -39,6 +39,7 @@ import funkin.backgrounds.BGSprite;
 import funkin.config.Options;
 import funkin.editors.*;
 import funkin.game.*;
+import funkin.game.objects.*;
 import funkin.game.Section.SwagSection;
 import funkin.game.Song.SwagSong;
 import funkin.menus.*;
