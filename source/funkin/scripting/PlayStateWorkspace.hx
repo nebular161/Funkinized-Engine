@@ -8,13 +8,13 @@ import hscript.Parser;
 import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.FlxSprite;
 import flixel.ui.FlxBar;
-import funkin.game.HealthIcon;
+import funkin.game.objects.HealthIcon;
 import flixel.FlxCamera;
 #if desktop
 import Sys;
 import sys.FileSystem;
 #end
-import funkin.game.Character;
+import funkin.game.objects.Character;
 import funkin.game.Boyfriend;
 import funkin.game.PlayState;
 class PlayStateWorkspace extends MusicBeatState
