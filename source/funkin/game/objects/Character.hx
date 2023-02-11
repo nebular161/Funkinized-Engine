@@ -1,4 +1,4 @@
-package funkin.game;
+package funkin.game.objects;
 
 import animateatlas.AtlasFrameMaker;
 import flixel.FlxG;

@@ -1,4 +1,4 @@
-package funkin.game;
+package funkin.game.objects;
 
 import funkin.config.Options;
 import funkin.shaders.ColorSwap;

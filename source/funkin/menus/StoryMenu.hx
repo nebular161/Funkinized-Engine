@@ -109,9 +109,9 @@ class StoryMenu extends MusicBeatState {
 		txtWeekTitle.setFormat('VCR OSD Mono', 32, FlxColor.WHITE, RIGHT);
 		txtWeekTitle.alpha = 0.7;
 
-		var ui_tex = Paths.getSparrowAtlas('storymenu/menu_assets');
+		var ui_tex = Paths.getSparrowAtlas('menuObjects/storymenu/menu_assets');
 
-		var diffs = Paths.getSparrowAtlas('storymenu/difficulties/diffs');
+		var diffs = Paths.getSparrowAtlas('menuObjects/storymenu/difficulties/diffs');
 
 		var yellowBG:FlxSprite = new FlxSprite(0, 56).makeGraphic(FlxG.width, 400, 0xFFF9CF51);
 

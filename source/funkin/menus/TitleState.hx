@@ -137,7 +137,7 @@ class TitleState extends MusicBeatState {
 		add(new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK));
 
 		logoBl = new FlxSprite(-150, -100);
-		logoBl.frames = Paths.getSparrowAtlas('menuUI/title_menu/logoBumpin');
+		logoBl.frames = Paths.getSparrowAtlas('menuObjects/title_menu/logoBumpin');
 		logoBl.animation.addByPrefix('bump', 'logo bumpin', 24);
 		logoBl.animation.play('bump');
 		logoBl.updateHitbox();
@@ -147,7 +147,7 @@ class TitleState extends MusicBeatState {
 		add(logoBl);
 
 		gfDance = new FlxSprite(FlxG.width * 0.4, FlxG.height * 0.07);
-		gfDance.frames = Paths.getSparrowAtlas('menuUI/title_menu/gfDanceTitle');
+		gfDance.frames = Paths.getSparrowAtlas('menuObjects/title_menu/gfDanceTitle');
 		gfDance.animation.addByIndices('danceLeft', 'gfDance', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], '', 24, false);
 		gfDance.animation.addByIndices('danceRight', 'gfDance', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], '', 24, false);
 		#if USE_SHADERS
@@ -156,7 +156,7 @@ class TitleState extends MusicBeatState {
 		add(gfDance);
 
 		titleText = new FlxSprite(100, FlxG.height * 0.8);
-		titleText.frames = Paths.getSparrowAtlas('menuUI/title_menu/titleEnter');
+		titleText.frames = Paths.getSparrowAtlas('menuObjects/title_menu/titleEnter');
 		titleText.animation.addByPrefix('idle', 'Press Enter to Begin', 24);
 		titleText.animation.addByPrefix('press', 'ENTER PRESSED', 24);
 		titleText.animation.play('idle');
@@ -167,7 +167,7 @@ class TitleState extends MusicBeatState {
 		credGroup.add(new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK));
 		add(credGroup);
 
-		ngSpr = new FlxSprite(0, FlxG.height * 0.52).loadGraphic(Paths.image('menuUI/title_menu/newgrounds_logo'));
+		ngSpr = new FlxSprite(0, FlxG.height * 0.52).loadGraphic(Paths.image('menuObjects/title_menu/newgrounds_logo'));
 		ngSpr.visible = false;
 		ngSpr.setGraphicSize(Std.int(ngSpr.width * 0.8));
 		ngSpr.updateHitbox();
