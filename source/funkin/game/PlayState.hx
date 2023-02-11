@@ -62,6 +62,7 @@ import dependency.Discord.DiscordClient;
 #end
 
 class PlayState extends MusicBeatState {
+	/*public variables*/
 	public static var instance:PlayState = null;
 	public static var curStage:String = '';
 	public static var SONG:SwagSong;
@@ -73,119 +74,85 @@ class PlayState extends MusicBeatState {
 	public static var deathCounter:Int = 0;
 	public static var practiceMode:Bool = false;
 	public static var seenCutscene:Bool = false;
-
-	var halloweenLevel:Bool = false;
-
 	public var vocals:FlxSound;
 	public var vocalsFinished = false;
-
 	public var dad:Character;
 	public var gf:Character;
 	public var boyfriend:Boyfriend;
-
 	public var notes:FlxTypedGroup<Note>;
 	public var unspawnNotes:Array<Note> = [];
-
 	public var songMisses:Int = 0;
-
-	private var songAccuracy:Float = 0.0;
-
 	public var strumLine:FlxSprite;
 	public var curSection:Int = 0;
-
 	public var camFollow:FlxObject;
 	public var camPos:FlxPoint;
-
 	public static var prevCamFollow:FlxObject;
-
 	public var strumLineNotes:FlxTypedGroup<FlxSprite>;
 	public var playerStrums:FlxTypedGroup<FlxSprite>;
-
-	public static var dadStrums:FlxTypedGroup<FlxSprite> = null;
-
-	private var grpNoteSplashes:FlxTypedGroup<NoteSplash>;
-
 	public var camZooming:Bool = true;
-
 	public var curSong:String = '';
-
 	public var bg:BGSprite;
 	public var stageFront:FlxSprite;
 	public var stageCurtains:FlxSprite;
-
+	public static var dadStrums:FlxTypedGroup<FlxSprite> = null;
 	public static var sicks:Int = 0;
 	public static var goods:Int = 0;
 	public static var bads:Int = 0;
 	public static var shits:Int = 0;
-
 	public var gfSpeed:Int = 1;
 	public var health:Float = 1;
 	public var misses:Int = 0;
-	private var lerpHealth:Float = 1;
 	public var accuracy:Float = 0.00;
 	public var combo:Int = 0;
-
-	private var totalNotesHit:Float = 0;
-	private var totalPlayed:Int = 0;
-
 	public var healthBarBG:FlxSprite;
 	public var healthBar:FlxBar;
-
 	public var generatedMusic:Bool = false;
 	public var startingSong:Bool = false;
-
 	public var iconP1:HealthIcon;
 	public var iconP2:HealthIcon;
 	public var camHUD:FlxCamera;
 	public var camGame:FlxCamera;
+	public static var campaignScore:Int = 0;
+	public static var daPixelZoom:Float = 6; // how big to stretch the pixel art assets
 
+	/*private variables*/
+	private var songAccuracy:Float = 0.0;
+	private var grpNoteSplashes:FlxTypedGroup<NoteSplash>;
+	private var lerpHealth:Float = 1;
+	private var totalNotesHit:Float = 0;
+	private var totalPlayed:Int = 0;
+	private var totalHits:Int = 0;
+
+	/*variables*/
+	var halloweenLevel:Bool = false;
 	var dialogue:Array<String> = ['test', 'this is also a test'];
-
 	var halloweenBG:FlxSprite;
 	var isHalloween:Bool = false;
-
 	var foregroundSprites:FlxTypedGroup<BGSprite>;
-
 	var phillyCityLights:FlxTypedGroup<FlxSprite>;
 	var phillyTrain:FlxSprite;
 	var trainSound:FlxSound;
 	#if USE_SHADERS
 	var lightFadeShader:BuildingShaders;
 	#end
-
 	var limo:FlxSprite;
 	var grpLimoDancers:FlxTypedGroup<BackgroundDancer>;
 	var fastCar:FlxSprite;
-
 	var upperBoppers:FlxSprite;
 	var bottomBoppers:FlxSprite;
 	var santa:FlxSprite;
-
 	var bgGirls:BackgroundGirls;
-
 	var tankWatchtower:BGSprite;
 	var tankGround:BGSprite;
 	var tankmanRun:FlxTypedGroup<TankmenBG>;
-
 	var gfCutsceneLayer:FlxTypedGroup<FlxAnimate>;
 	var bfTankCutsceneLayer:FlxTypedGroup<FlxAnimate>;
-
 	var talking:Bool = true;
 	var songScore:Int = 0;
-	private var totalHits:Int = 0;
 	var scoreTxt:FlxText;
-
-	public static var campaignScore:Int = 0;
-
 	var defaultCamZoom:Float = 1.05;
-
-	// how big to stretch the pixel art assets
-	public static var daPixelZoom:Float = 6;
-
 	var inCutscene:Bool = false;
-
-	// Discord RPC variables
-	var storyDifficultyText:String = '';
+	var storyDifficultyText:String = ''; // Discord RPC variables
 	var iconRPC:String = '';
 	var songLength:Float = 0;
 	var detailsText:String = '';
@@ -234,7 +201,6 @@ class PlayState extends MusicBeatState {
 		}
 
 		#if discord_rpc
-		// Making difficulty text for Discord Rich Presence.
 		switch (storyDifficulty) {
 			case 0:
 				storyDifficultyText = 'Easy';
@@ -2117,20 +2083,9 @@ if (Options.getPref('accuracy'))
 
 	private function keyShit():Void {
 		var holdingArray:Array<Bool> = [controls.NOTE_LEFT, controls.NOTE_DOWN, controls.NOTE_UP, controls.NOTE_RIGHT];
-		var controlArray:Array<Bool> = [
-			controls.NOTE_LEFT_P,
-			controls.NOTE_DOWN_P,
-			controls.NOTE_UP_P,
-			controls.NOTE_RIGHT_P
-		];
-		var releaseArray:Array<Bool> = [
-			controls.NOTE_LEFT_R,
-			controls.NOTE_DOWN_R,
-			controls.NOTE_UP_R,
-			controls.NOTE_RIGHT_R
-		];
+		var controlArray:Array<Bool> = [controls.NOTE_LEFT_P, controls.NOTE_DOWN_P, controls.NOTE_UP_P, controls.NOTE_RIGHT_P];
+		var releaseArray:Array<Bool> = [controls.NOTE_LEFT_R, controls.NOTE_DOWN_R, controls.NOTE_UP_R, controls.NOTE_RIGHT_R];
 
-		// FlxG.watch.addQuick('asdfa', upP);
 		if (holdingArray.contains(true) && generatedMusic) {
 			notes.forEachAlive(function(daNote:Note) {
 				if (daNote.isSustainNote && daNote.canBeHit && daNote.mustPress && holdingArray[daNote.noteData])
@@ -2223,8 +2178,6 @@ if (Options.getPref('accuracy'))
 				songScore -= 10;
 
 			FlxG.sound.play(Paths.soundRandom('missnote', 1, 3), FlxG.random.float(0.1, 0.2));
-			// FlxG.sound.play(Paths.sound('missnote1'), 1, false);
-			// FlxG.log.add('played imss note');
 
 			boyfriend.stunned = true;
 
