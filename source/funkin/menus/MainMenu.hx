@@ -50,7 +50,7 @@ class MainMenu extends MusicBeatState {
 
 		persistentUpdate = persistentDraw = true;
 
-		var bg:FlxSprite = new FlxSprite(null, null, Paths.image('menuUI/main_menu/menuBG'));
+		var bg:FlxSprite = new FlxSprite(null, null, Paths.image('menuObjects/main_menu/menuBG'));
 		bg.scrollFactor.set(0, 0.17);
 		bg.setGraphicSize(Std.int(bg.width * 1.2));
 		bg.updateHitbox();
@@ -60,7 +60,7 @@ class MainMenu extends MusicBeatState {
 		camFollow = new FlxObject(0, 0, 1, 1);
 		add(camFollow);
 
-		magenta = new FlxSprite(null, null, Paths.image('menuUI/main_menu/menuDesat'));
+		magenta = new FlxSprite(null, null, Paths.image('menuObjects/main_menu/menuDesat'));
 		magenta.scrollFactor.set(bg.scrollFactor.x, bg.scrollFactor.y);
 		magenta.setGraphicSize(Std.int(bg.width));
 		magenta.updateHitbox();
@@ -162,7 +162,7 @@ class MainMenuList extends MenuTypedList<MainMenuItem> {
 	var atlas:FlxAtlasFrames;
 
 	public function new() {
-		atlas = Paths.getSparrowAtlas('menuUI/main_menu/main_menu_assets');
+		atlas = Paths.getSparrowAtlas('menuObjects/main_menu/main_menu_assets');
 		super(Vertical);
 	}
 
