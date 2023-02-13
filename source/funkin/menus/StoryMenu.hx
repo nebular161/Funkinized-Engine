@@ -52,25 +52,25 @@ class StoryMenu extends MusicBeatState {
 	];
 
 	var weekCharacters:Array<Dynamic> = [
-		['dad', 'bf', 'gf'],
-		['dad', 'bf', 'gf'],
-		['spooky', 'bf', 'gf'],
-		['pico', 'bf', 'gf'],
-		['mom', 'bf', 'gf'],
-		['parents-christmas', 'bf', 'gf'],
-		['senpai', 'bf', 'gf'],
-		['tankman', 'bf', 'gf']
+		['dad', 'bf', 'gf'], // tutorial
+		['dad', 'bf', 'gf'], // week 1
+		['spooky', 'bf', 'gf'], // week 2
+		['pico', 'bf', 'gf'], // week 3
+		['mom', 'bf', 'gf'], // week 4
+		['parents-christmas', 'bf', 'gf'], // week 5
+		['senpai', 'bf', 'gf'], // week 6
+		['tankman', 'bf', 'gf'] // week 7
 	];
 
 	var weekNames:Array<String> = [
-		"Tutorial",
-		"Daddy Dearest",
-		"Spooky Month",
-		"PICO",
-		"MOMMY MUST MURDER",
-		"RED SNOW",
-		"hating simulator ft. moawling",
-		"Tankman"
+		"Tutorial", // tutorial
+		"Daddy Dearest", // week 1
+		"Spooky Month", // week 2
+		"PICO", // week 3
+		"MOMMY MUST MURDER", // week 4
+		"RED SNOW", // week 5
+		"hating simulator ft. moawling", // week 6
+		"Tankman" // week 7
 	];
 
 	var txtWeekTitle:FlxText;

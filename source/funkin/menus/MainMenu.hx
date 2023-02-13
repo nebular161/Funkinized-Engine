@@ -68,7 +68,7 @@ class MainMenu extends MusicBeatState {
 		magenta.visible = false;
 		magenta.color = 0xFFFD719B;
 
-		if (Options.getPref('flashing-menu'))
+		if (Options.getOption('flashing-menu'))
 		{	
 			add(magenta);
 		}

@@ -31,14 +31,14 @@ class Options extends Page
 		menuCamera.bgColor = FlxColor.TRANSPARENT;
 		camera = menuCamera;
 		add(items = new TextMenuList());
-		createPrefItem('naughtyness', 'censor-naughty', true);
+		createPrefItem('Censor Naughtyness', 'censor-naughty', false);
 		createPrefItem('downscroll', 'downscroll', false);
 		createPrefItem('flashing menu', 'flashing-menu', true);
 		createPrefItem('Note Splashes', 'notesplash', true);
 		createPrefItem('Show Accuracy', 'accuracy', true);
 		createPrefItem('Ghost Tapping', 'ghost-tap', true);
 		createPrefItem('Botplay', 'botplay', false);
-		createPrefItem('Show Judgement Counter', 'judgement-counter', false);
+		createPrefItem('Game Statistics', 'statistics', false);
 		createPrefItem('Auto Pause', 'auto-pause', false);
 		createPrefItem('Glow Opponent Strums', 'glow-strums', false);
 		camFollow = new FlxObject(FlxG.width / 2, 0, 140, 70);
@@ -55,7 +55,7 @@ class Options extends Page
 		});
 	}
 
-	public static function getPref(pref:String)
+	public static function getOption(pref:String)
 	{
 		return preferences.get(pref);
 	}
@@ -68,7 +68,7 @@ class Options extends Page
 		}
 		else
 		{
-			preferenceCheck('censor-naughty', true);
+			preferenceCheck('censor-naughty', false);
 		}
 
 		if(FlxG.save.data.downscroll != null)
@@ -143,21 +143,21 @@ class Options extends Page
 			preferenceCheck('ghost-tap', true);
 		}	
 		
-		if(FlxG.save.data.judgementCounter != null)
+		if(FlxG.save.data.statistics != null)
 		{
-			preferenceCheck('judgement-counter', FlxG.save.data.judgementCounter);
+			preferenceCheck('statistics', FlxG.save.data.statistics);
 		}
 		else
 		{
-			preferenceCheck('judgement-counter', false);
+			preferenceCheck('statistics', false);
 		}			
 
-		if (!getPref('fps-counter'))
+		if (!getOption('fps-counter'))
 		{
 			Lib.current.stage.removeChild(Main.fpsCounter);
 		}
 
-		FlxG.autoPause = getPref('auto-pause');
+		FlxG.autoPause = getOption('auto-pause');
 	}
 
 	public static function preferenceCheck(identifier:String, defaultValue:Dynamic)
@@ -211,16 +211,16 @@ class Options extends Page
 		preferences.set(identifier, value);
 		checkboxes[items.selectedIndex].daValue = value;
 
-		FlxG.save.data.censorNaughty = getPref('censor-naughty');
-		FlxG.save.data.downscroll = getPref('downscroll');
-		FlxG.save.data.flashingMenu = getPref('flashing-menu');
-		FlxG.save.data.glowStrums = getPref('glow-strums');
-		FlxG.save.data.notesplash = getPref('notesplash');
-		FlxG.save.data.accuracy = getPref('accuracy');
-		FlxG.save.data.glowTap = getPref('ghost-tap');
-		FlxG.save.data.botplay = getPref('botplay');
-		FlxG.save.data.autoPause = getPref('auto-pause');
-		FlxG.save.data.judgementCounter = getPref('judgement-counter');
+		FlxG.save.data.censorNaughty = getOption('censor-naughty');
+		FlxG.save.data.downscroll = getOption('downscroll');
+		FlxG.save.data.flashingMenu = getOption('flashing-menu');
+		FlxG.save.data.glowStrums = getOption('glow-strums');
+		FlxG.save.data.notesplash = getOption('notesplash');
+		FlxG.save.data.accuracy = getOption('accuracy');
+		FlxG.save.data.glowTap = getOption('ghost-tap');
+		FlxG.save.data.botplay = getOption('botplay');
+		FlxG.save.data.autoPause = getOption('auto-pause');
+		FlxG.save.data.statistics = getOption('statistics');
 
 		FlxG.save.flush();
 
@@ -228,9 +228,9 @@ class Options extends Page
 		switch (identifier)
 		{
 			case 'auto-pause':
-				FlxG.autoPause = getPref('auto-pause');
+				FlxG.autoPause = getOption('auto-pause');
 			case 'fps-counter':
-				if (!getPref('fps-counter'))
+				if (!getOption('fps-counter'))
 				{
 					Lib.current.stage.removeChild(Main.fpsCounter);
 				}

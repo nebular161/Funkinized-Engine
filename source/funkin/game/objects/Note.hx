@@ -122,7 +122,7 @@ class Note extends FlxSprite {
 		if (isSustainNote && prevNote != null) {
 			alpha = 0.6;
 
-			if (Options.getPref('downscroll')) {
+			if (Options.getOption('downscroll')) {
 				angle = 180;
 			}
 

@@ -103,6 +103,7 @@ class PlayState extends MusicBeatState {
 	public var health:Float = 1;
 	public var misses:Int = 0;
 	public var accuracy:Float = 0.00;
+	public var accuracyDefault:Float = 0.00;
 	public var combo:Int = 0;
 	public var healthBarBG:FlxSprite;
 	public var healthBar:FlxBar;
@@ -122,6 +123,7 @@ class PlayState extends MusicBeatState {
 	private var totalNotesHit:Float = 0;
 	private var totalPlayed:Int = 0;
 	private var totalHits:Int = 0;
+	private var totalNotesHitDefault:Float = 0;
 
 	/*variables*/
 	var halloweenLevel:Bool = false;
@@ -157,6 +159,7 @@ class PlayState extends MusicBeatState {
 	var songLength:Float = 0;
 	var detailsText:String = '';
 	var detailsPausedText:String = '';
+	var gameStatistics:FlxText;
 
 	override public function create() {
 
@@ -175,6 +178,12 @@ class PlayState extends MusicBeatState {
 		camGame = new FlxCamera();
 		camHUD = new FlxCamera();
 		camHUD.bgColor.alpha = 0;
+
+		sicks = 0;
+		bads = 0;
+		shits = 0;
+		goods = 0;
+		misses = 0;
 
 		FlxG.cameras.reset(camGame);
 		FlxG.cameras.add(camHUD, false);
@@ -755,7 +764,7 @@ class PlayState extends MusicBeatState {
 
 		Conductor.songPosition = -5000;
 
-		strumLine = new FlxSprite(0, Options.getPref('downscroll') ? FlxG.height - 150 : 50).makeGraphic(FlxG.width, 10);
+		strumLine = new FlxSprite(0, Options.getOption('downscroll') ? FlxG.height - 150 : 50).makeGraphic(FlxG.width, 10);
 		strumLineNotes = new FlxTypedGroup<FlxSprite>();
 		add(strumLineNotes);
 
@@ -790,7 +799,7 @@ class PlayState extends MusicBeatState {
 		healthBarBG.screenCenter(X);
 		healthBarBG.scrollFactor.set();
 		add(healthBarBG);
-		if (Options.getPref('downscroll'))
+		if (Options.getOption('downscroll'))
 			healthBarBG.y = FlxG.height * 0.1;
 
 		healthBar = new FlxBar(healthBarBG.x + 4, healthBarBG.y + 4, RIGHT_TO_LEFT, Std.int(healthBarBG.width - 8), Std.int(healthBarBG.height - 8), this,
@@ -807,7 +816,7 @@ class PlayState extends MusicBeatState {
 		iconP2.y = healthBar.y - (iconP2.height / 2);
 		add(iconP2);		
 
-		if (Options.getPref('accuracy'))
+		if (Options.getOption('accuracy'))
 			{	
 			  scoreTxt = new FlxText(0, healthBarBG.y + 36, FlxG.width, "", 20);
 			  scoreTxt.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, CENTER, OUTLINE, FlxColor.BLACK);
@@ -818,7 +827,20 @@ class PlayState extends MusicBeatState {
 		scoreTxt.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, CENTER, OUTLINE, FlxColor.BLACK);
 		scoreTxt.scrollFactor.set();
 		scoreTxt.borderSize = 1.25;
-		add(scoreTxt);	
+		add(scoreTxt);
+
+		if(Options.getOption('statistics'))
+		{
+			gameStatistics = new FlxText(20, 0, 0, "", 20);
+			gameStatistics.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, FlxTextAlign.LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+			gameStatistics.borderSize = 2;
+			gameStatistics.borderQuality = 2;
+			gameStatistics.scrollFactor.set();
+			gameStatistics.cameras = [camHUD];
+			gameStatistics.screenCenter(Y);
+			gameStatistics.text = 'Sicks: ${sicks}\nGoods: ${goods}\nBads: ${bads}\nShits: ${shits}\nMisses: ${misses}';
+			add(gameStatistics);
+		}
 
 		grpNoteSplashes.cameras = [camHUD];
 		strumLineNotes.cameras = [camHUD];
@@ -882,12 +904,9 @@ class PlayState extends MusicBeatState {
 	function updateAccuracy()
 		{
 			totalPlayed += 1;
-			accuracy = totalNotesHit / totalPlayed * 100;
-			if (accuracy >= 100.00)
-			{
-					accuracy = 100.00;
-			}
-		
+			accuracy = Math.max(0, totalNotesHit / totalPlayed * 100);
+			accuracyDefault = Math.max(0, totalNotesHitDefault / totalPlayed * 100);
+			gameStatistics.text = 'Sicks: ${sicks}\nGoods: ${goods}\nBads: ${bads}\nShits: ${shits}\nMisses: ${misses}';
 		}
 
 	function schoolIntro(?dialogueBox:DialogueBox):Void {
@@ -1440,7 +1459,7 @@ class PlayState extends MusicBeatState {
 
 		scoreTxt.text = 'Score:' + songScore;
 
-if (Options.getPref('accuracy'))
+if (Options.getOption('accuracy'))
 	{
 		function generateRanking():String //Code From Kade Engine 1.3.1 yayaya
 			{
@@ -1664,7 +1683,7 @@ if (Options.getPref('accuracy'))
 
 				var center = strumLine.y + (Note.swagWidth / 2);
 
-				if (Options.getPref('downscroll')) {
+				if (Options.getOption('downscroll')) {
 					daNote.y = strumLine.y + 0.45 * (Conductor.songPosition - daNote.strumTime) * FlxMath.roundDecimal(SONG.speed, 2);
 
 					if (daNote.isSustainNote) {
@@ -1707,7 +1726,7 @@ if (Options.getPref('accuracy'))
 					if (daNote.altNote)
 						altAnim = '-alt';
 
-					if (Options.getPref('glow-strums')) {
+					if (Options.getOption('glow-strums')) {
 						dadStrums.forEach(function(spr:FlxSprite) {
 							if (Math.abs(daNote.noteData) == spr.ID) {
 								spr.animation.play('confirm', true);
@@ -1743,7 +1762,7 @@ if (Options.getPref('accuracy'))
 				}
 
 				var doKill = daNote.y < -daNote.height;
-				if (Options.getPref('downscroll'))
+				if (Options.getOption('downscroll'))
 					doKill = daNote.y > FlxG.height;
 
 				if (doKill) {
@@ -1764,7 +1783,7 @@ if (Options.getPref('accuracy'))
 			});
 		}
 
-		if (Options.getPref('glow-strums')) {
+		if (Options.getOption('glow-strums')) {
 			dadStrums.forEach(function(spr:FlxSprite) {
 				if (spr.animation.finished) {
 					spr.animation.play('static');
@@ -1883,30 +1902,33 @@ if (Options.getPref('accuracy'))
 
 		if (noteDiff > Conductor.safeZoneOffset * 0.9) 
 		{
-			if(Options.getPref("accuracy")) {
+			if(Options.getOption("accuracy")) {
 				totalNotesHit += 1 - Conductor.shitZone;
 			}	
 			daRating = 'shit';
 			score = 50;
 			addedAccuracy -= 0.25;
+			shits++;
 			doSplash = false;
 		} else if (noteDiff > Conductor.safeZoneOffset * 0.75) 
 		{
-			if(Options.getPref("accuracy")) {
+			if(Options.getOption("accuracy")) {
 				totalNotesHit += 1 - Conductor.badZone;
 			}
 			daRating = 'bad';
 			score = 100;
 			addedAccuracy -= 0.50;
+			bads++;
 			doSplash = false;
 		} else if (noteDiff > Conductor.safeZoneOffset * 0.25) 
 		{
-			if(Options.getPref("accuracy")) {
+			if(Options.getOption("accuracy")) {
 				totalNotesHit += 1 - Conductor.goodZone;
 			}				
 			daRating = 'good';
 			addedAccuracy = 0.75;
 			score = 200;
+			goods++;
 			doSplash = false;
 		}
 		else if (noteDiff > Conductor.safeZoneOffset * 0) {
@@ -1914,6 +1936,7 @@ if (Options.getPref('accuracy'))
 			totalNotesHit += 1;
 			addedAccuracy = 1;
 			score = 350;
+			sicks++;
 			doSplash = true;
 		}		
 
@@ -2143,7 +2166,7 @@ if (Options.getPref('accuracy'))
 			} else
 				badNoteHit();
 		}
-		if (boyfriend.holdTimer > Conductor.stepCrochet * (40 / 1000) && !holdingArray.contains(true) && boyfriend.animation.curAnim.name.startsWith('sing') && !boyfriend.animation.curAnim.name.endsWith('miss'))
+		if (boyfriend.holdTimer > Conductor.stepCrochet * (4 / 1000) && !holdingArray.contains(true) && boyfriend.animation.curAnim.name.startsWith('sing') && !boyfriend.animation.curAnim.name.endsWith('miss'))
 			{
 				boyfriend.playAnim('idle');
 			}
@@ -2204,7 +2227,7 @@ if (Options.getPref('accuracy'))
 		var upP = controls.NOTE_UP_P;
 		var rightP = controls.NOTE_RIGHT_P;
 
-		if (Options.getPref('ghost-tap') == false) {
+		if (Options.getOption('ghost-tap') == false) {
 			if (leftP)
 				noteMiss(0);
 			if (downP)

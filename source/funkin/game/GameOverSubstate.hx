@@ -60,7 +60,7 @@ class GameOverSubstate extends MusicBeatSubstate
 		bf.playAnim('firstDeath');
 
 		var exclude = [];
-		if (Options.getPref('censor-naughty'))
+		if (Options.getOption('censor-naughty'))
 		{
 			exclude = [1, 3, 8, 13, 17, 21];
 		}
