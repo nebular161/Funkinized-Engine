@@ -15,7 +15,7 @@ import Sys;
 import sys.FileSystem;
 #end
 import funkin.game.objects.Character;
-import funkin.game.Boyfriend;
+import funkin.game.objects.Boyfriend;
 import funkin.game.PlayState;
 class PlayStateWorkspace extends MusicBeatState
 {

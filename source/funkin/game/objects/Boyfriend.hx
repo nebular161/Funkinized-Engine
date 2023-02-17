@@ -1,4 +1,4 @@
-package funkin.game;
+package funkin.game.objects;
 
 import funkin.game.objects.Character;
 import flixel.FlxG;
@@ -8,6 +8,7 @@ import flixel.util.FlxTimer;
 
 class Boyfriend extends Character
 {
+	public var stunned:Bool = false;
 	public var startedDeath:Bool = false;
 
 	public function new(x:Float, y:Float, ?char:String = 'bf')

@@ -41,7 +41,7 @@ import funkin.system.MusicBeatState;
 import funkin.game.objects.HealthIcon;
 import funkin.game.objects.Note;
 import funkin.game.objects.Character;
-import funkin.game.Boyfriend;
+import funkin.game.objects.Boyfriend;
 import funkin.game.PlayState;
 import funkin.game.Conductor;
 import funkin.system.LoadingState;

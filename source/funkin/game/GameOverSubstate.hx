@@ -10,7 +10,7 @@ import flixel.util.FlxTimer;
 import funkin.system.MusicBeatSubstate;
 import funkin.system.LoadingState;
 import funkin.menus.StoryMenu;
-import funkin.game.Boyfriend;
+import funkin.game.objects.Boyfriend;
 import funkin.game.PlayState;
 import funkin.game.Conductor;
 import funkin.menus.FreeplayMenu;
