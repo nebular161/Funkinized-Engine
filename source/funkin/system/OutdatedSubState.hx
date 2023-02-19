@@ -6,7 +6,7 @@ import flixel.text.FlxText;
 import flixel.util.FlxColor;
 import lime.app.Application;
 import funkin.system.MusicBeatState;
-import funkin.menus.MainMenuState;
+import funkin.menus.MainMenu;
 
 class OutdatedSubState extends MusicBeatState {
 	public static var leftState:Bool = false;
@@ -32,7 +32,7 @@ class OutdatedSubState extends MusicBeatState {
 		}
 		if (controls.BACK) {
 			leftState = true;
-			FlxG.switchState(new MainMenuState());
+			FlxG.switchState(new MainMenu());
 		}
 		super.update(elapsed);
 	}
