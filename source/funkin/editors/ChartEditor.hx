@@ -47,72 +47,53 @@ import funkin.game.Conductor;
 import funkin.system.LoadingState;
 import funkin.game.CoolUtil;
 import funkin.game.Song;
+import funkin.system.dependency.Paths;
 
 using StringTools;
-
-class ChartingState extends MusicBeatState
+class ChartEditor extends MusicBeatState
 {
-	
 	var _file:FileReference;
+	var bpmTxt:FlxText;
+	var strumLine:FlxSprite;
+	var curSong:String = 'DadBattle';
+	var amountSteps:Int = 0;
+	var bullshitUI:FlxGroup;
+	var writingNotesText:FlxText;
+	var highlight:FlxSprite;
+	var GRID_SIZE:Int = 40;
+	var dummyArrow:FlxSprite;
+	var curRenderedNotes:FlxTypedGroup<Note>;
+	var curRenderedSustains:FlxTypedGroup<FlxSprite>;
+	var gridBG:FlxSprite;
+	var gridBGOverlay:FlxSprite;
+	var _song:SwagSong;
+	var typingShit:FlxInputText;
+	var diffStuff:FlxInputText;
+	var currentDiff:String;
+	var curSelectedNote:Array<Dynamic>;
+	var tempBpm:Float = 0;
+	var gridBlackLine:FlxSprite;
+	var vocals:FlxSound;
+	var player2:Character = new Character(0,0, "dad");
+	var player1:Boyfriend = new Boyfriend(0,0, "bf");
+	var leftIcon:HealthIcon;
+	var rightIcon:HealthIcon;
+	var UI_box:FlxUITabMenu;
+	var claps:Array<Note> = [];
+	var curSection:Int = 0;
 
 	public var playClaps:Bool = false;
-
 	public var snap:Int = 1;
+	public var noteType:Int = 0;
+	public static var lastSection:Int = 0;	
+	public var snapText:FlxText;
 
-	var UI_box:FlxUITabMenu;
+	private var lastNote:Note;
 
 	/**
 	 * Array of notes showing when each section STARTS in STEPS
 	 * Usually rounded up??
 	 */
-
-	public var noteType:Int = 0;
-
-	var curSection:Int = 0;
-
-	public static var lastSection:Int = 0;
-
-	var bpmTxt:FlxText;
-
-	var strumLine:FlxSprite;
-	var curSong:String = 'Dad Battle';
-	var amountSteps:Int = 0;
-	var bullshitUI:FlxGroup;
-	var writingNotesText:FlxText;
-	var highlight:FlxSprite;
-
-	var GRID_SIZE:Int = 40;
-
-	var dummyArrow:FlxSprite;
-
-	var curRenderedNotes:FlxTypedGroup<Note>;
-	var curRenderedSustains:FlxTypedGroup<FlxSprite>;
-
-	var gridBG:FlxSprite;
-	var gridBGOverlay:FlxSprite;
-
-	var _song:SwagSong;
-
-	var typingShit:FlxInputText;
-	var diffStuff:FlxInputText;
-	var currentDiff:String;
-
-	var curSelectedNote:Array<Dynamic>;
-
-	var tempBpm:Float = 0;
-	var gridBlackLine:FlxSprite;
-	var vocals:FlxSound;
-
-	var player2:Character = new Character(0,0, "dad");
-	var player1:Boyfriend = new Boyfriend(0,0, "bf");
-
-	var leftIcon:HealthIcon;
-	var rightIcon:HealthIcon;
-
-	private var lastNote:Note;
-	var claps:Array<Note> = [];
-
-	public var snapText:FlxText;
 
 	override function create()
 	{
@@ -1340,13 +1321,13 @@ class ChartingState extends MusicBeatState
 		{
 			PlayState.SONG = Song.loadFromJson(currentDiff, song.toLowerCase());
 			PlayState.storyDifficulty2 = currentDiff.toLowerCase();
-			LoadingState.loadAndSwitchState(new ChartingState());
+			LoadingState.loadAndSwitchState(new ChartEditor());
 		}
 
 	function loadAutosave():Void
 	{
 		PlayState.SONG = Song.parseJSONshit(FlxG.save.data.autosave);
-		LoadingState.loadAndSwitchState(new ChartingState());
+		LoadingState.loadAndSwitchState(new ChartEditor());
 	}
 
 	function autosaveSong():Void

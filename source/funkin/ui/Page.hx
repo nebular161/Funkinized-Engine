@@ -4,7 +4,7 @@ import flixel.FlxG;
 import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.util.FlxSignal.FlxTypedSignal;
 import funkin.config.PlayerSettings;
-import dependency.Paths;
+import funkin.system.dependency.Paths;
 import funkin.config.Prompt;
 
 class Page extends FlxTypedGroup<Dynamic> {

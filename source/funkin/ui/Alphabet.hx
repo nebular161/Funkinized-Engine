@@ -5,7 +5,7 @@ import flixel.FlxSprite;
 import flixel.group.FlxSpriteGroup;
 import flixel.math.FlxMath;
 import flixel.util.FlxTimer;
-import dependency.Paths;
+import funkin.system.dependency.Paths;
 import funkin.system.MathFunctions;
 
 /**

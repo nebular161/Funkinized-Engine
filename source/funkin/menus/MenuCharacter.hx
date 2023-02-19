@@ -2,7 +2,7 @@ package funkin.menus;
 
 import flixel.FlxSprite;
 import flixel.graphics.frames.FlxAtlasFrames;
-
+import funkin.system.dependency.Paths;
 class MenuCharacter extends FlxSprite {
 	public var character:String;
 

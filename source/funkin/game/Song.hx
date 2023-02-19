@@ -7,6 +7,7 @@ import lime.utils.Assets;
 #if sys
 import sys.io.File;
 #end
+import funkin.system.dependency.Paths;
 
 using StringTools;
 

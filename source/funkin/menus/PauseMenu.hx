@@ -14,8 +14,9 @@ import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
 import funkin.system.*;
 import funkin.menus.*;
-import funkin.editors.ChartingState;
+import funkin.editors.ChartEditor;
 import funkin.game.*;
+import funkin.system.dependency.*;
 class PauseMenu extends MusicBeatSubstate {
 	var grpMenuShit:FlxTypedGroup<Alphabet>;
 
@@ -150,7 +151,7 @@ class PauseMenu extends MusicBeatSubstate {
 					PlayState.practiceMode = !PlayState.practiceMode;
 					practiceText.visible = PlayState.practiceMode;
 				case 'Chart Editor':
-					FlxG.switchState(new ChartingState());
+					FlxG.switchState(new ChartEditor());
 				case 'Exit to menu':
 					PlayState.seenCutscene = false;
 					PlayState.deathCounter = 0;

@@ -21,16 +21,11 @@ import sys.io.File;
 import js.html.FileSystem;
 import js.html.File;
 #end
-import dependency.Paths;
+import funkin.system.dependency.Paths;
 
 using StringTools;
-
 class AtlasFrameMaker extends FlxFramesCollection
 {
-	// public static var widthoffset:Int = 0;
-	// public static var heightoffset:Int = 0;
-	// public static var excludeArray:Array<String>;
-
 	/**
 
 		* Creates Frames from TextureAtlas(very early and broken ok) Originally made for FNF HD by Smokey and Rozebud

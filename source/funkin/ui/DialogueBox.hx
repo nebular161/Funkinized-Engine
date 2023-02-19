@@ -10,7 +10,7 @@ import flixel.text.FlxText;
 import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
 import funkin.game.PlayState;
-import dependency.Paths;
+import funkin.system.dependency.Paths;
 
 using StringTools;
 

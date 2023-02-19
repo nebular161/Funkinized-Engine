@@ -1,5 +1,5 @@
 // Game Imports //
-import dependency.Paths;
+import funkin.system.dependency.Paths;
 import funkin.ui.Alphabet;
 
 // Flixel Imports //

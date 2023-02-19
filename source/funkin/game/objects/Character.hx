@@ -7,6 +7,7 @@ import flixel.graphics.frames.FlxAtlasFrames;
 import funkin.backgrounds.TankmenBG;
 import funkin.game.PlayState;
 import funkin.game.Section.SwagSection;
+import funkin.system.dependency.Paths;
 
 using StringTools;
 
@@ -146,8 +147,7 @@ class Character extends FlxSprite
 				quickAnimAdd('singUP', "Mom Up Pose");
 				quickAnimAdd('singDOWN', "MOM DOWN POSE");
 				quickAnimAdd('singLEFT', 'Mom Left Pose');
-				// renamed mom's right pose, smfh dave
-				quickAnimAdd('singRIGHT', 'Mom Pose Right');
+				quickAnimAdd('singRIGHT', 'Mom Pose Left');
 
 				loadOffsetFile(curCharacter);
 
@@ -161,8 +161,7 @@ class Character extends FlxSprite
 				quickAnimAdd('singUP', "Mom Up Pose");
 				quickAnimAdd('singDOWN', "MOM DOWN POSE");
 				quickAnimAdd('singLEFT', 'Mom Left Pose');
-				// renamed mom's right pose, smfh dave
-				quickAnimAdd('singRIGHT', 'Mom Pose Right');
+				quickAnimAdd('singRIGHT', 'Mom Pose Left');
 				animation.addByIndices('idleHair', 'Mom Idle', [10, 11, 12, 13], '', 24, true);
 
 				loadOffsetFile(curCharacter);

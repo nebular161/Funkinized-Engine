@@ -9,7 +9,7 @@ import funkin.config.NavControls;
 import funkin.ui.WrapMode;
 import funkin.config.Controls;
 import funkin.config.PlayerSettings;
-import dependency.Paths;
+import funkin.system.dependency.Paths;
 
 class MenuTypedList<T:MenuItem> extends FlxTypedGroup<T> {
 	public var selectedIndex:Int = 0;

@@ -1,7 +1,7 @@
 package funkin.menus;
 
 #if discord_rpc
-import dependency.Discord.DiscordClient;
+import funkin.system.dependency.Discord.DiscordClient;
 #end
 import flash.text.TextField;
 import flixel.FlxG;
@@ -14,6 +14,7 @@ import flixel.util.FlxColor;
 import lime.utils.Assets;
 import funkin.menus.*;
 import funkin.system.*;
+import funkin.system.dependency.Paths;
 import funkin.game.*;
 import funkin.game.objects.*;
 

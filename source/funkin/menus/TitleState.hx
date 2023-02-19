@@ -1,7 +1,7 @@
 package funkin.menus;
 
 #if discord_rpc
-import dependency.Discord.DiscordClient;
+import Discord.DiscordClient;
 #end
 
 #if USE_SHADERS
@@ -36,8 +36,9 @@ import funkin.system.Highscore;
 import funkin.cutscenes.VideoState;
 import funkin.game.Conductor;
 import funkin.cutscenes.CutsceneAnimTestState;
-
+import funkin.system.dependency.*;
 class TitleState extends MusicBeatState {
+	
 	public static var initialized:Bool = false;
 
 	var credGroup:FlxGroup;

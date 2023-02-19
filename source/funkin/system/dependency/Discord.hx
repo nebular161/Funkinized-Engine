@@ -1,4 +1,4 @@
-package dependency;
+package funkin.system.dependency;
 
 #if desktop
 import Sys.sleep;

@@ -46,6 +46,7 @@ import funkin.menus.*;
 import funkin.cutscenes.*;
 import funkin.shaders.*;
 import funkin.system.*;
+import funkin.system.dependency.*;
 import funkin.scripting.PlayStateWorkspace;
 import funkin.ui.DialogueBox;
 import haxe.Json;
@@ -58,7 +59,7 @@ import openfl.utils.Assets;
 
 using StringTools;
 #if desktop
-import dependency.Discord.DiscordClient;
+import funkin.system.dependency.Discord.DiscordClient;
 #end
 
 class PlayState extends MusicBeatState {
@@ -1582,7 +1583,7 @@ if (Options.getOption('accuracy'))
 		}
 
 		if (FlxG.keys.justPressed.SEVEN) {
-			FlxG.switchState(new ChartingState());
+			FlxG.switchState(new ChartEditor());
 
 			#if discord_rpc
 			DiscordClient.changePresence('Chart Editor', null, null, true);

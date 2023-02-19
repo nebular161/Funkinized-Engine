@@ -2,6 +2,7 @@ package funkin.game.objects;
 
 import flixel.FlxSprite;
 import openfl.utils.Assets as OpenFlAssets;
+import funkin.system.dependency.Paths;
 
 using StringTools;
 

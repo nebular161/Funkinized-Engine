@@ -19,12 +19,26 @@ import flixel.util.FlxTimer;
 import lime.net.curl.CURLCode;
 import haxe.xml.Access;
 import funkin.system.*;
+import funkin.system.dependency.*;
 import funkin.menus.MenuItem;
 import funkin.menus.MenuCharacter;
 import funkin.game.*;
 import flixel.graphics.FlxGraphic;
 class StoryMenu extends MusicBeatState {
+	
 	var scoreText:FlxText;
+	var curDifficulty:Int = 1;
+	var curDifficultyArray = ["Easy", "Normal", "Hard"];
+	var txtWeekTitle:FlxText;
+	var curWeek:Int = 0;
+	var txtTracklist:FlxText;
+	var grpWeekText:FlxTypedGroup<MenuItem>;
+	var grpWeekCharacters:FlxTypedGroup<MenuCharacter>;
+	var grpLocks:FlxTypedGroup<FlxSprite>;
+	var difficultySelectors:FlxGroup;
+	var sprDifficulty:FlxSprite;
+	var leftArrow:FlxSprite;
+	var rightArrow:FlxSprite;
 
 	var weekData:Array<Dynamic> = [
 		['Tutorial'],
@@ -36,21 +50,8 @@ class StoryMenu extends MusicBeatState {
 		['Senpai', 'Roses', 'Thorns'],
 		['Ugh', 'Guns', 'Stress']
 	];
-	var curDifficulty:Int = 1;
-	var curDifficultyArray = ["Easy", "Normal", "Hard"];
-	
-	public static var weekUnlocked:Array<Bool> = 
-	[
-		true, // tutorial
-		true, // week 1
-		true, // week 2
-		true, // week 3
-		true, // week 4
-		true, // week 5
-		true,  // week 6
-		true // week 7
-	];
 
+	
 	var weekCharacters:Array<Dynamic> = [
 		['dad', 'bf', 'gf'], // tutorial
 		['dad', 'bf', 'gf'], // week 1
@@ -73,21 +74,17 @@ class StoryMenu extends MusicBeatState {
 		"Tankman" // week 7
 	];
 
-	var txtWeekTitle:FlxText;
-
-	var curWeek:Int = 0;
-
-	var txtTracklist:FlxText;
-
-	var grpWeekText:FlxTypedGroup<MenuItem>;
-	var grpWeekCharacters:FlxTypedGroup<MenuCharacter>;
-
-	var grpLocks:FlxTypedGroup<FlxSprite>;
-
-	var difficultySelectors:FlxGroup;
-	var sprDifficulty:FlxSprite;
-	var leftArrow:FlxSprite;
-	var rightArrow:FlxSprite;
+	public static var weekUnlocked:Array<Bool> = 
+	[
+		true, // tutorial
+		true, // week 1
+		true, // week 2
+		true, // week 3
+		true, // week 4
+		true, // week 5
+		true,  // week 6
+		true // week 7
+	];
 
 	override function create() {
 		transIn = FlxTransitionableState.defaultTransIn;

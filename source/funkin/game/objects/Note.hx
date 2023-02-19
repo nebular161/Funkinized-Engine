@@ -7,15 +7,12 @@ import flixel.graphics.frames.FlxAtlasFrames;
 import flixel.math.FlxMath;
 import flixel.util.FlxColor;
 import funkin.game.PlayState;
-#if polymod
-import polymod.format.ParseRules.TargetSignatureElement;
-#end
+import funkin.system.dependency.Paths;
 
 using StringTools;
 
 class Note extends FlxSprite {
 	public var strumTime:Float = 0;
-
 	public var mustPress:Bool = false;
 	public var noteData:Int = 0;
 	public var canBeHit:Bool = false;
@@ -24,18 +21,16 @@ class Note extends FlxSprite {
 	public var willMiss:Bool = false;
 	public var altNote:Bool = false;
 	public var prevNote:Note;
-
 	public var sustainLength:Float = 0;
 	public var isSustainNote:Bool = false;
-
-	var colorSwap:ColorSwap;
-
 	public static var swagWidth:Float = 160 * 0.7;
 	public static var arrowColors = [1, 1, 1, 1];
 	public static var PURPLE_RECEPTOR:Int = 0;
 	public static var GREEN_RECEPTOR:Int = 2;
 	public static var BLUE_RECEPTOR:Int = 1;
 	public static var RED_RECEPTOR:Int = 3;
+
+	var colorSwap:ColorSwap;
 
 	public function new(strumTime:Float, noteData:Int, ?prevNote:Note, ?sustainNote:Bool = false) {
 		super();

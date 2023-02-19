@@ -1,4 +1,4 @@
-package dependency;
+package funkin.system.dependency;
 
 import flash.media.Sound;
 import flixel.FlxG;
