@@ -87,6 +87,7 @@ class ChartEditor extends MusicBeatState
 	public var noteType:Int = 0;
 	public static var lastSection:Int = 0;	
 	public var snapText:FlxText;
+	public static var chartVer = "1.0";
 
 	private var lastNote:Note;
 
@@ -120,7 +121,8 @@ class ChartEditor extends MusicBeatState
 					noteStyle: 'normal',
 					stage: 'stage',
 					speed: 1,
-					validScore: false
+					validScore: false,
+					chartVer: chartVer
 				};
 			}
 			currentDiff = PlayState.storyDifficulty2;
@@ -137,12 +139,13 @@ class ChartEditor extends MusicBeatState
 			add(gridBG);
 			add(gridBGOverlay);
 
+			if (_song.chartVer == null)
+				_song.chartVer = "1.0";
+
 		curRenderedNotes = new FlxTypedGroup<Note>();
 		curRenderedSustains = new FlxTypedGroup<FlxSprite>();
 
 		addSection();
-
-		// sections = _song.notes;
 
 		updateGrid();
 
