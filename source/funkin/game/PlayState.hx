@@ -161,6 +161,8 @@ class PlayState extends MusicBeatState {
 	var detailsText:String = '';
 	var detailsPausedText:String = '';
 	var gameStatistics:FlxText;
+	var curDifficultyArray = ["Easy", "Normal", "Hard"];
+	var curDifficulty:Int = 1;
 
 	override public function create() {
 
@@ -1939,8 +1941,8 @@ if (Options.getOption('accuracy'))
 				trace('LOADING NEXT SONG');
 				trace(PlayState.storyPlaylist[0].toLowerCase() + difficulty);
 
-				//FlxTransitionableState.skipNextTransIn = true;
-				//FlxTransitionableState.skipNextTransOut = true;
+				FlxTransitionableState.skipNextTransIn = true;
+				FlxTransitionableState.skipNextTransOut = true;
 
 				FlxG.sound.music.stop();
 				vocals.stop();
@@ -1953,13 +1955,13 @@ if (Options.getOption('accuracy'))
 					camHUD.visible = false;
 
 					FlxG.sound.play(Paths.sound('Lights_Shut_off'), 1, false, null, true, function() {
-						PlayState.SONG = Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase() + difficulty, PlayState.storyPlaylist[0]);
+						PlayState.SONG = Song.loadFromJson(curDifficultyArray[curDifficulty].toLowerCase(), PlayState.storyPlaylist[0].toLowerCase());
 						LoadingState.loadAndSwitchState(new PlayState());
 					});
 				} else {
 					prevCamFollow = camFollow;
 
-					PlayState.SONG = Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase() + difficulty, PlayState.storyPlaylist[0]);
+					PlayState.SONG = Song.loadFromJson(curDifficultyArray[curDifficulty].toLowerCase(), PlayState.storyPlaylist[0].toLowerCase());
 
 					LoadingState.loadAndSwitchState(new PlayState());
 				}

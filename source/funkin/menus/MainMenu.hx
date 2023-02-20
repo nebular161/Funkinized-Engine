@@ -1,5 +1,6 @@
 package funkin.menus;
 
+import away3d.core.managers.Mouse3DManager;
 #if discord_rpc
 import funkin.system.dependency.Discord.DiscordClient;
 #end
@@ -24,6 +25,7 @@ import flixel.util.FlxColor;
 import lime.app.Application;
 import funkin.system.*;
 import funkin.menus.*;
+import funkin.mods.ModsMenu;
 import funkin.system.dependency.Paths;
 class MainMenu extends MusicBeatState {
 	var menuItems:MainMenuList;
@@ -83,6 +85,10 @@ class MainMenu extends MusicBeatState {
 		menuItems.createItem(null, null, 'story mode', function() startExitState(new StoryMenu()));
 		menuItems.createItem(null, null, 'freeplay', function() startExitState(new FreeplayMenu()));
 		menuItems.createItem(null, null, 'donate', selectDonate, true);
+		if(FlxG.keys.justPressed.TAB)
+			{
+				FlxG.switchState(new ModsMenu());
+			}
 		menuItems.createItem(0, 0, 'options', function() startExitState(new OptionsState()));
 
 		var pos:Float = (FlxG.height - 160 * (menuItems.length - 1)) / 2;

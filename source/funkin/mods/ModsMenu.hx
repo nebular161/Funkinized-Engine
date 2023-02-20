@@ -7,8 +7,8 @@ import flixel.util.FlxColor;
 #if discord_rpc
 import funkin.system.dependency.Discord.DiscordClient
 #end
-
-class ModMenu // Unfinished
+import funkin.menus.MainMenu;
+class ModsMenu extends MainMenu // Unfinished mods menu!!!!
 {
 	// Variables
 	var enabledMods:Array<String> = [];
