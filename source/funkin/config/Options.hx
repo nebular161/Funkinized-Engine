@@ -31,16 +31,20 @@ class Options extends Page
 		menuCamera.bgColor = FlxColor.TRANSPARENT;
 		camera = menuCamera;
 		add(items = new TextMenuList());
+
+	/*----------------------------------------------------------------*/
+						/* Options List*/
 		createPrefItem('Censor Naughtyness', 'censor-naughty', false);
 		createPrefItem('downscroll', 'downscroll', false);
 		createPrefItem('flashing menu', 'flashing-menu', true);
 		createPrefItem('Note Splashes', 'notesplash', true);
 		createPrefItem('Show Accuracy', 'accuracy', true);
 		createPrefItem('Ghost Tapping', 'ghost-tap', true);
-		createPrefItem('Botplay', 'botplay', false);
+		createPrefItem('Low End Mode', 'low-end', false);
 		createPrefItem('Game Statistics', 'statistics', false);
 		createPrefItem('Auto Pause', 'auto-pause', false);
 		createPrefItem('Glow Opponent Strums', 'glow-strums', false);
+	/*	--------------------------------------------------------------*/
 		camFollow = new FlxObject(FlxG.width / 2, 0, 140, 70);
 		if (items != null)
 		{
@@ -107,13 +111,13 @@ class Options extends Page
 			preferenceCheck('flashing-menu', true);
 		}
 
-		if(FlxG.save.data.botplay != null)
+		if(FlxG.save.data.lowEnd != null)
 		{
-			preferenceCheck('botplay', FlxG.save.data.botplay);
+			preferenceCheck('low-end', FlxG.save.data.lowEnd);
 		}
 		else
 		{
-			preferenceCheck('botplay', false);
+			preferenceCheck('low-end', false);
 		}
 
 		if(FlxG.save.data.autoPause != null)
@@ -210,7 +214,9 @@ class Options extends Page
 		value = !value;
 		preferences.set(identifier, value);
 		checkboxes[items.selectedIndex].daValue = value;
-
+		
+		/*----------------------------------------------------*/
+		/* Having FlxG save your choice after selecting the option*/
 		FlxG.save.data.censorNaughty = getOption('censor-naughty');
 		FlxG.save.data.downscroll = getOption('downscroll');
 		FlxG.save.data.flashingMenu = getOption('flashing-menu');
@@ -218,9 +224,10 @@ class Options extends Page
 		FlxG.save.data.notesplash = getOption('notesplash');
 		FlxG.save.data.accuracy = getOption('accuracy');
 		FlxG.save.data.glowTap = getOption('ghost-tap');
-		FlxG.save.data.botplay = getOption('botplay');
+		FlxG.save.data.lowEnd = getOption('low-end');
 		FlxG.save.data.autoPause = getOption('auto-pause');
 		FlxG.save.data.statistics = getOption('statistics');
+        /*--------------------------------------------------*/
 
 		FlxG.save.flush();
 

@@ -10,7 +10,6 @@ import funkin.game.Section.SwagSection;
 import funkin.system.dependency.Paths;
 
 using StringTools;
-
 class Character extends FlxSprite
 {
 	public var animOffsets:Map<String, Array<Dynamic>>;
@@ -32,6 +31,7 @@ class Character extends FlxSprite
 		this.isPlayer = isPlayer;
 
 		var tex:FlxAtlasFrames;
+
 		antialiasing = true;
 
 		switch (curCharacter)
@@ -100,7 +100,6 @@ class Character extends FlxSprite
 
 				setGraphicSize(Std.int(width * PlayState.daPixelZoom));
 				updateHitbox();
-				antialiasing = false;
 
 			case 'gf-tankmen':
 				frames = Paths.getSparrowAtlas('gameObjects/characters/gf/gfTankmen');
@@ -340,8 +339,6 @@ class Character extends FlxSprite
 				width -= 100;
 				height -= 100;
 
-				antialiasing = false;
-
 				flipX = true;
 				case 'bf-pixel-opponent':
 					frames = Paths.getSparrowAtlas('gameObjects/characters/bf/bfPixel');
@@ -364,10 +361,7 @@ class Character extends FlxSprite
 	
 					width -= 100;
 					height -= 100;
-	
-					antialiasing = false;
-	
-					flipX = true;				
+					flipX = true;
 			case 'bf-pixel-dead':
 				frames = Paths.getSparrowAtlas('gameObjects/characters/bf/bfPixel_Dead');
 				quickAnimAdd('singUP', "BF Dies pixel");
@@ -378,10 +372,8 @@ class Character extends FlxSprite
 
 				loadOffsetFile(curCharacter);
 				playAnim('firstDeath');
-				// pixel bullshit
 				setGraphicSize(Std.int(width * 6));
 				updateHitbox();
-				antialiasing = false;
 				flipX = true;
 			case 'bf-gf':
 				frames = Paths.getSparrowAtlas('gameObjects/characters/bf/bfAndGF');
@@ -429,8 +421,6 @@ class Character extends FlxSprite
 
 				setGraphicSize(Std.int(width * 6));
 				updateHitbox();
-
-				antialiasing = false;
 			case 'senpai-angry':
 				frames = Paths.getSparrowAtlas('gameObjects/characters/senpai/senpai_angry');
 				quickAnimAdd('idle', 'Angry Senpai Idle');
@@ -444,8 +434,6 @@ class Character extends FlxSprite
 
 				setGraphicSize(Std.int(width * 6));
 				updateHitbox();
-
-				antialiasing = false;
 
 			case 'spirit':
 				frames = Paths.getPackerAtlas('gameObjects/characters/spirit/spirit');
@@ -461,8 +449,6 @@ class Character extends FlxSprite
 				updateHitbox();
 
 				playAnim('idle');
-
-				antialiasing = false;
 
 			case 'parents-christmas':
 				frames = Paths.getSparrowAtlas('gameObjects/characters/parents/mom_dad_christmas_assets');
@@ -534,7 +520,6 @@ class Character extends FlxSprite
 			}
 		}
 		TankmenBG.animationNotes = animationNotes;
-		trace(animationNotes);
 		animationNotes.sort(sortAnims);
 	}
 
@@ -591,7 +576,6 @@ class Character extends FlxSprite
 			case 'pico-speaker':
 				if (animationNotes.length > 0 && Conductor.songPosition > animationNotes[0][0])
 				{
-					trace("played shoot anim" + animationNotes[0][1]);
 					var shotDirection:Int = 1;
 					if (animationNotes[0][1] >= 2)
 					{

@@ -262,6 +262,11 @@ class PlayState extends MusicBeatState {
 					halloweenBG.antialiasing = true;
 					add(halloweenBG);
 
+					if(Options.getOption('low-end'))
+						{
+							halloweenBG.animation.remove('lightning');
+						}
+
 					isHalloween = true;
 				}
 			case 'philly':
@@ -300,7 +305,12 @@ class PlayState extends MusicBeatState {
 					trainSound = new FlxSound().loadEmbedded(Paths.sound('train_passes'));
 					FlxG.sound.list.add(trainSound);
 
-					// var cityLights:FlxSprite = new FlxSprite().loadGraphic(AssetPaths.win0.png);
+					if(Options.getOption('low-end'))
+						{
+							remove(phillyTrain);
+							remove(phillyCityLights);
+							remove(city);
+						}
 
 					var street:FlxSprite = new FlxSprite(-40, streetBehind.y).loadGraphic(Paths.image('gameObjects/stage_assets/week3/street'));
 					add(street);
@@ -342,7 +352,13 @@ class PlayState extends MusicBeatState {
 					limo.antialiasing = true;
 
 					fastCar = new FlxSprite(-300, 160).loadGraphic(Paths.image('gameObjects/stage_assets/week4/fastCarLol'));
-					// add(limo);
+					
+					if(Options.getOption('low-end'))
+						{
+							remove(grpLimoDancers);
+							remove(fastCar);
+							remove(bgLimo);
+						}
 				}
 			case 'mall':
 				{
@@ -374,11 +390,19 @@ class PlayState extends MusicBeatState {
 					bgEscalator.setGraphicSize(Std.int(bgEscalator.width * 0.9));
 					bgEscalator.updateHitbox();
 					add(bgEscalator);
-
+					if(Options.getOption('low-end'))
+						{
+							remove(bgEscalator);
+						}
+				
 					var tree:FlxSprite = new FlxSprite(370, -250).loadGraphic(Paths.image('gameObjects/stage_assets/week5/christmasTree'));
 					tree.antialiasing = true;
 					tree.scrollFactor.set(0.40, 0.40);
 					add(tree);
+					if(Options.getOption('low-end'))
+						{
+							remove(tree);
+						}
 
 					bottomBoppers = new FlxSprite(-300, 140);
 					bottomBoppers.frames = Paths.getSparrowAtlas('gameObjects/stage_assets/week5/bottomBop');
@@ -399,6 +423,13 @@ class PlayState extends MusicBeatState {
 					santa.animation.addByPrefix('idle', 'santa idle in fear', 24, false);
 					santa.antialiasing = true;
 					add(santa);
+
+					if(Options.getOption('low-end'))
+						{
+							remove(santa);
+							remove(bottomBoppers);
+							remove(upperBoppers);
+						}
 				}
 			case 'mallEvil':
 				{
@@ -415,6 +446,10 @@ class PlayState extends MusicBeatState {
 					evilTree.antialiasing = true;
 					evilTree.scrollFactor.set(0.2, 0.2);
 					add(evilTree);
+					if(Options.getOption('low-end'))
+						{
+							remove(evilTree);
+						}
 
 					var evilSnow:FlxSprite = new FlxSprite(-200, 700).loadGraphic(Paths.image("gameObjects/stage_assets/week5/evilSnow"));
 					evilSnow.antialiasing = true;
@@ -485,6 +520,14 @@ class PlayState extends MusicBeatState {
 					bgGirls.setGraphicSize(Std.int(bgGirls.width * daPixelZoom));
 					bgGirls.updateHitbox();
 					add(bgGirls);
+
+					if(Options.getOption('low-end'))
+						{
+							remove(bgGirls);
+							remove(bgTrees);
+							remove(fgTrees);
+							remove(treeLeaves);
+						}
 				}
 			case 'schoolEvil':
 				{
@@ -517,6 +560,10 @@ class PlayState extends MusicBeatState {
 					clouds.active = true;
 					clouds.velocity.x = FlxG.random.float(5, 15);
 					add(clouds);
+					if(Options.getOption('low-end'))
+						{
+							remove(clouds);
+						}
 
 					var mountains:BGSprite = new BGSprite('gameObjects/stage_assets/week7/tankMountains', -300, -20, 0.2, 0.2);
 					mountains.setGraphicSize(Std.int(mountains.width * 1.2));
@@ -535,12 +582,24 @@ class PlayState extends MusicBeatState {
 
 					var smokeL:BGSprite = new BGSprite('gameObjects/stage_assets/week7/smokeLeft', -200, -100, 0.4, 0.4, ['SmokeBlurLeft'], true);
 					add(smokeL);
+					if(Options.getOption('low-end'))
+						{
+							remove(smokeL);
+						}
 
 					var smokeR:BGSprite = new BGSprite('gameObjects/stage_assets/week7/smokeRight', 1100, -100, 0.4, 0.4, ['SmokeRight'], true);
 					add(smokeR);
+					if(Options.getOption('low-end'))
+						{
+							remove(smokeR);
+						}
 
 					tankWatchtower = new BGSprite('gameObjects/stage_assets/week7/tankWatchtower', 100, 50, 0.5, 0.5, ['watchtower gradient color']);
 					add(tankWatchtower);
+					if(Options.getOption('low-end'))
+						{
+							remove(tankWatchtower);
+						}
 
 					tankGround = new BGSprite('gameObjects/stage_assets/week7/tankRolling', 300, 300, 0.5, 0.5, ['BG tank w lighting'], true);
 					add(tankGround);
@@ -556,21 +615,45 @@ class PlayState extends MusicBeatState {
 
 					var tankdude0:BGSprite = new BGSprite('gameObjects/stage_assets/week7/tank0', -500, 650, 1.7, 1.5, ['fg']);
 					foregroundSprites.add(tankdude0);
+					if(Options.getOption('low-end'))
+						{
+							foregroundSprites.remove(tankdude0);
+						}
 
 					var tankdude1:BGSprite = new BGSprite('gameObjects/stage_assets/week7/tank1', -300, 750, 2, 0.2, ['fg']);
 					foregroundSprites.add(tankdude1);
+					if(Options.getOption('low-end'))
+						{
+							foregroundSprites.remove(tankdude1);
+						}
 
 					var tankdude2:BGSprite = new BGSprite('gameObjects/stage_assets/week7/tank2', 450, 940, 1.5, 1.5, ['foreground']);
 					foregroundSprites.add(tankdude2);
-
-					var tankdude4:BGSprite = new BGSprite('gameObjects/stage_assets/week7/tank4', 1300, 900, 1.5, 1.5, ['fg']);
-					foregroundSprites.add(tankdude4);
-
-					var tankdude5:BGSprite = new BGSprite('gameObjects/stage_assets/week7/tank5', 1620, 700, 1.5, 1.5, ['fg']);
-					foregroundSprites.add(tankdude5);
+					if(Options.getOption('low-end'))
+						{
+							foregroundSprites.remove(tankdude2);
+						}
 
 					var tankdude3:BGSprite = new BGSprite('gameObjects/stage_assets/week7/tank3', 1300, 1200, 3.5, 2.5, ['fg']);
 					foregroundSprites.add(tankdude3);
+					if(Options.getOption('low-end'))
+						{
+							foregroundSprites.remove(tankdude3);
+						}
+
+					var tankdude4:BGSprite = new BGSprite('gameObjects/stage_assets/week7/tank4', 1300, 900, 1.5, 1.5, ['fg']);
+					foregroundSprites.add(tankdude4);
+					if(Options.getOption('low-end'))
+						{
+							foregroundSprites.remove(tankdude4);
+						}
+
+					var tankdude5:BGSprite = new BGSprite('gameObjects/stage_assets/week7/tank5', 1620, 700, 1.5, 1.5, ['fg']);
+					foregroundSprites.add(tankdude5);
+					if(Options.getOption('low-end'))
+						{
+							foregroundSprites.remove(tankdude5);
+						}
 				}
 			case 'stage':
 				{
@@ -596,8 +679,12 @@ class PlayState extends MusicBeatState {
 					stageCurtains.antialiasing = true;
 					stageCurtains.scrollFactor.set(1.3, 1.3);
 					stageCurtains.active = false;
-
 					add(stageCurtains);
+
+					if(Options.getOption('low-end'))
+						{
+							remove(stageCurtains);
+						}
 				}
 			default:
 				{
@@ -619,8 +706,11 @@ class PlayState extends MusicBeatState {
 					stageCurtains.updateHitbox();
 					stageCurtains.scrollFactor.set(1.3, 1.3);
 					stageCurtains.active = false;
-
 					add(stageCurtains);
+					if(Options.getOption('low-end'))
+						{
+							remove(stageCurtains);
+						}
 				}
 		}
 
