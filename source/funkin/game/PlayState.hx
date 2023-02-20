@@ -115,7 +115,7 @@ class PlayState extends MusicBeatState {
 	public var camHUD:FlxCamera;
 	public var camGame:FlxCamera;
 	public static var campaignScore:Int = 0;
-	public static var daPixelZoom:Float = 6; // how big to stretch the pixel art assets
+	public static var daPixelZoom:Float = 6;
 
 	/*private variables*/
 	private var songAccuracy:Float = 0.0;
@@ -161,8 +161,6 @@ class PlayState extends MusicBeatState {
 	var detailsText:String = '';
 	var detailsPausedText:String = '';
 	var gameStatistics:FlxText;
-	var curDifficultyArray = ["Easy", "Normal", "Hard"];
-	var curDifficulty:Int = 1;
 
 	override public function create() {
 
@@ -1955,19 +1953,17 @@ if (Options.getOption('accuracy'))
 					camHUD.visible = false;
 
 					FlxG.sound.play(Paths.sound('Lights_Shut_off'), 1, false, null, true, function() {
-						PlayState.SONG = Song.loadFromJson(curDifficultyArray[curDifficulty].toLowerCase(), PlayState.storyPlaylist[0].toLowerCase());
+						PlayState.SONG = Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase() + storyDifficulty2, PlayState.storyPlaylist[0]);
 						LoadingState.loadAndSwitchState(new PlayState());
 					});
 				} else {
 					prevCamFollow = camFollow;
 
-					PlayState.SONG = Song.loadFromJson(curDifficultyArray[curDifficulty].toLowerCase(), PlayState.storyPlaylist[0].toLowerCase());
-
+					PlayState.SONG = Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase() + storyDifficulty2, PlayState.storyPlaylist[0]);
 					LoadingState.loadAndSwitchState(new PlayState());
 				}
 			}
 		} else {
-			trace('WENT BACK TO FREEPLAY??');
 			FlxG.switchState(new FreeplayMenu());
 		}
 	}
