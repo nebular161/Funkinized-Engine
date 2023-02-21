@@ -10,7 +10,7 @@ import funkin.config.ControlsMenu;
 import funkin.menus.MainMenu;
 import funkin.ui.PageName;
 import funkin.ui.Page;
-import funkin.system.dependency.Paths;
+import funkin.system.Paths;
 class OptionsState extends MusicBeatState {
 	public var pages:EnumValueMap<PageName, Page> = new EnumValueMap();
 	public var currentName:PageName = Options;

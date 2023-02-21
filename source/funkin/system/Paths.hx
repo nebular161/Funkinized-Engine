@@ -1,4 +1,4 @@
-package funkin.system.dependency;
+package funkin.system;
 
 import flash.media.Sound;
 import flixel.FlxG;
@@ -125,8 +125,9 @@ class Paths {
 		return 'assets/core/fonts/$key';
 	}
 
-	inline static public function songjson(key:String, isSong=false, ?library:String)
+	inline static public function songjson(key:String, isSong=false, ?library:String):String
 		{
+	
 			return getPath('${isSong ? "funkin/music/songs" : "data"}/$key.json', TEXT, library);
 		}
 

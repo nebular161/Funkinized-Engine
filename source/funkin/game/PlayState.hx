@@ -46,7 +46,6 @@ import funkin.menus.*;
 import funkin.cutscenes.*;
 import funkin.shaders.*;
 import funkin.system.*;
-import funkin.system.dependency.*;
 import funkin.scripting.PlayStateWorkspace;
 import funkin.ui.DialogueBox;
 import haxe.Json;
@@ -59,7 +58,7 @@ import openfl.utils.Assets;
 
 using StringTools;
 #if desktop
-import funkin.system.dependency.Discord.DiscordClient;
+import funkin.system.Discord.DiscordClient;
 #end
 
 class PlayState extends MusicBeatState {
@@ -70,7 +69,7 @@ class PlayState extends MusicBeatState {
 	public static var isStoryMode:Bool = false;
 	public static var storyWeek:Int = 0;
 	public static var storyPlaylist:Array<String> = [];
-	public static var storyDifficulty:Int = 1;
+	public static var storyDifficulty:Int = 0;
 	public static var storyDifficulty2:String = "Normal";
 	public static var deathCounter:Int = 0;
 	public static var practiceMode:Bool = false;
@@ -1927,9 +1926,9 @@ if (Options.getOption('accuracy'))
 
 				FlxG.save.data.weekUnlocked = StoryMenu.weekUnlocked;
 				FlxG.save.flush();
-			} else {
-				var difficulty:String = '';
-
+			} else 
+			{
+				var difficulty:String = "";
 				if (storyDifficulty == 0)
 					difficulty = 'easy';
 
@@ -1937,7 +1936,7 @@ if (Options.getOption('accuracy'))
 					difficulty = 'hard';
 
 				trace('LOADING NEXT SONG');
-				trace(PlayState.storyPlaylist[0].toLowerCase() + difficulty);
+				trace(PlayState.storyPlaylist[0].toLowerCase(), difficulty);
 
 				FlxTransitionableState.skipNextTransIn = true;
 				FlxTransitionableState.skipNextTransOut = true;
@@ -1953,13 +1952,13 @@ if (Options.getOption('accuracy'))
 					camHUD.visible = false;
 
 					FlxG.sound.play(Paths.sound('Lights_Shut_off'), 1, false, null, true, function() {
-						PlayState.SONG = Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase() + storyDifficulty2, PlayState.storyPlaylist[0]);
-						LoadingState.loadAndSwitchState(new PlayState());
+					SONG = Song.loadFromJson(storyPlaylist[0].toLowerCase() + difficulty, storyPlaylist[0]);
+					LoadingState.loadAndSwitchState(new PlayState());
 					});
 				} else {
 					prevCamFollow = camFollow;
 
-					PlayState.SONG = Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase() + storyDifficulty2, PlayState.storyPlaylist[0]);
+					SONG = Song.loadFromJson(storyPlaylist[0].toLowerCase() + difficulty, storyPlaylist[0]);
 					LoadingState.loadAndSwitchState(new PlayState());
 				}
 			}

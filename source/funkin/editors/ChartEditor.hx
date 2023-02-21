@@ -47,7 +47,7 @@ import funkin.game.Conductor;
 import funkin.system.LoadingState;
 import funkin.game.CoolUtil;
 import funkin.game.Song;
-import funkin.system.dependency.Paths;
+import funkin.system.Paths;
 
 using StringTools;
 class ChartEditor extends MusicBeatState
@@ -90,11 +90,6 @@ class ChartEditor extends MusicBeatState
 	public static var chartVer = "1.0";
 
 	private var lastNote:Note;
-
-	/**
-	 * Array of notes showing when each section STARTS in STEPS
-	 * Usually rounded up??
-	 */
 
 	override function create()
 	{

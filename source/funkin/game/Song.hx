@@ -1,5 +1,6 @@
 package funkin.game;
 
+import funkin.menus.StoryMenu;
 import funkin.game.Section.SwagSection;
 import haxe.Json;
 import haxe.format.JsonParser;
@@ -7,7 +8,8 @@ import lime.utils.Assets;
 #if sys
 import sys.io.File;
 #end
-import funkin.system.dependency.Paths;
+import funkin.system.Paths;
+import funkin.game.PlayState;
 
 using StringTools;
 
@@ -47,8 +49,9 @@ class Song
 		this.bpm = bpm;
 	}
 
+
 	public static function loadFromJson(jsonInput:String, ?folder:String):SwagSong {
-		var rawJson = Assets.getText(Paths.songjson(folder.toLowerCase() + '/charts/' + jsonInput.toLowerCase(), true)).trim();
+		var rawJson = Assets.getText(Paths.songjson(folder.toLowerCase() + 'charts/' + jsonInput.toLowerCase(), true)).trim();
 
 		while (!rawJson.endsWith('}')) {
 			rawJson = rawJson.substr(0, rawJson.length - 1);
@@ -60,6 +63,8 @@ class Song
 
 	public static function parseJSONshit(rawJson:String):SwagSong 
 	{
-		return cast Json.parse(rawJson).song;
+		var swagShit:SwagSong = cast Json.parse(rawJson).song;
+		swagShit.validScore = true;
+		return swagShit;
 	}
 }

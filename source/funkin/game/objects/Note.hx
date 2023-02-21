@@ -7,7 +7,7 @@ import flixel.graphics.frames.FlxAtlasFrames;
 import flixel.math.FlxMath;
 import flixel.util.FlxColor;
 import funkin.game.PlayState;
-import funkin.system.dependency.Paths;
+import funkin.system.Paths;
 
 using StringTools;
 

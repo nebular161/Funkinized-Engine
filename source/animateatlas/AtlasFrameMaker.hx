@@ -21,7 +21,7 @@ import sys.io.File;
 import js.html.FileSystem;
 import js.html.File;
 #end
-import funkin.system.dependency.Paths;
+import funkin.system.Paths;
 
 using StringTools;
 class AtlasFrameMaker extends FlxFramesCollection

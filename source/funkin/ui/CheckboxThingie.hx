@@ -1,7 +1,7 @@
 package funkin.ui;
 
 import flixel.FlxSprite;
-import funkin.system.dependency.Paths;
+import funkin.system.Paths;
 
 class CheckboxThingie extends FlxSprite {
 	public var daValue(default, set):Bool;

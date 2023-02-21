@@ -26,7 +26,7 @@ import lime.app.Application;
 import funkin.system.*;
 import funkin.menus.*;
 import funkin.mods.ModsMenu;
-import funkin.system.dependency.Paths;
+import funkin.system.Paths;
 class MainMenu extends MusicBeatState {
 	var menuItems:MainMenuList;
 

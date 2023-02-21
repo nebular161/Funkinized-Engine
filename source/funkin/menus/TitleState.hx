@@ -36,7 +36,7 @@ import funkin.system.Highscore;
 import funkin.cutscenes.VideoState;
 import funkin.game.Conductor;
 import funkin.cutscenes.CutsceneAnimTestState;
-import funkin.system.dependency.*;
+import funkin.system.*;
 class TitleState extends MusicBeatState {
 	
 	public static var initialized:Bool = false;

@@ -14,6 +14,7 @@ import funkin.game.objects.Boyfriend;
 import funkin.game.PlayState;
 import funkin.game.Conductor;
 import funkin.menus.FreeplayMenu;
+import funkin.system.Paths;
 class GameOverSubstate extends MusicBeatSubstate
 {
 	var bf:Boyfriend;

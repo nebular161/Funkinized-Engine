@@ -94,7 +94,7 @@ class StoryMenu extends MusicBeatState {
 
 		if (FlxG.sound.music != null) {
 			if (!FlxG.sound.music.playing)
-				FlxG.sound.playMusic(Paths.music('freakyMenu'));
+				FlxG.sound.playMusic(Paths.music('menus/freakyMenu'));
 		}
 
 		persistentUpdate = persistentDraw = true;
@@ -316,7 +316,6 @@ class StoryMenu extends MusicBeatState {
 			}
 
 			PlayState.SONG = Song.loadFromJson(curDifficultyArray[curDifficulty].toLowerCase(), PlayState.storyPlaylist[0].toLowerCase());
-			PlayState.storyDifficulty2 = curDifficultyArray[curDifficulty].toLowerCase();
 			PlayState.storyWeek = curWeek;
 			PlayState.campaignScore = 0;
 			new FlxTimer().start(1, function(tmr:FlxTimer) {

@@ -7,7 +7,7 @@ import flixel.graphics.frames.FlxAtlasFrames;
 import funkin.backgrounds.TankmenBG;
 import funkin.game.PlayState;
 import funkin.game.Section.SwagSection;
-import funkin.system.dependency.Paths;
+import funkin.system.Paths;
 
 using StringTools;
 class Character extends FlxSprite

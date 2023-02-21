@@ -5,7 +5,7 @@ import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.text.FlxText;
 import flixel.util.FlxColor;
 #if discord_rpc
-import funkin.system.dependency.Discord.DiscordClient
+import funkin.system.Discord.DiscordClient
 #end
 import funkin.menus.MainMenu;
 class ModsMenu extends MainMenu // Unfinished mods menu!!!!

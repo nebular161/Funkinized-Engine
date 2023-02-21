@@ -6,7 +6,7 @@ import flixel.FlxG;
 import flixel.text.FlxText;
 import openfl.system.System;
 #if discord_rpc
-import funkin.system.dependency.Discord.DiscordClient;
+import funkin.system.Discord.DiscordClient;
 #end
 class CreditsMenu extends MusicBeatState
 {
