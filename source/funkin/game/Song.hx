@@ -1,15 +1,16 @@
 package funkin.game;
 
-import funkin.menus.StoryMenu;
 import funkin.game.Section.SwagSection;
 import haxe.Json;
 import haxe.format.JsonParser;
 import lime.utils.Assets;
+
+using StringTools;
+
 #if sys
+import sys.FileSystem;
 import sys.io.File;
 #end
-import funkin.system.Paths;
-import funkin.game.PlayState;
 
 using StringTools;
 
@@ -51,12 +52,17 @@ class Song
 
 
 	public static function loadFromJson(jsonInput:String, ?folder:String):SwagSong {
-		var rawJson = Assets.getText(Paths.songjson(folder.toLowerCase() + '/charts/' + jsonInput.toLowerCase(), true)).trim();
+		var path:String = Paths.charts(folder.toLowerCase() + '/charts/' + jsonInput.toLowerCase());
+		if (!FileSystem.exists(path))
+			path = Paths.charts(folder.toLowerCase() + '/charts/' + jsonInput.toLowerCase());
+		var getJSON = File.getContent(path).trim();
 
-		while (!rawJson.endsWith('}')) {
+		var rawJson = getJSON;
+
+		while (!rawJson.endsWith("}"))
+		{
 			rawJson = rawJson.substr(0, rawJson.length - 1);
 		}
-
 
 		return parseJSONshit(rawJson);
 	}

@@ -9,6 +9,10 @@ import openfl.display.BitmapData;
 import openfl.utils.AssetType;
 import openfl.utils.Assets as OpenFlAssets;
 
+#if sys
+import sys.FileSystem;
+import sys.io.File;
+#end
 class Paths {
 	inline public static var SOUND_EXT = #if web 'mp3' #else 'ogg' #end;
 
@@ -125,10 +129,10 @@ class Paths {
 		return 'assets/core/fonts/$key';
 	}
 
-	inline static public function songjson(key:String, isSong=false, ?library:String):String
+	inline static public function charts(key:String, isSong=false, ?library:String):String
 		{
 	
-			return getPath('${isSong ? "funkin/music/songs" : "data"}/$key.json', TEXT, library);
+			return getPath('${isSong ? "" : "funkin/music/songs"}/$key.json', TEXT, library);
 		}
 
 	inline static public function getSparrowAtlas(key:String, ?library:String) {

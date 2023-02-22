@@ -40,6 +40,13 @@ class CoolUtil
 		"HARD"
 	];
 
+	public static var difficultyArrayExport:Array<String> = 
+	[
+		'-easy', 
+		"", 
+		"-hard"
+    ];
+
 	public static function difficultyString():String
 	{
 		return difficultyArray[PlayState.storyDifficulty];
@@ -105,6 +112,15 @@ class CoolUtil
 		}
 		return dumbArray;
 	}
+
+	public static function formatSong(diff:Int):String
+		{
+			var coolDiff:String = difficultyArray[diff];
+	
+			var formatedSong:String = coolDiff;
+	
+			return formatedSong;
+		}	
 
 	inline public static function boundTo(value:Float, min:Float, max:Float):Float {
 		return Math.max(min, Math.min(max, value));

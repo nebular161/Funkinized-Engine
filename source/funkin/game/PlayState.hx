@@ -69,7 +69,7 @@ class PlayState extends MusicBeatState {
 	public static var isStoryMode:Bool = false;
 	public static var storyWeek:Int = 0;
 	public static var storyPlaylist:Array<String> = [];
-	public static var storyDifficulty:Int = 0;
+	public static var storyDifficulty:Int = 1;
 	public static var storyDifficulty2:String = "Normal";
 	public static var deathCounter:Int = 0;
 	public static var practiceMode:Bool = false;
@@ -1928,18 +1928,10 @@ if (Options.getOption('accuracy'))
 				FlxG.save.flush();
 			} else 
 			{
-				var difficulty:String = "";
-				if (storyDifficulty == 0)
-					difficulty = 'easy';
-
-				if (storyDifficulty == 1)
-					difficulty = 'normal';
-
-				if (storyDifficulty == 2)
-					difficulty = 'hard';
+				var formatSong = CoolUtil.formatSong(PlayState.storyDifficulty);
 
 				trace('LOADING NEXT SONG');
-				trace(PlayState.storyPlaylist[0].toLowerCase(), difficulty);
+				trace(formatSong);
 
 				FlxTransitionableState.skipNextTransIn = true;
 				FlxTransitionableState.skipNextTransOut = true;
@@ -1955,13 +1947,13 @@ if (Options.getOption('accuracy'))
 					camHUD.visible = false;
 
 					FlxG.sound.play(Paths.sound('Lights_Shut_off'), 1, false, null, true, function() {
-					SONG = Song.loadFromJson(storyPlaylist[0].toLowerCase(), storyPlaylist[0] + difficulty);
+					PlayState.SONG = Song.loadFromJson(formatSong, PlayState.storyPlaylist[0]);
 					LoadingState.loadAndSwitchState(new PlayState());
 					});
 				} else {
 					prevCamFollow = camFollow;
 
-					SONG = Song.loadFromJson(storyPlaylist[0].toLowerCase(), storyPlaylist[0] + difficulty);
+					PlayState.SONG = Song.loadFromJson(formatSong, PlayState.storyPlaylist[0]);
 					LoadingState.loadAndSwitchState(new PlayState());
 				}
 			}
