@@ -1,6 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<TextureAtlas imagePath="diffs.png">
-<SubTexture name="EASY0000" x="0" y="67" width="196" height="65" frameX="0" frameY="0" frameWidth="196" frameHeight="65" />
-<SubTexture name="HARD0000" x="0" y="0" width="211" height="67" frameX="0" frameY="0" frameWidth="211" frameHeight="67" />
-<SubTexture name="NORMAL0000" x="211" y="0" width="308" height="67" frameX="0" frameY="0" frameWidth="308" frameHeight="67" />
-</TextureAtlas>

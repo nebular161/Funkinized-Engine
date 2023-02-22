@@ -107,9 +107,6 @@ class StoryMenu extends MusicBeatState {
 		txtWeekTitle.alpha = 0.7;
 
 		var ui_tex = Paths.getSparrowAtlas('menuObjects/storymenu/menu_assets');
-
-		var diffs = Paths.getSparrowAtlas('menuObjects/storymenu/difficulties/diffs');
-
 		var yellowBG:FlxSprite = new FlxSprite(0, 56).makeGraphic(FlxG.width, 400, 0xFFF9CF51);
 
 		grpWeekText = new FlxTypedGroup<MenuItem>();
@@ -185,34 +182,19 @@ class StoryMenu extends MusicBeatState {
 		leftArrow.animation.addByPrefix('idle', "arrow left");
 		leftArrow.animation.addByPrefix('press', "arrow push left");
 		leftArrow.animation.play('idle');
-		leftArrow.antialiasing = true;
 		difficultySelectors.add(leftArrow);
 
 		sprDifficulty = new FlxSprite(leftArrow.x + 130, leftArrow.y);
-
-		sprDifficulty.frames = diffs;
-
-		sprDifficulty.animation.addByPrefix('easy', 'EASY');
-
-		sprDifficulty.animation.addByPrefix('normal', 'NORMAL');
-
-		sprDifficulty.animation.addByPrefix('hard', 'HARD');
-
-		sprDifficulty.animation.play('easy');
-
-		sprDifficulty.antialiasing = true;
 		changeDifficulty();
 
 		difficultySelectors.add(sprDifficulty);
 
-		rightArrow = new FlxSprite(sprDifficulty.x + sprDifficulty.width + 50, leftArrow.y);
+		rightArrow = new FlxSprite(leftArrow.x + 376, leftArrow.y);
 		rightArrow.frames = ui_tex;
 		rightArrow.animation.addByPrefix('idle', 'arrow right');
 		rightArrow.animation.addByPrefix('press', "arrow push right", 24, false);
 		rightArrow.animation.play('idle');
-		rightArrow.antialiasing = true;
 		difficultySelectors.add(rightArrow);
-
 		trace('Line 150');
 
 		add(yellowBG);
@@ -306,16 +288,10 @@ class StoryMenu extends MusicBeatState {
 			PlayState.isStoryMode = true;
 			selectedWeek = true;
 
-			var diffic = '';
+			PlayState.storyDifficulty = curDifficulty;
+			var formatSong = CoolUtil.formatSong(PlayState.storyDifficulty);
 
-			switch (curDifficulty) {
-				case 0:
-					diffic = 'easy';
-				case 2:
-					diffic = 'hard';
-			}
-
-			PlayState.SONG = Song.loadFromJson(curDifficultyArray[curDifficulty].toLowerCase(), PlayState.storyPlaylist[0].toLowerCase());
+			PlayState.SONG = Song.loadFromJson(formatSong, PlayState.storyPlaylist[0].toLowerCase());
 			PlayState.storyWeek = curWeek;
 			PlayState.campaignScore = 0;
 			new FlxTimer().start(1, function(tmr:FlxTimer) {
@@ -326,37 +302,22 @@ class StoryMenu extends MusicBeatState {
 
 	function changeDifficulty(change:Int = 0):Void
 		{
-			curDifficulty += change;
-	
-			if (curDifficulty < 0)
-				curDifficulty = 2;
-			if (curDifficulty > 2)
-				curDifficulty = 0;
-	
+			curDifficulty = FlxMath.wrap(curDifficulty + change, 0, CoolUtil.difficultyArray.length - 1);
+
 			sprDifficulty.offset.x = 0;
-	
-			switch (curDifficulty)
-			{
-				case 0:
-					sprDifficulty.animation.play('easy');
-					sprDifficulty.offset.x = 20;
-				case 1:
-					sprDifficulty.animation.play('normal');
-					sprDifficulty.offset.x = 70;
-				case 2:
-					sprDifficulty.animation.play('hard');
-					sprDifficulty.offset.x = 20;
-			}
+
+			sprDifficulty.loadGraphic(Paths.image("menuObjects/storymenu/difficulties/" + CoolUtil.difficultyArray[curDifficulty].toLowerCase()));
 	
 			sprDifficulty.alpha = 0;
+
 			sprDifficulty.y = leftArrow.y - 15;
 			intendedScore = Highscore.getWeekScore(curWeek, curDifficulty);
-	
+
 			#if !switch
 			intendedScore = Highscore.getWeekScore(curWeek, curDifficulty);
 			#end
-	
-			FlxTween.tween(sprDifficulty, {y: leftArrow.y + 15, alpha: 1}, 0.07);
+
+		FlxTween.tween(sprDifficulty, {y: leftArrow.y + 15, alpha: 1}, 0.07);
 		}
 	var lerpScore:Float = 0;
 	var intendedScore:Int = 0;

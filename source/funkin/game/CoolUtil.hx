@@ -121,6 +121,11 @@ class CoolUtil
 	
 			return formatedSong;
 		}	
+		
+	public static function difficultyExport():String
+		{
+			return difficultyArrayExport[PlayState.storyDifficulty];
+		}
 
 	inline public static function boundTo(value:Float, min:Float, max:Float):Float {
 		return Math.max(min, Math.min(max, value));
