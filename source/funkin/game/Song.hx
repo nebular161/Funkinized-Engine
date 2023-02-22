@@ -51,7 +51,7 @@ class Song
 
 
 	public static function loadFromJson(jsonInput:String, ?folder:String):SwagSong {
-		var rawJson = Assets.getText(Paths.songjson(folder.toLowerCase() + 'charts/' + jsonInput.toLowerCase(), true)).trim();
+		var rawJson = Assets.getText(Paths.songjson(folder.toLowerCase() + '/charts/' + jsonInput.toLowerCase(), true)).trim();
 
 		while (!rawJson.endsWith('}')) {
 			rawJson = rawJson.substr(0, rawJson.length - 1);

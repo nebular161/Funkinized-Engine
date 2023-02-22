@@ -1932,6 +1932,9 @@ if (Options.getOption('accuracy'))
 				if (storyDifficulty == 0)
 					difficulty = 'easy';
 
+				if (storyDifficulty == 1)
+					difficulty = 'normal';
+
 				if (storyDifficulty == 2)
 					difficulty = 'hard';
 
@@ -1952,13 +1955,13 @@ if (Options.getOption('accuracy'))
 					camHUD.visible = false;
 
 					FlxG.sound.play(Paths.sound('Lights_Shut_off'), 1, false, null, true, function() {
-					SONG = Song.loadFromJson(storyPlaylist[0].toLowerCase() + difficulty, storyPlaylist[0]);
+					SONG = Song.loadFromJson(storyPlaylist[0].toLowerCase(), storyPlaylist[0] + difficulty);
 					LoadingState.loadAndSwitchState(new PlayState());
 					});
 				} else {
 					prevCamFollow = camFollow;
 
-					SONG = Song.loadFromJson(storyPlaylist[0].toLowerCase() + difficulty, storyPlaylist[0]);
+					SONG = Song.loadFromJson(storyPlaylist[0].toLowerCase(), storyPlaylist[0] + difficulty);
 					LoadingState.loadAndSwitchState(new PlayState());
 				}
 			}
