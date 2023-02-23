@@ -103,7 +103,6 @@ class PlayState extends MusicBeatState {
 	public var health:Float = 1;
 	public var misses:Int = 0;
 	public var accuracy:Float = 0.00;
-	public var accuracyDefault:Float = 0.00;
 	public var combo:Int = 0;
 	public var healthBarBG:FlxSprite;
 	public var healthBar:FlxBar;
@@ -121,9 +120,8 @@ class PlayState extends MusicBeatState {
 	private var grpNoteSplashes:FlxTypedGroup<NoteSplash>;
 	private var lerpHealth:Float = 1;
 	private var totalNotesHit:Float = 0;
-	private var totalPlayed:Int = 0;
 	private var totalHits:Int = 0;
-	private var totalNotesHitDefault:Float = 0;
+	private var totalPlayed:Int = 0;
 
 	/*variables*/
 	var halloweenLevel:Bool = false;
@@ -917,7 +915,9 @@ class PlayState extends MusicBeatState {
 		scoreTxt.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, CENTER, OUTLINE, FlxColor.BLACK);
 		scoreTxt.scrollFactor.set();
 		scoreTxt.borderSize = 1.25;
+
 		add(scoreTxt);
+		
 
 		if(Options.getOption('statistics'))
 		{
@@ -994,8 +994,11 @@ class PlayState extends MusicBeatState {
 	function updateAccuracy()
 		{
 			totalPlayed += 1;
-			accuracy = Math.max(0, totalNotesHit / totalPlayed * 100);
-			accuracyDefault = Math.max(0, totalNotesHitDefault / totalPlayed * 100);
+			accuracy = totalNotesHit / totalPlayed * 100;
+			if (accuracy >= 100)
+			{
+				accuracy = 100;
+			}
 			gameStatistics.text = 'Sicks: ${sicks}\nGoods: ${goods}\nBads: ${bads}\nShits: ${shits}\nMisses: ${misses}';
 		}
 
@@ -1549,105 +1552,14 @@ class PlayState extends MusicBeatState {
 
 		scoreTxt.text = 'Score:' + songScore;
 
-if (Options.getOption('accuracy'))
-	{
-		function generateRanking():String //Code From Kade Engine 1.3.1 yayaya
-			{
-				var ranking:String = "?";
-				
-				if (misses == 0 && bads == 0 && shits == 0 && goods == 0) // Marvelous (SICK) Full Combo
-					ranking = "";
-				else if (misses == 0 && bads == 0 && shits == 0 && goods >= 1) // Good Full Combo (Nothing but Goods & Sicks)
-					ranking = "";
-				else if ((shits < 0 && shits != 0 || bads < 10 && bads != 0) && misses == 0) // Single Digit Combo Breaks
-					ranking = "";
-				else if (misses == 0 && (shits >= 0 || bads >= 0)) // Regular FC
-					ranking = "";
-				else if (misses >= 10 || (shits >= 10 || bads >= 10)) // Combo Breaks
-					ranking = "";
-				else
-					ranking = "";
-		
-		
-				var wifeConditions:Array<Bool> = [
-					accuracy >= 99.9935, // S
-					accuracy >= 99.980, // A
-					accuracy >= 99.970, // A
-					accuracy >= 99.955, // A
-					accuracy >= 99.90, // A
-					accuracy >= 99.80, // A
-					accuracy >= 99.70, // A
-					accuracy >= 99, // A
-					accuracy >= 96.50, // A
-					accuracy >= 93, // A
-					accuracy >= 90, // A
-					accuracy >= 90, // A
-					accuracy >= 90, // A
-					accuracy >= 80, // B
-					accuracy >= 70, // C
-					accuracy >= 60, // D
-					accuracy < 59.9935 // F
-				];
-		
-				for(i in 0...wifeConditions.length)
-				{
-					var b = wifeConditions[i];
-					if (b)
-					{
-						switch(i)
-						{
-							case 0:
-								ranking += "S";
-							case 1:
-								ranking += "A";
-							case 2:
-								ranking += "A";
-							case 3:
-								ranking += "A";
-							case 4:
-								ranking += "A";
-							case 5:
-								ranking += "A";
-							case 6:
-								ranking += "A";
-							case 7:
-								ranking += "A";
-							case 8:
-								ranking += "A";
-							case 9:
-								ranking += "A";
-							case 10:
-								ranking += "A";
-							case 11:
-								ranking += "A";
-							case 12:
-								ranking += "A";
-							case 13:
-								ranking += "B";
-							case 14:
-								ranking += "C";
-							case 15:
-								ranking += "D";
-							case 16:
-								ranking += "F";
-						}
-						break;
-					}
-				}
-		
-				if (accuracy == 0)
-					ranking = "?";
-		
-				return ranking;
-			}
-
-			var accuracyAdds:Float = songAccuracy / (totalHits + songMisses);
-			if (Math.isNaN(accuracyAdds))
-				accuracyAdds = 0;
-			else
-				accuracyAdds = FlxMath.roundDecimal(accuracyAdds * 100, 2);		
-			scoreTxt.text = "Score: " + songScore + " • Combo Breaks: " + misses + " • Accuracy: " + truncateFloat(accuracy, 2) + "%" + " • Grade: " + generateRanking();
-
+		if(Options.getOption('accuracy'))
+	{		
+		var accuracyAdds:Float = songAccuracy / (totalHits + songMisses);
+		if (Math.isNaN(accuracyAdds))
+			accuracyAdds = 0;
+		else
+			accuracyAdds = FlxMath.roundDecimal(accuracyAdds * 100, 2);
+		scoreTxt.text = "Score: " + songScore + " -" + " Combo Breaks: " + songMisses + " -" +' Accuracy: ${CoolUtil.formatAccuracy(accuracyAdds)}%';
 	}
 
 		if (controls.PAUSE && startedCountdown && canPause) {
@@ -1985,9 +1897,6 @@ if (Options.getOption('accuracy'))
 
 		if (noteDiff > Conductor.safeZoneOffset * 0.9) 
 		{
-			if(Options.getOption("accuracy")) {
-				totalNotesHit += 1 - Conductor.shitZone;
-			}	
 			daRating = 'shit';
 			score = 50;
 			addedAccuracy -= 0.25;
@@ -1995,19 +1904,13 @@ if (Options.getOption('accuracy'))
 			doSplash = false;
 		} else if (noteDiff > Conductor.safeZoneOffset * 0.75) 
 		{
-			if(Options.getOption("accuracy")) {
-				totalNotesHit += 1 - Conductor.badZone;
-			}
 			daRating = 'bad';
 			score = 100;
 			addedAccuracy -= 0.50;
 			bads++;
 			doSplash = false;
 		} else if (noteDiff > Conductor.safeZoneOffset * 0.25) 
-		{
-			if(Options.getOption("accuracy")) {
-				totalNotesHit += 1 - Conductor.goodZone;
-			}				
+		{		
 			daRating = 'good';
 			addedAccuracy = 0.75;
 			score = 200;
@@ -2016,7 +1919,6 @@ if (Options.getOption('accuracy'))
 		}
 		else if (noteDiff > Conductor.safeZoneOffset * 0) {
 			daRating = 'sick';
-			totalNotesHit += 1;
 			addedAccuracy = 1;
 			score = 350;
 			sicks++;
@@ -2330,8 +2232,7 @@ if (Options.getOption('accuracy'))
 			}
 
 			else
-				totalNotesHit += 1;		
-
+			totalNotesHit += 1;
 			if (note.noteData >= 0)
 				health += 0.023;
 			else
