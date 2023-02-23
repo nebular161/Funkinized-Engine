@@ -1771,7 +1771,7 @@ class PlayState extends MusicBeatState {
 					if (daNote.tooLate || !daNote.wasGoodHit) {
 						health -= 0.03;
 						vocals.volume = 0;
-						songMisses;
+						songMisses++;
 						noteMiss(daNote.noteData);
 					}
 
@@ -2182,6 +2182,8 @@ class PlayState extends MusicBeatState {
 
 			if (!practiceMode)
 				songScore -= 10;
+
+			songMisses++;
 
 			FlxG.sound.play(Paths.soundRandom('missnote', 1, 3), FlxG.random.float(0.1, 0.2));
 
