@@ -2,10 +2,6 @@ package funkin.game;
 
 import funkin.game.Song.SwagSong;
 
-/**
- * ...
- * @author
- */
 typedef BPMChangeEvent = {
 	var stepTime:Int;
 	var songTime:Float;
@@ -19,10 +15,6 @@ class Conductor {
 	public static var songPosition:Float;
 	public static var lastSongPos:Float;
 	public static var offset:Float = 0;
-
-	public static var goodZone:Float = 0.25;
-	public static var badZone:Float = 0.50;
-	public static var shitZone:Float = 0.75;
 
 	public static var safeFrames:Int = 10;
 	public static var safeZoneOffset:Float = (safeFrames / 60) * 1000; // is calculated in create(), is safeFrames in milliseconds
