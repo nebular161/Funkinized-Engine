@@ -186,10 +186,13 @@ class PlayState extends MusicBeatState {
 		FlxG.cameras.reset(camGame);
 		FlxG.cameras.add(camHUD, false);
 
-		grpNoteSplashes = new FlxTypedGroup<NoteSplash>();
-		var splash:NoteSplash = new NoteSplash(100, 100, 0);
-		grpNoteSplashes.add(splash);
-		splash.alpha = 0.1;
+		if(Options.getOption('notesplash'))
+			{
+				grpNoteSplashes = new FlxTypedGroup<NoteSplash>();
+				var splash:NoteSplash = new NoteSplash(100, 100, 0);
+				grpNoteSplashes.add(splash);
+				splash.alpha = 0.1;
+			}
 
 		persistentUpdate = persistentDraw = true;
 
@@ -307,6 +310,7 @@ class PlayState extends MusicBeatState {
 							remove(phillyTrain);
 							remove(phillyCityLights);
 							remove(city);
+							FlxG.sound.list.remove(trainSound);
 						}
 
 					var street:FlxSprite = new FlxSprite(-40, streetBehind.y).loadGraphic(Paths.image('gameObjects/stage_assets/week3/street'));
@@ -856,10 +860,13 @@ class PlayState extends MusicBeatState {
 		strumLineNotes = new FlxTypedGroup<FlxSprite>();
 		add(strumLineNotes);
 
-		add(grpNoteSplashes);
+		if(Options.getOption('notesplash'))
+		{
+			add(grpNoteSplashes);
 
-		var splashTest:NoteSplash = new NoteSplash(-700, 100, 0);
-		grpNoteSplashes.add(splashTest);
+			var splashTest:NoteSplash = new NoteSplash(-700, 100, 0);
+			grpNoteSplashes.add(splashTest);
+		}	
 
 		playerStrums = new FlxTypedGroup<FlxSprite>();
 		dadStrums = new FlxTypedGroup<FlxSprite>();
@@ -932,7 +939,10 @@ class PlayState extends MusicBeatState {
 			add(gameStatistics);
 		}
 
-		grpNoteSplashes.cameras = [camHUD];
+		if(Options.getOption('notesplash'))
+			{
+				grpNoteSplashes.cameras = [camHUD];
+			}
 		strumLineNotes.cameras = [camHUD];
 		notes.cameras = [camHUD];
 		healthBar.cameras = [camHUD];
@@ -1925,11 +1935,14 @@ class PlayState extends MusicBeatState {
 			doSplash = true;
 		}		
 
-		if (doSplash) {
-			var splash:NoteSplash = grpNoteSplashes.recycle(NoteSplash);
-			splash.setupNoteSplash(daNote.x + 57, playerStrums.members[daNote.noteData].y + 50, daNote.noteData);
-			grpNoteSplashes.add(splash);
-		}
+		if(Options.getOption('notesplash'))
+			{
+				if (doSplash) {
+					var splash:NoteSplash = grpNoteSplashes.recycle(NoteSplash);
+					splash.setupNoteSplash(daNote.x + 57, playerStrums.members[daNote.noteData].y + 50, daNote.noteData);
+					grpNoteSplashes.add(splash);
+				}
+			}
 
 		songAccuracy += addedAccuracy;
 		totalHits += 1;
@@ -2313,6 +2326,10 @@ class PlayState extends MusicBeatState {
 	function trainStart():Void {
 		trainMoving = true;
 		trainSound.play(true);
+		if(Options.getOption('low-end'))
+			{
+				trainMoving = false;
+			}
 	}
 
 	var startedMoving:Bool = false;
