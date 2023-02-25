@@ -1562,12 +1562,12 @@ class PlayState extends MusicBeatState {
 
 		if(Options.getOption('accuracy'))
 	{		
-		var accuracyAdds:Float = songAccuracy / (totalHits + songMisses);
+		var accuracyAdds:Float = songAccuracy / (totalHits);
 		if (Math.isNaN(accuracyAdds))
 			accuracyAdds = 0;
 		else
 			accuracyAdds = FlxMath.roundDecimal(accuracyAdds * 100, 2);
-		scoreTxt.text = "Score: " + songScore + " -" + " Combo Breaks: " + songMisses + " -" +' Accuracy: ${CoolUtil.formatAccuracy(accuracyAdds)}%';
+		scoreTxt.text = "Score: " + songScore + " -" + " Combo Breaks: " + misses + " -" +' Accuracy: ${CoolUtil.formatAccuracy(accuracyAdds)}%';
 	}
 
 		if (controls.PAUSE && startedCountdown && canPause) {
@@ -1777,9 +1777,9 @@ class PlayState extends MusicBeatState {
 
 				if (doKill) {
 					if (daNote.tooLate || !daNote.wasGoodHit) {
+						songMisses;
 						health -= 0.03;
 						vocals.volume = 0;
-						songMisses++;
 						noteMiss(daNote.noteData);
 					}
 
@@ -2194,7 +2194,7 @@ class PlayState extends MusicBeatState {
 			if (!practiceMode)
 				songScore -= 10;
 
-			songMisses++;
+			songMisses;
 
 			FlxG.sound.play(Paths.soundRandom('missnote', 1, 3), FlxG.random.float(0.1, 0.2));
 
