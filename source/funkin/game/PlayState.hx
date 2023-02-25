@@ -307,10 +307,8 @@ class PlayState extends MusicBeatState {
 
 					if(Options.getOption('low-end'))
 						{
-							remove(phillyTrain);
 							remove(phillyCityLights);
 							remove(city);
-							FlxG.sound.list.remove(trainSound);
 						}
 
 					var street:FlxSprite = new FlxSprite(-40, streetBehind.y).loadGraphic(Paths.image('gameObjects/stage_assets/week3/street'));
@@ -2326,10 +2324,6 @@ class PlayState extends MusicBeatState {
 	function trainStart():Void {
 		trainMoving = true;
 		trainSound.play(true);
-		if(Options.getOption('low-end'))
-			{
-				trainMoving = false;
-			}
 	}
 
 	var startedMoving:Bool = false;
