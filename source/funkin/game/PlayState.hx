@@ -32,10 +32,10 @@ import flixel.util.FlxColor;
 import flixel.util.FlxSort;
 import flixel.util.FlxStringUtil;
 import flixel.util.FlxTimer;
-import funkin.backgrounds.BackgroundDancer;
-import funkin.backgrounds.BackgroundGirls;
-import funkin.backgrounds.TankmenBG;
-import funkin.backgrounds.BGSprite;
+import funkin.game.objects.backgrounds.BackgroundDancer;
+import funkin.game.objects.backgrounds.BackgroundGirls;
+import funkin.game.objects.backgrounds.TankmenBG;
+import funkin.game.objects.backgrounds.BGSprite;
 import funkin.config.Options;
 import funkin.editors.*;
 import funkin.game.*;
@@ -46,7 +46,7 @@ import funkin.menus.*;
 import funkin.cutscenes.*;
 import funkin.shaders.*;
 import funkin.system.*;
-import funkin.scripting.PlayStateWorkspace;
+import funkin.scripting.Script;
 import funkin.ui.DialogueBox;
 import haxe.Json;
 import lime.utils.Assets;
@@ -56,11 +56,15 @@ import openfl.display.StageQuality;
 import openfl.filters.ShaderFilter;
 import openfl.utils.Assets;
 
+#if sys
+import sys.FileSystem;
+import sys.io.File;
+#end
+
 using StringTools;
 #if desktop
 import funkin.system.Discord.DiscordClient;
 #end
-
 class PlayState extends MusicBeatState {
 	/*public variables*/
 	public static var instance:PlayState = null;
@@ -105,15 +109,16 @@ class PlayState extends MusicBeatState {
 	public var accuracy:Float = 0.00;
 	public var combo:Int = 0;
 	public var healthBarBG:FlxSprite;
-	public var healthBar:FlxBar;
+	public static var healthBar:FlxBar;
 	public var generatedMusic:Bool = false;
 	public var startingSong:Bool = false;
-	public var iconP1:HealthIcon;
-	public var iconP2:HealthIcon;
+	public static var iconP1:HealthIcon;
+	public static var iconP2:HealthIcon;
 	public var camHUD:FlxCamera;
 	public var camGame:FlxCamera;
 	public static var campaignScore:Int = 0;
 	public static var daPixelZoom:Float = 6;
+	public var script:Script; //scripting
 
 	/*private variables*/
 	private var songAccuracy:Float = 0.0;
@@ -871,6 +876,8 @@ class PlayState extends MusicBeatState {
 
 		generateSong();
 
+		startScript();
+
 		camFollow = new FlxObject(camPos.x, camPos.y, 1, 1);
 
 		if (prevCamFollow != null) {
@@ -954,8 +961,6 @@ class PlayState extends MusicBeatState {
 		if (isStoryMode && !seenCutscene) {
 			seenCutscene = true;
 
-			//var video:MP4Handler = new MP4Handler();
-
 			switch (curSong.toLowerCase()) {
 				case 'winter-horrorland':
 					var blackScreen:FlxSprite = new FlxSprite(0, 0).makeGraphic(Std.int(FlxG.width * 2), Std.int(FlxG.height * 2), FlxColor.BLACK);
@@ -997,6 +1002,11 @@ class PlayState extends MusicBeatState {
 		}
 
 		super.create();
+		
+	if (script != null)
+		{
+			script.executeFunc("onCreate");
+		}
 	}
 
 	function updateAccuracy()
@@ -1115,6 +1125,11 @@ class PlayState extends MusicBeatState {
 				});
 			}
 
+	if (script != null)
+			{
+				script.executeFunc("onStartCountdown");
+			}
+
 			var introAssets:Map<String, Array<String>> = new Map<String, Array<String>>();
 			introAssets.set('default', ['gameObjects/countdowns/base/ready', 'gameObjects/countdowns/base/get', "gameObjects/countdowns/base/set", "gameObjects/countdowns/base/go"]);
 			introAssets.set('school', ['gameObjects/countdowns/pixel/ready-pixel', 'gameObjects/countdowns/pixel/get-pixel', 'gameObjects/countdowns/pixel/set-pixel', 'gameObjects/countdowns/pixel/date-pixel']);
@@ -1220,6 +1235,11 @@ class PlayState extends MusicBeatState {
 			FlxG.sound.playMusic(Paths.inst(PlayState.SONG.song), 1, false);
 		FlxG.sound.music.onComplete = endSong;
 		vocals.play();
+
+		if (script != null)
+		{
+			script.executeFunc("onSongStart");
+		}
 
 		#if discord_rpc
 		// Song duration in a float, useful for the time left feature
@@ -1809,6 +1829,11 @@ class PlayState extends MusicBeatState {
 		if (FlxG.keys.justPressed.ONE)
 			endSong();
 		#end
+		
+		if (script != null)
+		{
+			script.executeFunc("onUpdate");
+		}
 	}
 
 	function endSong():Void {
@@ -2372,8 +2397,29 @@ class PlayState extends MusicBeatState {
 		gf.playAnim('scared', true);
 	}
 
+		override function destroy()
+	{
+		if (script != null)
+		{
+			script.executeFunc("destroy");
+
+			script.destroy();
+		}
+
+		instance = null;
+
+		super.destroy();
+	}
+
 	override function stepHit() {
 		super.stepHit();
+		
+		if (script != null)
+		{
+			script.setVariable("curStep", curStep);
+			script.executeFunc("onStepHit");
+		}
+
 		if (Math.abs(FlxG.sound.music.time - (Conductor.songPosition - Conductor.offset)) > 20
 			|| (SONG.needsVoices && Math.abs(vocals.time - (Conductor.songPosition - Conductor.offset)) > 20)) {
 			resyncVocals();
@@ -2508,4 +2554,78 @@ class PlayState extends MusicBeatState {
 	}
 
 	var curLight:Int = 0;
+
+		public function startScript()
+	{
+		var formattedFolder:String = Paths.formatToSongPath(SONG.song);
+
+		var path:String = Paths.hscript(formattedFolder + '/scripts/' + '/script');
+
+		var hxdata:String = "";
+
+		if (FileSystem.exists(path))
+			hxdata = File.getContent(path);
+
+		if (hxdata != "")
+		{
+			script = new Script();
+
+			script.setVariable("onSongStart", function()
+			{
+			});
+
+			script.setVariable("destroy", function()
+			{
+			});
+
+			script.setVariable("onCreate", function()
+			{
+			});
+
+			script.setVariable("onStartCountdown", function()
+			{
+			});
+
+			script.setVariable("onStepHit", function()
+			{
+			});
+
+			script.setVariable("onUpdate", function()
+			{
+			});
+
+			script.setVariable("import", function(lib:String, ?as:Null<String>) // Does this even work?
+			{
+				if (lib != null && Type.resolveClass(lib) != null)
+				{
+					script.setVariable(as != null ? as : lib, Type.resolveClass(lib));
+				}
+			});
+
+			script.setVariable("fromRGB", function(Red:Int, Green:Int, Blue:Int, Alpha:Int = 255)
+			{
+				return FlxColor.fromRGB(Red, Green, Blue, Alpha);
+			});
+
+			script.setVariable("curStep", curStep);
+			script.setVariable("bpm", SONG.bpm);
+			script.setVariable("PlayState", instance);
+			script.setVariable("FlxTween", FlxTween);
+			script.setVariable("FlxEase", FlxEase);
+			script.setVariable("FlxSprite", FlxSprite);
+			script.setVariable("Math", Math);
+			script.setVariable("FlxG", FlxG);
+			script.setVariable("FlxTimer", FlxTimer);
+			script.setVariable("Main", Main);
+			script.setVariable("Conductor", Conductor);
+			script.setVariable("Std", Std);
+			script.setVariable("FlxTextBorderStyle", FlxTextBorderStyle);
+			script.setVariable("Paths", Paths);
+			script.setVariable("CENTER", FlxTextAlign.CENTER);
+			script.setVariable("FlxTextFormat", FlxTextFormat);
+			script.setVariable("InputFormatter", InputFormatter);
+			script.setVariable("FlxTextFormatMarkerPair", FlxTextFormatMarkerPair);
+			script.runScript(hxdata);
+		}
+	}
 }

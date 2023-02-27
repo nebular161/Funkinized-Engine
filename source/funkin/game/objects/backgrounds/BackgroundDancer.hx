@@ -1,4 +1,4 @@
-package funkin.backgrounds;
+package funkin.game.objects.backgrounds;
 
 import flixel.FlxSprite;
 import flixel.graphics.frames.FlxAtlasFrames;

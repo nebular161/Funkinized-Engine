@@ -105,6 +105,11 @@ class Paths {
 			return getPath('funkin/data/$key.png', IMAGE, library);
 		}	
 
+	inline static public function hscript(key:String, ?library:String)
+		{
+			return getPath('funkin/music/songs/$key.hx', TEXT, library);
+		}		
+
 	inline static public function music(key:String, ?library:String) {
 		return getPath('funkin/music/$key.$SOUND_EXT', MUSIC, library);
 	}

@@ -4,7 +4,7 @@ import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.animation.FlxBaseAnimation;
 import flixel.graphics.frames.FlxAtlasFrames;
-import funkin.backgrounds.TankmenBG;
+import funkin.game.objects.backgrounds.TankmenBG;
 import funkin.game.PlayState;
 import funkin.game.Section.SwagSection;
 import funkin.system.Paths;
@@ -100,6 +100,7 @@ class Character extends FlxSprite
 
 				setGraphicSize(Std.int(width * PlayState.daPixelZoom));
 				updateHitbox();
+				antialiasing = false;
 
 			case 'gf-tankmen':
 				frames = Paths.getSparrowAtlas('gameObjects/characters/gf/gfTankmen');
@@ -336,6 +337,8 @@ class Character extends FlxSprite
 
 				playAnim('idle');
 
+				antialiasing = false;
+
 				width -= 100;
 				height -= 100;
 
@@ -359,6 +362,8 @@ class Character extends FlxSprite
 	
 					playAnim('idle');
 	
+					antialiasing = false;
+
 					width -= 100;
 					height -= 100;
 					flipX = true;
@@ -374,6 +379,7 @@ class Character extends FlxSprite
 				playAnim('firstDeath');
 				setGraphicSize(Std.int(width * 6));
 				updateHitbox();
+				antialiasing = false;
 				flipX = true;
 			case 'bf-gf':
 				frames = Paths.getSparrowAtlas('gameObjects/characters/bf/bfAndGF');
@@ -420,6 +426,7 @@ class Character extends FlxSprite
 				playAnim('idle');
 
 				setGraphicSize(Std.int(width * 6));
+				antialiasing = false;
 				updateHitbox();
 			case 'senpai-angry':
 				frames = Paths.getSparrowAtlas('gameObjects/characters/senpai/senpai_angry');
@@ -431,7 +438,7 @@ class Character extends FlxSprite
 
 				loadOffsetFile(curCharacter);
 				playAnim('idle');
-
+				antialiasing = false;
 				setGraphicSize(Std.int(width * 6));
 				updateHitbox();
 
@@ -447,7 +454,7 @@ class Character extends FlxSprite
 
 				setGraphicSize(Std.int(width * 6));
 				updateHitbox();
-
+				antialiasing = false;
 				playAnim('idle');
 
 			case 'parents-christmas':
