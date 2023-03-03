@@ -2636,7 +2636,7 @@ class PlayState extends MusicBeatState {
 			script.setVariable("FlxTextFormatMarkerPair", FlxTextFormatMarkerPair);
 			script.setVariable("boyfriend", boyfriend);
 			script.setVariable("dad", dad);
-			script.setVariable("gf", gf);
+			script.setVariable("girlfriend", gf);
 			script.runScript(hxdata);
 		}
 	}
