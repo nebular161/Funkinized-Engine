@@ -8,10 +8,10 @@ import flixel.FlxCamera;
 import flixel.util.FlxColor;
 import haxe.ds.StringMap;
 import funkin.ui.Page;
-import funkin.ui.CheckboxThingie;
+import funkin.ui.objects.CheckboxThingie;
 import funkin.ui.TextMenuList;
 import funkin.ui.TextMenuItem;
-import funkin.game.CoolUtil;
+import funkin.utils.*;
 import funkin.ui.MenuItem;
 
 class Options extends Page
@@ -35,15 +35,15 @@ class Options extends Page
 	/*----------------------------------------------------------------*/
 						/* Options List*/
 		createPrefItem('Censor Naughtyness', 'censor-naughty', false);
-		createPrefItem('downscroll', 'downscroll', false);
-		createPrefItem('flashing menu', 'flashing-menu', true);
+		createPrefItem('Downscroll', 'downscroll', false);
+		createPrefItem('Flashing Lights', 'flashing-lights', true);
 		createPrefItem('Note Splashes', 'notesplash', true);
 		createPrefItem('Show Accuracy', 'accuracy', true);
 		createPrefItem('Ghost Tapping', 'ghost-tap', true);
 		createPrefItem('Low End Mode', 'low-end', false);
 		createPrefItem('Game Statistics', 'statistics', false);
 		createPrefItem('Auto Pause', 'auto-pause', false);
-		createPrefItem('Glow Opponent Strums', 'glow-strums', false);
+		createPrefItem('Glow Opponent Strums', 'glow-strums', true);
 	/*	--------------------------------------------------------------*/
 		camFollow = new FlxObject(FlxG.width / 2, 0, 140, 70);
 		if (items != null)
@@ -102,13 +102,13 @@ class Options extends Page
 			preferenceCheck('accuracy', true);
 		}		
 
-		if(FlxG.save.data.flashingMenu != null)
+		if(FlxG.save.data.flashingLights != null)
 		{
-			preferenceCheck('flashing-menu', FlxG.save.data.flashingMenu);
+			preferenceCheck('flashing-lights', FlxG.save.data.flashingLights);
 		}
 		else
 		{
-			preferenceCheck('flashing-menu', true);
+			preferenceCheck('flashing-lights', true);
 		}
 
 		if(FlxG.save.data.lowEnd != null)
@@ -215,11 +215,11 @@ class Options extends Page
 		preferences.set(identifier, value);
 		checkboxes[items.selectedIndex].daValue = value;
 		
-		/*----------------------------------------------------*/
+	/*----------------------------------------------------------------*/		
 		/* Having FlxG save your choice after selecting the option*/
 		FlxG.save.data.censorNaughty = getOption('censor-naughty');
 		FlxG.save.data.downscroll = getOption('downscroll');
-		FlxG.save.data.flashingMenu = getOption('flashing-menu');
+		FlxG.save.data.flashingLights = getOption('flashing-lights');
 		FlxG.save.data.glowStrums = getOption('glow-strums');
 		FlxG.save.data.notesplash = getOption('notesplash');
 		FlxG.save.data.accuracy = getOption('accuracy');
@@ -227,8 +227,7 @@ class Options extends Page
 		FlxG.save.data.lowEnd = getOption('low-end');
 		FlxG.save.data.autoPause = getOption('auto-pause');
 		FlxG.save.data.statistics = getOption('statistics');
-        /*--------------------------------------------------*/
-
+	/*----------------------------------------------------------------*/
 		FlxG.save.flush();
 
 		trace('toggled? ' + Std.string(preferences.get(identifier)));

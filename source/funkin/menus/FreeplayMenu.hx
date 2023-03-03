@@ -17,6 +17,7 @@ import funkin.system.*;
 import funkin.system.Paths;
 import funkin.game.*;
 import funkin.game.objects.*;
+import funkin.utils.*;
 
 using StringTools;
 

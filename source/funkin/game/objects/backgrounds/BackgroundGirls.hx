@@ -2,7 +2,7 @@ package funkin.game.objects.backgrounds;
 
 import flixel.FlxSprite;
 import flixel.graphics.frames.FlxAtlasFrames;
-import funkin.game.CoolUtil;
+import funkin.utils.*;
 
 class BackgroundGirls extends FlxSprite
 {

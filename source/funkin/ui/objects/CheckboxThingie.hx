@@ -1,4 +1,4 @@
-package funkin.ui;
+package funkin.ui.objects;
 
 import flixel.FlxSprite;
 import funkin.system.Paths;

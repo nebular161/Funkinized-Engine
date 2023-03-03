@@ -1,6 +1,5 @@
-# Everlast Engine
-A Friday Night Funkin' engine that makes using source code feel much more easier and will come with good ol' Hscript support! The engine also has organized assets making it easy to navigate them.
-
+# Supernova Engine
+A Friday Night Funkin' engine that makes using source code feel much more easier and will come with good ol' Hscript support! The engine also has organized assets making it easy to navigate them. This engine is inspired by Forever Engine and Codename Engine (mostly codename).
 # Features (This section is not finished yet):
 - Organized assets and source code
 - Hscript support
@@ -12,7 +11,7 @@ To get started, you need the following programs:
 - VS Community 2019
 - VS Code (Optional)
 
-Now we need to install some libraries, open up the 'Libraries' batch (.bat) file to make it install the required files.
+Now we need to install some libraries, open up the 'libraries' batch (.bat) file to make it install the required files.
 
 Then we need to install some gits:
 - Git https://git-scm.com/download (For the git setup, leave everything to its default settings)

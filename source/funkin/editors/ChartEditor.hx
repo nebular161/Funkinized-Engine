@@ -45,7 +45,7 @@ import funkin.game.objects.Boyfriend;
 import funkin.game.PlayState;
 import funkin.game.Conductor;
 import funkin.system.LoadingState;
-import funkin.game.CoolUtil;
+import funkin.utils.*;
 import funkin.game.Song;
 import funkin.system.Paths;
 
@@ -94,7 +94,7 @@ class ChartEditor extends MusicBeatState
 	override function create()
 	{
 
-		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuObjects/chart/menuChart')); // bg on chart editor, credits to ShadowMario for da bg code
+		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuObjects/chart/menuChart'));
 		bg.scrollFactor.set();
 		//bg.color = 0xFF3B1247;
 		add(bg);

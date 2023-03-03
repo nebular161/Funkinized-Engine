@@ -69,6 +69,6 @@ class SimpleInfoDisplay extends TextField
 
     function version_Function()
     { 	
-				text += "Everlast Engine v" + Application.current.meta.get('version');
+				text += "Supernova Engine v" + Application.current.meta.get('version');
     }        
 }

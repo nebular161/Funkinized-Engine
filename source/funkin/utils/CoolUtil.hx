@@ -1,4 +1,4 @@
-package funkin.game;
+package funkin.utils;
 
 #if cpp
 import cpp.NativeGc;
@@ -189,7 +189,7 @@ class CoolUtil
 		inline public static function getSavePath():String
 			{
 				@:privateAccess
-				return #if (flixel < "5.0.0") 'everlast-engine' #else FlxG.stage.application.meta.get('company')
+				return #if (flixel < "5.0.0") 'supernova-engine' #else FlxG.stage.application.meta.get('company')
 					+ '/'
 					+ FlxSave.validate(FlxG.stage.application.meta.get('file')) #end;
 			}		

@@ -20,10 +20,11 @@ import lime.net.curl.CURLCode;
 import haxe.xml.Access;
 import funkin.system.*;
 import funkin.system.dependency.*;
-import funkin.menus.MenuItem;
+import funkin.menus.WeekData;
 import funkin.menus.MenuCharacter;
 import funkin.game.*;
 import flixel.graphics.FlxGraphic;
+import funkin.utils.*;
 class StoryMenu extends MusicBeatState {
 	
 	var scoreText:FlxText;
@@ -32,7 +33,7 @@ class StoryMenu extends MusicBeatState {
 	var txtWeekTitle:FlxText;
 	var curWeek:Int = 0;
 	var txtTracklist:FlxText;
-	var grpWeekText:FlxTypedGroup<MenuItem>;
+	var grpWeekText:FlxTypedGroup<WeekData>;
 	var grpWeekCharacters:FlxTypedGroup<MenuCharacter>;
 	var grpLocks:FlxTypedGroup<FlxSprite>;
 	var difficultySelectors:FlxGroup;
@@ -109,7 +110,7 @@ class StoryMenu extends MusicBeatState {
 		var ui_tex = Paths.getSparrowAtlas('menuObjects/storymenu/menu_assets');
 		var yellowBG:FlxSprite = new FlxSprite(0, 56).makeGraphic(FlxG.width, 400, 0xFFF9CF51);
 
-		grpWeekText = new FlxTypedGroup<MenuItem>();
+		grpWeekText = new FlxTypedGroup<WeekData>();
 		add(grpWeekText);
 
 		var blackBarThingie:FlxSprite = new FlxSprite().makeGraphic(FlxG.width, 56, FlxColor.BLACK);
@@ -128,7 +129,7 @@ class StoryMenu extends MusicBeatState {
 		#end
 
 		for (i in 0...weekData.length) {
-			var weekThing:MenuItem = new MenuItem(0, yellowBG.y + yellowBG.height + 10, i);
+			var weekThing:WeekData = new WeekData(0, yellowBG.y + yellowBG.height + 10, i);
 			weekThing.y += ((weekThing.height + 20) * i);
 			weekThing.targetY = i;
 			grpWeekText.add(weekThing);

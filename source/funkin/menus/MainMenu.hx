@@ -71,7 +71,7 @@ class MainMenu extends MusicBeatState {
 		magenta.visible = false;
 		magenta.color = 0xFFFD719B;
 
-		if (Options.getOption('flashing-menu'))
+		if (Options.getOption('flashing-lights'))
 		{	
 			add(magenta);
 		}
@@ -96,7 +96,7 @@ class MainMenu extends MusicBeatState {
 
 		FlxG.camera.follow(camFollow, null, 0.06);
 
-		var versionShit:FlxText = new FlxText(5, FlxG.height - 18, 0, "FNF: Everlast Engine | v" + Application.current.meta.get('version'), 12);
+		var versionShit:FlxText = new FlxText(5, FlxG.height - 18, 0, "Supernova Engine | v" + Application.current.meta.get('version'), 12);
 		versionShit.scrollFactor.set();
 		versionShit.setFormat('VCR OSD Mono', 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);

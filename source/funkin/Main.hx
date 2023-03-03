@@ -22,7 +22,7 @@ import openfl.display.StageScaleMode;
 import openfl.events.Event;
 import openfl.text.TextFormat;
 import funkin.config.Options;
-import funkin.game.CoolUtil;
+import funkin.utils.*;
 import funkin.menus.TitleState;
 class Main extends Sprite
 {
