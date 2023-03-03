@@ -1594,7 +1594,7 @@ class PlayState extends MusicBeatState {
 			accuracyAdds = 0;
 		else
 			accuracyAdds = FlxMath.roundDecimal(accuracyAdds * 100, 2);
-		scoreTxt.text = "Score: " + songScore + " -" + " Combo Breaks: " + misses + " -" +' Accuracy: ${CoolUtil.formatAccuracy(accuracyAdds)}%';
+		scoreTxt.text = "Score: " + songScore + " |" + " Combo Breaks: " + misses + " |" +' Accuracy: ${CoolUtil.formatAccuracy(accuracyAdds)}%';
 	}
 
 		if (controls.PAUSE && startedCountdown && canPause) {
@@ -2634,7 +2634,9 @@ class PlayState extends MusicBeatState {
 			script.setVariable("FlxTextFormat", FlxTextFormat);
 			script.setVariable("InputFormatter", InputFormatter);
 			script.setVariable("FlxTextFormatMarkerPair", FlxTextFormatMarkerPair);
-			script.setVariable("Character", Character);
+			script.setVariable("boyfriend", boyfriend);
+			script.setVariable("dad", dad);
+			script.setVariable("gf", gf);
 			script.runScript(hxdata);
 		}
 	}
