@@ -1018,7 +1018,10 @@ class PlayState extends MusicBeatState {
 			{
 				accuracy = 100;
 			}
-			gameStatistics.text = 'Sicks: ${sicks}\nGoods: ${goods}\nBads: ${bads}\nShits: ${shits}\nMisses: ${misses}';
+			if(Options.getOption('statistics'))
+				{
+					gameStatistics.text = 'Sicks: ${sicks}\nGoods: ${goods}\nBads: ${bads}\nShits: ${shits}\nMisses: ${misses}';
+				}	
 		}
 
 	function schoolIntro(?dialogueBox:DialogueBox):Void {

@@ -9,7 +9,7 @@ import flixel.util.FlxColor;
 import funkin.system.MathFunctions;
 import funkin.system.Paths;
 
-class WeekData extends FlxSpriteGroup {
+class StoryItem extends FlxSpriteGroup {
 	public var targetY:Float = 0;
 	public var week:FlxSprite;
 	public var flashingInt:Int = 0;
