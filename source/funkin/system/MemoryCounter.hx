@@ -1,4 +1,4 @@
-package funkin.openfl.display;
+package funkin.system;
 
 import openfl.events.Event;
 import openfl.system.System;
@@ -6,7 +6,7 @@ import openfl.text.TextField;
 import lime.app.Application;
 import openfl.text.TextFormat;
 
-class Mem extends TextField
+class MemoryCounter extends TextField
 {
 	private var times:Array<Float>;
 	private var memPeak:Float = 0;

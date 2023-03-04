@@ -1,7 +1,7 @@
-package funkin.openfl.display;
+package funkin.system;
 
 import openfl.Lib;
-import openfl.display.FPS;
+import funkin.system.Fps;
 import flixel.FlxG;
 import lime.app.Application;
 import openfl.events.Event;
@@ -13,7 +13,7 @@ import openfl.text.TextFormat;
  * Version display lmfao
  * @ Mem Usuage Code author Kirill Poletaev
  */
-class SimpleInfoDisplay extends TextField
+class EngineVer extends TextField
 {
 	//
 	public var infoDisplayed:Array<Bool> = [true, true, true];
@@ -21,7 +21,7 @@ class SimpleInfoDisplay extends TextField
 	public var memPeak:Float = 0;
 	public var currentFPS:Int = 0;
 
-	public static var fpsCounter:FPS;
+	public static var fpsCounter:Fps;
 
 	public function new(inX:Float = 10.0, inY:Float = 10.0, inCol:Int = 0x000000, ?font:String)
 	{
@@ -32,7 +32,7 @@ class SimpleInfoDisplay extends TextField
 		selectable = false;
 		defaultTextFormat = new TextFormat("VCR OSD Mono", 14, inCol);
 
-		fpsCounter = new FPS(10000, 10000, inCol);
+		fpsCounter = new Fps(10000, 10000, inCol);
 		fpsCounter.visible = false;
 		Lib.current.addChild(fpsCounter);
 

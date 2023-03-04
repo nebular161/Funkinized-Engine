@@ -1,0 +1,89 @@
+{
+    "dependencies": [
+        {
+            "name": "hxcpp-debug-server",
+            "type": "haxelib",
+            "version": null
+        },
+        {
+            "name": "flixel-nebulazone",
+            "type": "git",
+            "dir": "flixel",
+            "ref": "master",
+            "url": "https://github.com/NebulaZone1/flixel.git"
+        },
+        {
+            "name": "flixel",
+            "type": "haxelib",
+            "version": null
+        },  
+        {
+            "name": "flixel-addons",
+            "type": "haxelib",
+            "version": null
+        },                
+        {
+            "name": "format",
+            "type": "haxelib",
+            "version": null
+        },
+        {
+            "name": "hscript",
+            "type": "haxelib",
+            "version": null
+        }, 
+        {
+            "name": "away3d",
+            "type": "haxelib",
+            "version": null
+        }, 
+        {
+            "name": "hxCodec",
+            "type": "haxelib",
+            "version": null
+        },
+        {
+            "name": "markdown",
+            "type": "haxelib",
+            "version": null
+        },                        
+        {
+            "name": "hscript-improved",
+            "type": "git",
+            "dir": "hscript-improved",
+            "ref": "master",
+            "url": "https://www.github.com/YoshiCrafter29/hscript-improved"
+        },
+        {
+            "name": "hxCodec",
+            "type": "haxelib",
+            "version": null
+        },
+        {
+            "name": "lime",
+            "type": "haxelib",
+            "version": null
+        },
+        {
+            "name": "linc_discord-rpc",
+            "type": "git",
+            "dir": "discord_rpc",
+            "ref": "master",
+            "url": "https://github.com/Aidan63/linc_discord-rpc"
+        },
+        {
+            "name": "openfl",
+            "type": "git",
+            "dir": "openfl",
+            "ref": "master",
+            "url": "https://github.com/openfl/openfl"
+        },
+        {
+            "name": "flxanimate",
+            "type": "git",
+            "dir": "flxanimate",
+            "ref": "master",
+            "url": "https://github.com/Dot-Stuff/flxanimate/"
+        }        
+    ]
+}

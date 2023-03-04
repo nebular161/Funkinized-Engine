@@ -1,6 +1,6 @@
 package funkin;
 
-import funkin.openfl.display.Mem;
+import funkin.system.MemoryCounter;
 import flixel.FlxG;
 import flixel.FlxGame;
 import flixel.FlxState;
@@ -15,8 +15,8 @@ import openfl.Assets;
 import openfl.Lib;
 import openfl.display.Application;
 import openfl.display.BlendMode;
-import funkin.openfl.display.FPS;
-import funkin.openfl.display.SimpleInfoDisplay;
+import funkin.system.Fps;
+import funkin.system.EngineVer;
 import openfl.display.Sprite;
 import openfl.display.StageScaleMode;
 import openfl.events.Event;
@@ -34,16 +34,15 @@ class Main extends Sprite
 	var skipSplash:Bool = true; // Whether to skip the flixel splash screen that appears in release mode.
 	var startFullscreen:Bool = false; // Whether to start the game in fullscreen on desktop targets
 
+	public static var instance:Main;
 	public static var watermarks = true;
-	public static var fpsVar:FPS;
-	public static var fpsCounter:FPS;
+	public static var fpsVar:Fps;
+	public static var fpsCounter:Fps;
 	static public var buildNumber:Int;
-
-	// You can pretty much ignore everything from here on - your code should go in your states.
 
 	public static function main():Void
 		{
-			Lib.current.addChild(new Main());
+			Lib.current.addChild(instance = new Main());
 		}	
 
 	public function new()
@@ -78,14 +77,14 @@ class Main extends Sprite
 
 			FlxG.mouse.load('assets/core/cursors/default.png');				
 	
-			fpsVar = new FPS(10, 3, 0xFFFFFF);
+			fpsVar = new Fps(10, 3, 0xFFFFFF);
 			addChild(fpsVar);
 			
-			memoryCounter = new Mem(10, 3, 0xffffff);
+			memoryCounter = new MemoryCounter(10, 3, 0xffffff);
 			addChild(memoryCounter);
 				   
-			display = new SimpleInfoDisplay(10, 3, 0xFFFFFF);
-			addChild(display);
+			engineVersion = new EngineVer(10, 3, 0xFFFFFF);
+			addChild(engineVersion);
 	
 			#if !mobile
 			Lib.current.stage.align = "tl";
@@ -95,8 +94,8 @@ class Main extends Sprite
 
 	var game:FlxGame;
 
-	public static var memoryCounter:Mem;
-	public static var display:SimpleInfoDisplay;
+	public static var memoryCounter:MemoryCounter;
+	public static var engineVersion:EngineVer;
 
 	public static function toggleMem(memEnabled:Bool):Void
 	{
@@ -104,7 +103,7 @@ class Main extends Sprite
 	}
 	public function toggleVers(enabled:Bool):Void
 		{
-			display.infoDisplayed[2] = enabled;
+			engineVersion.infoDisplayed[2] = enabled;
 		}		
 	public function getFPS():Float
 		{

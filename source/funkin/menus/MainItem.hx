@@ -1,8 +1,8 @@
-package funkin.ui;
+package funkin.menus;
 
 import flixel.FlxSprite;
 
-class MenuItem extends FlxSprite {
+class MainItem extends FlxSprite {
 	public var fireInstantly:Bool = false;
 	public var name:String;
 	public var callback:Dynamic;

@@ -6,7 +6,7 @@ import funkin.system.dependency.Discord.DiscordClient;
 #end
 import flixel.util.FlxTimer;
 import flixel.FlxState;
-import funkin.ui.MenuItem;
+import funkin.menus.MainItem;
 import funkin.ui.MenuTypedList;
 import funkin.ui.AtlasMenuItem;
 import funkin.config.OptionsState;
@@ -26,92 +26,74 @@ import lime.app.Application;
 import funkin.system.*;
 import funkin.menus.*;
 import funkin.system.Paths;
-class MainMenu extends MusicBeatState {
-	var menuItems:MainMenuList;
+import flixel.group.FlxSpriteGroup;
+import lime.utils.Assets;
+import funkin.system.FNFSprite;
 
-	var optionShit:Array<String> = 
+class MainMenu extends MusicBeatState {
+	var bg:FlxSprite;
+	var menuGroup:FlxSpriteGroup;
+	var items:Array<String> = 
 	[
 		'story mode', 
 		'freeplay', 
 		'donate', 
 		'options'
 	];
-
-	var magenta:FlxSprite;
-	var camFollow:FlxObject;
+	var curItem = 0;
 
 	override function create() {
-		#if discord_rpc
-		DiscordClient.changePresence('Main Menu', null);
-		#end
-
-		FlxG.mouse.visible = true;
-
-		if (!FlxG.sound.music.playing)
-		{
-			FlxG.sound.playMusic(Paths.music('freakyMenu'));
-		}
-		persistentUpdate = persistentDraw = true;
-
-		var bg:FlxSprite = new FlxSprite(null, null, Paths.image('menuObjects/main_menu/menuBG'));
-		bg.scrollFactor.set(0, 0.17);
-		bg.setGraphicSize(Std.int(bg.width * 1.2));
-		bg.updateHitbox();
-		bg.screenCenter();
-		add(bg);
-
-		camFollow = new FlxObject(0, 0, 1, 1);
-		add(camFollow);
-
-		magenta = new FlxSprite(null, null, Paths.image('menuObjects/main_menu/menuDesat'));
-		magenta.scrollFactor.set(bg.scrollFactor.x, bg.scrollFactor.y);
-		magenta.setGraphicSize(Std.int(bg.width));
-		magenta.updateHitbox();
-		magenta.setPosition(bg.x, bg.y);
-		magenta.visible = false;
-		magenta.color = 0xFFFD719B;
-
-		if (Options.getOption('flashing-lights'))
-		{	
-			add(magenta);
-		}
-		
-		menuItems = new MainMenuList();
-		menuItems.enabled = false;
-		add(menuItems);
-		menuItems.onChange.add(onMenuItemChange);
-		menuItems.onAcceptPress.add(function(item:MenuItem) FlxFlicker.flicker(magenta, 1.1, 0.15, false, true));
-
-		menuItems.createItem(null, null, 'story mode', function() startExitState(new StoryMenu()));
-		menuItems.createItem(null, null, 'freeplay', function() startExitState(new FreeplayMenu()));
-		menuItems.createItem(null, null, 'donate', selectDonate, true);
-		menuItems.createItem(0, 0, 'options', function() startExitState(new OptionsState()));
-
-		var pos:Float = (FlxG.height - 160 * (menuItems.length - 1)) / 2;
-		for (i in 0...menuItems.length) {
-			var item:MainMenuItem = menuItems.members[i];
-			item.x = FlxG.width / 2;
-			item.y = pos + (160 * i);
-		}
-
-		FlxG.camera.follow(camFollow, null, 0.06);
-
-		var versionShit:FlxText = new FlxText(5, FlxG.height - 18, 0, "Supernova Engine | v" + Application.current.meta.get('version'), 12);
-		versionShit.scrollFactor.set();
-		versionShit.setFormat('VCR OSD Mono', 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		add(versionShit);
-
 		super.create();
+		bg = new FNFSprite(0, 0).loadGraphic(Paths.image("menuObjects/main_menu/menuBG"));
+		add(bg);
+		menuGroup = new FlxSpriteGroup();
+		for (item in 0...items.length) {
+			var newItem = new FlxSprite(0, 0);
+			newItem.frames = Paths.getSparrowAtlas('menuObjects/main_menu/${items[item]}');
+			newItem.animation.addByPrefix('idle', '${items[item]} basic');
+			newItem.animation.addByPrefix('selected', '${items[item]} white');
+			newItem.animation.play('idle', true);
+			newItem.ID = item;
+			newItem.updateHitbox();
+			newItem.y = 160 * item;
+			newItem.screenCenter(X);
+			menuGroup.add(newItem);
+		}
+		menuGroup.y += 80;
+		add(menuGroup);
+		changeOption();
+		if (!FlxG.sound.music.playing) {
+			FlxG.sound.music.kill();
+			FlxG.sound.playMusic(Paths.music('menus/freakyMenu'));
+		}
 	}
 
-	override function finishTransIn() {
-		super.finishTransIn();
-		menuItems.enabled = true;
+	override function update(elapsed:Float) {
+		super.update(elapsed);
+		if (FlxG.sound.music.volume < 0.8)
+			FlxG.sound.music.volume += 0.5 * FlxG.elapsed;
+		if (FlxG.keys.justPressed.DOWN)
+			changeOption(1);
+		if (FlxG.keys.justPressed.UP)
+			changeOption(-1);
+		if (FlxG.keys.justPressed.ENTER)
+			selectItem();
 	}
 
-	function onMenuItemChange(item:MenuItem)
-		camFollow.setPosition(item.getGraphicMidpoint().x, item.getGraphicMidpoint().y);
+	public function changeOption(sex:Int = 0) {
+		curItem = FlxMath.wrap(curItem + sex, 0, items.length - 1);
+		FlxG.sound.play(Paths.sound('scrollMenu'), 0.4);
+		menuGroup.forEach(function(item) {
+			item.animation.play('idle');
+			item.updateHitbox();
+			item.screenCenter(X);
+		});
 
+		menuGroup.members[curItem].animation.play('selected');
+		menuGroup.members[curItem].updateHitbox();
+		menuGroup.members[curItem].screenCenter(X);
+	}
+	
 	function selectDonate() {
 		#if linux
 		Sys.command('/usr/bin/xdg-open', [
@@ -123,56 +105,25 @@ class MainMenu extends MusicBeatState {
 		#end
 	}
 
-	function startExitState(nextState:FlxState) {
-		menuItems.enabled = false;
-		menuItems.forEach(function(item:MainMenuItem) {
-			if (menuItems.selectedIndex != item.ID)
-				FlxTween.tween(item, {alpha: 0}, 0.4, {ease: FlxEase.quadOut});
+	public function selectItem() {
+		FlxG.sound.play(Paths.sound("confirmMenu"));
+		menuGroup.forEach(function(item) {
+			if (item.ID != curItem)
+				FlxTween.tween(item, {alpha: 0}, 1);
 			else
-				item.visible = false;
+				FlxFlicker.flicker(item, 1.4, 0.06, true, true, function(w) {
+					switch (items[curItem]) 
+					{
+						case "story mode":
+							FlxG.switchState(new StoryMenu());
+						case 'freeplay':
+							FlxG.switchState(new FreeplayMenu());
+						case 'donate':
+							selectDonate();
+						case 'options':
+							FlxG.switchState(new OptionsState());
+					}
+				});
 		});
-		new FlxTimer().start(0.4, function(tmr:FlxTimer) FlxG.switchState(nextState));
-	}
-
-	override function update(elapsed:Float) {
-		FlxG.camera.followLerp = MathFunctions.fixedLerpValue(0.06);
-
-		if (FlxG.sound.music.volume < 0.8)
-			FlxG.sound.music.volume += 0.5 * FlxG.elapsed;
-		if (_exiting)
-			menuItems.enabled = false;
-		if (controls.BACK && menuItems.enabled && !menuItems.busy)
-			FlxG.switchState(new TitleState());
-
-		super.update(elapsed);
-	}
-}
-
-class MainMenuItem extends AtlasMenuItem {
-	public function new(?x:Float = 0, ?y:Float = 0, name:String, atlas:FlxAtlasFrames, callback:Dynamic) {
-		super(x, y, name, atlas, callback);
-		this.scrollFactor.set();
-	}
-
-	override public function changeAnim(anim:String) {
-		super.changeAnim(anim);
-		origin.set(frameWidth * 0.5, frameHeight * 0.5);
-		offset.copyFrom(origin);
-	}
-}
-
-class MainMenuList extends MenuTypedList<MainMenuItem> {
-	var atlas:FlxAtlasFrames;
-
-	public function new() {
-		atlas = Paths.getSparrowAtlas('menuObjects/main_menu/main_menu_assets');
-		super(Vertical);
-	}
-
-	public function createItem(?x:Float = 0, ?y:Float = 0, name:String, callback:Dynamic = null, fireInstantly:Bool = false) {
-		var item:MainMenuItem = new MainMenuItem(x, y, name, atlas, callback);
-		item.fireInstantly = fireInstantly;
-		item.ID = length;
-		return addItem(name, item);
 	}
 }

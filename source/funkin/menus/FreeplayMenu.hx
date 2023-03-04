@@ -12,7 +12,7 @@ import flixel.math.FlxMath;
 import flixel.text.FlxText;
 import flixel.util.FlxColor;
 import lime.utils.Assets;
-import funkin.menus.*;
+import funkin.menus.MainMenu;
 import funkin.system.*;
 import funkin.system.Paths;
 import funkin.game.*;

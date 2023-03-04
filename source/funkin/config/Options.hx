@@ -12,8 +12,8 @@ import funkin.ui.objects.CheckboxThingie;
 import funkin.ui.TextMenuList;
 import funkin.ui.TextMenuItem;
 import funkin.utils.*;
-import funkin.ui.MenuItem;
-
+import funkin.menus.MainItem;
+import funkin.Main;
 class Options extends Page
 {
 	public static var preferences:StringMap<Dynamic> = new StringMap<Dynamic>();
@@ -44,7 +44,8 @@ class Options extends Page
 		createPrefItem('Game Statistics', 'statistics', false);
 		createPrefItem('Auto Pause', 'auto-pause', false);
 		createPrefItem('Glow Opponent Strums', 'glow-strums', true);
-	/*	--------------------------------------------------------------*/
+		//createPrefItem('Info Display', 'display', true);
+	/*---------------------------------------------------------------*/
 		camFollow = new FlxObject(FlxG.width / 2, 0, 140, 70);
 		if (items != null)
 		{
@@ -156,10 +157,21 @@ class Options extends Page
 			preferenceCheck('statistics', false);
 		}			
 
-		if (!getOption('fps-counter'))
+	/*	if(FlxG.save.data.display != null)
 		{
-			Lib.current.stage.removeChild(Main.fpsCounter);
+			if (!getOption('display'))
+				{
+					Lib.current.stage.removeChild(Main.fpsCounter);
+				}
 		}
+		else
+		{
+			if (!getOption('display'))
+				{
+					Lib.current.stage.addChild(Main.fpsCounter);
+				}
+			preferenceCheck('display', true);
+		}	*/
 
 		FlxG.autoPause = getOption('auto-pause');
 	}
@@ -235,15 +247,6 @@ class Options extends Page
 		{
 			case 'auto-pause':
 				FlxG.autoPause = getOption('auto-pause');
-			case 'fps-counter':
-				if (!getOption('fps-counter'))
-				{
-					Lib.current.stage.removeChild(Main.fpsCounter);
-				}
-				else
-				{
-					Lib.current.stage.addChild(Main.fpsCounter);
-				}
 		}
 	}
 
@@ -251,7 +254,7 @@ class Options extends Page
 	{
 		super.update(elapsed);
 		menuCamera.followLerp = CoolUtil.camLerpShit(0.02);
-		items.forEach(function(item:MenuItem)
+		items.forEach(function(item:MainItem)
 		{
 			if (item == items.members[items.selectedIndex])
 				item.x = 150;

@@ -1,9 +1,9 @@
 package funkin.ui;
 
 import flixel.graphics.frames.FlxAtlasFrames;
-import funkin.ui.MenuItem;
+import funkin.menus.MainItem;
 
-class AtlasMenuItem extends MenuItem {
+class AtlasMenuItem extends MainItem {
 	var atlas:FlxAtlasFrames;
 
 	public function new(?x:Float = 0, ?y:Float = 0, name:String, atlas:FlxAtlasFrames, ?callback:Dynamic) {

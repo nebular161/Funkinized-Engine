@@ -1,4 +1,4 @@
-package funkin.openfl.display;
+package funkin.system;
 
 import flixel.text.FlxText.FlxTextBorderStyle;
 import haxe.Timer;
@@ -24,7 +24,7 @@ import openfl.Lib;
 #end
 
 
-class FPS extends TextField
+class Fps extends TextField
 {
 	/**
 		The current frame rate, expressed using frames-per-second

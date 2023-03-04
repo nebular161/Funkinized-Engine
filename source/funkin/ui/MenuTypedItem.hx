@@ -1,10 +1,10 @@
 package funkin.ui;
 
 import flixel.util.FlxColor;
-import funkin.ui.MenuItem;
+import funkin.menus.MainItem;
 import funkin.ui.AtlasText;
 
-class MenuTypedItem extends MenuItem {
+class MenuTypedItem extends MainItem {
 	public var label(default, set):AtlasText;
 
 	override public function new(?x:Float = 0, ?y:Float = 0, atlasText:AtlasText, text:String, ?callback:Dynamic) {

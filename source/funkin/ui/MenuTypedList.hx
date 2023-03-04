@@ -10,8 +10,8 @@ import funkin.ui.WrapMode;
 import funkin.config.Controls;
 import funkin.config.PlayerSettings;
 import funkin.system.Paths;
-
-class MenuTypedList<T:MenuItem> extends FlxTypedGroup<T> {
+import funkin.menus.MainItem;
+class MenuTypedList<T:MainItem> extends FlxTypedGroup<T> {
 	public var selectedIndex:Int = 0;
 
 	public var onChange:FlxTypedSignal<T->Void> = new FlxTypedSignal<T->Void>();
