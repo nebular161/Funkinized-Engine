@@ -80,8 +80,8 @@ class MainMenu extends MusicBeatState {
 			selectItem();
 	}
 
-	public function changeOption(sex:Int = 0) {
-		curItem = FlxMath.wrap(curItem + sex, 0, items.length - 1);
+	public function changeOption(saidItem:Int = 0) {
+		curItem = FlxMath.wrap(curItem + saidItem, 0, items.length - 1);
 		FlxG.sound.play(Paths.sound('scrollMenu'), 0.4);
 		menuGroup.forEach(function(item) {
 			item.animation.play('idle');
