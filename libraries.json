@@ -79,6 +79,13 @@
             "url": "https://github.com/openfl/openfl"
         },
         {
+            "name": "faxe",
+            "type": "git",
+            "dir": "faxe",
+            "ref": "master",
+            "url": "https://github.com/uhrobots/faxe"
+        },        
+        {
             "name": "flxanimate",
             "type": "git",
             "dir": "flxanimate",
