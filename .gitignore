@@ -2,8 +2,5 @@
 export/
 .vscode/
 
-#Github
-.github/
-
 #HaxeLib
 /.haxelib

@@ -1,7 +1,7 @@
 package funkin.system;
 
 import openfl.Lib;
-import funkin.system.Fps;
+import funkin.system.FpsCounter;
 import flixel.FlxG;
 import lime.app.Application;
 import openfl.events.Event;
@@ -21,9 +21,9 @@ class EngineVer extends TextField
 	public var memPeak:Float = 0;
 	public var currentFPS:Int = 0;
 
-	public static var fpsCounter:Fps;
+	public static var fpsCounter:FpsCounter;
 
-	public function new(inX:Float = 10.0, inY:Float = 10.0, inCol:Int = 0x000000, ?font:String)
+	public function new(inX:Float = 10.0, inY:Float = 10.0, ?Bold:Bool = true, inCol:Int =0xFFFFFF, ?font:String)
 	{
 		super();
 
@@ -32,7 +32,7 @@ class EngineVer extends TextField
 		selectable = false;
 		defaultTextFormat = new TextFormat("VCR OSD Mono", 14, inCol);
 
-		fpsCounter = new Fps(10000, 10000, inCol);
+		fpsCounter = new FpsCounter(10000, 10000, inCol);
 		fpsCounter.visible = false;
 		Lib.current.addChild(fpsCounter);
 

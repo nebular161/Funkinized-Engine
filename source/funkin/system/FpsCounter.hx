@@ -24,7 +24,7 @@ import openfl.Lib;
 #end
 
 
-class Fps extends TextField
+class FpsCounter extends TextField
 {
 	/**
 		The current frame rate, expressed using frames-per-second
@@ -35,7 +35,7 @@ class Fps extends TextField
 	@:noCompletion private var currentTime:Float;
 	@:noCompletion private var times:Array<Float>;
 
-	public function new(x:Float = 10, y:Float = 10, color:Int = 0x000000)
+	public function new(x:Float = 10, y:Float = 10, ?Bold:Bool = true, color:Int =0xFFFFFF)
 	{
 		super();
 

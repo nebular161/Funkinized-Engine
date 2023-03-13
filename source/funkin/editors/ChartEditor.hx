@@ -39,7 +39,7 @@ import openfl.net.FileReference;
 import openfl.utils.ByteArray;
 import funkin.system.MusicBeatState;
 import funkin.game.objects.HealthIcon;
-import funkin.game.objects.Note;
+import funkin.game.objects.StrumNote;
 import funkin.game.objects.Character;
 import funkin.game.objects.Boyfriend;
 import funkin.game.PlayState;
@@ -62,7 +62,7 @@ class ChartEditor extends MusicBeatState
 	var highlight:FlxSprite;
 	var GRID_SIZE:Int = 40;
 	var dummyArrow:FlxSprite;
-	var curRenderedNotes:FlxTypedGroup<Note>;
+	var curRenderedNotes:FlxTypedGroup<StrumNote>;
 	var curRenderedSustains:FlxTypedGroup<FlxSprite>;
 	var gridBG:FlxSprite;
 	var gridBGOverlay:FlxSprite;
@@ -74,12 +74,12 @@ class ChartEditor extends MusicBeatState
 	var tempBpm:Float = 0;
 	var gridBlackLine:FlxSprite;
 	var vocals:FlxSound;
-	var player2:Character = new Character(0,0, "dad");
 	var player1:Boyfriend = new Boyfriend(0,0, "bf");
+	var player2:Character = new Character(0,0, "dad");
 	var leftIcon:HealthIcon;
 	var rightIcon:HealthIcon;
 	var UI_box:FlxUITabMenu;
-	var claps:Array<Note> = [];
+	var claps:Array<StrumNote> = [];
 	var curSection:Int = 0;
 
 	public var playClaps:Bool = false;
@@ -89,7 +89,7 @@ class ChartEditor extends MusicBeatState
 	public var snapText:FlxText;
 	public static var chartVer = "1.0";
 
-	private var lastNote:Note;
+	private var lastNote:StrumNote;
 
 	override function create()
 	{
@@ -123,7 +123,7 @@ class ChartEditor extends MusicBeatState
 			currentDiff = PlayState.storyDifficulty2;
 
 			FlxG.mouse.visible = true;
-			FlxG.save.bind('everlast-engine', 'NebulaZone');
+			FlxG.save.bind('supernova-engine', 'NebulaZone');
 			
 			tempBpm = _song.bpm;
 
@@ -137,7 +137,7 @@ class ChartEditor extends MusicBeatState
 			if (_song.chartVer == null)
 				_song.chartVer = "1.0";
 
-		curRenderedNotes = new FlxTypedGroup<Note>();
+		curRenderedNotes = new FlxTypedGroup<StrumNote>();
 		curRenderedSustains = new FlxTypedGroup<FlxSprite>();
 
 		addSection();
@@ -667,7 +667,7 @@ class ChartEditor extends MusicBeatState
 
 		var pressArray = [left, down, up, right, leftO, downO, upO, rightO];
 		var delete = false;
-		curRenderedNotes.forEach(function(note:Note)
+		curRenderedNotes.forEach(function(note:StrumNote)
 			{
 				if (strumLine.overlaps(note) && pressArray[Math.floor(Math.abs(note.noteData))])
 				{
@@ -681,7 +681,7 @@ class ChartEditor extends MusicBeatState
 			var i = pressArray[p];
 			if (i && !delete)
 			{
-				addNote(new Note(Conductor.songPosition,p));
+				addNote(new StrumNote(Conductor.songPosition,p));
 			}
 		}
 
@@ -691,7 +691,7 @@ class ChartEditor extends MusicBeatState
 
 		if (playClaps)
 		{
-			curRenderedNotes.forEach(function(note:Note)
+			curRenderedNotes.forEach(function(note:StrumNote)
 			{
 				if (FlxG.sound.music.playing)
 				{
@@ -728,7 +728,7 @@ class ChartEditor extends MusicBeatState
 		{
 			if (FlxG.mouse.overlaps(curRenderedNotes))
 			{
-				curRenderedNotes.forEach(function(note:Note)
+				curRenderedNotes.forEach(function(note:StrumNote)
 				{
 					if (FlxG.mouse.overlaps(note))
 					{
@@ -1119,7 +1119,7 @@ class ChartEditor extends MusicBeatState
 			var daStrumTime = i[0];
 			var daSus = i[2];
 
-			var note:Note = new Note(daStrumTime, daNoteInfo % 4);
+			var note:StrumNote = new StrumNote(daStrumTime, daNoteInfo % 4);
 			note.sustainLength = daSus;
 			note.setGraphicSize(GRID_SIZE, GRID_SIZE);
 			note.updateHitbox();
@@ -1156,7 +1156,7 @@ class ChartEditor extends MusicBeatState
 		_song.notes.push(sec);
 	}
 
-	function selectNote(note:Note):Void
+	function selectNote(note:StrumNote):Void
 	{
 		var swagNum:Int = 0;
 
@@ -1175,7 +1175,7 @@ class ChartEditor extends MusicBeatState
 	}
 
 
-	function deleteNote(note:Note):Void
+	function deleteNote(note:StrumNote):Void
 		{
 			lastNote = note;
 			for (i in _song.notes[curSection].sectionNotes)
@@ -1265,7 +1265,7 @@ class ChartEditor extends MusicBeatState
 			updateSectionUI();
 			updateNoteUI();
 		}
-	private function addNote(?n:Note):Void
+	private function addNote(?n:StrumNote):Void
 	{
 		var noteStrum = getStrumTime(dummyArrow.y) + sectionStartTime();
 		var noteData = Math.floor(FlxG.mouse.x / GRID_SIZE);

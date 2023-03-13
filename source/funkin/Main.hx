@@ -1,5 +1,6 @@
 package funkin;
 
+import flixel.addons.ui.FlxUIText;
 import funkin.system.MemoryCounter;
 import flixel.FlxG;
 import flixel.FlxGame;
@@ -15,7 +16,7 @@ import openfl.Assets;
 import openfl.Lib;
 import openfl.display.Application;
 import openfl.display.BlendMode;
-import funkin.system.Fps;
+import funkin.system.FpsCounter;
 import funkin.system.EngineVer;
 import openfl.display.Sprite;
 import openfl.display.StageScaleMode;
@@ -36,8 +37,7 @@ class Main extends Sprite
 
 	public static var instance:Main;
 	public static var watermarks = true;
-	public static var fpsVar:Fps;
-	public static var fpsCounter:Fps;
+	public static var fpsCounter:FpsCounter;
 	static public var buildNumber:Int;
 
 	public static function main():Void
@@ -77,13 +77,13 @@ class Main extends Sprite
 
 			FlxG.mouse.load('assets/core/cursors/default.png');				
 	
-			fpsVar = new Fps(10, 3, 0xFFFFFF);
-			addChild(fpsVar);
+			fpsCounter = new FpsCounter(10, 3);
+			addChild(fpsCounter);
 			
-			memoryCounter = new MemoryCounter(10, 3, 0xffffff);
+			memoryCounter = new MemoryCounter(10, 3);
 			addChild(memoryCounter);
 				   
-			engineVersion = new EngineVer(10, 3, 0xFFFFFF);
+			engineVersion = new EngineVer(10, 3);
 			addChild(engineVersion);
 	
 			#if !mobile

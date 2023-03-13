@@ -5,6 +5,7 @@ import openfl.system.System;
 import openfl.text.TextField;
 import lime.app.Application;
 import openfl.text.TextFormat;
+import flixel.util.FlxColor;
 
 class MemoryCounter extends TextField
 {
@@ -12,7 +13,7 @@ class MemoryCounter extends TextField
 	private var memPeak:Float = 0;
 
 
-	public function new(inX:Float = 10.0, inY:Float = 10.0, inCol:Int = 0x000000)
+	public function new(inX:Float = 10.0, inY:Float = 10.0, ?Bold:Bool = true, inCol:Int =0xFFFFFF)
 	{
 		super();
 

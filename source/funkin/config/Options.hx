@@ -157,7 +157,7 @@ class Options extends Page
 			preferenceCheck('statistics', false);
 		}			
 
-	/*	if(FlxG.save.data.display != null)
+		/*if(FlxG.save.data.display != null)
 		{
 			if (!getOption('display'))
 				{
@@ -171,7 +171,7 @@ class Options extends Page
 					Lib.current.stage.addChild(Main.fpsCounter);
 				}
 			preferenceCheck('display', true);
-		}	*/
+		}*/
 
 		FlxG.autoPause = getOption('auto-pause');
 	}
@@ -239,6 +239,7 @@ class Options extends Page
 		FlxG.save.data.lowEnd = getOption('low-end');
 		FlxG.save.data.autoPause = getOption('auto-pause');
 		FlxG.save.data.statistics = getOption('statistics');
+		//FlxG.save.data.display = getOption('display');
 	/*----------------------------------------------------------------*/
 		FlxG.save.flush();
 

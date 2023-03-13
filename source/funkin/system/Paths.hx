@@ -148,6 +148,10 @@ class Paths {
 		return FlxAtlasFrames.fromSpriteSheetPacker(image(key, library), file('funkin/images/$key.txt', library));
 	}
 
+	inline static public function getJSONAtlas(key:String, ?library:String) {
+		return FlxAtlasFrames.fromSpriteSheetPacker(image(key, library), file('funkin/images/$key.json', library));
+	}
+
 	public static function getTextFileArray(path:String, delimeter:String = '\n'):Array<String> {
 		var daList:Array<String> = openfl.Assets.getText(path).trim().split(delimeter);
 

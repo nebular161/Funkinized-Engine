@@ -84,8 +84,8 @@ class PlayState extends MusicBeatState {
 	public var dad:Character;
 	public var gf:Character;
 	public var boyfriend:Boyfriend;
-	public var notes:FlxTypedGroup<Note>;
-	public var unspawnNotes:Array<Note> = [];
+	public var notes:FlxTypedGroup<StrumNote>;
+	public var unspawnNotes:Array<StrumNote> = [];
 	public var songMisses:Int = 0;
 	public var strumLine:FlxSprite;
 	public var curSection:Int = 0;
@@ -1124,7 +1124,7 @@ class PlayState extends MusicBeatState {
 				dad.dance();
 
 			if (generatedMusic) {
-				notes.members.sort(function(Obj1:Note, Obj2:Note) {
+				notes.members.sort(function(Obj1:StrumNote, Obj2:StrumNote) {
 					return sortNotes(FlxSort.DESCENDING, Obj1, Obj2);
 				});
 			}
@@ -1274,7 +1274,7 @@ class PlayState extends MusicBeatState {
 		};
 		FlxG.sound.list.add(vocals);
 
-		notes = new FlxTypedGroup<Note>();
+		notes = new FlxTypedGroup<StrumNote>();
 		add(notes);
 
 		var noteData:Array<SwagSection>;
@@ -1298,13 +1298,13 @@ class PlayState extends MusicBeatState {
 					gottaHitNote = !section.mustHitSection;
 				}
 
-				var oldNote:Note;
+				var oldNote:StrumNote;
 				if (unspawnNotes.length > 0)
 					oldNote = unspawnNotes[Std.int(unspawnNotes.length - 1)];
 				else
 					oldNote = null;
 
-				var swagNote:Note = new Note(daStrumTime, daNoteData, oldNote);
+				var swagNote:StrumNote = new StrumNote(daStrumTime, daNoteData, oldNote);
 				swagNote.sustainLength = songNotes[2];
 				swagNote.altNote = songNotes[3];
 				swagNote.scrollFactor.set(0, 0);
@@ -1317,7 +1317,7 @@ class PlayState extends MusicBeatState {
 				for (susNote in 0...Math.floor(susLength)) {
 					oldNote = unspawnNotes[Std.int(unspawnNotes.length - 1)];
 
-					var sustainNote:Note = new Note(daStrumTime + (Conductor.stepCrochet * susNote) + Conductor.stepCrochet, daNoteData, oldNote, true);
+					var sustainNote:StrumNote = new StrumNote(daStrumTime + (Conductor.stepCrochet * susNote) + Conductor.stepCrochet, daNoteData, oldNote, true);
 					sustainNote.scrollFactor.set();
 					unspawnNotes.push(sustainNote);
 
@@ -1345,22 +1345,22 @@ class PlayState extends MusicBeatState {
 		generatedMusic = true;
 	}
 
-	function sortByShit(Obj1:Note, Obj2:Note):Int {
+	function sortByShit(Obj1:StrumNote, Obj2:StrumNote):Int {
 		return sortNotes(FlxSort.ASCENDING, Obj1, Obj2);
 	}
 
-	function sortNotes(Sort:Int = FlxSort.ASCENDING, Obj1:Note, Obj2:Note):Int {
+	function sortNotes(Sort:Int = FlxSort.ASCENDING, Obj1:StrumNote, Obj2:StrumNote):Int {
 		return Obj1.strumTime < Obj2.strumTime ? Sort : Obj1.strumTime > Obj2.strumTime ? -Sort : 0;
 	}
 
-	public function generateStaticArrows(player:Int):Void {
+	public function generateStaticArrows(player:Int):Void 
+	{
 		for (i in 0...4) {
-			// FlxG.log.add(i);
 			var babyArrow:FlxSprite = new FlxSprite(0, strumLine.y);
 			var colorSwap:ColorSwap = new ColorSwap();
 
 			babyArrow.shader = colorSwap.shader;
-			colorSwap.update(Note.arrowColors[i]);
+			colorSwap.update(StrumNote.arrowColors[i]);
 
 			switch (curStage)
 			{
@@ -1378,22 +1378,22 @@ class PlayState extends MusicBeatState {
 					switch (Math.abs(i))
 					{
 						case 2:
-							babyArrow.x += Note.swagWidth * 2;
+							babyArrow.x += StrumNote.swagWidth * 2;
 							babyArrow.animation.add('static', [2]);
 							babyArrow.animation.add('pressed', [6, 10], 12, false);
 							babyArrow.animation.add('confirm', [14, 18], 24, false);
 						case 3:
-							babyArrow.x += Note.swagWidth * 3;
+							babyArrow.x += StrumNote.swagWidth * 3;
 							babyArrow.animation.add('static', [3]);
 							babyArrow.animation.add('pressed', [7, 11], 12, false);
 							babyArrow.animation.add('confirm', [15, 19], 24, false);
 						case 1:
-							babyArrow.x += Note.swagWidth * 1;
+							babyArrow.x += StrumNote.swagWidth * 1;
 							babyArrow.animation.add('static', [1]);
 							babyArrow.animation.add('pressed', [5, 9], 12, false);
 							babyArrow.animation.add('confirm', [13, 17], 24, false);
 						case 0:
-							babyArrow.x += Note.swagWidth * 0;
+							babyArrow.x += StrumNote.swagWidth * 0;
 							babyArrow.animation.add('static', [0]);
 							babyArrow.animation.add('pressed', [4, 8], 12, false);
 							babyArrow.animation.add('confirm', [12, 16], 24, false);
@@ -1412,22 +1412,22 @@ class PlayState extends MusicBeatState {
 					switch (Math.abs(i))
 					{
 						case 2:
-							babyArrow.x += Note.swagWidth * 2;
+							babyArrow.x += StrumNote.swagWidth * 2;
 							babyArrow.animation.addByPrefix('static', 'arrowUP');
 							babyArrow.animation.addByPrefix('pressed', 'up press', 24, false);
 							babyArrow.animation.addByPrefix('confirm', 'up confirm', 24, false);
 						case 3:
-							babyArrow.x += Note.swagWidth * 3;
+							babyArrow.x += StrumNote.swagWidth * 3;
 							babyArrow.animation.addByPrefix('static', 'arrowRIGHT');
 							babyArrow.animation.addByPrefix('pressed', 'right press', 24, false);
 							babyArrow.animation.addByPrefix('confirm', 'right confirm', 24, false);
 						case 1:
-							babyArrow.x += Note.swagWidth * 1;
+							babyArrow.x += StrumNote.swagWidth * 1;
 							babyArrow.animation.addByPrefix('static', 'arrowDOWN');
 							babyArrow.animation.addByPrefix('pressed', 'down press', 24, false);
 							babyArrow.animation.addByPrefix('confirm', 'down confirm', 24, false);
 						case 0:
-							babyArrow.x += Note.swagWidth * 0;
+							babyArrow.x += StrumNote.swagWidth * 0;
 							babyArrow.animation.addByPrefix('static', 'arrowLEFT');
 							babyArrow.animation.addByPrefix('pressed', 'left press', 24, false);
 							babyArrow.animation.addByPrefix('confirm', 'left confirm', 24, false);
@@ -1698,7 +1698,7 @@ class PlayState extends MusicBeatState {
 
 		while (unspawnNotes[0] != null) {
 			if (unspawnNotes[0].strumTime - Conductor.songPosition < 1800 / SONG.speed) {
-				var dunceNote:Note = unspawnNotes[0];
+				var dunceNote:StrumNote = unspawnNotes[0];
 				notes.add(dunceNote);
 
 				var index:Int = unspawnNotes.indexOf(dunceNote);
@@ -1709,7 +1709,7 @@ class PlayState extends MusicBeatState {
 		}
 
 		if (generatedMusic) {
-			notes.forEachAlive(function(daNote:Note) {
+			notes.forEachAlive(function(daNote:StrumNote) {
 				if (daNote.y > FlxG.height) {
 					daNote.active = false;
 					daNote.visible = false;
@@ -1718,7 +1718,7 @@ class PlayState extends MusicBeatState {
 					daNote.active = true;
 				}
 
-				var center = strumLine.y + (Note.swagWidth / 2);
+				var center = strumLine.y + (StrumNote.swagWidth / 2);
 
 				if (Options.getOption('downscroll')) {
 					daNote.y = strumLine.y + 0.45 * (Conductor.songPosition - daNote.strumTime) * FlxMath.roundDecimal(SONG.speed, 2);
@@ -1916,7 +1916,7 @@ class PlayState extends MusicBeatState {
 
 	var endingSong:Bool = false;
 
-	private function popUpScore(strumtime:Float, daNote:Note):Void {
+	public function popUpScore(strumtime:Float, daNote:StrumNote):Void {
 		var noteDiff:Float = Math.abs(strumtime - Conductor.songPosition);
 		vocals.volume = 1;
 
@@ -2136,7 +2136,7 @@ class PlayState extends MusicBeatState {
 		var releaseArray:Array<Bool> = [controls.NOTE_LEFT_R, controls.NOTE_DOWN_R, controls.NOTE_UP_R, controls.NOTE_RIGHT_R];
 
 		if (holdingArray.contains(true) && generatedMusic) {
-			notes.forEachAlive(function(daNote:Note) {
+			notes.forEachAlive(function(daNote:StrumNote) {
 				if (daNote.isSustainNote && daNote.canBeHit && daNote.mustPress && holdingArray[daNote.noteData])
 					goodNoteHit(daNote);
 			});
@@ -2144,13 +2144,13 @@ class PlayState extends MusicBeatState {
 		if (controlArray.contains(true) && generatedMusic) {
 			boyfriend.holdTimer = 0;
 
-			var possibleNotes:Array<Note> = [];
+			var possibleNotes:Array<StrumNote> = [];
 
 			var ignoreList:Array<Int> = [];
 
-			var removeList:Array<Note> = [];
+			var removeList:Array<StrumNote> = [];
 
-			notes.forEachAlive(function(daNote:Note) {
+			notes.forEachAlive(function(daNote:StrumNote) {
 				if (daNote.canBeHit && daNote.mustPress && !daNote.tooLate && !daNote.wasGoodHit) {
 					if (ignoreList.contains(daNote.noteData)) {
 						for (possibleNote in possibleNotes) {
@@ -2176,7 +2176,7 @@ class PlayState extends MusicBeatState {
 				badNote.destroy();
 			}
 
-			possibleNotes.sort(function(note1:Note, note2:Note) {
+			possibleNotes.sort(function(note1:StrumNote, note2:StrumNote) {
 				return Std.int(note1.strumTime - note2.strumTime);
 			});
 
@@ -2194,8 +2194,9 @@ class PlayState extends MusicBeatState {
 			} else
 				badNoteHit();
 		}
-		if (boyfriend.holdTimer > Conductor.stepCrochet * (4 / 1000) && !holdingArray.contains(true) && boyfriend.animation.curAnim.name.startsWith('sing') && !boyfriend.animation.curAnim.name.endsWith('miss'))
+		if (boyfriend.holdTimer > Conductor.stepCrochet * (1/100) && !controlArray.contains(true))
 			{
+				if (boyfriend.animation.curAnim.name.startsWith('sing') && !boyfriend.animation.curAnim.name.endsWith('miss'))
 				boyfriend.playAnim('idle');
 			}
 		playerStrums.forEach(function(spr:FlxSprite) {
@@ -2269,7 +2270,7 @@ class PlayState extends MusicBeatState {
 		}
 	}
 
-	function goodNoteHit(note:Note):Void {
+	function goodNoteHit(note:StrumNote):Void {
 		if (!note.wasGoodHit) {
 			if (!note.isSustainNote) {
 				popUpScore(note.strumTime, note);
@@ -2444,7 +2445,7 @@ class PlayState extends MusicBeatState {
 		super.beatHit();
 
 		if (generatedMusic) {
-			notes.members.sort(function(note1:Note, note2:Note) {
+			notes.members.sort(function(note1:StrumNote, note2:StrumNote) {
 				return sortNotes(FlxSort.DESCENDING, note1, note2);
 			});
 		}

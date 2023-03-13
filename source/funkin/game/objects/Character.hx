@@ -9,6 +9,7 @@ import funkin.game.PlayState;
 import funkin.game.Section.SwagSection;
 import funkin.system.Paths;
 import funkin.utils.*;
+import flixel.util.FlxTimer;
 
 using StringTools;
 class Character extends FlxSprite

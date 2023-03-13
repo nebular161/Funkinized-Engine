@@ -11,7 +11,7 @@ import funkin.system.Paths;
 
 using StringTools;
 
-class Note extends FlxSprite {
+class StrumNote extends FlxSprite {
 	public var strumTime:Float = 0;
 	public var mustPress:Bool = false;
 	public var noteData:Int = 0;
@@ -20,7 +20,7 @@ class Note extends FlxSprite {
 	public var wasGoodHit:Bool = false;
 	public var willMiss:Bool = false;
 	public var altNote:Bool = false;
-	public var prevNote:Note;
+	public var prevNote:StrumNote;
 	public var sustainLength:Float = 0;
 	public var isSustainNote:Bool = false;
 	public static var swagWidth:Float = 160 * 0.7;
@@ -32,7 +32,7 @@ class Note extends FlxSprite {
 
 	var colorSwap:ColorSwap;
 
-	public function new(strumTime:Float, noteData:Int, ?prevNote:Note, ?sustainNote:Bool = false) {
+	public function new(strumTime:Float, noteData:Int, ?prevNote:StrumNote, ?sustainNote:Bool = false) {
 		super();
 
 		if (prevNote == null)
@@ -49,16 +49,16 @@ class Note extends FlxSprite {
 
 		switch (PlayState.curStage) {
 			case 'school' | 'schoolEvil':
-				loadGraphic(Paths.image('gameObjects/notes/pixel/pixel-arrows'), true, 17, 17);
-
+				var imgPath = Paths.image('gameObjects/notes/pixel/pixel-arrows');
+				loadGraphic(imgPath, true, 17, 17);
 				animation.add('greenScroll', [6]);
 				animation.add('redScroll', [7]);
 				animation.add('blueScroll', [5]);
 				animation.add('purpleScroll', [4]);
 
 				if (isSustainNote) {
-					loadGraphic(Paths.image('gameObjects/notes/pixel/arrowEnds'), true, 7, 6);
-
+					var endingPath = Paths.image('gameObjects/notes/pixel/arrowEnds');
+					loadGraphic(endingPath, true, 7, 6);
 					animation.add('purpleholdend', [4]);
 					animation.add('greenholdend', [6]);
 					animation.add('redholdend', [7]);
@@ -117,8 +117,9 @@ class Note extends FlxSprite {
 		if (isSustainNote && prevNote != null) {
 			alpha = 0.6;
 
-			if (Options.getOption('downscroll')) {
-				angle = 180;
+			if (Options.getOption('downscroll')) 
+			{
+				flipY = true;
 			}
 
 			x += width / 2;
