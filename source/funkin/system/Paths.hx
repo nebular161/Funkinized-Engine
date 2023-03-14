@@ -149,7 +149,7 @@ class Paths {
 	}
 
 	inline static public function getJSONAtlas(key:String, ?library:String) {
-		return FlxAtlasFrames.fromSpriteSheetPacker(image(key, library), file('funkin/images/$key.json', library));
+		return FlxAtlasFrames.fromTexturePackerJson(image(key, library), file('funkin/images/$key.json', library));
 	}
 
 	public static function getTextFileArray(path:String, delimeter:String = '\n'):Array<String> {

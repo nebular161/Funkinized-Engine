@@ -1400,7 +1400,7 @@ class PlayState extends MusicBeatState {
 					}
 
 				default:
-					babyArrow.frames = Paths.getSparrowAtlas('gameObjects/notes/base/default');
+					babyArrow.frames = Paths.getJSONAtlas('gameObjects/notes/base/default');
 					babyArrow.animation.addByPrefix('green', 'arrowUP');
 					babyArrow.animation.addByPrefix('blue', 'arrowDOWN');
 					babyArrow.animation.addByPrefix('purple', 'arrowLEFT');

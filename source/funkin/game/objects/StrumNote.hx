@@ -74,14 +74,14 @@ class StrumNote extends FlxSprite {
 				updateHitbox();
 				antialiasing = false;
 			default:
-				frames = Paths.getSparrowAtlas('gameObjects/notes/base/default');
+				frames = Paths.getJSONAtlas('gameObjects/notes/base/default');
 
-				animation.addByPrefix('greenScroll', 'green0');
-				animation.addByPrefix('redScroll', 'red0');
-				animation.addByPrefix('blueScroll', 'blue0');
-				animation.addByPrefix('purpleScroll', 'purple0');
+				animation.addByPrefix('greenScroll', 'greenNote');
+				animation.addByPrefix('redScroll', 'redNote');
+				animation.addByPrefix('blueScroll', 'blueNote');
+				animation.addByPrefix('purpleScroll', 'purpleNote');
 
-				animation.addByPrefix('purpleholdend', 'pruple end hold');
+				animation.addByPrefix('purpleholdend', 'purple hold end');
 				animation.addByPrefix('greenholdend', 'green hold end');
 				animation.addByPrefix('redholdend', 'red hold end');
 				animation.addByPrefix('blueholdend', 'blue hold end');
