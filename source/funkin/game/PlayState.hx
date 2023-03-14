@@ -860,7 +860,11 @@ class PlayState extends MusicBeatState {
 
 		Conductor.songPosition = -5000;
 
-		strumLine = new FlxSprite(0, Options.getOption('downscroll') ? FlxG.height - 150 : 50).makeGraphic(FlxG.width, 10);
+		strumLine = new FlxSprite(0, 50).makeGraphic(FlxG.width, 10);
+		if (Options.getOption('downscroll'))
+			strumLine.y = FlxG.height - 150;
+		strumLine.scrollFactor.set();
+
 		strumLineNotes = new FlxTypedGroup<FlxSprite>();
 		add(strumLineNotes);
 
@@ -901,7 +905,9 @@ class PlayState extends MusicBeatState {
 		healthBarBG.scrollFactor.set();
 		add(healthBarBG);
 		if (Options.getOption('downscroll'))
-			healthBarBG.y = FlxG.height * 0.1;
+			{
+				healthBarBG.y = FlxG.height * 0.1;
+			}
 
 		healthBar = new FlxBar(healthBarBG.x + 4, healthBarBG.y + 4, RIGHT_TO_LEFT, Std.int(healthBarBG.width - 8), Std.int(healthBarBG.height - 8), this,
 			'health', 0, 2);
@@ -1634,9 +1640,8 @@ class PlayState extends MusicBeatState {
 		
 		var iconOffset:Int = 26;
 
-		iconP1.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * 0.01)) + (150 * iconP1.scale.x - 150) / 2 - iconOffset;
-		iconP2.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * 0.01)) - (150 * iconP2.scale.x) / 2 - iconOffset * 2;
-
+		iconP1.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * 0.01) - iconOffset);
+		iconP2.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * 0.01)) - (iconP2.width - iconOffset);
 		health = FlxMath.bound(health, 0, 2);
 
 		if (healthBar.percent < 20)
@@ -1722,7 +1727,6 @@ class PlayState extends MusicBeatState {
 
 				if (Options.getOption('downscroll')) {
 					daNote.y = strumLine.y + 0.45 * (Conductor.songPosition - daNote.strumTime) * FlxMath.roundDecimal(SONG.speed, 2);
-
 					if (daNote.isSustainNote) {
 						if (daNote.animation.curAnim.name.endsWith('end') && daNote.prevNote != null)
 							daNote.y += daNote.prevNote.height;
@@ -2467,11 +2471,11 @@ class PlayState extends MusicBeatState {
 				camHUD.zoom += 0.03;
 			}
 
-		iconP1.scale.set(1.2, 1.2);
-		iconP2.scale.set(1.2, 1.2);
-
-		iconP1.updateHitbox();
-		iconP2.updateHitbox();
+			iconP1.setGraphicSize(Std.int(iconP1.width + 30));
+			iconP2.setGraphicSize(Std.int(iconP2.width + 30));
+	
+			iconP1.updateHitbox();
+			iconP2.updateHitbox();
 
 		if (curBeat % gfSpeed == 0) {
 			gf.dance();

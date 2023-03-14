@@ -247,33 +247,13 @@ class Character extends FlxSprite
 
 				flipX = true;
 				
-				loadOffsetFile(curCharacter);
-
-				case 'bf-opponent':
-					tex = Paths.getSparrowAtlas('gameObjects/characters/bf/Boyfriend');
-					frames = tex;
-					quickAnimAdd('idle', 'BF idle dance');
-					quickAnimAdd('singUP', 'BF NOTE UP0');
-					quickAnimAdd('singLEFT', 'BF NOTE RIGHT0');
-					quickAnimAdd('singRIGHT', 'BF NOTE LEFT0');
-					quickAnimAdd('singDOWN', 'BF NOTE DOWN0');
-					quickAnimAdd('hey', 'BF HEY');
-	
-					animation.addByPrefix('scared', 'BF idle shaking', 24, true);
-	
-					loadOffsetFile(curCharacter);
-	
-					playAnim('idle');
-	
-					flipX = true;
-					
-					loadOffsetFile(curCharacter);				
+				loadOffsetFile(curCharacter);			
 
 			case 'bf-dead':
 				frames = Paths.getSparrowAtlas('gameObjects/characters/bf/Boyfriend_Dead');
+				animation.addByPrefix('firstDeath', "BF dies");
 				animation.addByPrefix('deathLoop', "BF Dead Loop", 24, true);
-				quickAnimAdd('firstDeath', "BF dies");
-				quickAnimAdd('deathConfirm', "BF Dead confirm");
+				animation.addByPrefix('deathConfirm', "BF Dead confirm");
 	
 				loadOffsetFile(curCharacter);
 	
