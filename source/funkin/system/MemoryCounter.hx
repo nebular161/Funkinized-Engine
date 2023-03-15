@@ -6,7 +6,7 @@ import openfl.text.TextField;
 import lime.app.Application;
 import openfl.text.TextFormat;
 import flixel.util.FlxColor;
-
+import flixel.text.FlxText;
 class MemoryCounter extends TextField
 {
 	private var times:Array<Float>;

@@ -13,6 +13,7 @@ import openfl.display._internal.stats.DrawCallContext;
 #if flash
 import openfl.Lib;
 #end
+import flixel.text.FlxText;
 
 /**
 	The FPS class provides an easy-to-use monitor to display

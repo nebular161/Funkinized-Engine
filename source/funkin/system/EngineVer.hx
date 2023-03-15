@@ -8,7 +8,8 @@ import openfl.events.Event;
 import openfl.system.System;
 import openfl.text.TextField;
 import openfl.text.TextFormat;
-
+import flixel.text.FlxText;
+import flixel.util.FlxColor;
 /**
  * Version display lmfao
  * @ Mem Usuage Code author Kirill Poletaev
