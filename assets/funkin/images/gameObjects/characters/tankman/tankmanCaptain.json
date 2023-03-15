@@ -1,0 +1,3447 @@
+{
+  "frames": {
+    "Tankman UP note MISS0001": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 492,
+        "h": 620
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 492,
+        "h": 620
+      },
+      "sourceSize": {
+        "w": 494,
+        "h": 620
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman UP note0001": {
+      "frame": {
+        "x": 492,
+        "y": 0,
+        "w": 492,
+        "h": 620
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 492,
+        "h": 620
+      },
+      "sourceSize": {
+        "w": 505,
+        "h": 621
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman UP note0003": {
+      "frame": {
+        "x": 0,
+        "y": 620,
+        "w": 498,
+        "h": 610
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 11,
+        "w": 498,
+        "h": 610
+      },
+      "sourceSize": {
+        "w": 505,
+        "h": 621
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman UP note MISS0002": {
+      "frame": {
+        "x": 498,
+        "y": 620,
+        "w": 493,
+        "h": 601
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 19,
+        "w": 493,
+        "h": 601
+      },
+      "sourceSize": {
+        "w": 494,
+        "h": 620
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0043": {
+      "frame": {
+        "x": 498,
+        "y": 1221,
+        "w": 527,
+        "h": 561
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 28,
+        "w": 527,
+        "h": 561
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman UP note MISS0004": {
+      "frame": {
+        "x": 984,
+        "y": 0,
+        "w": 486,
+        "h": 607
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 13,
+        "w": 486,
+        "h": 607
+      },
+      "sourceSize": {
+        "w": 494,
+        "h": 620
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0055": {
+      "frame": {
+        "x": 991,
+        "y": 607,
+        "w": 524,
+        "h": 561
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 4,
+        "y": 28,
+        "w": 524,
+        "h": 561
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0053": {
+      "frame": {
+        "x": 1470,
+        "y": 0,
+        "w": 524,
+        "h": 561
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 4,
+        "y": 28,
+        "w": 524,
+        "h": 561
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0051": {
+      "frame": {
+        "x": 1025,
+        "y": 1168,
+        "w": 524,
+        "h": 561
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 4,
+        "y": 28,
+        "w": 524,
+        "h": 561
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0045": {
+      "frame": {
+        "x": 1025,
+        "y": 1729,
+        "w": 524,
+        "h": 561
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 4,
+        "y": 28,
+        "w": 524,
+        "h": 561
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0046": {
+      "frame": {
+        "x": 0,
+        "y": 1782,
+        "w": 524,
+        "h": 561
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 4,
+        "y": 28,
+        "w": 524,
+        "h": 561
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0048": {
+      "frame": {
+        "x": 1515,
+        "y": 561,
+        "w": 524,
+        "h": 561
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 4,
+        "y": 28,
+        "w": 524,
+        "h": 561
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0050": {
+      "frame": {
+        "x": 1994,
+        "y": 0,
+        "w": 524,
+        "h": 561
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 4,
+        "y": 28,
+        "w": 524,
+        "h": 561
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0057": {
+      "frame": {
+        "x": 1549,
+        "y": 1122,
+        "w": 524,
+        "h": 561
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 4,
+        "y": 28,
+        "w": 524,
+        "h": 561
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Right Note MISS0004": {
+      "frame": {
+        "x": 524,
+        "y": 1782,
+        "w": 489,
+        "h": 559
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 1,
+        "w": 489,
+        "h": 559
+      },
+      "sourceSize": {
+        "w": 504,
+        "h": 560
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Right Note MISS0002": {
+      "frame": {
+        "x": 1549,
+        "y": 1683,
+        "w": 489,
+        "h": 559
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 489,
+        "h": 559
+      },
+      "sourceSize": {
+        "w": 504,
+        "h": 560
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Note Left MISS0004": {
+      "frame": {
+        "x": 0,
+        "y": 1230,
+        "w": 497,
+        "h": 543
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 13,
+        "y": 0,
+        "w": 497,
+        "h": 543
+      },
+      "sourceSize": {
+        "w": 510,
+        "h": 543
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Right Note0003": {
+      "frame": {
+        "x": 2039,
+        "y": 561,
+        "w": 482,
+        "h": 559
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 482,
+        "h": 559
+      },
+      "sourceSize": {
+        "w": 494,
+        "h": 559
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Right Note MISS0001": {
+      "frame": {
+        "x": 2038,
+        "y": 1683,
+        "w": 483,
+        "h": 557
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 21,
+        "y": 0,
+        "w": 483,
+        "h": 557
+      },
+      "sourceSize": {
+        "w": 504,
+        "h": 560
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Note Left MISS0002": {
+      "frame": {
+        "x": 1549,
+        "y": 2242,
+        "w": 495,
+        "h": 543
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 15,
+        "y": 0,
+        "w": 495,
+        "h": 543
+      },
+      "sourceSize": {
+        "w": 510,
+        "h": 543
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Right Note0001": {
+      "frame": {
+        "x": 1013,
+        "y": 2290,
+        "w": 483,
+        "h": 556
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 11,
+        "y": 3,
+        "w": 483,
+        "h": 556
+      },
+      "sourceSize": {
+        "w": 494,
+        "h": 559
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Note Left0001": {
+      "frame": {
+        "x": 0,
+        "y": 2343,
+        "w": 501,
+        "h": 525
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 15,
+        "w": 501,
+        "h": 525
+      },
+      "sourceSize": {
+        "w": 503,
+        "h": 541
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Note Left0003": {
+      "frame": {
+        "x": 524,
+        "y": 2341,
+        "w": 486,
+        "h": 541
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 17,
+        "y": 0,
+        "w": 486,
+        "h": 541
+      },
+      "sourceSize": {
+        "w": 503,
+        "h": 541
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Note Left MISS0001": {
+      "frame": {
+        "x": 2518,
+        "y": 0,
+        "w": 501,
+        "h": 524
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 17,
+        "w": 501,
+        "h": 524
+      },
+      "sourceSize": {
+        "w": 510,
+        "h": 543
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Idle Dance0009": {
+      "frame": {
+        "x": 2044,
+        "y": 2240,
+        "w": 428,
+        "h": 573
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 0,
+        "w": 428,
+        "h": 573
+      },
+      "sourceSize": {
+        "w": 431,
+        "h": 573
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Idle Dance0008": {
+      "frame": {
+        "x": 2472,
+        "y": 2240,
+        "w": 428,
+        "h": 572
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 1,
+        "w": 428,
+        "h": 572
+      },
+      "sourceSize": {
+        "w": 431,
+        "h": 573
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Idle Dance0007": {
+      "frame": {
+        "x": 2521,
+        "y": 524,
+        "w": 427,
+        "h": 572
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 4,
+        "y": 1,
+        "w": 427,
+        "h": 572
+      },
+      "sourceSize": {
+        "w": 431,
+        "h": 573
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0002": {
+      "frame": {
+        "x": 2073,
+        "y": 1120,
+        "w": 431,
+        "h": 563
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 26,
+        "w": 431,
+        "h": 563
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0001": {
+      "frame": {
+        "x": 2504,
+        "y": 1120,
+        "w": 431,
+        "h": 563
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 26,
+        "w": 431,
+        "h": 563
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Idle Dance0005": {
+      "frame": {
+        "x": 0,
+        "y": 2868,
+        "w": 425,
+        "h": 560
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 4,
+        "y": 13,
+        "w": 425,
+        "h": 560
+      },
+      "sourceSize": {
+        "w": 431,
+        "h": 573
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Idle Dance0003": {
+      "frame": {
+        "x": 2521,
+        "y": 1683,
+        "w": 427,
+        "h": 556
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 17,
+        "w": 427,
+        "h": 556
+      },
+      "sourceSize": {
+        "w": 431,
+        "h": 573
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0004": {
+      "frame": {
+        "x": 2472,
+        "y": 2812,
+        "w": 403,
+        "h": 589
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 403,
+        "h": 589
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0003": {
+      "frame": {
+        "x": 1496,
+        "y": 2785,
+        "w": 403,
+        "h": 589
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 403,
+        "h": 589
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Idle Dance0001": {
+      "frame": {
+        "x": 1010,
+        "y": 2846,
+        "w": 426,
+        "h": 554
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 19,
+        "w": 426,
+        "h": 554
+      },
+      "sourceSize": {
+        "w": 431,
+        "h": 573
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0007": {
+      "frame": {
+        "x": 1899,
+        "y": 2813,
+        "w": 403,
+        "h": 580
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 9,
+        "w": 403,
+        "h": 580
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0005": {
+      "frame": {
+        "x": 2935,
+        "y": 1096,
+        "w": 403,
+        "h": 580
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 9,
+        "w": 403,
+        "h": 580
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0040": {
+      "frame": {
+        "x": 2875,
+        "y": 2812,
+        "w": 403,
+        "h": 579
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 10,
+        "w": 403,
+        "h": 579
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0042": {
+      "frame": {
+        "x": 2948,
+        "y": 524,
+        "w": 407,
+        "h": 556
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 33,
+        "w": 407,
+        "h": 556
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0041": {
+      "frame": {
+        "x": 2900,
+        "y": 2239,
+        "w": 407,
+        "h": 556
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 33,
+        "w": 407,
+        "h": 556
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0006": {
+      "frame": {
+        "x": 2935,
+        "y": 1096,
+        "w": 403,
+        "h": 580
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 9,
+        "w": 403,
+        "h": 580
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0008": {
+      "frame": {
+        "x": 1899,
+        "y": 2813,
+        "w": 403,
+        "h": 580
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 9,
+        "w": 403,
+        "h": 580
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0009": {
+      "frame": {
+        "x": 1899,
+        "y": 2813,
+        "w": 403,
+        "h": 580
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 9,
+        "w": 403,
+        "h": 580
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0010": {
+      "frame": {
+        "x": 1899,
+        "y": 2813,
+        "w": 403,
+        "h": 580
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 9,
+        "w": 403,
+        "h": 580
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0011": {
+      "frame": {
+        "x": 1899,
+        "y": 2813,
+        "w": 403,
+        "h": 580
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 9,
+        "w": 403,
+        "h": 580
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0012": {
+      "frame": {
+        "x": 1899,
+        "y": 2813,
+        "w": 403,
+        "h": 580
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 9,
+        "w": 403,
+        "h": 580
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0013": {
+      "frame": {
+        "x": 1899,
+        "y": 2813,
+        "w": 403,
+        "h": 580
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 9,
+        "w": 403,
+        "h": 580
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0014": {
+      "frame": {
+        "x": 1899,
+        "y": 2813,
+        "w": 403,
+        "h": 580
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 9,
+        "w": 403,
+        "h": 580
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0015": {
+      "frame": {
+        "x": 1899,
+        "y": 2813,
+        "w": 403,
+        "h": 580
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 9,
+        "w": 403,
+        "h": 580
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0016": {
+      "frame": {
+        "x": 1899,
+        "y": 2813,
+        "w": 403,
+        "h": 580
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 9,
+        "w": 403,
+        "h": 580
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0017": {
+      "frame": {
+        "x": 1899,
+        "y": 2813,
+        "w": 403,
+        "h": 580
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 9,
+        "w": 403,
+        "h": 580
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0018": {
+      "frame": {
+        "x": 1899,
+        "y": 2813,
+        "w": 403,
+        "h": 580
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 9,
+        "w": 403,
+        "h": 580
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0019": {
+      "frame": {
+        "x": 1899,
+        "y": 2813,
+        "w": 403,
+        "h": 580
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 9,
+        "w": 403,
+        "h": 580
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0020": {
+      "frame": {
+        "x": 1899,
+        "y": 2813,
+        "w": 403,
+        "h": 580
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 9,
+        "w": 403,
+        "h": 580
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0021": {
+      "frame": {
+        "x": 1899,
+        "y": 2813,
+        "w": 403,
+        "h": 580
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 9,
+        "w": 403,
+        "h": 580
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0022": {
+      "frame": {
+        "x": 1899,
+        "y": 2813,
+        "w": 403,
+        "h": 580
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 9,
+        "w": 403,
+        "h": 580
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0023": {
+      "frame": {
+        "x": 1899,
+        "y": 2813,
+        "w": 403,
+        "h": 580
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 9,
+        "w": 403,
+        "h": 580
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0024": {
+      "frame": {
+        "x": 1899,
+        "y": 2813,
+        "w": 403,
+        "h": 580
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 9,
+        "w": 403,
+        "h": 580
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0025": {
+      "frame": {
+        "x": 1899,
+        "y": 2813,
+        "w": 403,
+        "h": 580
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 9,
+        "w": 403,
+        "h": 580
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0026": {
+      "frame": {
+        "x": 1899,
+        "y": 2813,
+        "w": 403,
+        "h": 580
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 9,
+        "w": 403,
+        "h": 580
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0027": {
+      "frame": {
+        "x": 1899,
+        "y": 2813,
+        "w": 403,
+        "h": 580
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 9,
+        "w": 403,
+        "h": 580
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0028": {
+      "frame": {
+        "x": 1899,
+        "y": 2813,
+        "w": 403,
+        "h": 580
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 9,
+        "w": 403,
+        "h": 580
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0029": {
+      "frame": {
+        "x": 1899,
+        "y": 2813,
+        "w": 403,
+        "h": 580
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 9,
+        "w": 403,
+        "h": 580
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0030": {
+      "frame": {
+        "x": 1899,
+        "y": 2813,
+        "w": 403,
+        "h": 580
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 9,
+        "w": 403,
+        "h": 580
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0031": {
+      "frame": {
+        "x": 1899,
+        "y": 2813,
+        "w": 403,
+        "h": 580
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 9,
+        "w": 403,
+        "h": 580
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0032": {
+      "frame": {
+        "x": 1899,
+        "y": 2813,
+        "w": 403,
+        "h": 580
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 9,
+        "w": 403,
+        "h": 580
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0033": {
+      "frame": {
+        "x": 1899,
+        "y": 2813,
+        "w": 403,
+        "h": 580
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 9,
+        "w": 403,
+        "h": 580
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0034": {
+      "frame": {
+        "x": 1899,
+        "y": 2813,
+        "w": 403,
+        "h": 580
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 9,
+        "w": 403,
+        "h": 580
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0035": {
+      "frame": {
+        "x": 1899,
+        "y": 2813,
+        "w": 403,
+        "h": 580
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 9,
+        "w": 403,
+        "h": 580
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0036": {
+      "frame": {
+        "x": 1899,
+        "y": 2813,
+        "w": 403,
+        "h": 580
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 9,
+        "w": 403,
+        "h": 580
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0037": {
+      "frame": {
+        "x": 1899,
+        "y": 2813,
+        "w": 403,
+        "h": 580
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 9,
+        "w": 403,
+        "h": 580
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0038": {
+      "frame": {
+        "x": 1899,
+        "y": 2813,
+        "w": 403,
+        "h": 580
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 9,
+        "w": 403,
+        "h": 580
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0039": {
+      "frame": {
+        "x": 1899,
+        "y": 2813,
+        "w": 403,
+        "h": 580
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 9,
+        "w": 403,
+        "h": 580
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0044": {
+      "frame": {
+        "x": 498,
+        "y": 1221,
+        "w": 527,
+        "h": 561
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 28,
+        "w": 527,
+        "h": 561
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0047": {
+      "frame": {
+        "x": 0,
+        "y": 1782,
+        "w": 524,
+        "h": 561
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 4,
+        "y": 28,
+        "w": 524,
+        "h": 561
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0049": {
+      "frame": {
+        "x": 1515,
+        "y": 561,
+        "w": 524,
+        "h": 561
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 4,
+        "y": 28,
+        "w": 524,
+        "h": 561
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0059": {
+      "frame": {
+        "x": 1515,
+        "y": 561,
+        "w": 524,
+        "h": 561
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 4,
+        "y": 28,
+        "w": 524,
+        "h": 561
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0060": {
+      "frame": {
+        "x": 1515,
+        "y": 561,
+        "w": 524,
+        "h": 561
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 4,
+        "y": 28,
+        "w": 524,
+        "h": 561
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0061": {
+      "frame": {
+        "x": 1515,
+        "y": 561,
+        "w": 524,
+        "h": 561
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 4,
+        "y": 28,
+        "w": 524,
+        "h": 561
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0062": {
+      "frame": {
+        "x": 1515,
+        "y": 561,
+        "w": 524,
+        "h": 561
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 4,
+        "y": 28,
+        "w": 524,
+        "h": 561
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0063": {
+      "frame": {
+        "x": 1515,
+        "y": 561,
+        "w": 524,
+        "h": 561
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 4,
+        "y": 28,
+        "w": 524,
+        "h": 561
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0064": {
+      "frame": {
+        "x": 1515,
+        "y": 561,
+        "w": 524,
+        "h": 561
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 4,
+        "y": 28,
+        "w": 524,
+        "h": 561
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0065": {
+      "frame": {
+        "x": 1515,
+        "y": 561,
+        "w": 524,
+        "h": 561
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 4,
+        "y": 28,
+        "w": 524,
+        "h": 561
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0066": {
+      "frame": {
+        "x": 1515,
+        "y": 561,
+        "w": 524,
+        "h": 561
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 4,
+        "y": 28,
+        "w": 524,
+        "h": 561
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0067": {
+      "frame": {
+        "x": 1515,
+        "y": 561,
+        "w": 524,
+        "h": 561
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 4,
+        "y": 28,
+        "w": 524,
+        "h": 561
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0052": {
+      "frame": {
+        "x": 1025,
+        "y": 1168,
+        "w": 524,
+        "h": 561
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 4,
+        "y": 28,
+        "w": 524,
+        "h": 561
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0054": {
+      "frame": {
+        "x": 1470,
+        "y": 0,
+        "w": 524,
+        "h": 561
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 4,
+        "y": 28,
+        "w": 524,
+        "h": 561
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0056": {
+      "frame": {
+        "x": 991,
+        "y": 607,
+        "w": 524,
+        "h": 561
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 4,
+        "y": 28,
+        "w": 524,
+        "h": 561
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "PRETTY GOOD tankman0058": {
+      "frame": {
+        "x": 1549,
+        "y": 1122,
+        "w": 524,
+        "h": 561
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 4,
+        "y": 28,
+        "w": 524,
+        "h": 561
+      },
+      "sourceSize": {
+        "w": 532,
+        "h": 589
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Idle Dance0002": {
+      "frame": {
+        "x": 1010,
+        "y": 2846,
+        "w": 426,
+        "h": 554
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 19,
+        "w": 426,
+        "h": 554
+      },
+      "sourceSize": {
+        "w": 431,
+        "h": 573
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Idle Dance0004": {
+      "frame": {
+        "x": 2521,
+        "y": 1683,
+        "w": 427,
+        "h": 556
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 17,
+        "w": 427,
+        "h": 556
+      },
+      "sourceSize": {
+        "w": 431,
+        "h": 573
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Idle Dance0006": {
+      "frame": {
+        "x": 0,
+        "y": 2868,
+        "w": 425,
+        "h": 560
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 4,
+        "y": 13,
+        "w": 425,
+        "h": 560
+      },
+      "sourceSize": {
+        "w": 431,
+        "h": 573
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Idle Dance0010": {
+      "frame": {
+        "x": 2044,
+        "y": 2240,
+        "w": 428,
+        "h": 573
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 0,
+        "w": 428,
+        "h": 573
+      },
+      "sourceSize": {
+        "w": 431,
+        "h": 573
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Idle Dance0011": {
+      "frame": {
+        "x": 2044,
+        "y": 2240,
+        "w": 428,
+        "h": 573
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 0,
+        "w": 428,
+        "h": 573
+      },
+      "sourceSize": {
+        "w": 431,
+        "h": 573
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Idle Dance0012": {
+      "frame": {
+        "x": 2044,
+        "y": 2240,
+        "w": 428,
+        "h": 573
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 0,
+        "w": 428,
+        "h": 573
+      },
+      "sourceSize": {
+        "w": 431,
+        "h": 573
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Idle Dance0013": {
+      "frame": {
+        "x": 2044,
+        "y": 2240,
+        "w": 428,
+        "h": 573
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 0,
+        "w": 428,
+        "h": 573
+      },
+      "sourceSize": {
+        "w": 431,
+        "h": 573
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Idle Dance0014": {
+      "frame": {
+        "x": 2044,
+        "y": 2240,
+        "w": 428,
+        "h": 573
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 0,
+        "w": 428,
+        "h": 573
+      },
+      "sourceSize": {
+        "w": 431,
+        "h": 573
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Note Left MISS0003": {
+      "frame": {
+        "x": 1549,
+        "y": 2242,
+        "w": 495,
+        "h": 543
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 15,
+        "y": 0,
+        "w": 495,
+        "h": 543
+      },
+      "sourceSize": {
+        "w": 510,
+        "h": 543
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Note Left MISS0005": {
+      "frame": {
+        "x": 0,
+        "y": 1230,
+        "w": 497,
+        "h": 543
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 13,
+        "y": 0,
+        "w": 497,
+        "h": 543
+      },
+      "sourceSize": {
+        "w": 510,
+        "h": 543
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Note Left MISS0006": {
+      "frame": {
+        "x": 0,
+        "y": 1230,
+        "w": 497,
+        "h": 543
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 13,
+        "y": 0,
+        "w": 497,
+        "h": 543
+      },
+      "sourceSize": {
+        "w": 510,
+        "h": 543
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Note Left MISS0007": {
+      "frame": {
+        "x": 0,
+        "y": 1230,
+        "w": 497,
+        "h": 543
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 13,
+        "y": 0,
+        "w": 497,
+        "h": 543
+      },
+      "sourceSize": {
+        "w": 510,
+        "h": 543
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Note Left MISS0008": {
+      "frame": {
+        "x": 0,
+        "y": 1230,
+        "w": 497,
+        "h": 543
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 13,
+        "y": 0,
+        "w": 497,
+        "h": 543
+      },
+      "sourceSize": {
+        "w": 510,
+        "h": 543
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Note Left MISS0009": {
+      "frame": {
+        "x": 0,
+        "y": 1230,
+        "w": 497,
+        "h": 543
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 13,
+        "y": 0,
+        "w": 497,
+        "h": 543
+      },
+      "sourceSize": {
+        "w": 510,
+        "h": 543
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Note Left MISS0010": {
+      "frame": {
+        "x": 0,
+        "y": 1230,
+        "w": 497,
+        "h": 543
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 13,
+        "y": 0,
+        "w": 497,
+        "h": 543
+      },
+      "sourceSize": {
+        "w": 510,
+        "h": 543
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Note Left0002": {
+      "frame": {
+        "x": 0,
+        "y": 2343,
+        "w": 501,
+        "h": 525
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 15,
+        "w": 501,
+        "h": 525
+      },
+      "sourceSize": {
+        "w": 503,
+        "h": 541
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Note Left0004": {
+      "frame": {
+        "x": 524,
+        "y": 2341,
+        "w": 486,
+        "h": 541
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 17,
+        "y": 0,
+        "w": 486,
+        "h": 541
+      },
+      "sourceSize": {
+        "w": 503,
+        "h": 541
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Note Left0005": {
+      "frame": {
+        "x": 524,
+        "y": 2341,
+        "w": 486,
+        "h": 541
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 17,
+        "y": 0,
+        "w": 486,
+        "h": 541
+      },
+      "sourceSize": {
+        "w": 503,
+        "h": 541
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Note Left0006": {
+      "frame": {
+        "x": 524,
+        "y": 2341,
+        "w": 486,
+        "h": 541
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 17,
+        "y": 0,
+        "w": 486,
+        "h": 541
+      },
+      "sourceSize": {
+        "w": 503,
+        "h": 541
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Note Left0007": {
+      "frame": {
+        "x": 524,
+        "y": 2341,
+        "w": 486,
+        "h": 541
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 17,
+        "y": 0,
+        "w": 486,
+        "h": 541
+      },
+      "sourceSize": {
+        "w": 503,
+        "h": 541
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Note Left0008": {
+      "frame": {
+        "x": 524,
+        "y": 2341,
+        "w": 486,
+        "h": 541
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 17,
+        "y": 0,
+        "w": 486,
+        "h": 541
+      },
+      "sourceSize": {
+        "w": 503,
+        "h": 541
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Right Note MISS0003": {
+      "frame": {
+        "x": 1549,
+        "y": 1683,
+        "w": 489,
+        "h": 559
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 489,
+        "h": 559
+      },
+      "sourceSize": {
+        "w": 504,
+        "h": 560
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Right Note MISS0005": {
+      "frame": {
+        "x": 524,
+        "y": 1782,
+        "w": 489,
+        "h": 559
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 1,
+        "w": 489,
+        "h": 559
+      },
+      "sourceSize": {
+        "w": 504,
+        "h": 560
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Right Note MISS0006": {
+      "frame": {
+        "x": 524,
+        "y": 1782,
+        "w": 489,
+        "h": 559
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 1,
+        "w": 489,
+        "h": 559
+      },
+      "sourceSize": {
+        "w": 504,
+        "h": 560
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Right Note MISS0007": {
+      "frame": {
+        "x": 524,
+        "y": 1782,
+        "w": 489,
+        "h": 559
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 1,
+        "w": 489,
+        "h": 559
+      },
+      "sourceSize": {
+        "w": 504,
+        "h": 560
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Right Note MISS0008": {
+      "frame": {
+        "x": 524,
+        "y": 1782,
+        "w": 489,
+        "h": 559
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 1,
+        "w": 489,
+        "h": 559
+      },
+      "sourceSize": {
+        "w": 504,
+        "h": 560
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Right Note MISS0009": {
+      "frame": {
+        "x": 524,
+        "y": 1782,
+        "w": 489,
+        "h": 559
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 1,
+        "w": 489,
+        "h": 559
+      },
+      "sourceSize": {
+        "w": 504,
+        "h": 560
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Right Note0002": {
+      "frame": {
+        "x": 1013,
+        "y": 2290,
+        "w": 483,
+        "h": 556
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 11,
+        "y": 3,
+        "w": 483,
+        "h": 556
+      },
+      "sourceSize": {
+        "w": 494,
+        "h": 559
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Right Note0004": {
+      "frame": {
+        "x": 2039,
+        "y": 561,
+        "w": 482,
+        "h": 559
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 482,
+        "h": 559
+      },
+      "sourceSize": {
+        "w": 494,
+        "h": 559
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Right Note0005": {
+      "frame": {
+        "x": 2039,
+        "y": 561,
+        "w": 482,
+        "h": 559
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 482,
+        "h": 559
+      },
+      "sourceSize": {
+        "w": 494,
+        "h": 559
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Right Note0006": {
+      "frame": {
+        "x": 2039,
+        "y": 561,
+        "w": 482,
+        "h": 559
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 482,
+        "h": 559
+      },
+      "sourceSize": {
+        "w": 494,
+        "h": 559
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Right Note0007": {
+      "frame": {
+        "x": 2039,
+        "y": 561,
+        "w": 482,
+        "h": 559
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 482,
+        "h": 559
+      },
+      "sourceSize": {
+        "w": 494,
+        "h": 559
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Right Note0008": {
+      "frame": {
+        "x": 2039,
+        "y": 561,
+        "w": 482,
+        "h": 559
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 482,
+        "h": 559
+      },
+      "sourceSize": {
+        "w": 494,
+        "h": 559
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Right Note0009": {
+      "frame": {
+        "x": 2039,
+        "y": 561,
+        "w": 482,
+        "h": 559
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 482,
+        "h": 559
+      },
+      "sourceSize": {
+        "w": 494,
+        "h": 559
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman Right Note0010": {
+      "frame": {
+        "x": 2039,
+        "y": 561,
+        "w": 482,
+        "h": 559
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 482,
+        "h": 559
+      },
+      "sourceSize": {
+        "w": 494,
+        "h": 559
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman UP note MISS0003": {
+      "frame": {
+        "x": 498,
+        "y": 620,
+        "w": 493,
+        "h": 601
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 19,
+        "w": 493,
+        "h": 601
+      },
+      "sourceSize": {
+        "w": 494,
+        "h": 620
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman UP note MISS0005": {
+      "frame": {
+        "x": 984,
+        "y": 0,
+        "w": 486,
+        "h": 607
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 13,
+        "w": 486,
+        "h": 607
+      },
+      "sourceSize": {
+        "w": 494,
+        "h": 620
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman UP note MISS0006": {
+      "frame": {
+        "x": 984,
+        "y": 0,
+        "w": 486,
+        "h": 607
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 13,
+        "w": 486,
+        "h": 607
+      },
+      "sourceSize": {
+        "w": 494,
+        "h": 620
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman UP note MISS0007": {
+      "frame": {
+        "x": 984,
+        "y": 0,
+        "w": 486,
+        "h": 607
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 13,
+        "w": 486,
+        "h": 607
+      },
+      "sourceSize": {
+        "w": 494,
+        "h": 620
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman UP note MISS0008": {
+      "frame": {
+        "x": 984,
+        "y": 0,
+        "w": 486,
+        "h": 607
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 13,
+        "w": 486,
+        "h": 607
+      },
+      "sourceSize": {
+        "w": 494,
+        "h": 620
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman UP note MISS0009": {
+      "frame": {
+        "x": 984,
+        "y": 0,
+        "w": 486,
+        "h": 607
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 13,
+        "w": 486,
+        "h": 607
+      },
+      "sourceSize": {
+        "w": 494,
+        "h": 620
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman UP note MISS0010": {
+      "frame": {
+        "x": 984,
+        "y": 0,
+        "w": 486,
+        "h": 607
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 13,
+        "w": 486,
+        "h": 607
+      },
+      "sourceSize": {
+        "w": 494,
+        "h": 620
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman UP note MISS0011": {
+      "frame": {
+        "x": 984,
+        "y": 0,
+        "w": 486,
+        "h": 607
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 13,
+        "w": 486,
+        "h": 607
+      },
+      "sourceSize": {
+        "w": 494,
+        "h": 620
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman UP note MISS0012": {
+      "frame": {
+        "x": 984,
+        "y": 0,
+        "w": 486,
+        "h": 607
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 13,
+        "w": 486,
+        "h": 607
+      },
+      "sourceSize": {
+        "w": 494,
+        "h": 620
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman UP note MISS0013": {
+      "frame": {
+        "x": 984,
+        "y": 0,
+        "w": 486,
+        "h": 607
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 13,
+        "w": 486,
+        "h": 607
+      },
+      "sourceSize": {
+        "w": 494,
+        "h": 620
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman UP note MISS0014": {
+      "frame": {
+        "x": 984,
+        "y": 0,
+        "w": 486,
+        "h": 607
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 13,
+        "w": 486,
+        "h": 607
+      },
+      "sourceSize": {
+        "w": 494,
+        "h": 620
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman UP note MISS0015": {
+      "frame": {
+        "x": 984,
+        "y": 0,
+        "w": 486,
+        "h": 607
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 13,
+        "w": 486,
+        "h": 607
+      },
+      "sourceSize": {
+        "w": 494,
+        "h": 620
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman UP note0002": {
+      "frame": {
+        "x": 492,
+        "y": 0,
+        "w": 492,
+        "h": 620
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 492,
+        "h": 620
+      },
+      "sourceSize": {
+        "w": 505,
+        "h": 621
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman UP note0004": {
+      "frame": {
+        "x": 0,
+        "y": 620,
+        "w": 498,
+        "h": 610
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 11,
+        "w": 498,
+        "h": 610
+      },
+      "sourceSize": {
+        "w": 505,
+        "h": 621
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman UP note0005": {
+      "frame": {
+        "x": 0,
+        "y": 620,
+        "w": 498,
+        "h": 610
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 11,
+        "w": 498,
+        "h": 610
+      },
+      "sourceSize": {
+        "w": 505,
+        "h": 621
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman UP note0006": {
+      "frame": {
+        "x": 0,
+        "y": 620,
+        "w": 498,
+        "h": 610
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 11,
+        "w": 498,
+        "h": 610
+      },
+      "sourceSize": {
+        "w": 505,
+        "h": 621
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman UP note0007": {
+      "frame": {
+        "x": 0,
+        "y": 620,
+        "w": 498,
+        "h": 610
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 11,
+        "w": 498,
+        "h": 610
+      },
+      "sourceSize": {
+        "w": 505,
+        "h": 621
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman UP note0008": {
+      "frame": {
+        "x": 0,
+        "y": 620,
+        "w": 498,
+        "h": 610
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 11,
+        "w": 498,
+        "h": 610
+      },
+      "sourceSize": {
+        "w": 505,
+        "h": 621
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman UP note0009": {
+      "frame": {
+        "x": 0,
+        "y": 620,
+        "w": 498,
+        "h": 610
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 11,
+        "w": 498,
+        "h": 610
+      },
+      "sourceSize": {
+        "w": 505,
+        "h": 621
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Tankman UP note0010": {
+      "frame": {
+        "x": 0,
+        "y": 620,
+        "w": 498,
+        "h": 610
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 11,
+        "w": 498,
+        "h": 610
+      },
+      "sourceSize": {
+        "w": 505,
+        "h": 621
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "tankmanCaptain.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 3355,
+      "h": 3428
+    },
+    "scale": 1
+  }
+}

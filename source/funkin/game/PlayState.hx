@@ -1039,7 +1039,7 @@ class PlayState extends MusicBeatState {
 		red.scrollFactor.set();
 
 		var senpaiEvil:FlxSprite = new FlxSprite();
-		senpaiEvil.frames = Paths.getSparrowAtlas('characters/senpai/senpaiCrazy');
+		senpaiEvil.frames = Paths.getJSONAtlas('characters/senpai/senpaiCrazy');
 		senpaiEvil.animation.addByPrefix('idle', 'Senpai Pre Explosion', 24, false);
 		senpaiEvil.setGraphicSize(Std.int(senpaiEvil.width * daPixelZoom));
 		senpaiEvil.scrollFactor.set();
@@ -1102,13 +1102,13 @@ class PlayState extends MusicBeatState {
 
 	var startTimer:FlxTimer = new FlxTimer();
 
-	function startCountdown():Void {
+	function startCountdown():Void 
+	{
+		generateStaticArrows(0);
+		generateStaticArrows(1);
 		inCutscene = false;
 
 		camHUD.visible = true;
-
-		generateStaticArrows(0);
-		generateStaticArrows(1);
 
 		talking = false;
 		startedCountdown = true;
@@ -1285,7 +1285,6 @@ class PlayState extends MusicBeatState {
 
 		var noteData:Array<SwagSection>;
 
-		// NEW SHIT
 		noteData = songData.notes;
 
 		var playerCounter:Int = 0;
@@ -1359,7 +1358,7 @@ class PlayState extends MusicBeatState {
 		return Obj1.strumTime < Obj2.strumTime ? Sort : Obj1.strumTime > Obj2.strumTime ? -Sort : 0;
 	}
 
-	public function generateStaticArrows(player:Int):Void 
+	private function generateStaticArrows(player:Int):Void 
 	{
 		for (i in 0...4) {
 			var babyArrow:FlxSprite = new FlxSprite(0, strumLine.y);
@@ -1383,6 +1382,16 @@ class PlayState extends MusicBeatState {
 
 					switch (Math.abs(i))
 					{
+						case 0:
+							babyArrow.x += StrumNote.swagWidth * 0;
+							babyArrow.animation.add('static', [0]);
+							babyArrow.animation.add('pressed', [4, 8], 12, false);
+							babyArrow.animation.add('confirm', [12, 16], 24, false);
+						case 1:
+							babyArrow.x += StrumNote.swagWidth * 1;
+							babyArrow.animation.add('static', [1]);
+							babyArrow.animation.add('pressed', [5, 9], 12, false);
+							babyArrow.animation.add('confirm', [13, 17], 24, false);
 						case 2:
 							babyArrow.x += StrumNote.swagWidth * 2;
 							babyArrow.animation.add('static', [2]);
@@ -1393,16 +1402,8 @@ class PlayState extends MusicBeatState {
 							babyArrow.animation.add('static', [3]);
 							babyArrow.animation.add('pressed', [7, 11], 12, false);
 							babyArrow.animation.add('confirm', [15, 19], 24, false);
-						case 1:
-							babyArrow.x += StrumNote.swagWidth * 1;
-							babyArrow.animation.add('static', [1]);
-							babyArrow.animation.add('pressed', [5, 9], 12, false);
-							babyArrow.animation.add('confirm', [13, 17], 24, false);
-						case 0:
-							babyArrow.x += StrumNote.swagWidth * 0;
-							babyArrow.animation.add('static', [0]);
-							babyArrow.animation.add('pressed', [4, 8], 12, false);
-							babyArrow.animation.add('confirm', [12, 16], 24, false);
+
+
 					}
 
 				default:
@@ -1417,6 +1418,16 @@ class PlayState extends MusicBeatState {
 
 					switch (Math.abs(i))
 					{
+						case 0:
+							babyArrow.x += StrumNote.swagWidth * 0;
+							babyArrow.animation.addByPrefix('static', 'arrowLEFT');
+							babyArrow.animation.addByPrefix('pressed', 'left press', 24, false);
+							babyArrow.animation.addByPrefix('confirm', 'left confirm', 24, false);
+						case 1:
+							babyArrow.x += StrumNote.swagWidth * 1;
+							babyArrow.animation.addByPrefix('static', 'arrowDOWN');
+							babyArrow.animation.addByPrefix('pressed', 'down press', 24, false);
+							babyArrow.animation.addByPrefix('confirm', 'down confirm', 24, false);	
 						case 2:
 							babyArrow.x += StrumNote.swagWidth * 2;
 							babyArrow.animation.addByPrefix('static', 'arrowUP');
@@ -1427,16 +1438,8 @@ class PlayState extends MusicBeatState {
 							babyArrow.animation.addByPrefix('static', 'arrowRIGHT');
 							babyArrow.animation.addByPrefix('pressed', 'right press', 24, false);
 							babyArrow.animation.addByPrefix('confirm', 'right confirm', 24, false);
-						case 1:
-							babyArrow.x += StrumNote.swagWidth * 1;
-							babyArrow.animation.addByPrefix('static', 'arrowDOWN');
-							babyArrow.animation.addByPrefix('pressed', 'down press', 24, false);
-							babyArrow.animation.addByPrefix('confirm', 'down confirm', 24, false);
-						case 0:
-							babyArrow.x += StrumNote.swagWidth * 0;
-							babyArrow.animation.addByPrefix('static', 'arrowLEFT');
-							babyArrow.animation.addByPrefix('pressed', 'left press', 24, false);
-							babyArrow.animation.addByPrefix('confirm', 'left confirm', 24, false);
+
+
 					}
 			}
 

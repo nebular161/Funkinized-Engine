@@ -1,0 +1,1551 @@
+{
+  "frames": {
+    "MOM DOWN POSE0002": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 444,
+        "h": 585
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 28,
+        "w": 444,
+        "h": 585
+      },
+      "sourceSize": {
+        "w": 457,
+        "h": 613
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "MOM DOWN POSE0001": {
+      "frame": {
+        "x": 444,
+        "y": 0,
+        "w": 452,
+        "h": 593
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 20,
+        "w": 452,
+        "h": 593
+      },
+      "sourceSize": {
+        "w": 457,
+        "h": 613
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "MOM DOWN POSE0004": {
+      "frame": {
+        "x": 896,
+        "y": 0,
+        "w": 442,
+        "h": 606
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 6,
+        "y": 7,
+        "w": 442,
+        "h": 606
+      },
+      "sourceSize": {
+        "w": 457,
+        "h": 613
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "MOM DOWN POSE0006": {
+      "frame": {
+        "x": 1338,
+        "y": 0,
+        "w": 437,
+        "h": 606
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 7,
+        "w": 437,
+        "h": 606
+      },
+      "sourceSize": {
+        "w": 457,
+        "h": 613
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "MOM DOWN POSE0003": {
+      "frame": {
+        "x": 1775,
+        "y": 0,
+        "w": 440,
+        "h": 613
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 17,
+        "y": 0,
+        "w": 440,
+        "h": 613
+      },
+      "sourceSize": {
+        "w": 457,
+        "h": 613
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "MOM DOWN POSE0005": {
+      "frame": {
+        "x": 2215,
+        "y": 0,
+        "w": 450,
+        "h": 613
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 450,
+        "h": 613
+      },
+      "sourceSize": {
+        "w": 457,
+        "h": 613
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Pose Left0004": {
+      "frame": {
+        "x": 2665,
+        "y": 0,
+        "w": 658,
+        "h": 743
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 19,
+        "w": 658,
+        "h": 743
+      },
+      "sourceSize": {
+        "w": 672,
+        "h": 762
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Pose Left0003": {
+      "frame": {
+        "x": 3323,
+        "y": 0,
+        "w": 648,
+        "h": 745
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 17,
+        "w": 648,
+        "h": 745
+      },
+      "sourceSize": {
+        "w": 672,
+        "h": 762
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Pose Left0006": {
+      "frame": {
+        "x": 3971,
+        "y": 0,
+        "w": 663,
+        "h": 747
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 15,
+        "w": 663,
+        "h": 747
+      },
+      "sourceSize": {
+        "w": 672,
+        "h": 762
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Pose Left0008": {
+      "frame": {
+        "x": 0,
+        "y": 593,
+        "w": 658,
+        "h": 747
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 15,
+        "w": 658,
+        "h": 747
+      },
+      "sourceSize": {
+        "w": 672,
+        "h": 762
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Pose Left0005": {
+      "frame": {
+        "x": 658,
+        "y": 606,
+        "w": 659,
+        "h": 749
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 13,
+        "w": 659,
+        "h": 749
+      },
+      "sourceSize": {
+        "w": 672,
+        "h": 762
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Pose Left0007": {
+      "frame": {
+        "x": 1317,
+        "y": 613,
+        "w": 648,
+        "h": 749
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 13,
+        "w": 648,
+        "h": 749
+      },
+      "sourceSize": {
+        "w": 672,
+        "h": 762
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Pose Left0002": {
+      "frame": {
+        "x": 1965,
+        "y": 613,
+        "w": 672,
+        "h": 761
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 1,
+        "w": 672,
+        "h": 761
+      },
+      "sourceSize": {
+        "w": 672,
+        "h": 762
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Pose Left0001": {
+      "frame": {
+        "x": 2637,
+        "y": 743,
+        "w": 662,
+        "h": 762
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 662,
+        "h": 762
+      },
+      "sourceSize": {
+        "w": 672,
+        "h": 762
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Idle0004": {
+      "frame": {
+        "x": 3299,
+        "y": 745,
+        "w": 478,
+        "h": 792
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 22,
+        "w": 478,
+        "h": 792
+      },
+      "sourceSize": {
+        "w": 479,
+        "h": 814
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Idle0003": {
+      "frame": {
+        "x": 3777,
+        "y": 747,
+        "w": 467,
+        "h": 797
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 17,
+        "w": 467,
+        "h": 797
+      },
+      "sourceSize": {
+        "w": 479,
+        "h": 814
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Left Pose0002": {
+      "frame": {
+        "x": 4244,
+        "y": 747,
+        "w": 561,
+        "h": 799
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 11,
+        "w": 561,
+        "h": 799
+      },
+      "sourceSize": {
+        "w": 568,
+        "h": 810
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Idle0006": {
+      "frame": {
+        "x": 0,
+        "y": 1340,
+        "w": 473,
+        "h": 801
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 13,
+        "w": 473,
+        "h": 801
+      },
+      "sourceSize": {
+        "w": 479,
+        "h": 814
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Left Pose0001": {
+      "frame": {
+        "x": 473,
+        "y": 1355,
+        "w": 563,
+        "h": 802
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 8,
+        "w": 563,
+        "h": 802
+      },
+      "sourceSize": {
+        "w": 568,
+        "h": 810
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Idle0008": {
+      "frame": {
+        "x": 1036,
+        "y": 1362,
+        "w": 472,
+        "h": 804
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 10,
+        "w": 472,
+        "h": 804
+      },
+      "sourceSize": {
+        "w": 479,
+        "h": 814
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Idle0005": {
+      "frame": {
+        "x": 1508,
+        "y": 1374,
+        "w": 462,
+        "h": 805
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 9,
+        "w": 462,
+        "h": 805
+      },
+      "sourceSize": {
+        "w": 479,
+        "h": 814
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Left Pose0004": {
+      "frame": {
+        "x": 1970,
+        "y": 1374,
+        "w": 567,
+        "h": 805
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 5,
+        "w": 567,
+        "h": 805
+      },
+      "sourceSize": {
+        "w": 568,
+        "h": 810
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Left Pose0006": {
+      "frame": {
+        "x": 2537,
+        "y": 1505,
+        "w": 565,
+        "h": 805
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 5,
+        "w": 565,
+        "h": 805
+      },
+      "sourceSize": {
+        "w": 568,
+        "h": 810
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Idle0007": {
+      "frame": {
+        "x": 3102,
+        "y": 1537,
+        "w": 462,
+        "h": 807
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 7,
+        "w": 462,
+        "h": 807
+      },
+      "sourceSize": {
+        "w": 479,
+        "h": 814
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Idle0002": {
+      "frame": {
+        "x": 3564,
+        "y": 1544,
+        "w": 478,
+        "h": 809
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 4,
+        "w": 478,
+        "h": 809
+      },
+      "sourceSize": {
+        "w": 479,
+        "h": 814
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Idle0010": {
+      "frame": {
+        "x": 4042,
+        "y": 1546,
+        "w": 472,
+        "h": 810
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 4,
+        "w": 472,
+        "h": 810
+      },
+      "sourceSize": {
+        "w": 479,
+        "h": 814
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Idle0001": {
+      "frame": {
+        "x": 4514,
+        "y": 1546,
+        "w": 467,
+        "h": 811
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 2,
+        "w": 467,
+        "h": 811
+      },
+      "sourceSize": {
+        "w": 479,
+        "h": 814
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Idle0009": {
+      "frame": {
+        "x": 0,
+        "y": 2141,
+        "w": 462,
+        "h": 812
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 2,
+        "w": 462,
+        "h": 812
+      },
+      "sourceSize": {
+        "w": 479,
+        "h": 814
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Left Pose0003": {
+      "frame": {
+        "x": 462,
+        "y": 2157,
+        "w": 556,
+        "h": 810
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 12,
+        "y": 0,
+        "w": 556,
+        "h": 810
+      },
+      "sourceSize": {
+        "w": 568,
+        "h": 810
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Idle0012": {
+      "frame": {
+        "x": 1018,
+        "y": 2166,
+        "w": 476,
+        "h": 811
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 3,
+        "w": 476,
+        "h": 811
+      },
+      "sourceSize": {
+        "w": 479,
+        "h": 814
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Left Pose0005": {
+      "frame": {
+        "x": 1494,
+        "y": 2179,
+        "w": 568,
+        "h": 810
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 568,
+        "h": 810
+      },
+      "sourceSize": {
+        "w": 568,
+        "h": 810
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Idle0014": {
+      "frame": {
+        "x": 2062,
+        "y": 2179,
+        "w": 472,
+        "h": 812
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 2,
+        "w": 472,
+        "h": 812
+      },
+      "sourceSize": {
+        "w": 479,
+        "h": 814
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Idle0011": {
+      "frame": {
+        "x": 2534,
+        "y": 2310,
+        "w": 472,
+        "h": 813
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 1,
+        "w": 472,
+        "h": 813
+      },
+      "sourceSize": {
+        "w": 479,
+        "h": 814
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Idle0013": {
+      "frame": {
+        "x": 3006,
+        "y": 2344,
+        "w": 462,
+        "h": 814
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 0,
+        "w": 462,
+        "h": 814
+      },
+      "sourceSize": {
+        "w": 479,
+        "h": 814
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Up Pose0002": {
+      "frame": {
+        "x": 3468,
+        "y": 2353,
+        "w": 452,
+        "h": 839
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 9,
+        "y": 16,
+        "w": 452,
+        "h": 839
+      },
+      "sourceSize": {
+        "w": 473,
+        "h": 862
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Up Pose0001": {
+      "frame": {
+        "x": 3920,
+        "y": 2356,
+        "w": 455,
+        "h": 841
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 14,
+        "w": 455,
+        "h": 841
+      },
+      "sourceSize": {
+        "w": 473,
+        "h": 862
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Up Pose0005": {
+      "frame": {
+        "x": 4375,
+        "y": 2357,
+        "w": 461,
+        "h": 858
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 9,
+        "y": 4,
+        "w": 461,
+        "h": 858
+      },
+      "sourceSize": {
+        "w": 473,
+        "h": 862
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Up Pose0007": {
+      "frame": {
+        "x": 0,
+        "y": 2953,
+        "w": 457,
+        "h": 858
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 4,
+        "w": 457,
+        "h": 858
+      },
+      "sourceSize": {
+        "w": 473,
+        "h": 862
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Up Pose0006": {
+      "frame": {
+        "x": 457,
+        "y": 2967,
+        "w": 468,
+        "h": 859
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 3,
+        "w": 468,
+        "h": 859
+      },
+      "sourceSize": {
+        "w": 473,
+        "h": 862
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Up Pose0008": {
+      "frame": {
+        "x": 925,
+        "y": 2977,
+        "w": 454,
+        "h": 859
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 15,
+        "y": 3,
+        "w": 454,
+        "h": 859
+      },
+      "sourceSize": {
+        "w": 473,
+        "h": 862
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Up Pose0003": {
+      "frame": {
+        "x": 1379,
+        "y": 2989,
+        "w": 457,
+        "h": 861
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 1,
+        "w": 457,
+        "h": 861
+      },
+      "sourceSize": {
+        "w": 473,
+        "h": 862
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Up Pose0004": {
+      "frame": {
+        "x": 1836,
+        "y": 2991,
+        "w": 454,
+        "h": 862
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 15,
+        "y": 0,
+        "w": 454,
+        "h": 862
+      },
+      "sourceSize": {
+        "w": 473,
+        "h": 862
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "MOM DOWN POSE0007": {
+      "frame": {
+        "x": 1775,
+        "y": 0,
+        "w": 440,
+        "h": 613
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 17,
+        "y": 0,
+        "w": 440,
+        "h": 613
+      },
+      "sourceSize": {
+        "w": 457,
+        "h": 613
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "MOM DOWN POSE0011": {
+      "frame": {
+        "x": 1775,
+        "y": 0,
+        "w": 440,
+        "h": 613
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 17,
+        "y": 0,
+        "w": 440,
+        "h": 613
+      },
+      "sourceSize": {
+        "w": 457,
+        "h": 613
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "MOM DOWN POSE0015": {
+      "frame": {
+        "x": 1775,
+        "y": 0,
+        "w": 440,
+        "h": 613
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 17,
+        "y": 0,
+        "w": 440,
+        "h": 613
+      },
+      "sourceSize": {
+        "w": 457,
+        "h": 613
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "MOM DOWN POSE0008": {
+      "frame": {
+        "x": 896,
+        "y": 0,
+        "w": 442,
+        "h": 606
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 6,
+        "y": 7,
+        "w": 442,
+        "h": 606
+      },
+      "sourceSize": {
+        "w": 457,
+        "h": 613
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "MOM DOWN POSE0012": {
+      "frame": {
+        "x": 896,
+        "y": 0,
+        "w": 442,
+        "h": 606
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 6,
+        "y": 7,
+        "w": 442,
+        "h": 606
+      },
+      "sourceSize": {
+        "w": 457,
+        "h": 613
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "MOM DOWN POSE0009": {
+      "frame": {
+        "x": 2215,
+        "y": 0,
+        "w": 450,
+        "h": 613
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 450,
+        "h": 613
+      },
+      "sourceSize": {
+        "w": 457,
+        "h": 613
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "MOM DOWN POSE0013": {
+      "frame": {
+        "x": 2215,
+        "y": 0,
+        "w": 450,
+        "h": 613
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 450,
+        "h": 613
+      },
+      "sourceSize": {
+        "w": 457,
+        "h": 613
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "MOM DOWN POSE0010": {
+      "frame": {
+        "x": 1338,
+        "y": 0,
+        "w": 437,
+        "h": 606
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 7,
+        "w": 437,
+        "h": 606
+      },
+      "sourceSize": {
+        "w": 457,
+        "h": 613
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "MOM DOWN POSE0014": {
+      "frame": {
+        "x": 1338,
+        "y": 0,
+        "w": 437,
+        "h": 606
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 7,
+        "w": 437,
+        "h": 606
+      },
+      "sourceSize": {
+        "w": 457,
+        "h": 613
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Left Pose0007": {
+      "frame": {
+        "x": 462,
+        "y": 2157,
+        "w": 556,
+        "h": 810
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 12,
+        "y": 0,
+        "w": 556,
+        "h": 810
+      },
+      "sourceSize": {
+        "w": 568,
+        "h": 810
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Left Pose0008": {
+      "frame": {
+        "x": 1970,
+        "y": 1374,
+        "w": 567,
+        "h": 805
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 1,
+        "y": 5,
+        "w": 567,
+        "h": 805
+      },
+      "sourceSize": {
+        "w": 568,
+        "h": 810
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Left Pose0009": {
+      "frame": {
+        "x": 1494,
+        "y": 2179,
+        "w": 568,
+        "h": 810
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 568,
+        "h": 810
+      },
+      "sourceSize": {
+        "w": 568,
+        "h": 810
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Left Pose0010": {
+      "frame": {
+        "x": 2537,
+        "y": 1505,
+        "w": 565,
+        "h": 805
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 5,
+        "w": 565,
+        "h": 805
+      },
+      "sourceSize": {
+        "w": 568,
+        "h": 810
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Pose Left0009": {
+      "frame": {
+        "x": 658,
+        "y": 606,
+        "w": 659,
+        "h": 749
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 13,
+        "w": 659,
+        "h": 749
+      },
+      "sourceSize": {
+        "w": 672,
+        "h": 762
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Pose Left0010": {
+      "frame": {
+        "x": 3971,
+        "y": 0,
+        "w": 663,
+        "h": 747
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 15,
+        "w": 663,
+        "h": 747
+      },
+      "sourceSize": {
+        "w": 672,
+        "h": 762
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Up Pose0009": {
+      "frame": {
+        "x": 4375,
+        "y": 2357,
+        "w": 461,
+        "h": 858
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 9,
+        "y": 4,
+        "w": 461,
+        "h": 858
+      },
+      "sourceSize": {
+        "w": 473,
+        "h": 862
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Up Pose0013": {
+      "frame": {
+        "x": 4375,
+        "y": 2357,
+        "w": 461,
+        "h": 858
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 9,
+        "y": 4,
+        "w": 461,
+        "h": 858
+      },
+      "sourceSize": {
+        "w": 473,
+        "h": 862
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Up Pose0010": {
+      "frame": {
+        "x": 457,
+        "y": 2967,
+        "w": 468,
+        "h": 859
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 3,
+        "w": 468,
+        "h": 859
+      },
+      "sourceSize": {
+        "w": 473,
+        "h": 862
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Up Pose0014": {
+      "frame": {
+        "x": 457,
+        "y": 2967,
+        "w": 468,
+        "h": 859
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 3,
+        "w": 468,
+        "h": 859
+      },
+      "sourceSize": {
+        "w": 473,
+        "h": 862
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Up Pose0011": {
+      "frame": {
+        "x": 0,
+        "y": 2953,
+        "w": 457,
+        "h": 858
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 4,
+        "w": 457,
+        "h": 858
+      },
+      "sourceSize": {
+        "w": 473,
+        "h": 862
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Up Pose0015": {
+      "frame": {
+        "x": 0,
+        "y": 2953,
+        "w": 457,
+        "h": 858
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 4,
+        "w": 457,
+        "h": 858
+      },
+      "sourceSize": {
+        "w": 473,
+        "h": 862
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Mom Up Pose0012": {
+      "frame": {
+        "x": 925,
+        "y": 2977,
+        "w": 454,
+        "h": 859
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 15,
+        "y": 3,
+        "w": 454,
+        "h": 859
+      },
+      "sourceSize": {
+        "w": 473,
+        "h": 862
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "momCar.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 4981,
+      "h": 3853
+    },
+    "scale": 1
+  }
+}

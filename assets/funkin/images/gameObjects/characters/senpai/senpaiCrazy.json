@@ -1,0 +1,3087 @@
+{
+  "frames": {
+    "Senpai Pre Explosion0060": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 172,
+        "h": 106
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 48,
+        "w": 172,
+        "h": 106
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "senpai explodes0002": {
+      "frame": {
+        "x": 0,
+        "y": 106,
+        "w": 172,
+        "h": 106
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 45,
+        "w": 172,
+        "h": 106
+      },
+      "sourceSize": {
+        "w": 229,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0059": {
+      "frame": {
+        "x": 0,
+        "y": 212,
+        "w": 153,
+        "h": 103
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 49,
+        "w": 153,
+        "h": 103
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "senpai explodes0001": {
+      "frame": {
+        "x": 153,
+        "y": 212,
+        "w": 153,
+        "h": 103
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 46,
+        "w": 153,
+        "h": 103
+      },
+      "sourceSize": {
+        "w": 229,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0061": {
+      "frame": {
+        "x": 172,
+        "y": 0,
+        "w": 113,
+        "h": 104
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 48,
+        "w": 113,
+        "h": 104
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "senpai explodes0003": {
+      "frame": {
+        "x": 285,
+        "y": 0,
+        "w": 113,
+        "h": 104
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 45,
+        "w": 113,
+        "h": 104
+      },
+      "sourceSize": {
+        "w": 229,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0058": {
+      "frame": {
+        "x": 172,
+        "y": 104,
+        "w": 58,
+        "h": 100
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 42,
+        "y": 52,
+        "w": 58,
+        "h": 100
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0010": {
+      "frame": {
+        "x": 230,
+        "y": 104,
+        "w": 50,
+        "h": 97
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 51,
+        "w": 50,
+        "h": 97
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0012": {
+      "frame": {
+        "x": 280,
+        "y": 104,
+        "w": 48,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 50,
+        "w": 48,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0009": {
+      "frame": {
+        "x": 306,
+        "y": 202,
+        "w": 54,
+        "h": 125
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 51,
+        "y": 24,
+        "w": 54,
+        "h": 125
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0007": {
+      "frame": {
+        "x": 0,
+        "y": 315,
+        "w": 59,
+        "h": 122
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 50,
+        "y": 24,
+        "w": 59,
+        "h": 122
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0004": {
+      "frame": {
+        "x": 59,
+        "y": 315,
+        "w": 62,
+        "h": 120
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 49,
+        "y": 27,
+        "w": 62,
+        "h": 120
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0001": {
+      "frame": {
+        "x": 121,
+        "y": 315,
+        "w": 67,
+        "h": 115
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 47,
+        "y": 32,
+        "w": 67,
+        "h": 115
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0002": {
+      "frame": {
+        "x": 188,
+        "y": 315,
+        "w": 69,
+        "h": 112
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 47,
+        "y": 36,
+        "w": 69,
+        "h": 112
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0018": {
+      "frame": {
+        "x": 257,
+        "y": 315,
+        "w": 48,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 50,
+        "w": 48,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0026": {
+      "frame": {
+        "x": 328,
+        "y": 104,
+        "w": 48,
+        "h": 97
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 54,
+        "y": 52,
+        "w": 48,
+        "h": 97
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0003": {
+      "frame": {
+        "x": 188,
+        "y": 315,
+        "w": 69,
+        "h": 112
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 47,
+        "y": 36,
+        "w": 69,
+        "h": 112
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0005": {
+      "frame": {
+        "x": 59,
+        "y": 315,
+        "w": 62,
+        "h": 120
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 49,
+        "y": 27,
+        "w": 62,
+        "h": 120
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0006": {
+      "frame": {
+        "x": 59,
+        "y": 315,
+        "w": 62,
+        "h": 120
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 49,
+        "y": 27,
+        "w": 62,
+        "h": 120
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0008": {
+      "frame": {
+        "x": 0,
+        "y": 315,
+        "w": 59,
+        "h": 122
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 50,
+        "y": 24,
+        "w": 59,
+        "h": 122
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0011": {
+      "frame": {
+        "x": 230,
+        "y": 104,
+        "w": 50,
+        "h": 97
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 52,
+        "y": 51,
+        "w": 50,
+        "h": 97
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0013": {
+      "frame": {
+        "x": 280,
+        "y": 104,
+        "w": 48,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 50,
+        "w": 48,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0014": {
+      "frame": {
+        "x": 280,
+        "y": 104,
+        "w": 48,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 50,
+        "w": 48,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0015": {
+      "frame": {
+        "x": 280,
+        "y": 104,
+        "w": 48,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 50,
+        "w": 48,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0016": {
+      "frame": {
+        "x": 280,
+        "y": 104,
+        "w": 48,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 50,
+        "w": 48,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0017": {
+      "frame": {
+        "x": 280,
+        "y": 104,
+        "w": 48,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 50,
+        "w": 48,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0020": {
+      "frame": {
+        "x": 280,
+        "y": 104,
+        "w": 48,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 50,
+        "w": 48,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0021": {
+      "frame": {
+        "x": 280,
+        "y": 104,
+        "w": 48,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 50,
+        "w": 48,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0022": {
+      "frame": {
+        "x": 280,
+        "y": 104,
+        "w": 48,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 50,
+        "w": 48,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0023": {
+      "frame": {
+        "x": 280,
+        "y": 104,
+        "w": 48,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 50,
+        "w": 48,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0024": {
+      "frame": {
+        "x": 280,
+        "y": 104,
+        "w": 48,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 50,
+        "w": 48,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0025": {
+      "frame": {
+        "x": 280,
+        "y": 104,
+        "w": 48,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 50,
+        "w": 48,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0028": {
+      "frame": {
+        "x": 280,
+        "y": 104,
+        "w": 48,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 50,
+        "w": 48,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0029": {
+      "frame": {
+        "x": 280,
+        "y": 104,
+        "w": 48,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 50,
+        "w": 48,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0030": {
+      "frame": {
+        "x": 280,
+        "y": 104,
+        "w": 48,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 50,
+        "w": 48,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0031": {
+      "frame": {
+        "x": 280,
+        "y": 104,
+        "w": 48,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 50,
+        "w": 48,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0033": {
+      "frame": {
+        "x": 280,
+        "y": 104,
+        "w": 48,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 50,
+        "w": 48,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0034": {
+      "frame": {
+        "x": 280,
+        "y": 104,
+        "w": 48,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 50,
+        "w": 48,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0035": {
+      "frame": {
+        "x": 280,
+        "y": 104,
+        "w": 48,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 50,
+        "w": 48,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0037": {
+      "frame": {
+        "x": 280,
+        "y": 104,
+        "w": 48,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 50,
+        "w": 48,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0038": {
+      "frame": {
+        "x": 280,
+        "y": 104,
+        "w": 48,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 50,
+        "w": 48,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0039": {
+      "frame": {
+        "x": 280,
+        "y": 104,
+        "w": 48,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 50,
+        "w": 48,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0040": {
+      "frame": {
+        "x": 280,
+        "y": 104,
+        "w": 48,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 50,
+        "w": 48,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0047": {
+      "frame": {
+        "x": 280,
+        "y": 104,
+        "w": 48,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 50,
+        "w": 48,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0048": {
+      "frame": {
+        "x": 280,
+        "y": 104,
+        "w": 48,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 50,
+        "w": 48,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0054": {
+      "frame": {
+        "x": 280,
+        "y": 104,
+        "w": 48,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 50,
+        "w": 48,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0057": {
+      "frame": {
+        "x": 280,
+        "y": 104,
+        "w": 48,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 50,
+        "w": 48,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0019": {
+      "frame": {
+        "x": 257,
+        "y": 315,
+        "w": 48,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 50,
+        "w": 48,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0032": {
+      "frame": {
+        "x": 257,
+        "y": 315,
+        "w": 48,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 50,
+        "w": 48,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0045": {
+      "frame": {
+        "x": 257,
+        "y": 315,
+        "w": 48,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 50,
+        "w": 48,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0049": {
+      "frame": {
+        "x": 257,
+        "y": 315,
+        "w": 48,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 50,
+        "w": 48,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0052": {
+      "frame": {
+        "x": 257,
+        "y": 315,
+        "w": 48,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 50,
+        "w": 48,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0055": {
+      "frame": {
+        "x": 257,
+        "y": 315,
+        "w": 48,
+        "h": 98
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 53,
+        "y": 50,
+        "w": 48,
+        "h": 98
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0027": {
+      "frame": {
+        "x": 328,
+        "y": 104,
+        "w": 48,
+        "h": 97
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 54,
+        "y": 52,
+        "w": 48,
+        "h": 97
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0036": {
+      "frame": {
+        "x": 328,
+        "y": 104,
+        "w": 48,
+        "h": 97
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 54,
+        "y": 52,
+        "w": 48,
+        "h": 97
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0041": {
+      "frame": {
+        "x": 328,
+        "y": 104,
+        "w": 48,
+        "h": 97
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 54,
+        "y": 52,
+        "w": 48,
+        "h": 97
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0042": {
+      "frame": {
+        "x": 328,
+        "y": 104,
+        "w": 48,
+        "h": 97
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 54,
+        "y": 52,
+        "w": 48,
+        "h": 97
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0043": {
+      "frame": {
+        "x": 328,
+        "y": 104,
+        "w": 48,
+        "h": 97
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 54,
+        "y": 52,
+        "w": 48,
+        "h": 97
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0044": {
+      "frame": {
+        "x": 328,
+        "y": 104,
+        "w": 48,
+        "h": 97
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 54,
+        "y": 52,
+        "w": 48,
+        "h": 97
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0046": {
+      "frame": {
+        "x": 328,
+        "y": 104,
+        "w": 48,
+        "h": 97
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 54,
+        "y": 52,
+        "w": 48,
+        "h": 97
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0050": {
+      "frame": {
+        "x": 328,
+        "y": 104,
+        "w": 48,
+        "h": 97
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 54,
+        "y": 52,
+        "w": 48,
+        "h": 97
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0051": {
+      "frame": {
+        "x": 328,
+        "y": 104,
+        "w": 48,
+        "h": 97
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 54,
+        "y": 52,
+        "w": 48,
+        "h": 97
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0053": {
+      "frame": {
+        "x": 328,
+        "y": 104,
+        "w": 48,
+        "h": 97
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 54,
+        "y": 52,
+        "w": 48,
+        "h": 97
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0056": {
+      "frame": {
+        "x": 328,
+        "y": 104,
+        "w": 48,
+        "h": 97
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 54,
+        "y": 52,
+        "w": 48,
+        "h": 97
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0062": {
+      "frame": {
+        "x": 0,
+        "y": 212,
+        "w": 153,
+        "h": 103
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 49,
+        "w": 153,
+        "h": 103
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0065": {
+      "frame": {
+        "x": 0,
+        "y": 212,
+        "w": 153,
+        "h": 103
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 49,
+        "w": 153,
+        "h": 103
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0068": {
+      "frame": {
+        "x": 0,
+        "y": 212,
+        "w": 153,
+        "h": 103
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 49,
+        "w": 153,
+        "h": 103
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0071": {
+      "frame": {
+        "x": 0,
+        "y": 212,
+        "w": 153,
+        "h": 103
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 49,
+        "w": 153,
+        "h": 103
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0074": {
+      "frame": {
+        "x": 0,
+        "y": 212,
+        "w": 153,
+        "h": 103
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 49,
+        "w": 153,
+        "h": 103
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0077": {
+      "frame": {
+        "x": 0,
+        "y": 212,
+        "w": 153,
+        "h": 103
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 49,
+        "w": 153,
+        "h": 103
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0080": {
+      "frame": {
+        "x": 0,
+        "y": 212,
+        "w": 153,
+        "h": 103
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 49,
+        "w": 153,
+        "h": 103
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0083": {
+      "frame": {
+        "x": 0,
+        "y": 212,
+        "w": 153,
+        "h": 103
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 49,
+        "w": 153,
+        "h": 103
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0086": {
+      "frame": {
+        "x": 0,
+        "y": 212,
+        "w": 153,
+        "h": 103
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 49,
+        "w": 153,
+        "h": 103
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0089": {
+      "frame": {
+        "x": 0,
+        "y": 212,
+        "w": 153,
+        "h": 103
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 49,
+        "w": 153,
+        "h": 103
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0092": {
+      "frame": {
+        "x": 0,
+        "y": 212,
+        "w": 153,
+        "h": 103
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 49,
+        "w": 153,
+        "h": 103
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0095": {
+      "frame": {
+        "x": 0,
+        "y": 212,
+        "w": 153,
+        "h": 103
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 49,
+        "w": 153,
+        "h": 103
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0098": {
+      "frame": {
+        "x": 0,
+        "y": 212,
+        "w": 153,
+        "h": 103
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 49,
+        "w": 153,
+        "h": 103
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0101": {
+      "frame": {
+        "x": 0,
+        "y": 212,
+        "w": 153,
+        "h": 103
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 49,
+        "w": 153,
+        "h": 103
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0104": {
+      "frame": {
+        "x": 0,
+        "y": 212,
+        "w": 153,
+        "h": 103
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 49,
+        "w": 153,
+        "h": 103
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0107": {
+      "frame": {
+        "x": 0,
+        "y": 212,
+        "w": 153,
+        "h": 103
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 49,
+        "w": 153,
+        "h": 103
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0110": {
+      "frame": {
+        "x": 0,
+        "y": 212,
+        "w": 153,
+        "h": 103
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 49,
+        "w": 153,
+        "h": 103
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0113": {
+      "frame": {
+        "x": 0,
+        "y": 212,
+        "w": 153,
+        "h": 103
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 49,
+        "w": 153,
+        "h": 103
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0116": {
+      "frame": {
+        "x": 0,
+        "y": 212,
+        "w": 153,
+        "h": 103
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 49,
+        "w": 153,
+        "h": 103
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0119": {
+      "frame": {
+        "x": 0,
+        "y": 212,
+        "w": 153,
+        "h": 103
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 49,
+        "w": 153,
+        "h": 103
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0122": {
+      "frame": {
+        "x": 0,
+        "y": 212,
+        "w": 153,
+        "h": 103
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 49,
+        "w": 153,
+        "h": 103
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0125": {
+      "frame": {
+        "x": 0,
+        "y": 212,
+        "w": 153,
+        "h": 103
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 49,
+        "w": 153,
+        "h": 103
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0063": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 172,
+        "h": 106
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 48,
+        "w": 172,
+        "h": 106
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0066": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 172,
+        "h": 106
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 48,
+        "w": 172,
+        "h": 106
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0069": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 172,
+        "h": 106
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 48,
+        "w": 172,
+        "h": 106
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0072": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 172,
+        "h": 106
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 48,
+        "w": 172,
+        "h": 106
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0075": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 172,
+        "h": 106
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 48,
+        "w": 172,
+        "h": 106
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0078": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 172,
+        "h": 106
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 48,
+        "w": 172,
+        "h": 106
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0081": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 172,
+        "h": 106
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 48,
+        "w": 172,
+        "h": 106
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0084": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 172,
+        "h": 106
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 48,
+        "w": 172,
+        "h": 106
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0087": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 172,
+        "h": 106
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 48,
+        "w": 172,
+        "h": 106
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0090": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 172,
+        "h": 106
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 48,
+        "w": 172,
+        "h": 106
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0093": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 172,
+        "h": 106
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 48,
+        "w": 172,
+        "h": 106
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0096": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 172,
+        "h": 106
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 48,
+        "w": 172,
+        "h": 106
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0099": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 172,
+        "h": 106
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 48,
+        "w": 172,
+        "h": 106
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0102": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 172,
+        "h": 106
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 48,
+        "w": 172,
+        "h": 106
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0105": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 172,
+        "h": 106
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 48,
+        "w": 172,
+        "h": 106
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0108": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 172,
+        "h": 106
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 48,
+        "w": 172,
+        "h": 106
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0111": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 172,
+        "h": 106
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 48,
+        "w": 172,
+        "h": 106
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0114": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 172,
+        "h": 106
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 48,
+        "w": 172,
+        "h": 106
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0117": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 172,
+        "h": 106
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 48,
+        "w": 172,
+        "h": 106
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0120": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 172,
+        "h": 106
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 48,
+        "w": 172,
+        "h": 106
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0123": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 172,
+        "h": 106
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 48,
+        "w": 172,
+        "h": 106
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0064": {
+      "frame": {
+        "x": 172,
+        "y": 0,
+        "w": 113,
+        "h": 104
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 48,
+        "w": 113,
+        "h": 104
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0067": {
+      "frame": {
+        "x": 172,
+        "y": 0,
+        "w": 113,
+        "h": 104
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 48,
+        "w": 113,
+        "h": 104
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0070": {
+      "frame": {
+        "x": 172,
+        "y": 0,
+        "w": 113,
+        "h": 104
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 48,
+        "w": 113,
+        "h": 104
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0073": {
+      "frame": {
+        "x": 172,
+        "y": 0,
+        "w": 113,
+        "h": 104
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 48,
+        "w": 113,
+        "h": 104
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0076": {
+      "frame": {
+        "x": 172,
+        "y": 0,
+        "w": 113,
+        "h": 104
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 48,
+        "w": 113,
+        "h": 104
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0079": {
+      "frame": {
+        "x": 172,
+        "y": 0,
+        "w": 113,
+        "h": 104
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 48,
+        "w": 113,
+        "h": 104
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0082": {
+      "frame": {
+        "x": 172,
+        "y": 0,
+        "w": 113,
+        "h": 104
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 48,
+        "w": 113,
+        "h": 104
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0085": {
+      "frame": {
+        "x": 172,
+        "y": 0,
+        "w": 113,
+        "h": 104
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 48,
+        "w": 113,
+        "h": 104
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0088": {
+      "frame": {
+        "x": 172,
+        "y": 0,
+        "w": 113,
+        "h": 104
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 48,
+        "w": 113,
+        "h": 104
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0091": {
+      "frame": {
+        "x": 172,
+        "y": 0,
+        "w": 113,
+        "h": 104
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 48,
+        "w": 113,
+        "h": 104
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0094": {
+      "frame": {
+        "x": 172,
+        "y": 0,
+        "w": 113,
+        "h": 104
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 48,
+        "w": 113,
+        "h": 104
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0097": {
+      "frame": {
+        "x": 172,
+        "y": 0,
+        "w": 113,
+        "h": 104
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 48,
+        "w": 113,
+        "h": 104
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0100": {
+      "frame": {
+        "x": 172,
+        "y": 0,
+        "w": 113,
+        "h": 104
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 48,
+        "w": 113,
+        "h": 104
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0103": {
+      "frame": {
+        "x": 172,
+        "y": 0,
+        "w": 113,
+        "h": 104
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 48,
+        "w": 113,
+        "h": 104
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0106": {
+      "frame": {
+        "x": 172,
+        "y": 0,
+        "w": 113,
+        "h": 104
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 48,
+        "w": 113,
+        "h": 104
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0109": {
+      "frame": {
+        "x": 172,
+        "y": 0,
+        "w": 113,
+        "h": 104
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 48,
+        "w": 113,
+        "h": 104
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0112": {
+      "frame": {
+        "x": 172,
+        "y": 0,
+        "w": 113,
+        "h": 104
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 48,
+        "w": 113,
+        "h": 104
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0115": {
+      "frame": {
+        "x": 172,
+        "y": 0,
+        "w": 113,
+        "h": 104
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 48,
+        "w": 113,
+        "h": 104
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0118": {
+      "frame": {
+        "x": 172,
+        "y": 0,
+        "w": 113,
+        "h": 104
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 48,
+        "w": 113,
+        "h": 104
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0121": {
+      "frame": {
+        "x": 172,
+        "y": 0,
+        "w": 113,
+        "h": 104
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 48,
+        "w": 113,
+        "h": 104
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Pre Explosion0124": {
+      "frame": {
+        "x": 172,
+        "y": 0,
+        "w": 113,
+        "h": 104
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 7,
+        "y": 48,
+        "w": 113,
+        "h": 104
+      },
+      "sourceSize": {
+        "w": 250,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "senpaiCrazy.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 398,
+      "h": 437
+    },
+    "scale": 1
+  }
+}

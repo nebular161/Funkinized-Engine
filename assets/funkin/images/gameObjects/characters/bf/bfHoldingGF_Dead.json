@@ -1,0 +1,2943 @@
+{
+  "frames": {
+    "RETRY confirm holding gf0003": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 606,
+        "h": 495
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 2,
+        "w": 606,
+        "h": 495
+      },
+      "sourceSize": {
+        "w": 606,
+        "h": 497
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "RETRY confirm holding gf0002": {
+      "frame": {
+        "x": 0,
+        "y": 495,
+        "w": 605,
+        "h": 494
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 3,
+        "w": 605,
+        "h": 494
+      },
+      "sourceSize": {
+        "w": 606,
+        "h": 497
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "RETRY confirm holding gf0001": {
+      "frame": {
+        "x": 605,
+        "y": 495,
+        "w": 605,
+        "h": 492
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 5,
+        "w": 605,
+        "h": 492
+      },
+      "sourceSize": {
+        "w": 606,
+        "h": 497
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "RETRY confirm holding gf0023": {
+      "frame": {
+        "x": 605,
+        "y": 987,
+        "w": 606,
+        "h": 491
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 6,
+        "w": 606,
+        "h": 491
+      },
+      "sourceSize": {
+        "w": 606,
+        "h": 497
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "RETRY confirm holding gf0022": {
+      "frame": {
+        "x": 1210,
+        "y": 0,
+        "w": 606,
+        "h": 491
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 6,
+        "w": 606,
+        "h": 491
+      },
+      "sourceSize": {
+        "w": 606,
+        "h": 497
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "RETRY confirm holding gf0021": {
+      "frame": {
+        "x": 1210,
+        "y": 491,
+        "w": 606,
+        "h": 491
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 6,
+        "w": 606,
+        "h": 491
+      },
+      "sourceSize": {
+        "w": 606,
+        "h": 497
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "RETRY confirm holding gf0020": {
+      "frame": {
+        "x": 1211,
+        "y": 982,
+        "w": 606,
+        "h": 491
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 6,
+        "w": 606,
+        "h": 491
+      },
+      "sourceSize": {
+        "w": 606,
+        "h": 497
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "RETRY confirm holding gf0019": {
+      "frame": {
+        "x": 1211,
+        "y": 1473,
+        "w": 606,
+        "h": 491
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 6,
+        "w": 606,
+        "h": 491
+      },
+      "sourceSize": {
+        "w": 606,
+        "h": 497
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "RETRY confirm holding gf0018": {
+      "frame": {
+        "x": 0,
+        "y": 1478,
+        "w": 606,
+        "h": 491
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 6,
+        "w": 606,
+        "h": 491
+      },
+      "sourceSize": {
+        "w": 606,
+        "h": 497
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "RETRY confirm holding gf0017": {
+      "frame": {
+        "x": 1816,
+        "y": 0,
+        "w": 606,
+        "h": 491
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 6,
+        "w": 606,
+        "h": 491
+      },
+      "sourceSize": {
+        "w": 606,
+        "h": 497
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "RETRY confirm holding gf0016": {
+      "frame": {
+        "x": 1816,
+        "y": 491,
+        "w": 606,
+        "h": 491
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 6,
+        "w": 606,
+        "h": 491
+      },
+      "sourceSize": {
+        "w": 606,
+        "h": 497
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "RETRY confirm holding gf0015": {
+      "frame": {
+        "x": 1817,
+        "y": 982,
+        "w": 606,
+        "h": 491
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 6,
+        "w": 606,
+        "h": 491
+      },
+      "sourceSize": {
+        "w": 606,
+        "h": 497
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "RETRY confirm holding gf0014": {
+      "frame": {
+        "x": 1817,
+        "y": 1473,
+        "w": 606,
+        "h": 491
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 6,
+        "w": 606,
+        "h": 491
+      },
+      "sourceSize": {
+        "w": 606,
+        "h": 497
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "RETRY confirm holding gf0013": {
+      "frame": {
+        "x": 606,
+        "y": 1964,
+        "w": 606,
+        "h": 491
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 6,
+        "w": 606,
+        "h": 491
+      },
+      "sourceSize": {
+        "w": 606,
+        "h": 497
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "RETRY confirm holding gf0025": {
+      "frame": {
+        "x": 0,
+        "y": 1969,
+        "w": 606,
+        "h": 491
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 6,
+        "w": 606,
+        "h": 491
+      },
+      "sourceSize": {
+        "w": 606,
+        "h": 497
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "RETRY confirm holding gf0011": {
+      "frame": {
+        "x": 1212,
+        "y": 1964,
+        "w": 606,
+        "h": 491
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 6,
+        "w": 606,
+        "h": 491
+      },
+      "sourceSize": {
+        "w": 606,
+        "h": 497
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "RETRY confirm holding gf0010": {
+      "frame": {
+        "x": 2422,
+        "y": 0,
+        "w": 606,
+        "h": 491
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 6,
+        "w": 606,
+        "h": 491
+      },
+      "sourceSize": {
+        "w": 606,
+        "h": 497
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "RETRY confirm holding gf0009": {
+      "frame": {
+        "x": 2422,
+        "y": 491,
+        "w": 606,
+        "h": 491
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 6,
+        "w": 606,
+        "h": 491
+      },
+      "sourceSize": {
+        "w": 606,
+        "h": 497
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "RETRY confirm holding gf0008": {
+      "frame": {
+        "x": 1818,
+        "y": 1964,
+        "w": 606,
+        "h": 491
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 6,
+        "w": 606,
+        "h": 491
+      },
+      "sourceSize": {
+        "w": 606,
+        "h": 497
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "RETRY confirm holding gf0007": {
+      "frame": {
+        "x": 2423,
+        "y": 982,
+        "w": 606,
+        "h": 491
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 6,
+        "w": 606,
+        "h": 491
+      },
+      "sourceSize": {
+        "w": 606,
+        "h": 497
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "RETRY confirm holding gf0006": {
+      "frame": {
+        "x": 2423,
+        "y": 1473,
+        "w": 606,
+        "h": 491
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 6,
+        "w": 606,
+        "h": 491
+      },
+      "sourceSize": {
+        "w": 606,
+        "h": 497
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "RETRY confirm holding gf0005": {
+      "frame": {
+        "x": 606,
+        "y": 2455,
+        "w": 606,
+        "h": 491
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 6,
+        "w": 606,
+        "h": 491
+      },
+      "sourceSize": {
+        "w": 606,
+        "h": 497
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "RETRY confirm holding gf0004": {
+      "frame": {
+        "x": 0,
+        "y": 2460,
+        "w": 606,
+        "h": 491
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 6,
+        "w": 606,
+        "h": 491
+      },
+      "sourceSize": {
+        "w": 606,
+        "h": 497
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "RETRY confirm holding gf0026": {
+      "frame": {
+        "x": 1212,
+        "y": 2455,
+        "w": 606,
+        "h": 491
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 6,
+        "w": 606,
+        "h": 491
+      },
+      "sourceSize": {
+        "w": 606,
+        "h": 497
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "RETRY confirm holding gf0024": {
+      "frame": {
+        "x": 1818,
+        "y": 2455,
+        "w": 606,
+        "h": 491
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 6,
+        "w": 606,
+        "h": 491
+      },
+      "sourceSize": {
+        "w": 606,
+        "h": 497
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "RETRY confirm holding gf0012": {
+      "frame": {
+        "x": 606,
+        "y": 2946,
+        "w": 606,
+        "h": 491
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 6,
+        "w": 606,
+        "h": 491
+      },
+      "sourceSize": {
+        "w": 606,
+        "h": 497
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0026": {
+      "frame": {
+        "x": 606,
+        "y": 1478,
+        "w": 592,
+        "h": 472
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 472
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0030": {
+      "frame": {
+        "x": 0,
+        "y": 989,
+        "w": 592,
+        "h": 469
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 469
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0032": {
+      "frame": {
+        "x": 0,
+        "y": 2951,
+        "w": 592,
+        "h": 468
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 468
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0036": {
+      "frame": {
+        "x": 606,
+        "y": 0,
+        "w": 592,
+        "h": 468
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 468
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0037": {
+      "frame": {
+        "x": 2424,
+        "y": 1964,
+        "w": 592,
+        "h": 468
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 468
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0038": {
+      "frame": {
+        "x": 2424,
+        "y": 2432,
+        "w": 592,
+        "h": 468
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 468
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0039": {
+      "frame": {
+        "x": 2424,
+        "y": 2900,
+        "w": 592,
+        "h": 468
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 468
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0040": {
+      "frame": {
+        "x": 1212,
+        "y": 2946,
+        "w": 592,
+        "h": 468
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 468
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0041": {
+      "frame": {
+        "x": 1804,
+        "y": 2946,
+        "w": 592,
+        "h": 468
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 468
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0042": {
+      "frame": {
+        "x": 3028,
+        "y": 0,
+        "w": 592,
+        "h": 468
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 468
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0043": {
+      "frame": {
+        "x": 3028,
+        "y": 468,
+        "w": 592,
+        "h": 468
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 468
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0044": {
+      "frame": {
+        "x": 3016,
+        "y": 1964,
+        "w": 592,
+        "h": 468
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 468
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0045": {
+      "frame": {
+        "x": 3029,
+        "y": 936,
+        "w": 592,
+        "h": 468
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 468
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0046": {
+      "frame": {
+        "x": 3029,
+        "y": 1404,
+        "w": 592,
+        "h": 468
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 468
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0047": {
+      "frame": {
+        "x": 3016,
+        "y": 2432,
+        "w": 592,
+        "h": 468
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 468
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0048": {
+      "frame": {
+        "x": 3016,
+        "y": 2900,
+        "w": 592,
+        "h": 468
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 468
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0049": {
+      "frame": {
+        "x": 0,
+        "y": 3419,
+        "w": 592,
+        "h": 468
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 468
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0050": {
+      "frame": {
+        "x": 2396,
+        "y": 3368,
+        "w": 592,
+        "h": 468
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 468
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0051": {
+      "frame": {
+        "x": 2988,
+        "y": 3368,
+        "w": 592,
+        "h": 468
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 468
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0052": {
+      "frame": {
+        "x": 1212,
+        "y": 3414,
+        "w": 592,
+        "h": 468
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 468
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0053": {
+      "frame": {
+        "x": 592,
+        "y": 3437,
+        "w": 592,
+        "h": 468
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 468
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0054": {
+      "frame": {
+        "x": 1804,
+        "y": 3414,
+        "w": 592,
+        "h": 468
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 468
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dead with GF Loop0002": {
+      "frame": {
+        "x": 3580,
+        "y": 3368,
+        "w": 592,
+        "h": 467
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 592,
+        "h": 467
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 467
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dead with GF Loop0001": {
+      "frame": {
+        "x": 3620,
+        "y": 0,
+        "w": 592,
+        "h": 467
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 592,
+        "h": 467
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 467
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dead with GF Loop0004": {
+      "frame": {
+        "x": 3620,
+        "y": 467,
+        "w": 592,
+        "h": 467
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 592,
+        "h": 467
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 467
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dead with GF Loop0006": {
+      "frame": {
+        "x": 3608,
+        "y": 1872,
+        "w": 592,
+        "h": 467
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 592,
+        "h": 467
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 467
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dead with GF Loop0008": {
+      "frame": {
+        "x": 3621,
+        "y": 934,
+        "w": 592,
+        "h": 467
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 592,
+        "h": 467
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 467
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dead with GF Loop0009": {
+      "frame": {
+        "x": 3621,
+        "y": 1401,
+        "w": 592,
+        "h": 467
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 592,
+        "h": 467
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 467
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dead with GF Loop0010": {
+      "frame": {
+        "x": 3608,
+        "y": 2339,
+        "w": 592,
+        "h": 467
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 592,
+        "h": 467
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 467
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dead with GF Loop0012": {
+      "frame": {
+        "x": 3608,
+        "y": 2806,
+        "w": 592,
+        "h": 467
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 592,
+        "h": 467
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 467
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dead with GF Loop0013": {
+      "frame": {
+        "x": 0,
+        "y": 3887,
+        "w": 592,
+        "h": 467
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 592,
+        "h": 467
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 467
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0028": {
+      "frame": {
+        "x": 3580,
+        "y": 3835,
+        "w": 592,
+        "h": 467
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 467
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0002": {
+      "frame": {
+        "x": 2396,
+        "y": 3836,
+        "w": 582,
+        "h": 459
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 582,
+        "h": 459
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0001": {
+      "frame": {
+        "x": 2978,
+        "y": 3836,
+        "w": 582,
+        "h": 459
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 582,
+        "h": 459
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0015": {
+      "frame": {
+        "x": 1184,
+        "y": 3882,
+        "w": 592,
+        "h": 445
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 445
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0014": {
+      "frame": {
+        "x": 592,
+        "y": 3905,
+        "w": 592,
+        "h": 445
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 445
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0004": {
+      "frame": {
+        "x": 1776,
+        "y": 3882,
+        "w": 592,
+        "h": 445
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 445
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0003": {
+      "frame": {
+        "x": 4212,
+        "y": 0,
+        "w": 592,
+        "h": 445
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 445
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0012": {
+      "frame": {
+        "x": 4212,
+        "y": 445,
+        "w": 592,
+        "h": 445
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 445
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0006": {
+      "frame": {
+        "x": 4172,
+        "y": 3273,
+        "w": 592,
+        "h": 445
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 445
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0007": {
+      "frame": {
+        "x": 4172,
+        "y": 3718,
+        "w": 592,
+        "h": 445
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 445
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0016": {
+      "frame": {
+        "x": 4200,
+        "y": 1868,
+        "w": 592,
+        "h": 445
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 445
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0017": {
+      "frame": {
+        "x": 4213,
+        "y": 890,
+        "w": 592,
+        "h": 445
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 445
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0019": {
+      "frame": {
+        "x": 4213,
+        "y": 1335,
+        "w": 592,
+        "h": 445
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 445
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0021": {
+      "frame": {
+        "x": 4200,
+        "y": 2313,
+        "w": 592,
+        "h": 445
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 445
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0023": {
+      "frame": {
+        "x": 4200,
+        "y": 2758,
+        "w": 592,
+        "h": 445
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 445
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0025": {
+      "frame": {
+        "x": 4172,
+        "y": 4163,
+        "w": 592,
+        "h": 445
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 445
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0005": {
+      "frame": {
+        "x": 2368,
+        "y": 4295,
+        "w": 592,
+        "h": 445
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 445
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dead with GF Loop0018": {
+      "frame": {
+        "x": 3620,
+        "y": 0,
+        "w": 592,
+        "h": 467
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 592,
+        "h": 467
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 467
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dead with GF Loop0003": {
+      "frame": {
+        "x": 3580,
+        "y": 3368,
+        "w": 592,
+        "h": 467
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 592,
+        "h": 467
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 467
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dead with GF Loop0019": {
+      "frame": {
+        "x": 3580,
+        "y": 3368,
+        "w": 592,
+        "h": 467
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 592,
+        "h": 467
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 467
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dead with GF Loop0020": {
+      "frame": {
+        "x": 3580,
+        "y": 3368,
+        "w": 592,
+        "h": 467
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 592,
+        "h": 467
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 467
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dead with GF Loop0005": {
+      "frame": {
+        "x": 3620,
+        "y": 467,
+        "w": 592,
+        "h": 467
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 592,
+        "h": 467
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 467
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dead with GF Loop0021": {
+      "frame": {
+        "x": 3620,
+        "y": 467,
+        "w": 592,
+        "h": 467
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 592,
+        "h": 467
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 467
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dead with GF Loop0022": {
+      "frame": {
+        "x": 3620,
+        "y": 467,
+        "w": 592,
+        "h": 467
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 592,
+        "h": 467
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 467
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dead with GF Loop0007": {
+      "frame": {
+        "x": 3608,
+        "y": 1872,
+        "w": 592,
+        "h": 467
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 592,
+        "h": 467
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 467
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dead with GF Loop0023": {
+      "frame": {
+        "x": 3608,
+        "y": 1872,
+        "w": 592,
+        "h": 467
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 592,
+        "h": 467
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 467
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dead with GF Loop0024": {
+      "frame": {
+        "x": 3608,
+        "y": 1872,
+        "w": 592,
+        "h": 467
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 592,
+        "h": 467
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 467
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dead with GF Loop0031": {
+      "frame": {
+        "x": 3621,
+        "y": 934,
+        "w": 592,
+        "h": 467
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 592,
+        "h": 467
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 467
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dead with GF Loop0015": {
+      "frame": {
+        "x": 3621,
+        "y": 1401,
+        "w": 592,
+        "h": 467
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 592,
+        "h": 467
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 467
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dead with GF Loop0016": {
+      "frame": {
+        "x": 3621,
+        "y": 1401,
+        "w": 592,
+        "h": 467
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 592,
+        "h": 467
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 467
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dead with GF Loop0017": {
+      "frame": {
+        "x": 3621,
+        "y": 1401,
+        "w": 592,
+        "h": 467
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 592,
+        "h": 467
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 467
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dead with GF Loop0025": {
+      "frame": {
+        "x": 3621,
+        "y": 1401,
+        "w": 592,
+        "h": 467
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 592,
+        "h": 467
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 467
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dead with GF Loop0026": {
+      "frame": {
+        "x": 3621,
+        "y": 1401,
+        "w": 592,
+        "h": 467
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 592,
+        "h": 467
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 467
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dead with GF Loop0027": {
+      "frame": {
+        "x": 3621,
+        "y": 1401,
+        "w": 592,
+        "h": 467
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 592,
+        "h": 467
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 467
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dead with GF Loop0028": {
+      "frame": {
+        "x": 3621,
+        "y": 1401,
+        "w": 592,
+        "h": 467
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 592,
+        "h": 467
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 467
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dead with GF Loop0029": {
+      "frame": {
+        "x": 3621,
+        "y": 1401,
+        "w": 592,
+        "h": 467
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 592,
+        "h": 467
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 467
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dead with GF Loop0030": {
+      "frame": {
+        "x": 3621,
+        "y": 1401,
+        "w": 592,
+        "h": 467
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 592,
+        "h": 467
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 467
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dead with GF Loop0032": {
+      "frame": {
+        "x": 3621,
+        "y": 1401,
+        "w": 592,
+        "h": 467
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 592,
+        "h": 467
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 467
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dead with GF Loop0033": {
+      "frame": {
+        "x": 3621,
+        "y": 1401,
+        "w": 592,
+        "h": 467
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 592,
+        "h": 467
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 467
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dead with GF Loop0034": {
+      "frame": {
+        "x": 3621,
+        "y": 1401,
+        "w": 592,
+        "h": 467
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 592,
+        "h": 467
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 467
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dead with GF Loop0011": {
+      "frame": {
+        "x": 3608,
+        "y": 2339,
+        "w": 592,
+        "h": 467
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 592,
+        "h": 467
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 467
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dead with GF Loop0014": {
+      "frame": {
+        "x": 0,
+        "y": 3887,
+        "w": 592,
+        "h": 467
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 592,
+        "h": 467
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 467
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0008": {
+      "frame": {
+        "x": 4172,
+        "y": 3718,
+        "w": 592,
+        "h": 445
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 445
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0009": {
+      "frame": {
+        "x": 4172,
+        "y": 3718,
+        "w": 592,
+        "h": 445
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 445
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0010": {
+      "frame": {
+        "x": 4172,
+        "y": 3718,
+        "w": 592,
+        "h": 445
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 445
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0011": {
+      "frame": {
+        "x": 4172,
+        "y": 3718,
+        "w": 592,
+        "h": 445
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 445
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0013": {
+      "frame": {
+        "x": 4212,
+        "y": 445,
+        "w": 592,
+        "h": 445
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 445
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0018": {
+      "frame": {
+        "x": 4213,
+        "y": 890,
+        "w": 592,
+        "h": 445
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 445
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0020": {
+      "frame": {
+        "x": 4213,
+        "y": 1335,
+        "w": 592,
+        "h": 445
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 445
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0022": {
+      "frame": {
+        "x": 4200,
+        "y": 2313,
+        "w": 592,
+        "h": 445
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 445
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0024": {
+      "frame": {
+        "x": 4200,
+        "y": 2758,
+        "w": 592,
+        "h": 445
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 445
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0027": {
+      "frame": {
+        "x": 606,
+        "y": 1478,
+        "w": 592,
+        "h": 472
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 472
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0029": {
+      "frame": {
+        "x": 3580,
+        "y": 3835,
+        "w": 592,
+        "h": 467
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 467
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0031": {
+      "frame": {
+        "x": 0,
+        "y": 989,
+        "w": 592,
+        "h": 469
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 469
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0033": {
+      "frame": {
+        "x": 0,
+        "y": 2951,
+        "w": 592,
+        "h": 468
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 468
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0034": {
+      "frame": {
+        "x": 0,
+        "y": 2951,
+        "w": 592,
+        "h": 468
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 468
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "BF Dies with GF0035": {
+      "frame": {
+        "x": 0,
+        "y": 2951,
+        "w": 592,
+        "h": 468
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 16,
+        "w": 592,
+        "h": 468
+      },
+      "sourceSize": {
+        "w": 592,
+        "h": 488
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "RETRY confirm holding gf0027": {
+      "frame": {
+        "x": 1212,
+        "y": 2455,
+        "w": 606,
+        "h": 491
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 6,
+        "w": 606,
+        "h": 491
+      },
+      "sourceSize": {
+        "w": 606,
+        "h": 497
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "RETRY confirm holding gf0028": {
+      "frame": {
+        "x": 1212,
+        "y": 2455,
+        "w": 606,
+        "h": 491
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 6,
+        "w": 606,
+        "h": 491
+      },
+      "sourceSize": {
+        "w": 606,
+        "h": 497
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "RETRY confirm holding gf0029": {
+      "frame": {
+        "x": 1212,
+        "y": 2455,
+        "w": 606,
+        "h": 491
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 6,
+        "w": 606,
+        "h": 491
+      },
+      "sourceSize": {
+        "w": 606,
+        "h": 497
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "RETRY confirm holding gf0030": {
+      "frame": {
+        "x": 1212,
+        "y": 2455,
+        "w": 606,
+        "h": 491
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 6,
+        "w": 606,
+        "h": 491
+      },
+      "sourceSize": {
+        "w": 606,
+        "h": 497
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "RETRY confirm holding gf0031": {
+      "frame": {
+        "x": 1212,
+        "y": 2455,
+        "w": 606,
+        "h": 491
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 6,
+        "w": 606,
+        "h": 491
+      },
+      "sourceSize": {
+        "w": 606,
+        "h": 497
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "RETRY confirm holding gf0032": {
+      "frame": {
+        "x": 1212,
+        "y": 2455,
+        "w": 606,
+        "h": 491
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 6,
+        "w": 606,
+        "h": 491
+      },
+      "sourceSize": {
+        "w": 606,
+        "h": 497
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "RETRY confirm holding gf0033": {
+      "frame": {
+        "x": 1212,
+        "y": 2455,
+        "w": 606,
+        "h": 491
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 6,
+        "w": 606,
+        "h": 491
+      },
+      "sourceSize": {
+        "w": 606,
+        "h": 497
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "RETRY confirm holding gf0034": {
+      "frame": {
+        "x": 1212,
+        "y": 2455,
+        "w": 606,
+        "h": 491
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 6,
+        "w": 606,
+        "h": 491
+      },
+      "sourceSize": {
+        "w": 606,
+        "h": 497
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "bfHoldingGF_Dead.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 4805,
+      "h": 4740
+    },
+    "scale": 1
+  }
+}

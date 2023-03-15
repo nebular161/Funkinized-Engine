@@ -1,0 +1,2031 @@
+{
+  "frames": {
+    "SENPAI UP NOTE0003": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 66,
+        "h": 122
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 28,
+        "y": 31,
+        "w": 66,
+        "h": 122
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI UP NOTE0001": {
+      "frame": {
+        "x": 66,
+        "y": 0,
+        "w": 64,
+        "h": 122
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 31,
+        "w": 64,
+        "h": 122
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Idle0022": {
+      "frame": {
+        "x": 0,
+        "y": 122,
+        "w": 67,
+        "h": 116
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 31,
+        "w": 67,
+        "h": 116
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Idle0021": {
+      "frame": {
+        "x": 67,
+        "y": 122,
+        "w": 67,
+        "h": 116
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 31,
+        "w": 67,
+        "h": 116
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Idle0007": {
+      "frame": {
+        "x": 130,
+        "y": 0,
+        "w": 67,
+        "h": 116
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 31,
+        "w": 67,
+        "h": 116
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Idle0011": {
+      "frame": {
+        "x": 134,
+        "y": 116,
+        "w": 67,
+        "h": 115
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 32,
+        "w": 67,
+        "h": 115
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Idle0023": {
+      "frame": {
+        "x": 197,
+        "y": 0,
+        "w": 67,
+        "h": 115
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 32,
+        "w": 67,
+        "h": 115
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Idle0028": {
+      "frame": {
+        "x": 134,
+        "y": 231,
+        "w": 67,
+        "h": 115
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 32,
+        "w": 67,
+        "h": 115
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Idle0014": {
+      "frame": {
+        "x": 0,
+        "y": 238,
+        "w": 67,
+        "h": 115
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 32,
+        "w": 67,
+        "h": 115
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Idle0013": {
+      "frame": {
+        "x": 67,
+        "y": 238,
+        "w": 67,
+        "h": 115
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 32,
+        "w": 67,
+        "h": 115
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Idle0009": {
+      "frame": {
+        "x": 264,
+        "y": 0,
+        "w": 67,
+        "h": 115
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 32,
+        "w": 67,
+        "h": 115
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Idle0027": {
+      "frame": {
+        "x": 201,
+        "y": 115,
+        "w": 67,
+        "h": 115
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 32,
+        "w": 67,
+        "h": 115
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Idle0001": {
+      "frame": {
+        "x": 201,
+        "y": 230,
+        "w": 66,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 28,
+        "y": 33,
+        "w": 66,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Idle0003": {
+      "frame": {
+        "x": 267,
+        "y": 230,
+        "w": 65,
+        "h": 115
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 32,
+        "w": 65,
+        "h": 115
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI RIGHT NOTE0001": {
+      "frame": {
+        "x": 268,
+        "y": 115,
+        "w": 65,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 33,
+        "y": 33,
+        "w": 65,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Idle0015": {
+      "frame": {
+        "x": 201,
+        "y": 344,
+        "w": 66,
+        "h": 112
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 28,
+        "y": 35,
+        "w": 66,
+        "h": 112
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Idle0016": {
+      "frame": {
+        "x": 134,
+        "y": 346,
+        "w": 66,
+        "h": 112
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 28,
+        "y": 35,
+        "w": 66,
+        "h": 112
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Idle0005": {
+      "frame": {
+        "x": 331,
+        "y": 0,
+        "w": 65,
+        "h": 113
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 34,
+        "w": 65,
+        "h": 113
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Idle0019": {
+      "frame": {
+        "x": 267,
+        "y": 345,
+        "w": 65,
+        "h": 113
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 34,
+        "w": 65,
+        "h": 113
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Idle0020": {
+      "frame": {
+        "x": 396,
+        "y": 0,
+        "w": 65,
+        "h": 113
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 34,
+        "w": 65,
+        "h": 113
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Idle0017": {
+      "frame": {
+        "x": 0,
+        "y": 353,
+        "w": 65,
+        "h": 112
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 35,
+        "w": 65,
+        "h": 112
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Idle0018": {
+      "frame": {
+        "x": 65,
+        "y": 353,
+        "w": 65,
+        "h": 112
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 35,
+        "w": 65,
+        "h": 112
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI RIGHT NOTE0003": {
+      "frame": {
+        "x": 332,
+        "y": 229,
+        "w": 63,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 32,
+        "y": 33,
+        "w": 63,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI LEFT NOTE0003": {
+      "frame": {
+        "x": 333,
+        "y": 113,
+        "w": 61,
+        "h": 115
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 32,
+        "w": 61,
+        "h": 115
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI LEFT NOTE0001": {
+      "frame": {
+        "x": 394,
+        "y": 113,
+        "w": 59,
+        "h": 115
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 32,
+        "w": 59,
+        "h": 115
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI DOWN NOTE0001": {
+      "frame": {
+        "x": 395,
+        "y": 228,
+        "w": 63,
+        "h": 107
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 40,
+        "w": 63,
+        "h": 107
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI DOWN NOTE0003": {
+      "frame": {
+        "x": 395,
+        "y": 335,
+        "w": 62,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 30,
+        "y": 39,
+        "w": 62,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI DOWN NOTE0002": {
+      "frame": {
+        "x": 395,
+        "y": 228,
+        "w": 63,
+        "h": 107
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 40,
+        "w": 63,
+        "h": 107
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI DOWN NOTE0004": {
+      "frame": {
+        "x": 395,
+        "y": 335,
+        "w": 62,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 30,
+        "y": 39,
+        "w": 62,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI DOWN NOTE0005": {
+      "frame": {
+        "x": 395,
+        "y": 335,
+        "w": 62,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 30,
+        "y": 39,
+        "w": 62,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI DOWN NOTE0006": {
+      "frame": {
+        "x": 395,
+        "y": 335,
+        "w": 62,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 30,
+        "y": 39,
+        "w": 62,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI DOWN NOTE0007": {
+      "frame": {
+        "x": 395,
+        "y": 335,
+        "w": 62,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 30,
+        "y": 39,
+        "w": 62,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI DOWN NOTE0008": {
+      "frame": {
+        "x": 395,
+        "y": 335,
+        "w": 62,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 30,
+        "y": 39,
+        "w": 62,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI DOWN NOTE0009": {
+      "frame": {
+        "x": 395,
+        "y": 335,
+        "w": 62,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 30,
+        "y": 39,
+        "w": 62,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI DOWN NOTE0010": {
+      "frame": {
+        "x": 395,
+        "y": 335,
+        "w": 62,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 30,
+        "y": 39,
+        "w": 62,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI DOWN NOTE0011": {
+      "frame": {
+        "x": 395,
+        "y": 335,
+        "w": 62,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 30,
+        "y": 39,
+        "w": 62,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI DOWN NOTE0012": {
+      "frame": {
+        "x": 395,
+        "y": 335,
+        "w": 62,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 30,
+        "y": 39,
+        "w": 62,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI DOWN NOTE0013": {
+      "frame": {
+        "x": 395,
+        "y": 335,
+        "w": 62,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 30,
+        "y": 39,
+        "w": 62,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI DOWN NOTE0014": {
+      "frame": {
+        "x": 395,
+        "y": 335,
+        "w": 62,
+        "h": 108
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 30,
+        "y": 39,
+        "w": 62,
+        "h": 108
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI LEFT NOTE0002": {
+      "frame": {
+        "x": 394,
+        "y": 113,
+        "w": 59,
+        "h": 115
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 32,
+        "w": 59,
+        "h": 115
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI LEFT NOTE0004": {
+      "frame": {
+        "x": 333,
+        "y": 113,
+        "w": 61,
+        "h": 115
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 32,
+        "w": 61,
+        "h": 115
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI LEFT NOTE0005": {
+      "frame": {
+        "x": 333,
+        "y": 113,
+        "w": 61,
+        "h": 115
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 32,
+        "w": 61,
+        "h": 115
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI LEFT NOTE0006": {
+      "frame": {
+        "x": 333,
+        "y": 113,
+        "w": 61,
+        "h": 115
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 32,
+        "w": 61,
+        "h": 115
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI LEFT NOTE0007": {
+      "frame": {
+        "x": 333,
+        "y": 113,
+        "w": 61,
+        "h": 115
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 32,
+        "w": 61,
+        "h": 115
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI LEFT NOTE0008": {
+      "frame": {
+        "x": 333,
+        "y": 113,
+        "w": 61,
+        "h": 115
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 32,
+        "w": 61,
+        "h": 115
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI LEFT NOTE0009": {
+      "frame": {
+        "x": 333,
+        "y": 113,
+        "w": 61,
+        "h": 115
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 32,
+        "w": 61,
+        "h": 115
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI LEFT NOTE0010": {
+      "frame": {
+        "x": 333,
+        "y": 113,
+        "w": 61,
+        "h": 115
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 32,
+        "w": 61,
+        "h": 115
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI LEFT NOTE0011": {
+      "frame": {
+        "x": 333,
+        "y": 113,
+        "w": 61,
+        "h": 115
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 32,
+        "w": 61,
+        "h": 115
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI LEFT NOTE0012": {
+      "frame": {
+        "x": 333,
+        "y": 113,
+        "w": 61,
+        "h": 115
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 32,
+        "w": 61,
+        "h": 115
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI LEFT NOTE0013": {
+      "frame": {
+        "x": 333,
+        "y": 113,
+        "w": 61,
+        "h": 115
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 32,
+        "w": 61,
+        "h": 115
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI LEFT NOTE0014": {
+      "frame": {
+        "x": 333,
+        "y": 113,
+        "w": 61,
+        "h": 115
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 32,
+        "w": 61,
+        "h": 115
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI RIGHT NOTE0002": {
+      "frame": {
+        "x": 268,
+        "y": 115,
+        "w": 65,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 33,
+        "y": 33,
+        "w": 65,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI RIGHT NOTE0004": {
+      "frame": {
+        "x": 332,
+        "y": 229,
+        "w": 63,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 32,
+        "y": 33,
+        "w": 63,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI RIGHT NOTE0005": {
+      "frame": {
+        "x": 332,
+        "y": 229,
+        "w": 63,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 32,
+        "y": 33,
+        "w": 63,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI RIGHT NOTE0006": {
+      "frame": {
+        "x": 332,
+        "y": 229,
+        "w": 63,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 32,
+        "y": 33,
+        "w": 63,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI RIGHT NOTE0007": {
+      "frame": {
+        "x": 332,
+        "y": 229,
+        "w": 63,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 32,
+        "y": 33,
+        "w": 63,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI RIGHT NOTE0008": {
+      "frame": {
+        "x": 332,
+        "y": 229,
+        "w": 63,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 32,
+        "y": 33,
+        "w": 63,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI RIGHT NOTE0009": {
+      "frame": {
+        "x": 332,
+        "y": 229,
+        "w": 63,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 32,
+        "y": 33,
+        "w": 63,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI RIGHT NOTE0010": {
+      "frame": {
+        "x": 332,
+        "y": 229,
+        "w": 63,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 32,
+        "y": 33,
+        "w": 63,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI RIGHT NOTE0011": {
+      "frame": {
+        "x": 332,
+        "y": 229,
+        "w": 63,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 32,
+        "y": 33,
+        "w": 63,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI RIGHT NOTE0012": {
+      "frame": {
+        "x": 332,
+        "y": 229,
+        "w": 63,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 32,
+        "y": 33,
+        "w": 63,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI RIGHT NOTE0013": {
+      "frame": {
+        "x": 332,
+        "y": 229,
+        "w": 63,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 32,
+        "y": 33,
+        "w": 63,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI RIGHT NOTE0014": {
+      "frame": {
+        "x": 332,
+        "y": 229,
+        "w": 63,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 32,
+        "y": 33,
+        "w": 63,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI UP NOTE0002": {
+      "frame": {
+        "x": 66,
+        "y": 0,
+        "w": 64,
+        "h": 122
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 31,
+        "w": 64,
+        "h": 122
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI UP NOTE0004": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 66,
+        "h": 122
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 28,
+        "y": 31,
+        "w": 66,
+        "h": 122
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI UP NOTE0005": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 66,
+        "h": 122
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 28,
+        "y": 31,
+        "w": 66,
+        "h": 122
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI UP NOTE0006": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 66,
+        "h": 122
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 28,
+        "y": 31,
+        "w": 66,
+        "h": 122
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI UP NOTE0007": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 66,
+        "h": 122
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 28,
+        "y": 31,
+        "w": 66,
+        "h": 122
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI UP NOTE0008": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 66,
+        "h": 122
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 28,
+        "y": 31,
+        "w": 66,
+        "h": 122
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI UP NOTE0009": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 66,
+        "h": 122
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 28,
+        "y": 31,
+        "w": 66,
+        "h": 122
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI UP NOTE0010": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 66,
+        "h": 122
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 28,
+        "y": 31,
+        "w": 66,
+        "h": 122
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI UP NOTE0011": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 66,
+        "h": 122
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 28,
+        "y": 31,
+        "w": 66,
+        "h": 122
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI UP NOTE0012": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 66,
+        "h": 122
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 28,
+        "y": 31,
+        "w": 66,
+        "h": 122
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI UP NOTE0013": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 66,
+        "h": 122
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 28,
+        "y": 31,
+        "w": 66,
+        "h": 122
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "SENPAI UP NOTE0014": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 66,
+        "h": 122
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 28,
+        "y": 31,
+        "w": 66,
+        "h": 122
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Idle0002": {
+      "frame": {
+        "x": 201,
+        "y": 230,
+        "w": 66,
+        "h": 114
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 28,
+        "y": 33,
+        "w": 66,
+        "h": 114
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Idle0004": {
+      "frame": {
+        "x": 267,
+        "y": 230,
+        "w": 65,
+        "h": 115
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 32,
+        "w": 65,
+        "h": 115
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Idle0006": {
+      "frame": {
+        "x": 331,
+        "y": 0,
+        "w": 65,
+        "h": 113
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 34,
+        "w": 65,
+        "h": 113
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Idle0008": {
+      "frame": {
+        "x": 130,
+        "y": 0,
+        "w": 67,
+        "h": 116
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 31,
+        "w": 67,
+        "h": 116
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Idle0010": {
+      "frame": {
+        "x": 264,
+        "y": 0,
+        "w": 67,
+        "h": 115
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 32,
+        "w": 67,
+        "h": 115
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Idle0012": {
+      "frame": {
+        "x": 134,
+        "y": 116,
+        "w": 67,
+        "h": 115
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 32,
+        "w": 67,
+        "h": 115
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Idle0024": {
+      "frame": {
+        "x": 134,
+        "y": 116,
+        "w": 67,
+        "h": 115
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 32,
+        "w": 67,
+        "h": 115
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Idle0025": {
+      "frame": {
+        "x": 134,
+        "y": 116,
+        "w": 67,
+        "h": 115
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 32,
+        "w": 67,
+        "h": 115
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Senpai Idle0026": {
+      "frame": {
+        "x": 67,
+        "y": 238,
+        "w": 67,
+        "h": 115
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 29,
+        "y": 32,
+        "w": 67,
+        "h": 115
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 163
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "senpai_assets.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 461,
+      "h": 465
+    },
+    "scale": 1
+  }
+}

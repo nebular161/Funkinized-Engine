@@ -1,0 +1,5967 @@
+{
+  "frames": {
+    "GF Dancing Beat Hair Landing0005": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 804,
+        "h": 667
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 41,
+        "w": 804,
+        "h": 667
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair Landing0006": {
+      "frame": {
+        "x": 804,
+        "y": 0,
+        "w": 804,
+        "h": 667
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 41,
+        "w": 804,
+        "h": 667
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair Landing0003": {
+      "frame": {
+        "x": 1608,
+        "y": 0,
+        "w": 804,
+        "h": 679
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 29,
+        "w": 804,
+        "h": 679
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair Landing0004": {
+      "frame": {
+        "x": 2412,
+        "y": 0,
+        "w": 804,
+        "h": 679
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 29,
+        "w": 804,
+        "h": 679
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing0019": {
+      "frame": {
+        "x": 3216,
+        "y": 0,
+        "w": 804,
+        "h": 684
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 25,
+        "w": 804,
+        "h": 684
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 716
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing0016": {
+      "frame": {
+        "x": 4020,
+        "y": 0,
+        "w": 804,
+        "h": 685
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 24,
+        "w": 804,
+        "h": 685
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 716
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair Landing0007": {
+      "frame": {
+        "x": 4824,
+        "y": 0,
+        "w": 804,
+        "h": 686
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 22,
+        "w": 804,
+        "h": 686
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing0004": {
+      "frame": {
+        "x": 5628,
+        "y": 0,
+        "w": 804,
+        "h": 687
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 22,
+        "w": 804,
+        "h": 687
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 716
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing0021": {
+      "frame": {
+        "x": 6432,
+        "y": 0,
+        "w": 804,
+        "h": 687
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 22,
+        "w": 804,
+        "h": 687
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 716
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing0003": {
+      "frame": {
+        "x": 7236,
+        "y": 0,
+        "w": 804,
+        "h": 689
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 20,
+        "w": 804,
+        "h": 689
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 716
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing0022": {
+      "frame": {
+        "x": 0,
+        "y": 667,
+        "w": 804,
+        "h": 690
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 19,
+        "w": 804,
+        "h": 690
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 716
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing0018": {
+      "frame": {
+        "x": 804,
+        "y": 667,
+        "w": 804,
+        "h": 691
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 18,
+        "w": 804,
+        "h": 691
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 716
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Down Note0001": {
+      "frame": {
+        "x": 1608,
+        "y": 679,
+        "w": 804,
+        "h": 691
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 6,
+        "w": 804,
+        "h": 691
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 704
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Down Note0002": {
+      "frame": {
+        "x": 2412,
+        "y": 679,
+        "w": 804,
+        "h": 691
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 6,
+        "w": 804,
+        "h": 691
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 704
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF left note0002": {
+      "frame": {
+        "x": 3216,
+        "y": 684,
+        "w": 804,
+        "h": 691
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 7,
+        "w": 804,
+        "h": 691
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 705
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat0003": {
+      "frame": {
+        "x": 4020,
+        "y": 685,
+        "w": 804,
+        "h": 692
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 16,
+        "w": 804,
+        "h": 692
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat0004": {
+      "frame": {
+        "x": 4824,
+        "y": 686,
+        "w": 804,
+        "h": 692
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 16,
+        "w": 804,
+        "h": 692
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Right Note0001": {
+      "frame": {
+        "x": 5628,
+        "y": 687,
+        "w": 804,
+        "h": 692
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 5,
+        "w": 804,
+        "h": 692
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 704
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Right Note0002": {
+      "frame": {
+        "x": 6432,
+        "y": 687,
+        "w": 804,
+        "h": 692
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 5,
+        "w": 804,
+        "h": 692
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 704
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0001": {
+      "frame": {
+        "x": 7236,
+        "y": 689,
+        "w": 804,
+        "h": 692
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 3,
+        "w": 804,
+        "h": 692
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing0017": {
+      "frame": {
+        "x": 0,
+        "y": 1357,
+        "w": 804,
+        "h": 694
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 15,
+        "w": 804,
+        "h": 694
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 716
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing0020": {
+      "frame": {
+        "x": 804,
+        "y": 1358,
+        "w": 804,
+        "h": 694
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 15,
+        "w": 804,
+        "h": 694
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 716
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat0001": {
+      "frame": {
+        "x": 1608,
+        "y": 1370,
+        "w": 804,
+        "h": 694
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 14,
+        "w": 804,
+        "h": 694
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat0002": {
+      "frame": {
+        "x": 2412,
+        "y": 1370,
+        "w": 804,
+        "h": 694
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 14,
+        "w": 804,
+        "h": 694
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF left note0001": {
+      "frame": {
+        "x": 3216,
+        "y": 1375,
+        "w": 804,
+        "h": 694
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 4,
+        "w": 804,
+        "h": 694
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 705
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair Landing0001": {
+      "frame": {
+        "x": 4020,
+        "y": 1377,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 13,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair Landing0002": {
+      "frame": {
+        "x": 4824,
+        "y": 1378,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 13,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat0005": {
+      "frame": {
+        "x": 5628,
+        "y": 1379,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 13,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat0006": {
+      "frame": {
+        "x": 6432,
+        "y": 1379,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 13,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0003": {
+      "frame": {
+        "x": 7236,
+        "y": 1381,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0005": {
+      "frame": {
+        "x": 0,
+        "y": 2051,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0007": {
+      "frame": {
+        "x": 804,
+        "y": 2052,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0009": {
+      "frame": {
+        "x": 1608,
+        "y": 2064,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair Landing0016": {
+      "frame": {
+        "x": 2412,
+        "y": 2064,
+        "w": 804,
+        "h": 696
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 12,
+        "w": 804,
+        "h": 696
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair Landing0017": {
+      "frame": {
+        "x": 3216,
+        "y": 2069,
+        "w": 804,
+        "h": 696
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 12,
+        "w": 804,
+        "h": 696
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair Landing0018": {
+      "frame": {
+        "x": 4020,
+        "y": 2072,
+        "w": 804,
+        "h": 696
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 12,
+        "w": 804,
+        "h": 696
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair Landing0019": {
+      "frame": {
+        "x": 4824,
+        "y": 2073,
+        "w": 804,
+        "h": 696
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 12,
+        "w": 804,
+        "h": 696
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing0001": {
+      "frame": {
+        "x": 5628,
+        "y": 2074,
+        "w": 804,
+        "h": 696
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 13,
+        "w": 804,
+        "h": 696
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 716
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing0002": {
+      "frame": {
+        "x": 6432,
+        "y": 2074,
+        "w": 804,
+        "h": 696
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 13,
+        "w": 804,
+        "h": 696
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 716
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Down Note0003": {
+      "frame": {
+        "x": 7236,
+        "y": 2076,
+        "w": 804,
+        "h": 696
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 1,
+        "w": 804,
+        "h": 696
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 704
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Down Note0004": {
+      "frame": {
+        "x": 0,
+        "y": 2746,
+        "w": 804,
+        "h": 696
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 1,
+        "w": 804,
+        "h": 696
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 704
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Right Note0003": {
+      "frame": {
+        "x": 804,
+        "y": 2747,
+        "w": 804,
+        "h": 696
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 1,
+        "w": 804,
+        "h": 696
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 704
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Right Note0004": {
+      "frame": {
+        "x": 1608,
+        "y": 2759,
+        "w": 804,
+        "h": 696
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 1,
+        "w": 804,
+        "h": 696
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 704
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair Landing0020": {
+      "frame": {
+        "x": 2412,
+        "y": 2760,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 11,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair Landing0021": {
+      "frame": {
+        "x": 3216,
+        "y": 2765,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 11,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing0007": {
+      "frame": {
+        "x": 4020,
+        "y": 2768,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 12,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 716
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat0007": {
+      "frame": {
+        "x": 4824,
+        "y": 2769,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 11,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Down Note0005": {
+      "frame": {
+        "x": 5628,
+        "y": 2770,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 704
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Down Note0006": {
+      "frame": {
+        "x": 6432,
+        "y": 2770,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 704
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Down Note0007": {
+      "frame": {
+        "x": 7236,
+        "y": 2772,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 704
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Down Note0008": {
+      "frame": {
+        "x": 0,
+        "y": 3442,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 704
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Right Note0005": {
+      "frame": {
+        "x": 804,
+        "y": 3443,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 704
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Right Note0006": {
+      "frame": {
+        "x": 1608,
+        "y": 3455,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 704
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Right Note0007": {
+      "frame": {
+        "x": 2412,
+        "y": 3457,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 704
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Right Note0008": {
+      "frame": {
+        "x": 3216,
+        "y": 3462,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 704
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Right Note0009": {
+      "frame": {
+        "x": 4020,
+        "y": 3465,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 704
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF left note0007": {
+      "frame": {
+        "x": 4824,
+        "y": 3466,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 1,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 705
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF left note0008": {
+      "frame": {
+        "x": 5628,
+        "y": 3467,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 1,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 705
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF left note0009": {
+      "frame": {
+        "x": 6432,
+        "y": 3467,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 1,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 705
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing0005": {
+      "frame": {
+        "x": 7236,
+        "y": 3469,
+        "w": 804,
+        "h": 698
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 11,
+        "w": 804,
+        "h": 698
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 716
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing0006": {
+      "frame": {
+        "x": 0,
+        "y": 4139,
+        "w": 804,
+        "h": 698
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 11,
+        "w": 804,
+        "h": 698
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 716
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing0010": {
+      "frame": {
+        "x": 804,
+        "y": 4140,
+        "w": 804,
+        "h": 698
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 11,
+        "w": 804,
+        "h": 698
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 716
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing0028": {
+      "frame": {
+        "x": 1608,
+        "y": 4152,
+        "w": 804,
+        "h": 698
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 11,
+        "w": 804,
+        "h": 698
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 716
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF left note0003": {
+      "frame": {
+        "x": 2412,
+        "y": 4154,
+        "w": 804,
+        "h": 698
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 698
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 705
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF left note0004": {
+      "frame": {
+        "x": 3216,
+        "y": 4159,
+        "w": 804,
+        "h": 698
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 698
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 705
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF left note0005": {
+      "frame": {
+        "x": 4020,
+        "y": 4162,
+        "w": 804,
+        "h": 698
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 698
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 705
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF left note0006": {
+      "frame": {
+        "x": 4824,
+        "y": 4163,
+        "w": 804,
+        "h": 698
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 698
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 705
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair Landing0022": {
+      "frame": {
+        "x": 5628,
+        "y": 4164,
+        "w": 804,
+        "h": 699
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 9,
+        "w": 804,
+        "h": 699
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing0025": {
+      "frame": {
+        "x": 6432,
+        "y": 4164,
+        "w": 804,
+        "h": 699
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 10,
+        "w": 804,
+        "h": 699
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 716
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing0009": {
+      "frame": {
+        "x": 7236,
+        "y": 4167,
+        "w": 804,
+        "h": 700
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 9,
+        "w": 804,
+        "h": 700
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 716
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing0027": {
+      "frame": {
+        "x": 0,
+        "y": 4837,
+        "w": 804,
+        "h": 700
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 9,
+        "w": 804,
+        "h": 700
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 716
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing0015": {
+      "frame": {
+        "x": 804,
+        "y": 4838,
+        "w": 804,
+        "h": 701
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 8,
+        "w": 804,
+        "h": 701
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 716
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair Landing0026": {
+      "frame": {
+        "x": 1608,
+        "y": 4850,
+        "w": 804,
+        "h": 702
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 6,
+        "w": 804,
+        "h": 702
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair Landing0029": {
+      "frame": {
+        "x": 2412,
+        "y": 4852,
+        "w": 804,
+        "h": 702
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 6,
+        "w": 804,
+        "h": 702
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing0013": {
+      "frame": {
+        "x": 3216,
+        "y": 4857,
+        "w": 804,
+        "h": 702
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 7,
+        "w": 804,
+        "h": 702
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 716
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair Landing0023": {
+      "frame": {
+        "x": 4020,
+        "y": 4860,
+        "w": 804,
+        "h": 703
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 5,
+        "w": 804,
+        "h": 703
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing0023": {
+      "frame": {
+        "x": 4824,
+        "y": 4861,
+        "w": 804,
+        "h": 706
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 3,
+        "w": 804,
+        "h": 706
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 716
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing0029": {
+      "frame": {
+        "x": 5628,
+        "y": 4863,
+        "w": 804,
+        "h": 706
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 3,
+        "w": 804,
+        "h": 706
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 716
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair Landing0008": {
+      "frame": {
+        "x": 6432,
+        "y": 4863,
+        "w": 804,
+        "h": 707
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 1,
+        "w": 804,
+        "h": 707
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing0008": {
+      "frame": {
+        "x": 7236,
+        "y": 4867,
+        "w": 804,
+        "h": 707
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 2,
+        "w": 804,
+        "h": 707
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 716
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing0026": {
+      "frame": {
+        "x": 0,
+        "y": 5537,
+        "w": 804,
+        "h": 707
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 2,
+        "w": 804,
+        "h": 707
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 716
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair Landing0011": {
+      "frame": {
+        "x": 804,
+        "y": 5539,
+        "w": 804,
+        "h": 708
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 708
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair Landing0014": {
+      "frame": {
+        "x": 1608,
+        "y": 5552,
+        "w": 804,
+        "h": 708
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 708
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing0014": {
+      "frame": {
+        "x": 2412,
+        "y": 5554,
+        "w": 804,
+        "h": 708
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 1,
+        "w": 804,
+        "h": 708
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 716
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing0011": {
+      "frame": {
+        "x": 3216,
+        "y": 5559,
+        "w": 804,
+        "h": 709
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 709
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 716
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Cheer0003": {
+      "frame": {
+        "x": 4020,
+        "y": 5563,
+        "w": 804,
+        "h": 714
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 3,
+        "w": 804,
+        "h": 714
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 724
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Cheer0004": {
+      "frame": {
+        "x": 4824,
+        "y": 5567,
+        "w": 804,
+        "h": 714
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 3,
+        "w": 804,
+        "h": 714
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 724
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Cheer0005": {
+      "frame": {
+        "x": 5628,
+        "y": 5569,
+        "w": 804,
+        "h": 714
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 3,
+        "w": 804,
+        "h": 714
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 724
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Cheer0006": {
+      "frame": {
+        "x": 6432,
+        "y": 5570,
+        "w": 804,
+        "h": 714
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 3,
+        "w": 804,
+        "h": 714
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 724
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Cheer0007": {
+      "frame": {
+        "x": 7236,
+        "y": 5574,
+        "w": 804,
+        "h": 714
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 3,
+        "w": 804,
+        "h": 714
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 724
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Cheer0008": {
+      "frame": {
+        "x": 0,
+        "y": 6244,
+        "w": 804,
+        "h": 714
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 3,
+        "w": 804,
+        "h": 714
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 724
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Cheer0001": {
+      "frame": {
+        "x": 804,
+        "y": 6247,
+        "w": 804,
+        "h": 717
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 717
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 724
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Cheer0002": {
+      "frame": {
+        "x": 1608,
+        "y": 6260,
+        "w": 804,
+        "h": 717
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 717
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 724
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Up Note0001": {
+      "frame": {
+        "x": 2412,
+        "y": 6262,
+        "w": 804,
+        "h": 721
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 721
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 728
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Up Note0002": {
+      "frame": {
+        "x": 3216,
+        "y": 6268,
+        "w": 804,
+        "h": 721
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 721
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 728
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Up Note0003": {
+      "frame": {
+        "x": 4020,
+        "y": 6277,
+        "w": 804,
+        "h": 721
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 721
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 728
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Up Note0004": {
+      "frame": {
+        "x": 4824,
+        "y": 6281,
+        "w": 804,
+        "h": 721
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 721
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 728
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Up Note0005": {
+      "frame": {
+        "x": 5628,
+        "y": 6283,
+        "w": 804,
+        "h": 721
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 721
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 728
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Up Note0006": {
+      "frame": {
+        "x": 6432,
+        "y": 6284,
+        "w": 804,
+        "h": 721
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 721
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 728
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Up Note0007": {
+      "frame": {
+        "x": 7236,
+        "y": 6288,
+        "w": 804,
+        "h": 721
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 721
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 728
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Cheer0009": {
+      "frame": {
+        "x": 0,
+        "y": 6244,
+        "w": 804,
+        "h": 714
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 3,
+        "w": 804,
+        "h": 714
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 724
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Cheer0010": {
+      "frame": {
+        "x": 0,
+        "y": 6244,
+        "w": 804,
+        "h": 714
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 3,
+        "w": 804,
+        "h": 714
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 724
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Cheer0011": {
+      "frame": {
+        "x": 0,
+        "y": 6244,
+        "w": 804,
+        "h": 714
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 3,
+        "w": 804,
+        "h": 714
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 724
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Cheer0012": {
+      "frame": {
+        "x": 0,
+        "y": 6244,
+        "w": 804,
+        "h": 714
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 3,
+        "w": 804,
+        "h": 714
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 724
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Cheer0013": {
+      "frame": {
+        "x": 0,
+        "y": 6244,
+        "w": 804,
+        "h": 714
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 3,
+        "w": 804,
+        "h": 714
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 724
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Cheer0014": {
+      "frame": {
+        "x": 0,
+        "y": 6244,
+        "w": 804,
+        "h": 714
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 3,
+        "w": 804,
+        "h": 714
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 724
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Cheer0015": {
+      "frame": {
+        "x": 0,
+        "y": 6244,
+        "w": 804,
+        "h": 714
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 3,
+        "w": 804,
+        "h": 714
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 724
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Cheer0016": {
+      "frame": {
+        "x": 0,
+        "y": 6244,
+        "w": 804,
+        "h": 714
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 3,
+        "w": 804,
+        "h": 714
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 724
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Cheer0017": {
+      "frame": {
+        "x": 0,
+        "y": 6244,
+        "w": 804,
+        "h": 714
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 3,
+        "w": 804,
+        "h": 714
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 724
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Cheer0018": {
+      "frame": {
+        "x": 0,
+        "y": 6244,
+        "w": 804,
+        "h": 714
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 3,
+        "w": 804,
+        "h": 714
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 724
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Cheer0019": {
+      "frame": {
+        "x": 0,
+        "y": 6244,
+        "w": 804,
+        "h": 714
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 3,
+        "w": 804,
+        "h": 714
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 724
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Cheer0020": {
+      "frame": {
+        "x": 0,
+        "y": 6244,
+        "w": 804,
+        "h": 714
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 3,
+        "w": 804,
+        "h": 714
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 724
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Cheer0021": {
+      "frame": {
+        "x": 0,
+        "y": 6244,
+        "w": 804,
+        "h": 714
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 3,
+        "w": 804,
+        "h": 714
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 724
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair Landing0009": {
+      "frame": {
+        "x": 6432,
+        "y": 4863,
+        "w": 804,
+        "h": 707
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 1,
+        "w": 804,
+        "h": 707
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair Landing0010": {
+      "frame": {
+        "x": 6432,
+        "y": 4863,
+        "w": 804,
+        "h": 707
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 1,
+        "w": 804,
+        "h": 707
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat0008": {
+      "frame": {
+        "x": 6432,
+        "y": 4863,
+        "w": 804,
+        "h": 707
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 1,
+        "w": 804,
+        "h": 707
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat0009": {
+      "frame": {
+        "x": 6432,
+        "y": 4863,
+        "w": 804,
+        "h": 707
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 1,
+        "w": 804,
+        "h": 707
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat0010": {
+      "frame": {
+        "x": 6432,
+        "y": 4863,
+        "w": 804,
+        "h": 707
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 1,
+        "w": 804,
+        "h": 707
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair Landing0012": {
+      "frame": {
+        "x": 804,
+        "y": 5539,
+        "w": 804,
+        "h": 708
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 708
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair Landing0013": {
+      "frame": {
+        "x": 804,
+        "y": 5539,
+        "w": 804,
+        "h": 708
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 708
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat0011": {
+      "frame": {
+        "x": 804,
+        "y": 5539,
+        "w": 804,
+        "h": 708
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 708
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat0012": {
+      "frame": {
+        "x": 804,
+        "y": 5539,
+        "w": 804,
+        "h": 708
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 708
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat0013": {
+      "frame": {
+        "x": 804,
+        "y": 5539,
+        "w": 804,
+        "h": 708
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 708
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair Landing0015": {
+      "frame": {
+        "x": 1608,
+        "y": 5552,
+        "w": 804,
+        "h": 708
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 708
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat0014": {
+      "frame": {
+        "x": 1608,
+        "y": 5552,
+        "w": 804,
+        "h": 708
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 708
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat0015": {
+      "frame": {
+        "x": 1608,
+        "y": 5552,
+        "w": 804,
+        "h": 708
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 708
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat0016": {
+      "frame": {
+        "x": 2412,
+        "y": 2064,
+        "w": 804,
+        "h": 696
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 12,
+        "w": 804,
+        "h": 696
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat0017": {
+      "frame": {
+        "x": 3216,
+        "y": 2069,
+        "w": 804,
+        "h": 696
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 12,
+        "w": 804,
+        "h": 696
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat0018": {
+      "frame": {
+        "x": 4020,
+        "y": 2072,
+        "w": 804,
+        "h": 696
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 12,
+        "w": 804,
+        "h": 696
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat0019": {
+      "frame": {
+        "x": 4824,
+        "y": 2073,
+        "w": 804,
+        "h": 696
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 12,
+        "w": 804,
+        "h": 696
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat0020": {
+      "frame": {
+        "x": 2412,
+        "y": 2760,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 11,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat0021": {
+      "frame": {
+        "x": 3216,
+        "y": 2765,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 11,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat0022": {
+      "frame": {
+        "x": 5628,
+        "y": 4164,
+        "w": 804,
+        "h": 699
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 9,
+        "w": 804,
+        "h": 699
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair Landing0024": {
+      "frame": {
+        "x": 4020,
+        "y": 4860,
+        "w": 804,
+        "h": 703
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 5,
+        "w": 804,
+        "h": 703
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair Landing0025": {
+      "frame": {
+        "x": 4020,
+        "y": 4860,
+        "w": 804,
+        "h": 703
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 5,
+        "w": 804,
+        "h": 703
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat0023": {
+      "frame": {
+        "x": 4020,
+        "y": 4860,
+        "w": 804,
+        "h": 703
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 5,
+        "w": 804,
+        "h": 703
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat0024": {
+      "frame": {
+        "x": 4020,
+        "y": 4860,
+        "w": 804,
+        "h": 703
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 5,
+        "w": 804,
+        "h": 703
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat0025": {
+      "frame": {
+        "x": 4020,
+        "y": 4860,
+        "w": 804,
+        "h": 703
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 5,
+        "w": 804,
+        "h": 703
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair Landing0027": {
+      "frame": {
+        "x": 1608,
+        "y": 4850,
+        "w": 804,
+        "h": 702
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 6,
+        "w": 804,
+        "h": 702
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair Landing0028": {
+      "frame": {
+        "x": 1608,
+        "y": 4850,
+        "w": 804,
+        "h": 702
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 6,
+        "w": 804,
+        "h": 702
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat0026": {
+      "frame": {
+        "x": 1608,
+        "y": 4850,
+        "w": 804,
+        "h": 702
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 6,
+        "w": 804,
+        "h": 702
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat0027": {
+      "frame": {
+        "x": 1608,
+        "y": 4850,
+        "w": 804,
+        "h": 702
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 6,
+        "w": 804,
+        "h": 702
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat0028": {
+      "frame": {
+        "x": 1608,
+        "y": 4850,
+        "w": 804,
+        "h": 702
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 6,
+        "w": 804,
+        "h": 702
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair Landing0030": {
+      "frame": {
+        "x": 2412,
+        "y": 4852,
+        "w": 804,
+        "h": 702
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 6,
+        "w": 804,
+        "h": 702
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat0029": {
+      "frame": {
+        "x": 2412,
+        "y": 4852,
+        "w": 804,
+        "h": 702
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 6,
+        "w": 804,
+        "h": 702
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat0030": {
+      "frame": {
+        "x": 2412,
+        "y": 4852,
+        "w": 804,
+        "h": 702
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 6,
+        "w": 804,
+        "h": 702
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 715
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing0012": {
+      "frame": {
+        "x": 3216,
+        "y": 5559,
+        "w": 804,
+        "h": 709
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 709
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 716
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing0024": {
+      "frame": {
+        "x": 4824,
+        "y": 4861,
+        "w": 804,
+        "h": 706
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 3,
+        "w": 804,
+        "h": 706
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 716
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing0030": {
+      "frame": {
+        "x": 5628,
+        "y": 4863,
+        "w": 804,
+        "h": 706
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 3,
+        "w": 804,
+        "h": 706
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 716
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Down Note0009": {
+      "frame": {
+        "x": 0,
+        "y": 3442,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 704
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Down Note0010": {
+      "frame": {
+        "x": 0,
+        "y": 3442,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 704
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Down Note0011": {
+      "frame": {
+        "x": 0,
+        "y": 3442,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 704
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Down Note0012": {
+      "frame": {
+        "x": 0,
+        "y": 3442,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 704
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Down Note0013": {
+      "frame": {
+        "x": 0,
+        "y": 3442,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 704
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Down Note0014": {
+      "frame": {
+        "x": 0,
+        "y": 3442,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 704
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Down Note0015": {
+      "frame": {
+        "x": 0,
+        "y": 3442,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 704
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Down Note0016": {
+      "frame": {
+        "x": 0,
+        "y": 3442,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 704
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Down Note0017": {
+      "frame": {
+        "x": 0,
+        "y": 3442,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 704
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Down Note0018": {
+      "frame": {
+        "x": 0,
+        "y": 3442,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 704
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Down Note0019": {
+      "frame": {
+        "x": 0,
+        "y": 3442,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 704
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Down Note0020": {
+      "frame": {
+        "x": 0,
+        "y": 3442,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 704
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Right Note0010": {
+      "frame": {
+        "x": 4020,
+        "y": 3465,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 704
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Right Note0011": {
+      "frame": {
+        "x": 4020,
+        "y": 3465,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 704
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Right Note0012": {
+      "frame": {
+        "x": 4020,
+        "y": 3465,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 704
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Right Note0013": {
+      "frame": {
+        "x": 4020,
+        "y": 3465,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 704
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Right Note0014": {
+      "frame": {
+        "x": 4020,
+        "y": 3465,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 704
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Right Note0015": {
+      "frame": {
+        "x": 4020,
+        "y": 3465,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 704
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF left note0010": {
+      "frame": {
+        "x": 6432,
+        "y": 3467,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 1,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 705
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF left note0011": {
+      "frame": {
+        "x": 6432,
+        "y": 3467,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 1,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 705
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF left note0012": {
+      "frame": {
+        "x": 6432,
+        "y": 3467,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 1,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 705
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF left note0013": {
+      "frame": {
+        "x": 6432,
+        "y": 3467,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 1,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 705
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF left note0014": {
+      "frame": {
+        "x": 6432,
+        "y": 3467,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 1,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 705
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF left note0015": {
+      "frame": {
+        "x": 6432,
+        "y": 3467,
+        "w": 804,
+        "h": 697
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 1,
+        "w": 804,
+        "h": 697
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 705
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0002": {
+      "frame": {
+        "x": 7236,
+        "y": 689,
+        "w": 804,
+        "h": 692
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 3,
+        "w": 804,
+        "h": 692
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0004": {
+      "frame": {
+        "x": 7236,
+        "y": 1381,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0011": {
+      "frame": {
+        "x": 7236,
+        "y": 1381,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0012": {
+      "frame": {
+        "x": 7236,
+        "y": 1381,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0019": {
+      "frame": {
+        "x": 7236,
+        "y": 1381,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0020": {
+      "frame": {
+        "x": 7236,
+        "y": 1381,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0027": {
+      "frame": {
+        "x": 7236,
+        "y": 1381,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0028": {
+      "frame": {
+        "x": 7236,
+        "y": 1381,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0035": {
+      "frame": {
+        "x": 7236,
+        "y": 1381,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0036": {
+      "frame": {
+        "x": 7236,
+        "y": 1381,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0043": {
+      "frame": {
+        "x": 7236,
+        "y": 1381,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0044": {
+      "frame": {
+        "x": 7236,
+        "y": 1381,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0051": {
+      "frame": {
+        "x": 7236,
+        "y": 1381,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0052": {
+      "frame": {
+        "x": 7236,
+        "y": 1381,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0059": {
+      "frame": {
+        "x": 7236,
+        "y": 1381,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0060": {
+      "frame": {
+        "x": 7236,
+        "y": 1381,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0067": {
+      "frame": {
+        "x": 7236,
+        "y": 1381,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0068": {
+      "frame": {
+        "x": 7236,
+        "y": 1381,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0075": {
+      "frame": {
+        "x": 7236,
+        "y": 1381,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0076": {
+      "frame": {
+        "x": 7236,
+        "y": 1381,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0006": {
+      "frame": {
+        "x": 0,
+        "y": 2051,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0013": {
+      "frame": {
+        "x": 0,
+        "y": 2051,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0014": {
+      "frame": {
+        "x": 0,
+        "y": 2051,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0021": {
+      "frame": {
+        "x": 0,
+        "y": 2051,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0022": {
+      "frame": {
+        "x": 0,
+        "y": 2051,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0029": {
+      "frame": {
+        "x": 0,
+        "y": 2051,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0030": {
+      "frame": {
+        "x": 0,
+        "y": 2051,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0037": {
+      "frame": {
+        "x": 0,
+        "y": 2051,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0038": {
+      "frame": {
+        "x": 0,
+        "y": 2051,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0045": {
+      "frame": {
+        "x": 0,
+        "y": 2051,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0046": {
+      "frame": {
+        "x": 0,
+        "y": 2051,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0053": {
+      "frame": {
+        "x": 0,
+        "y": 2051,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0054": {
+      "frame": {
+        "x": 0,
+        "y": 2051,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0061": {
+      "frame": {
+        "x": 0,
+        "y": 2051,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0062": {
+      "frame": {
+        "x": 0,
+        "y": 2051,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0069": {
+      "frame": {
+        "x": 0,
+        "y": 2051,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0070": {
+      "frame": {
+        "x": 0,
+        "y": 2051,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0077": {
+      "frame": {
+        "x": 0,
+        "y": 2051,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0078": {
+      "frame": {
+        "x": 0,
+        "y": 2051,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0008": {
+      "frame": {
+        "x": 804,
+        "y": 2052,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0015": {
+      "frame": {
+        "x": 804,
+        "y": 2052,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0016": {
+      "frame": {
+        "x": 804,
+        "y": 2052,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0023": {
+      "frame": {
+        "x": 804,
+        "y": 2052,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0024": {
+      "frame": {
+        "x": 804,
+        "y": 2052,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0031": {
+      "frame": {
+        "x": 804,
+        "y": 2052,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0032": {
+      "frame": {
+        "x": 804,
+        "y": 2052,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0039": {
+      "frame": {
+        "x": 804,
+        "y": 2052,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0040": {
+      "frame": {
+        "x": 804,
+        "y": 2052,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0047": {
+      "frame": {
+        "x": 804,
+        "y": 2052,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0048": {
+      "frame": {
+        "x": 804,
+        "y": 2052,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0055": {
+      "frame": {
+        "x": 804,
+        "y": 2052,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0056": {
+      "frame": {
+        "x": 804,
+        "y": 2052,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0063": {
+      "frame": {
+        "x": 804,
+        "y": 2052,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0064": {
+      "frame": {
+        "x": 804,
+        "y": 2052,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0071": {
+      "frame": {
+        "x": 804,
+        "y": 2052,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0072": {
+      "frame": {
+        "x": 804,
+        "y": 2052,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0079": {
+      "frame": {
+        "x": 804,
+        "y": 2052,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0080": {
+      "frame": {
+        "x": 804,
+        "y": 2052,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0010": {
+      "frame": {
+        "x": 1608,
+        "y": 2064,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0017": {
+      "frame": {
+        "x": 1608,
+        "y": 2064,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0018": {
+      "frame": {
+        "x": 1608,
+        "y": 2064,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0025": {
+      "frame": {
+        "x": 1608,
+        "y": 2064,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0026": {
+      "frame": {
+        "x": 1608,
+        "y": 2064,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0033": {
+      "frame": {
+        "x": 1608,
+        "y": 2064,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0034": {
+      "frame": {
+        "x": 1608,
+        "y": 2064,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0041": {
+      "frame": {
+        "x": 1608,
+        "y": 2064,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0042": {
+      "frame": {
+        "x": 1608,
+        "y": 2064,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0049": {
+      "frame": {
+        "x": 1608,
+        "y": 2064,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0050": {
+      "frame": {
+        "x": 1608,
+        "y": 2064,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0057": {
+      "frame": {
+        "x": 1608,
+        "y": 2064,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0058": {
+      "frame": {
+        "x": 1608,
+        "y": 2064,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0065": {
+      "frame": {
+        "x": 1608,
+        "y": 2064,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0066": {
+      "frame": {
+        "x": 1608,
+        "y": 2064,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0073": {
+      "frame": {
+        "x": 1608,
+        "y": 2064,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "gf sad0074": {
+      "frame": {
+        "x": 1608,
+        "y": 2064,
+        "w": 804,
+        "h": 695
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 5,
+        "y": 0,
+        "w": 804,
+        "h": 695
+      },
+      "sourceSize": {
+        "w": 817,
+        "h": 703
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "gfChristmas.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 8040,
+      "h": 7009
+    },
+    "scale": 1
+  }
+}

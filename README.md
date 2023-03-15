@@ -29,6 +29,7 @@ Finally we're going to install only 2 components in VS Community 2019 (Note: Thi
 
 # Credits
 - NebulaZone: Creator, Programmer
+- ThatOneFoxHX: Main Menu Theme
 - AlexShadow: Additional Programming Help
 - Yoshubs: Inspiration
 - YoshiCrafter: Inspiration, Hscript Improved Git, Update Batch Code

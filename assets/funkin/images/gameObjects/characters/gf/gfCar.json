@@ -1,0 +1,831 @@
+{
+  "frames": {
+    "GF Duck Hair Blowing0001": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 714,
+        "h": 564
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 8,
+        "w": 714,
+        "h": 564
+      },
+      "sourceSize": {
+        "w": 727,
+        "h": 572
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Duck Hair Blowing0004": {
+      "frame": {
+        "x": 714,
+        "y": 0,
+        "w": 708,
+        "h": 571
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 1,
+        "w": 708,
+        "h": 571
+      },
+      "sourceSize": {
+        "w": 727,
+        "h": 572
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Duck Hair Blowing0003": {
+      "frame": {
+        "x": 1422,
+        "y": 0,
+        "w": 724,
+        "h": 572
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 3,
+        "y": 0,
+        "w": 724,
+        "h": 572
+      },
+      "sourceSize": {
+        "w": 727,
+        "h": 572
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing CAR0019": {
+      "frame": {
+        "x": 2146,
+        "y": 0,
+        "w": 766,
+        "h": 624
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 25,
+        "w": 766,
+        "h": 624
+      },
+      "sourceSize": {
+        "w": 774,
+        "h": 649
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing CAR0004": {
+      "frame": {
+        "x": 2912,
+        "y": 0,
+        "w": 699,
+        "h": 625
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 24,
+        "w": 699,
+        "h": 625
+      },
+      "sourceSize": {
+        "w": 774,
+        "h": 649
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing CAR0016": {
+      "frame": {
+        "x": 3611,
+        "y": 0,
+        "w": 712,
+        "h": 625
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 24,
+        "w": 712,
+        "h": 625
+      },
+      "sourceSize": {
+        "w": 774,
+        "h": 649
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing CAR0022": {
+      "frame": {
+        "x": 4323,
+        "y": 0,
+        "w": 707,
+        "h": 630
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 19,
+        "w": 707,
+        "h": 630
+      },
+      "sourceSize": {
+        "w": 774,
+        "h": 649
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing CAR0001": {
+      "frame": {
+        "x": 0,
+        "y": 564,
+        "w": 699,
+        "h": 634
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 15,
+        "w": 699,
+        "h": 634
+      },
+      "sourceSize": {
+        "w": 774,
+        "h": 649
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing CAR0003": {
+      "frame": {
+        "x": 699,
+        "y": 572,
+        "w": 728,
+        "h": 627
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 22,
+        "w": 728,
+        "h": 627
+      },
+      "sourceSize": {
+        "w": 774,
+        "h": 649
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing CAR0002": {
+      "frame": {
+        "x": 1427,
+        "y": 572,
+        "w": 703,
+        "h": 634
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 15,
+        "w": 703,
+        "h": 634
+      },
+      "sourceSize": {
+        "w": 774,
+        "h": 649
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing CAR0021": {
+      "frame": {
+        "x": 2130,
+        "y": 624,
+        "w": 767,
+        "h": 627
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 22,
+        "w": 767,
+        "h": 627
+      },
+      "sourceSize": {
+        "w": 774,
+        "h": 649
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing CAR0018": {
+      "frame": {
+        "x": 2897,
+        "y": 625,
+        "w": 722,
+        "h": 631
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 18,
+        "w": 722,
+        "h": 631
+      },
+      "sourceSize": {
+        "w": 774,
+        "h": 649
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing CAR0005": {
+      "frame": {
+        "x": 3619,
+        "y": 625,
+        "w": 699,
+        "h": 638
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 11,
+        "w": 699,
+        "h": 638
+      },
+      "sourceSize": {
+        "w": 774,
+        "h": 649
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing CAR0017": {
+      "frame": {
+        "x": 4318,
+        "y": 630,
+        "w": 729,
+        "h": 634
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 15,
+        "w": 729,
+        "h": 634
+      },
+      "sourceSize": {
+        "w": 774,
+        "h": 649
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing CAR0020": {
+      "frame": {
+        "x": 0,
+        "y": 1199,
+        "w": 722,
+        "h": 634
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 15,
+        "w": 722,
+        "h": 634
+      },
+      "sourceSize": {
+        "w": 774,
+        "h": 649
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing CAR0006": {
+      "frame": {
+        "x": 722,
+        "y": 1199,
+        "w": 699,
+        "h": 638
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 11,
+        "w": 699,
+        "h": 638
+      },
+      "sourceSize": {
+        "w": 774,
+        "h": 649
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing CAR0010": {
+      "frame": {
+        "x": 1421,
+        "y": 1206,
+        "w": 699,
+        "h": 638
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 11,
+        "w": 699,
+        "h": 638
+      },
+      "sourceSize": {
+        "w": 774,
+        "h": 649
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing CAR0007": {
+      "frame": {
+        "x": 2120,
+        "y": 1251,
+        "w": 727,
+        "h": 637
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 12,
+        "w": 727,
+        "h": 637
+      },
+      "sourceSize": {
+        "w": 774,
+        "h": 649
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing CAR0028": {
+      "frame": {
+        "x": 2847,
+        "y": 1256,
+        "w": 699,
+        "h": 638
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 11,
+        "w": 699,
+        "h": 638
+      },
+      "sourceSize": {
+        "w": 774,
+        "h": 649
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing CAR0025": {
+      "frame": {
+        "x": 3546,
+        "y": 1263,
+        "w": 759,
+        "h": 639
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 10,
+        "w": 759,
+        "h": 639
+      },
+      "sourceSize": {
+        "w": 774,
+        "h": 649
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing CAR0023": {
+      "frame": {
+        "x": 4305,
+        "y": 1264,
+        "w": 716,
+        "h": 646
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 3,
+        "w": 716,
+        "h": 646
+      },
+      "sourceSize": {
+        "w": 774,
+        "h": 649
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing CAR0009": {
+      "frame": {
+        "x": 0,
+        "y": 1837,
+        "w": 749,
+        "h": 640
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 9,
+        "w": 749,
+        "h": 640
+      },
+      "sourceSize": {
+        "w": 774,
+        "h": 649
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing CAR0027": {
+      "frame": {
+        "x": 749,
+        "y": 1844,
+        "w": 756,
+        "h": 640
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 9,
+        "w": 756,
+        "h": 640
+      },
+      "sourceSize": {
+        "w": 774,
+        "h": 649
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing CAR0015": {
+      "frame": {
+        "x": 1505,
+        "y": 1888,
+        "w": 755,
+        "h": 641
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 8,
+        "w": 755,
+        "h": 641
+      },
+      "sourceSize": {
+        "w": 774,
+        "h": 649
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing CAR0013": {
+      "frame": {
+        "x": 2260,
+        "y": 1894,
+        "w": 757,
+        "h": 642
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 7,
+        "w": 757,
+        "h": 642
+      },
+      "sourceSize": {
+        "w": 774,
+        "h": 649
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing CAR0029": {
+      "frame": {
+        "x": 3017,
+        "y": 1902,
+        "w": 712,
+        "h": 646
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 3,
+        "w": 712,
+        "h": 646
+      },
+      "sourceSize": {
+        "w": 774,
+        "h": 649
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing CAR0008": {
+      "frame": {
+        "x": 3729,
+        "y": 1910,
+        "w": 702,
+        "h": 647
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 2,
+        "w": 702,
+        "h": 647
+      },
+      "sourceSize": {
+        "w": 774,
+        "h": 649
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing CAR0026": {
+      "frame": {
+        "x": 0,
+        "y": 2477,
+        "w": 714,
+        "h": 647
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 2,
+        "w": 714,
+        "h": 647
+      },
+      "sourceSize": {
+        "w": 774,
+        "h": 649
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing CAR0014": {
+      "frame": {
+        "x": 714,
+        "y": 2484,
+        "w": 711,
+        "h": 648
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 1,
+        "w": 711,
+        "h": 648
+      },
+      "sourceSize": {
+        "w": 774,
+        "h": 649
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing CAR0011": {
+      "frame": {
+        "x": 1425,
+        "y": 2529,
+        "w": 712,
+        "h": 649
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 0,
+        "w": 712,
+        "h": 649
+      },
+      "sourceSize": {
+        "w": 774,
+        "h": 649
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing CAR0012": {
+      "frame": {
+        "x": 1425,
+        "y": 2529,
+        "w": 712,
+        "h": 649
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 0,
+        "w": 712,
+        "h": 649
+      },
+      "sourceSize": {
+        "w": 774,
+        "h": 649
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing CAR0024": {
+      "frame": {
+        "x": 4305,
+        "y": 1264,
+        "w": 716,
+        "h": 646
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 3,
+        "w": 716,
+        "h": 646
+      },
+      "sourceSize": {
+        "w": 774,
+        "h": 649
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Dancing Beat Hair blowing CAR0030": {
+      "frame": {
+        "x": 3017,
+        "y": 1902,
+        "w": 712,
+        "h": 646
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 2,
+        "y": 3,
+        "w": 712,
+        "h": 646
+      },
+      "sourceSize": {
+        "w": 774,
+        "h": 649
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "GF Duck Hair Blowing0002": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 714,
+        "h": 564
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 8,
+        "w": 714,
+        "h": 564
+      },
+      "sourceSize": {
+        "w": 727,
+        "h": 572
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "gfCar.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 5047,
+      "h": 3178
+    },
+    "scale": 1
+  }
+}
