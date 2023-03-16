@@ -108,9 +108,9 @@ class Main extends Sprite
 			Lib.current.stage.scaleMode = StageScaleMode.NO_SCALE;
 			#end
 			
-			#if CRASH_HANDLER
-			Lib.current.loaderInfo.uncaughtErrorEvents.addEventListener(UncaughtErrorEvent.UNCAUGHT_ERROR, onCrash);
-			#end
+			//#if CRASH_HANDLER
+			///Lib.current.loaderInfo.uncaughtErrorEvents.addEventListener(UncaughtErrorEvent.UNCAUGHT_ERROR, onCrash);
+			//#end
 
 			#if !hl
 			Debug.onGameStart();
