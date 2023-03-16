@@ -71,7 +71,7 @@ class Main extends Sprite
 
 	private function init(?E:Event):Void
 		{
-			FlxG.save.bind('everlast-engine', CoolUtil.getSavePath());
+			FlxG.save.bind('supernova-engine', CoolUtil.getSavePath());
 			if (hasEventListener(Event.ADDED_TO_STAGE))
 			{	
 				removeEventListener(Event.ADDED_TO_STAGE, init);
