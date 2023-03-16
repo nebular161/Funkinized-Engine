@@ -33,6 +33,3 @@ Finally we're going to install only 2 components in VS Community 2019 (Note: Thi
 - AlexShadow: Additional Programming Help
 - Yoshubs: Inspiration
 - YoshiCrafter: Inspiration, Hscript Improved Git, Update Batch Code
-
-# Repo Size
-![Repo size](https://img.shields.io/github/repo-size/nebulazone1/SuperNova-Engine)
