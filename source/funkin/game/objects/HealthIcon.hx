@@ -25,7 +25,7 @@ class HealthIcon extends FlxSprite
 	private var iconOffsets:Array<Float> = [0, 0];
 	public function setIcon(char:String = 'bf', flipX:Bool = false)
 	{
-		var correctIcon = char; // To make the icons folder less cluttered with the same icon image but on a different file name
+		var correctIcon = char; // To make the icons folder less cluttered
 		switch (char)
 		{
 			case 'parents-christmas':
@@ -57,18 +57,7 @@ class HealthIcon extends FlxSprite
 		animation.add(char, [0, 1], 0, false, flipX);
 		animation.play(char);
 		curicon = char;
-
-		/*iconOffsets[0] = (width - 150) / 2;
-		iconOffsets[1] = (width - 150) / 2;
-		updateHitbox();*/
 	}
-
-	/*override function updateHitbox()
-		{
-			super.updateHitbox();
-			offset.x = iconOffsets[0];
-			offset.y = iconOffsets[1];
-		}*/
 
 	public function getIcon()
 	{
