@@ -1401,7 +1401,6 @@ class PlayState extends MusicBeatState {
 							babyArrow.animation.add('static', [3]);
 							babyArrow.animation.add('pressed', [7, 11], 12, false);
 							babyArrow.animation.add('confirm', [15, 19], 24, false);
-							babyArrow.alpha = 0.7;
 					}
 
 				default:
@@ -1436,7 +1435,6 @@ class PlayState extends MusicBeatState {
 							babyArrow.animation.addByPrefix('static', 'arrowRIGHT');
 							babyArrow.animation.addByPrefix('pressed', 'right press', 24, false);
 							babyArrow.animation.addByPrefix('confirm', 'right confirm', 24, false);
-							babyArrow.alpha = 0.7;
 					}
 			}
 
