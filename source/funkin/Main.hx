@@ -10,6 +10,14 @@ import flixel.util.FlxColor;
 import sys.io.File;
 import sys.FileSystem;
 #end
+#if CRASH_HANDLER
+import openfl.events.UncaughtErrorEvent;
+import haxe.CallStack;
+import haxe.io.Path;
+import sys.FileSystem;
+import sys.io.File;
+import sys.io.Process;
+#end
 import flixel.system.ui.FlxSoundTray;
 import haxe.Exception;
 import openfl.Assets;
@@ -25,6 +33,7 @@ import openfl.text.TextFormat;
 import funkin.config.Options;
 import funkin.utils.*;
 import funkin.menus.TitleState;
+import funkin.system.debug.Debug;
 class Main extends Sprite
 {
 	var gameWidth:Int = 1280; // Width of the game in pixels (might be less / more in actual pixels depending on your zoom).
@@ -34,6 +43,7 @@ class Main extends Sprite
 	var framerate:Int = 144; // How many frames per second the game should run at.
 	var skipSplash:Bool = true; // Whether to skip the flixel splash screen that appears in release mode.
 	var startFullscreen:Bool = false; // Whether to start the game in fullscreen on desktop targets
+	var game:FlxGame; // The game
 
 	public static var instance:Main;
 	public static var watermarks = true;
@@ -61,10 +71,17 @@ class Main extends Sprite
 
 	private function init(?E:Event):Void
 		{
-			if (hasEventListener(Event.ADDED_TO_STAGE))
-				removeEventListener(Event.ADDED_TO_STAGE, init);
-	
 			FlxG.save.bind('everlast-engine', CoolUtil.getSavePath());
+			if (hasEventListener(Event.ADDED_TO_STAGE))
+			{	
+				removeEventListener(Event.ADDED_TO_STAGE, init);
+			}	
+			setupGame();
+		}
+
+	private function setupGame():Void
+		{
+			Debug.onInitProgram();
 	
 			#if (flixel < "5.0.0")
 			var stageWidth:Int = Lib.current.stage.stageWidth;
@@ -90,9 +107,15 @@ class Main extends Sprite
 			Lib.current.stage.align = "tl";
 			Lib.current.stage.scaleMode = StageScaleMode.NO_SCALE;
 			#end
-		}
+			
+			#if CRASH_HANDLER
+			Lib.current.loaderInfo.uncaughtErrorEvents.addEventListener(UncaughtErrorEvent.UNCAUGHT_ERROR, onCrash);
+			#end
 
-	var game:FlxGame;
+			#if !hl
+			Debug.onGameStart();
+			#end
+		}
 
 	public static var memoryCounter:MemoryCounter;
 	public static var engineVersion:EngineVer;
@@ -108,5 +131,5 @@ class Main extends Sprite
 	public function getFPS():Float
 		{
 			return fpsCounter.currentFPS;
-		}		
-}	
+		}
+}

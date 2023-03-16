@@ -65,6 +65,11 @@
             "version": null
         },
         {
+            "name": "hashlink",
+            "type": "haxelib",
+            "version": null
+        },        
+        {
             "name": "linc_discord-rpc",
             "type": "git",
             "dir": "discord_rpc",

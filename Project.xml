@@ -51,15 +51,16 @@
 	<assets path="CHANGELOG.md" rename='changelog.txt'/>
 
 	<!-- ______________________________ Defines _____________________________ -->
+	<!-- You can disable these if you want by just commenting them out -->
 
 	<define name="FLX_NO_FOCUS_LOST_SCREEN" />
 	<define name="FLX_NO_DEBUG" unless="debug" />
 	<define name="NAPE_RELEASE_BUILD" unless="debug" />
-
-	<!-- You can disable these if you want by just commenting them out -->
+	<define name="CRASH_HANDLER" if="desktop" unless="debug" />
 	<define name="USE_INST_TIME" if="html5" />
 	<define name="USE_SHADERS" />
-
+	<define name="FEATURE_LOGGING" if="FEATURE_FILESYSTEM" unless="PUBLIC_BUILD" />
+	<define name="FEATURE_FILESYSTEM" if="desktop" />
 	<!-- _______________________________ Libraries ______________________________ -->
 
 	<haxelib name="flixel" />

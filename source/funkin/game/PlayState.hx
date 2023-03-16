@@ -81,9 +81,9 @@ class PlayState extends MusicBeatState {
 	public static var seenCutscene:Bool = false;
 	public var vocals:FlxSound;
 	public var vocalsFinished = false;
-	public var dad:Character;
-	public var gf:Character;
-	public var boyfriend:Boyfriend;
+	public static var dad:Character;
+	public static var gf:Character;
+	public static var boyfriend:Boyfriend;
 	public var notes:FlxTypedGroup<StrumNote>;
 	public var unspawnNotes:Array<StrumNote> = [];
 	public var songMisses:Int = 0;
@@ -1363,7 +1363,6 @@ class PlayState extends MusicBeatState {
 		for (i in 0...4) {
 			var babyArrow:FlxSprite = new FlxSprite(0, strumLine.y);
 			var colorSwap:ColorSwap = new ColorSwap();
-
 			babyArrow.shader = colorSwap.shader;
 			colorSwap.update(StrumNote.arrowColors[i]);
 
@@ -1402,8 +1401,7 @@ class PlayState extends MusicBeatState {
 							babyArrow.animation.add('static', [3]);
 							babyArrow.animation.add('pressed', [7, 11], 12, false);
 							babyArrow.animation.add('confirm', [15, 19], 24, false);
-
-
+							babyArrow.alpha = 0.7;
 					}
 
 				default:
@@ -1438,8 +1436,7 @@ class PlayState extends MusicBeatState {
 							babyArrow.animation.addByPrefix('static', 'arrowRIGHT');
 							babyArrow.animation.addByPrefix('pressed', 'right press', 24, false);
 							babyArrow.animation.addByPrefix('confirm', 'right confirm', 24, false);
-
-
+							babyArrow.alpha = 0.7;
 					}
 			}
 
