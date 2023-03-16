@@ -245,9 +245,9 @@ class Character extends FlxSprite
 			case 'bf-dead':
 				tex = Paths.getJSONAtlas('gameObjects/characters/bf/Boyfriend_Dead');
 				frames = tex;
-				animation.addByPrefix('firstDeath', "BF dies");
+				quickAnimAdd('firstDeath', "BF dies");
 				animation.addByPrefix('deathLoop', "BF Dead Loop", 24, true);
-				animation.addByPrefix('deathConfirm', "BF Dead confirm");
+				quickAnimAdd('deathConfirm', "BF Dead confirm");
 	
 				loadOffsetFile(curCharacter);
 	
@@ -428,22 +428,18 @@ class Character extends FlxSprite
 
 				playAnim('idle');
 
-			case 'tankman':
+			case 'tankman': //for some reason his left and right anims are flipped???
 				frames = Paths.getJSONAtlas('gameObjects/characters/tankman/tankmanCaptain');
 				quickAnimAdd('idle', 'Tankman Idle Dance');
-				quickAnimAdd('singLEFT', 'Tankman Note Left ');
-				quickAnimAdd('singRIGHT', 'Tankman Right Note ');
-				//quickAnimAdd('singLEFTmiss', 'Tankman Note Left MISS');
-				//quickAnimAdd('singRIGHTmiss', 'Tankman Right Note MISS');
-				quickAnimAdd('singLEFT', 'Tankman Right Note ');
-				quickAnimAdd('singRIGHT', 'Tankman Note Left ');
-				//quickAnimAdd('singLEFTmiss', 'Tankman Right Note MISS');
-				//quickAnimAdd('singRIGHTmiss', 'Tankman Note Left MISS');
-				quickAnimAdd('singUP', 'Tankman UP note ');
-				quickAnimAdd('singDOWN', 'Tankman DOWN note ');
-				//quickAnimAdd('singUPmiss', 'Tankman UP note MISS');
-				//quickAnimAdd('singDOWNmiss', 'Tankman DOWN note MISS');
-
+				quickAnimAdd('singLEFT', 'Tankman Right Note');
+				quickAnimAdd('singRIGHT', 'Tankman Note Left');
+				if(isPlayer)
+					{
+						quickAnimAdd('singLEFT', 'Tankman Note Left');
+						quickAnimAdd('singRIGHT', 'Tankman Right Note');
+					}
+				quickAnimAdd('singUP', 'Tankman UP note');
+				quickAnimAdd('singDOWN', 'Tankman DOWN note');
 				quickAnimAdd('singDOWN-alt', 'PRETTY GOOD');
 				quickAnimAdd('singUP-alt', 'TANKMAN UGH');
 

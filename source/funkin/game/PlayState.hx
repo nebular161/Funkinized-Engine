@@ -1358,7 +1358,7 @@ class PlayState extends MusicBeatState {
 		return Obj1.strumTime < Obj2.strumTime ? Sort : Obj1.strumTime > Obj2.strumTime ? -Sort : 0;
 	}
 
-	private function generateStaticArrows(player:Int):Void 
+	public function generateStaticArrows(player:Int):Void 
 	{
 		for (i in 0...4) {
 			var babyArrow:FlxSprite = new FlxSprite(0, strumLine.y);
@@ -1635,8 +1635,8 @@ class PlayState extends MusicBeatState {
 			#end
 		}
 
-		iconP1.setGraphicSize(Std.int(FlxMath.lerp(150, iconP1.width, 0.85)));
-		iconP2.setGraphicSize(Std.int(FlxMath.lerp(150, iconP2.width, 0.85)));
+		iconP1.setGraphicSize(Std.int(FlxMath.lerp(150, iconP1.width, 0.95)));
+		iconP2.setGraphicSize(Std.int(FlxMath.lerp(150, iconP2.width, 0.95)));
 
 		iconP1.updateHitbox();
 		iconP2.updateHitbox();
@@ -1946,27 +1946,39 @@ class PlayState extends MusicBeatState {
 		{
 			daRating = 'shit';
 			score = 50;
-			addedAccuracy -= 0.25;
+			if(Options.getOption('accuracy'))
+				{
+					addedAccuracy -= 0.25;
+				}
 			shits++;
 			doSplash = false;
 		} else if (noteDiff > Conductor.safeZoneOffset * 0.75) 
 		{
 			daRating = 'bad';
 			score = 100;
-			addedAccuracy -= 0.50;
+			if(Options.getOption('accuracy'))
+				{
+					addedAccuracy -= 0.50;
+				}
 			bads++;
 			doSplash = false;
-		} else if (noteDiff > Conductor.safeZoneOffset * 0.25) 
+		} else if (noteDiff > Conductor.safeZoneOffset * 0.2) 
 		{		
 			daRating = 'good';
-			addedAccuracy = 0.75;
+			if(Options.getOption('accuracy'))
+				{
+					addedAccuracy = 0.75;
+				}
 			score = 200;
 			goods++;
 			doSplash = false;
 		}
 		else if (noteDiff > Conductor.safeZoneOffset * 0) {
 			daRating = 'sick';
-			addedAccuracy = 1;
+			if(Options.getOption('accuracy'))
+				{
+					addedAccuracy = 1;
+				}
 			score = 350;
 			sicks++;
 			doSplash = true;

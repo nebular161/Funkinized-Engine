@@ -59,15 +59,15 @@ class StrumNote extends FlxSprite {
 				if (isSustainNote) {
 					var endingPath = Paths.image('gameObjects/notes/pixel/arrowEnds');
 					loadGraphic(endingPath, true, 7, 6);
-					animation.add('purpleholdend', [4]);
-					animation.add('greenholdend', [6]);
-					animation.add('redholdend', [7]);
-					animation.add('blueholdend', [5]);
-
 					animation.add('purplehold', [0]);
 					animation.add('greenhold', [2]);
 					animation.add('redhold', [3]);
 					animation.add('bluehold', [1]);
+
+					animation.add('purpleholdend', [4]);
+					animation.add('greenholdend', [6]);
+					animation.add('redholdend', [7]);
+					animation.add('blueholdend', [5]);
 				}
 
 				setGraphicSize(Std.int(width * PlayState.daPixelZoom));
@@ -81,15 +81,15 @@ class StrumNote extends FlxSprite {
 				animation.addByPrefix('blueScroll', 'blueNote');
 				animation.addByPrefix('purpleScroll', 'purpleNote');
 
-				animation.addByPrefix('purpleholdend', 'purple hold end');
-				animation.addByPrefix('greenholdend', 'green hold end');
-				animation.addByPrefix('redholdend', 'red hold end');
-				animation.addByPrefix('blueholdend', 'blue hold end');
-
 				animation.addByPrefix('purplehold', 'purple hold piece');
 				animation.addByPrefix('greenhold', 'green hold piece');
 				animation.addByPrefix('redhold', 'red hold piece');
 				animation.addByPrefix('bluehold', 'blue hold piece');
+
+				animation.addByPrefix('purpleholdend', 'purple hold end');
+				animation.addByPrefix('greenholdend', 'green hold end');
+				animation.addByPrefix('redholdend', 'red hold end');
+				animation.addByPrefix('blueholdend', 'blue hold end');
 
 				setGraphicSize(Std.int(width * 0.7));
 				updateHitbox();
@@ -164,10 +164,9 @@ class StrumNote extends FlxSprite {
 		colorSwap.update(arrowColors[noteData]);
 	}
 
-	override function update(elapsed:Float) {
+	override function update(elapsed:Float) 
+	{
 		super.update(elapsed);
-
-
 		if (mustPress)
 			{
 				if (strumTime > Conductor.songPosition - Conductor.safeZoneOffset
