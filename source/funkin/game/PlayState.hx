@@ -1981,7 +1981,8 @@ class PlayState extends MusicBeatState {
 
 		if(Options.getOption('notesplash'))
 			{
-				if (doSplash) {
+				if (doSplash) 
+				{
 					var splash:NoteSplash = grpNoteSplashes.recycle(NoteSplash);
 					splash.setupNoteSplash(daNote.x + 57, playerStrums.members[daNote.noteData].y + 50, daNote.noteData);
 					grpNoteSplashes.add(splash);

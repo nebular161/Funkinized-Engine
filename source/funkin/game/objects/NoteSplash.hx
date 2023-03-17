@@ -5,26 +5,30 @@ import flixel.FlxSprite;
 import funkin.system.Paths;
 class NoteSplash extends FlxSprite
 {
-    public function new(x:Float = 0, y:Float = 0, note:Int = 0)
+    public function new(x:Float = 0, y:Float = 0, noteData:Int = 0)
     {
         super(x, y);
 
-        frames = Paths.getJSONAtlas('gameObjects/notes/base/default_splash');
+        frames = Paths.getJSONAtlas('gameObjects/splashes/base/default_splashes');
 
-        animation.addByPrefix("splash-0", "note splash purple", 24, false);
-        animation.addByPrefix("splash-1", "note splash blue", 24, false);
-        animation.addByPrefix("splash-2", "note splash green", 24, false);
-        animation.addByPrefix("splash-3", "note splash red", 24, false);
+		animation.addByPrefix('note1-0', 'splash blue0', 24, false);
+		animation.addByPrefix('note2-0', 'splash green0', 24, false);
+		animation.addByPrefix('note0-0', 'splash purple0', 24, false);
+		animation.addByPrefix('note3-0', 'splash red0', 24, false);
+		animation.addByPrefix('note1-1', 'splash blue 2', 24, false);
+		animation.addByPrefix('note2-1', 'splash green 2', 24, false);
+		animation.addByPrefix('note0-1', 'splash purple 2', 24, false);
+		animation.addByPrefix('note3-1', 'splash red 2', 24, false);
 
-        setupNoteSplash(x, y, note);
+        setupNoteSplash(x, y, noteData);
         antialiasing = true;
     }
-    public function setupNoteSplash(x:Float, y:Float, note:Int = 0)
+    public function setupNoteSplash(x:Float, y:Float, noteData:Int = 0)
     {
         setPosition(x, y);
 
         alpha = 0.9;
-        animation.play('splash-' + note, false);
+        animation.play('note' + noteData + '-' + FlxG.random.int(0, 1), false);
         scale.set(1.05, 1.05);
         updateHitbox();
         offset.set(0.5 * width, 0.5 * height);
@@ -33,7 +37,6 @@ class NoteSplash extends FlxSprite
     override function update(elapsed:Float)
     {
         super.update(elapsed);
-        
         if (animation.curAnim.finished)
             kill();
     }

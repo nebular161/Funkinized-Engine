@@ -3,18 +3,15 @@ package funkin.menus;
 #if discord_rpc
 import Discord.DiscordClient;
 #end
-
 #if USE_SHADERS
 import funkin.shaders.ColorSwap;
 #end
-
 #if html5
 import openfl.display.Sprite;
 import openfl.net.NetStream;
 import openfl.media.Video;
 import openfl.Lib;
 #end
-
 import funkin.config.Options;
 import flixel.FlxG;
 import flixel.FlxSprite;
