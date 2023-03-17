@@ -123,7 +123,7 @@ class ChartEditor extends MusicBeatState
 			currentDiff = PlayState.storyDifficulty2;
 
 			FlxG.mouse.visible = true;
-			FlxG.save.bind('supernova-engine', 'NebulaZone');
+			FlxG.save.bind('supernova-engine', 'violet292');
 			
 			tempBpm = _song.bpm;
 

@@ -155,23 +155,7 @@ class Options extends Page
 		else
 		{
 			preferenceCheck('statistics', false);
-		}			
-
-		/*if(FlxG.save.data.display != null)
-		{
-			if (!getOption('display'))
-				{
-					Lib.current.stage.removeChild(Main.fpsCounter);
-				}
 		}
-		else
-		{
-			if (!getOption('display'))
-				{
-					Lib.current.stage.addChild(Main.fpsCounter);
-				}
-			preferenceCheck('display', true);
-		}*/
 
 		FlxG.autoPause = getOption('auto-pause');
 	}

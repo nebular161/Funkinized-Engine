@@ -72,7 +72,7 @@ class TitleState extends MusicBeatState {
 
 		super.create();
 
-		FlxG.save.bind('supernova-engine', 'NebulaZone');
+		FlxG.save.bind('supernova-engine', 'violet292');
 
 		Options.initPrefs();
 		PlayerSettings.init();

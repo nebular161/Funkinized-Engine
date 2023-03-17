@@ -6,11 +6,11 @@
             "version": null
         },
         {
-            "name": "flixel-nebulazone",
+            "name": "flixel-violet",
             "type": "git",
             "dir": "flixel",
             "ref": "master",
-            "url": "https://github.com/NebulaZone1/flixel.git"
+            "url": "https://github.com/violet292/flixel"
         },
         {
             "name": "flixel",
