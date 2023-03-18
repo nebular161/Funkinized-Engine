@@ -40,11 +40,9 @@ class StrumNote extends FlxSprite {
 
 		this.prevNote = prevNote;
 		isSustainNote = sustainNote;
-
 		x += 50;
 		y -= 2000;
 		this.strumTime = strumTime;
-
 		this.noteData = noteData;
 
 		switch (PlayState.curStage) {
@@ -94,10 +92,12 @@ class StrumNote extends FlxSprite {
 				setGraphicSize(Std.int(width * 0.7));
 				updateHitbox();
 		}
-
 		colorSwap = new ColorSwap();
 		shader = colorSwap.shader;
 		updateColors();
+
+		if (this.strumTime < 0 )
+			this.strumTime = 0;
 
 		switch (noteData) {
 			case 0:
@@ -164,19 +164,29 @@ class StrumNote extends FlxSprite {
 		colorSwap.update(arrowColors[noteData]);
 	}
 
-	override function update(elapsed:Float) 
-	{
-		super.update(elapsed);
-		if (mustPress)
+	override function update(elapsed:Float)
+		{
+			super.update(elapsed);
+			if (mustPress)
 			{
-				if (strumTime > Conductor.songPosition - Conductor.safeZoneOffset
-					&& strumTime < Conductor.songPosition + (Conductor.safeZoneOffset * 0.5))
-					canBeHit = true;
+				if (isSustainNote)
+				{
+					if (strumTime > Conductor.songPosition - (Conductor.safeZoneOffset * 1.5)
+						&& strumTime < Conductor.songPosition + (Conductor.safeZoneOffset * 0.5))
+						canBeHit = true;
+					else
+						canBeHit = false;
+				}
 				else
-					canBeHit = false;
+				{
+					if (strumTime > Conductor.songPosition - Conductor.safeZoneOffset
+						&& strumTime < Conductor.songPosition + Conductor.safeZoneOffset)
+						canBeHit = true;
+					else
+						canBeHit = false;
+				}
 	
-				if (strumTime < Conductor.songPosition - Conductor.safeZoneOffset && !wasGoodHit)
-					tooLate = true;
+				if (strumTime < Conductor.songPosition - Conductor.safeZoneOffset && !wasGoodHit) tooLate = true;
 			}
 			else
 			{
@@ -185,10 +195,11 @@ class StrumNote extends FlxSprite {
 				if (strumTime <= Conductor.songPosition)
 					wasGoodHit = true;
 			}
-
-		if (tooLate) {
-			if (alpha > 0.3)
-				alpha = 0.3;
+	
+			if (tooLate)
+			{
+				if (alpha > 0.3)
+					alpha = 0.3;
+			}
 		}
-	}
 }

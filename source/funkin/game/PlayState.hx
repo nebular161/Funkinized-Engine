@@ -86,7 +86,6 @@ class PlayState extends MusicBeatState {
 	public static var boyfriend:Boyfriend;
 	public var notes:FlxTypedGroup<StrumNote>;
 	public var unspawnNotes:Array<StrumNote> = [];
-	public var songMisses:Int = 0;
 	public var strumLine:FlxSprite;
 	public var curSection:Int = 0;
 	public var camFollow:FlxObject;
@@ -96,10 +95,11 @@ class PlayState extends MusicBeatState {
 	public var playerStrums:FlxTypedGroup<FlxSprite>;
 	public var camZooming:Bool = true;
 	public var curSong:String = '';
+	public var songMisses:Int = 0;
 	public var bg:BGSprite;
 	public var stageFront:FlxSprite;
 	public var stageCurtains:FlxSprite;
-	public static var dadStrums:FlxTypedGroup<FlxSprite> = null;
+	public static var dadStrums:FlxTypedGroup<FlxSprite>;
 	public static var sicks:Int = 0;
 	public static var goods:Int = 0;
 	public static var bads:Int = 0;
@@ -1941,39 +1941,27 @@ class PlayState extends MusicBeatState {
 		{
 			daRating = 'shit';
 			score = 50;
-			if(Options.getOption('accuracy'))
-				{
-					addedAccuracy -= 0.25;
-				}
+			addedAccuracy -= 0.25;
 			shits++;
 			doSplash = false;
 		} else if (noteDiff > Conductor.safeZoneOffset * 0.75) 
 		{
 			daRating = 'bad';
 			score = 100;
-			if(Options.getOption('accuracy'))
-				{
-					addedAccuracy -= 0.50;
-				}
+			addedAccuracy -= 0.50;
 			bads++;
 			doSplash = false;
 		} else if (noteDiff > Conductor.safeZoneOffset * 0.2) 
 		{		
 			daRating = 'good';
-			if(Options.getOption('accuracy'))
-				{
-					addedAccuracy = 0.75;
-				}
+			addedAccuracy = 0.75;
 			score = 200;
 			goods++;
 			doSplash = false;
 		}
 		else if (noteDiff > Conductor.safeZoneOffset * 0) {
 			daRating = 'sick';
-			if(Options.getOption('accuracy'))
-				{
-					addedAccuracy = 1;
-				}
+			addedAccuracy = 1;
 			score = 350;
 			sicks++;
 			doSplash = true;
@@ -2244,11 +2232,12 @@ class PlayState extends MusicBeatState {
 
 			songMisses;
 
+			updateAccuracy();
+
 			FlxG.sound.play(Paths.soundRandom('missnote', 1, 3), FlxG.random.float(0.1, 0.2));
 
 			boyfriend.stunned = true;
 
-			// get stunned for 5 seconds
 			new FlxTimer().start(5 / 60, function(tmr:FlxTimer) {
 				boyfriend.stunned = false;
 			});
@@ -2263,7 +2252,6 @@ class PlayState extends MusicBeatState {
 				case 3:
 					boyfriend.playAnim('singRIGHTmiss', true);
 			}
-			updateAccuracy();
 		}
 	}
 
