@@ -2232,8 +2232,6 @@ class PlayState extends MusicBeatState {
 
 			songMisses;
 
-			updateAccuracy();
-
 			FlxG.sound.play(Paths.soundRandom('missnote', 1, 3), FlxG.random.float(0.1, 0.2));
 
 			boyfriend.stunned = true;
@@ -2252,6 +2250,7 @@ class PlayState extends MusicBeatState {
 				case 3:
 					boyfriend.playAnim('singRIGHTmiss', true);
 			}
+			updateAccuracy();
 		}
 	}
 
