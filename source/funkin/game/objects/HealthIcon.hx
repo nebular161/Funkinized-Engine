@@ -52,7 +52,7 @@ class HealthIcon extends FlxSprite
 			case 'pico-speaker' | 'pico-player':
 				correctIcon = 'pico';
 		}
-		loadGraphic(Paths.data('character-data/icons/' + correctIcon), true, 150, 150);
+		loadGraphic(Paths.image('gameObjects/characters/icons/' + correctIcon), true, 150, 150);
 		
 		animation.add(char, [0, 1], 0, false, flipX);
 		animation.play(char);

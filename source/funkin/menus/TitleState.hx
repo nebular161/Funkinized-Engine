@@ -69,7 +69,7 @@ class TitleState extends MusicBeatState {
 
 		super.create();
 
-		FlxG.save.bind('supernova-engine', 'violet292');
+		FlxG.save.bind('framework-engine', 'violet292');
 
 		Options.initPrefs();
 		PlayerSettings.init();
@@ -146,8 +146,8 @@ class TitleState extends MusicBeatState {
 
 		gfDance = new FlxSprite(FlxG.width * 0.4, FlxG.height * 0.07);
 		gfDance.frames = Paths.getSparrowAtlas('menuObjects/title_menu/gfDanceTitle');
-		gfDance.animation.addByIndices('danceLeft', 'gfDance', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], '', 24, false);
-		gfDance.animation.addByIndices('danceRight', 'gfDance', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], '', 24, false);
+		gfDance.animation.addByIndices('danceLeft', 'GF Dancing Beat', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], '', 24, false);
+		gfDance.animation.addByIndices('danceRight', 'GF Dancing Beat', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], '', 24, false);
 		#if USE_SHADERS
 		gfDance.shader = swagShader.shader;
 		#end

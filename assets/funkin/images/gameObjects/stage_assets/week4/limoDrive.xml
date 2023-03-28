@@ -1,9 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TextureAtlas imagePath="limoDrive.png">
-	<!-- Created with Adobe Animate version 20.0.0.17400 -->
-	<!-- http://www.adobe.com/products/animate.html -->
-	<SubTexture name="Limo stage0000" x="0" y="0" width="2048" height="646"/>
-	<SubTexture name="Limo stage0001" x="0" y="656" width="2048" height="646"/>
-	<SubTexture name="Limo stage0002" x="0" y="1312" width="2048" height="646"/>
-	<SubTexture name="Limo stage0003" x="0" y="0" width="2048" height="646"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+-->
+<TextureAtlas imagePath="limoDrive.png" width="2003" height="2596">
+  <SubTexture name="Limo stage0003" x="0" y="0"  width="2003" height="651" frameX="-46" frameY="-1" frameWidth="2049" frameHeight="652"/>
+  <SubTexture name="Limo stage0002" x="0" y="651"  width="2003" height="649" frameX="-46" frameY="-3" frameWidth="2049" frameHeight="652"/>
+  <SubTexture name="Limo stage0001" x="0" y="1300"  width="2003" height="648" frameX="-46" frameY="-4" frameWidth="2049" frameHeight="652"/>
+  <SubTexture name="Limo stage0004" x="0" y="1948"  width="2003" height="648" frameX="-46" frameY="-4" frameWidth="2049" frameHeight="652"/>
 </TextureAtlas>

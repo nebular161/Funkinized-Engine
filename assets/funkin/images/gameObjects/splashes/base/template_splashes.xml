@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:91aa7d0b67533137678f69b1d50053e3:e0127ee401d7bd0d26c6337be8158ee4:1b99ae3ba3bf31a6a9845a642189c62e$ -->
+<TextureAtlas imagePath="template_splashes.png" width="808" height="863">
+    <SubTexture name="splash template 20001" x="260" y="298" width="274" height="267"/>
+    <SubTexture name="splash template 20002" x="534" y="298" width="274" height="267"/>
+    <SubTexture name="splash template 20003" x="0" y="596" width="274" height="267"/>
+    <SubTexture name="splash template 20004" x="274" y="596" width="274" height="267"/>
+    <SubTexture name="splash template0001" x="0" y="0" width="260" height="298"/>
+    <SubTexture name="splash template0002" x="260" y="0" width="260" height="298"/>
+    <SubTexture name="splash template0003" x="520" y="0" width="260" height="298"/>
+    <SubTexture name="splash template0004" x="0" y="298" width="260" height="298"/>
+</TextureAtlas>

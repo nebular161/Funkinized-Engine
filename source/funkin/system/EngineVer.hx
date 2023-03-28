@@ -70,6 +70,6 @@ class EngineVer extends TextField
 
     function version_Function()
     { 	
-				text += "Supernova Engine v" + Application.current.meta.get('version');
+		text += Application.current.meta.get('file') + " v" + Application.current.meta.get('version');
     }        
 }
