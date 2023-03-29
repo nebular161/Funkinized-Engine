@@ -53,15 +53,24 @@ class HealthIcon extends FlxSprite
 				correctIcon = 'pico';
 		}
 		loadGraphic(Paths.image('gameObjects/characters/icons/' + correctIcon), true, 150, 150);
-		
 		animation.add(char, [0, 1], 0, false, flipX);
 		animation.play(char);
-		curicon = char;
+		curicon = char;	
+		iconOffsets[0] = (width - 150) / 2;
+		iconOffsets[1] = (width - 150) / 2;
+		updateHitbox();
 	}
 
 	public function getIcon()
 	{
 		return curicon;
+	}
+
+	override function updateHitbox()
+	{
+		super.updateHitbox();
+		offset.x = iconOffsets[0];
+		offset.y = iconOffsets[1];
 	}
 
 	override function update(elapsed:Float)

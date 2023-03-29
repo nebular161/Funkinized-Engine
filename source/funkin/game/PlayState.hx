@@ -1630,10 +1630,12 @@ class PlayState extends MusicBeatState {
 			#end
 		}
 
-		iconP1.setGraphicSize(Std.int(FlxMath.lerp(150, iconP1.width, 0.95)));
-		iconP2.setGraphicSize(Std.int(FlxMath.lerp(150, iconP2.width, 0.95)));
-
+		var mult:Float = FlxMath.lerp(1, iconP1.scale.x, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1));
+		iconP1.scale.set(mult, 1);
 		iconP1.updateHitbox();
+
+		var mult:Float = FlxMath.lerp(1, iconP2.scale.x, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1));
+		iconP2.scale.set(mult, 1);
 		iconP2.updateHitbox();
 		
 		var iconOffset:Int = 26;
@@ -2498,8 +2500,8 @@ class PlayState extends MusicBeatState {
 				camHUD.zoom += 0.03;
 			}
 
-			iconP1.setGraphicSize(Std.int(iconP1.width + 30));
-			iconP2.setGraphicSize(Std.int(iconP2.width + 30));
+			iconP1.scale.set(1.2, 1.2);
+			iconP2.scale.set(1.2, 1.2);
 	
 			iconP1.updateHitbox();
 			iconP2.updateHitbox();
