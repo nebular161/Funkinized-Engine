@@ -31,13 +31,13 @@ jobs:
       - name: Uploading artifact (entire build)
         uses: actions/upload-artifact@v2
         with:
-          name: Codename Engine
+          name: Framework Engine
           path: export/release/macos/bin
       - name: Uploading artifact (executable)
         uses: actions/upload-artifact@v2
         with:
           name: Update-Mac
-          path: export/release/macos/bin/CodenameEngine
+          path: export/release/macos/bin/Framework Engine
       - name: Clearing already existing cache
         uses: actions/github-script@v6
         with:
