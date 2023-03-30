@@ -1,4 +1,4 @@
-# Supernova Engine
+# Framework Engine
 A Friday Night Funkin' engine that makes using source code feel much more easier and will come with good ol' Hscript support! The engine also has organized assets making it easy to navigate them. This engine is inspired by Forever Engine and Codename Engine (mostly codename).
 # Features (This section is not finished yet):
 - Organized assets and source code
@@ -22,13 +22,13 @@ Finally we're going to install only 2 components in VS Community 2019 (Note: Thi
 
 # Build Commands
 - Lime build [target] (Whichever platform you want to build: windows, mac, linux, html5)
-- You can find the build at Supernova-Engine/export/release/[target]/bin including all the assets and an exe file that -  you've build the code with
+- You can find the build at export/release/[target]/bin including all the assets and an exe file that -  you've build the code with
 - If you want to access debug mode, do lime build [target] -debug
-- You can find the debug version of the build by simply going to Supernova-Engine/export/debug/[target]/bin
+- You can find the debug version of the build by simply going to export/debug/[target]/bin
 - Now you can make your own FNF mod, hope you enjoy!
 
 # Credits
-- NebulaZone: Creator, Programmer
+- violet292: Creator, Programmer
 - ThatOneFoxHX: Main Menu Theme
 - AlexShadow: Additional Programming Help
 - Yoshubs: Inspiration

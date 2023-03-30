@@ -78,7 +78,7 @@ class FreeplayMenu extends MusicBeatState
 
 		songs.push(new SongMetadata("Pico", 3, 'pico'));
 
-		songs.push(new SongMetadata("Philly", 3, 'pico'));
+		songs.push(new SongMetadata("Philly-Nice", 3, 'pico'));
 
 		songs.push(new SongMetadata("Blammed", 3, 'pico'));
 
