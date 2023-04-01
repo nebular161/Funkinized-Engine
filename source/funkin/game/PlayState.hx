@@ -1982,7 +1982,7 @@ class PlayState extends MusicBeatState {
 			addedAccuracy -= 0.50;
 			bads++;
 			doSplash = false;
-		} else if (noteDiff > Conductor.safeZoneOffset * 0.2) 
+		} else if (noteDiff > Conductor.safeZoneOffset * 0.25) 
 		{		
 			daRating = 'good';
 			addedAccuracy = 0.75;
