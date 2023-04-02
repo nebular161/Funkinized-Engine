@@ -2,7 +2,7 @@
 <project>
 	<!-- _________________________ Application Settings _________________________ -->
 
-	<app title="Friday Night Funkin' - Framework Engine" file="Framework Engine" packageName="com.violet292.framework-engine" package="com.violet292.supernova-engine" main="funkin.Main" version="0.1 [NON PUBLIC BUILD]" company="violet292" />
+	<app title="Friday Night Funkin' - Framework Engine" file="Framework Engine" packageName="com.violet292.framework-engine" package="com.violet292.supernova-engine" main="funkin.Main" version="0.1" company="violet292" />
 
 	<app preloader="flixel.system.FlxPreloader" />
 	<set name="SWF_VERSION" value="11.8" />
@@ -10,7 +10,7 @@
 	<!-- ____________________________ Window Settings ___________________________ -->
 
 	<!--These window settings apply to all targets-->
-	<window width="1280" height="720" fps="200" background="#000000" hardware="true" vsync="false" />
+	<window width="1280" height="720" fps="" background="#000000" hardware="true" vsync="false" />
 
 	<!--HTML5-specific-->
 	<window if="html5" resizable="true" />
@@ -38,11 +38,19 @@
 	<define name="NO_PRELOAD_ALL" unless="PRELOAD_ALL"/>
 	
 	<section if="PRELOAD_ALL">
-		<library name="songs"    preload="true" />
+		<library name="songs"   preload="true" />
+		<library name="images"  preload="true" />
+		<library name="data"    preload="true" />
+		<library name="sounds"  preload="true" />
+		<library name="music"   preload="true" />
 	</section>
 	
 	<section if="NO_PRELOAD_ALL">
-		<library name="songs"    preload="false" />
+		<library name="songs"   preload="false" />
+		<library name="images"  preload="false" />
+		<library name="data"    preload="false" />
+		<library name="sounds"  preload="false" />
+		<library name="music"   preload="false" />
 	</section>
 	
 	<assets path="assets/funkin/music/songs"    library="songs"    exclude="*.ogg" if="web"/>
@@ -51,9 +59,11 @@
 	<assets path="assets/README.txt" rename='README.txt'/>
 
 	<!-- ______________________________ Defines _____________________________ -->
-	<!-- You can disable these if you want by just commenting them out -->
+	<!-- You can disable these if you want by commenting them out -->
 
 	<define name="FLX_NO_FOCUS_LOST_SCREEN" />
+	<haxedef name="FLX_NO_TOUCH" if="desktop" />
+	<haxedef name="HXCPP_GC_BIG_BLOCKS" />
 	<define name="FLX_NO_DEBUG" unless="debug" />
 	<define name="NAPE_RELEASE_BUILD" unless="debug" />
 	<define name="CRASH_HANDLER" if="desktop" unless="debug" />

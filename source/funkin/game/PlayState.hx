@@ -120,6 +120,8 @@ class PlayState extends MusicBeatState {
 	public static var campaignScore:Int = 0;
 	public static var daPixelZoom:Float = 6;
 	public var script:Script; //scripting
+	public var accelScale:Float = 1;
+	public var velocityScale:Float = 1;
 
 	/*private variables*/
 	private var songAccuracy:Float = 0.0;
@@ -892,7 +894,7 @@ class PlayState extends MusicBeatState {
 
 		add(camFollow);
 
-		FlxG.camera.follow(camFollow, LOCKON, 0.04);
+		FlxG.camera.follow(camFollow, LOCKON);
 		FlxG.camera.zoom = defaultCamZoom;
 		FlxG.camera.focusOn(camFollow.getPosition());
 
@@ -1959,8 +1961,6 @@ class PlayState extends MusicBeatState {
 		coolText.screenCenter();
 		coolText.x = FlxG.width * 0.55;
 
-		var rating:FlxSprite = new FlxSprite();
-
 		var score:Int = 0;
 
 		var addedAccuracy:Float = 1;
@@ -2027,37 +2027,38 @@ class PlayState extends MusicBeatState {
             thePrefix = 'pixel';
 		}
 
-		rating.loadGraphic(Paths.image('gameObjects/ratings/$thePrefix/' + daRating + pixelShitPart2));
-		rating.screenCenter();
-		rating.x = coolText.x - 40;
-		rating.y -= 60;
-		rating.acceleration.y = 550;
-		rating.velocity.y -= FlxG.random.int(140, 175);
-		rating.velocity.x -= FlxG.random.int(0, 10);
+		var ratingSprite:FlxSprite = new FlxSprite();
+		ratingSprite.loadGraphic(Paths.image('gameObjects/ratings/$thePrefix/' + daRating + pixelShitPart2));
+		ratingSprite.screenCenter();
+		ratingSprite.x = coolText.x - 40;
+		ratingSprite.y -= 60;
+		ratingSprite.acceleration.y = 250 * accelScale;
+		ratingSprite.velocity.y -= FlxG.random.int(100, 130) * velocityScale;
+		ratingSprite.velocity.x -= FlxG.random.int(-5, 5) * velocityScale;
 
-		var comboSpr:FlxSprite = new FlxSprite().loadGraphic(Paths.image('gameObjects/ratings/$thePrefix/' + 'combo' + pixelShitPart2));
-		comboSpr.screenCenter();
-		comboSpr.x = coolText.x;
-		comboSpr.acceleration.y = 600;
-		comboSpr.velocity.y -= 150;
+		var comboSprite:FlxSprite = new FlxSprite().loadGraphic(Paths.image('gameObjects/ratings/$thePrefix/' + 'combo' + pixelShitPart2));
+		comboSprite.screenCenter();
+		comboSprite.x = coolText.x;
+		comboSprite.acceleration.y = 250 * accelScale;
+		comboSprite.velocity.y -= FlxG.random.int(100, 130) * velocityScale;
 
-		comboSpr.velocity.x += FlxG.random.int(1, 10);
-		add(rating);
+		comboSprite.velocity.x += FlxG.random.int(1, 10);
+		add(ratingSprite);
 		if (combo >= 0)
-			add(comboSpr); // adds the combo sprite
+			add(comboSprite); // adds the combo sprite
 
 		if (!curStage.startsWith('school')) {
-			rating.setGraphicSize(Std.int(rating.width * 0.7));
-			rating.antialiasing = true;
-			comboSpr.setGraphicSize(Std.int(comboSpr.width * 0.7));
-			comboSpr.antialiasing = true;
+			ratingSprite.setGraphicSize(Std.int(ratingSprite.width * 0.7));
+			ratingSprite.antialiasing = true;
+			comboSprite.setGraphicSize(Std.int(comboSprite.width * 0.7));
+			comboSprite.antialiasing = true;
 		} else {
-			rating.setGraphicSize(Std.int(rating.width * daPixelZoom * 0.7));
-			comboSpr.setGraphicSize(Std.int(comboSpr.width * daPixelZoom * 0.7));
+			ratingSprite.setGraphicSize(Std.int(ratingSprite.width * daPixelZoom * 0.7));
+			comboSprite.setGraphicSize(Std.int(comboSprite.width * daPixelZoom * 0.7));
 		}
 
-		comboSpr.updateHitbox();
-		rating.updateHitbox();
+		comboSprite.updateHitbox();
+		ratingSprite.updateHitbox();
 
 		var seperatedScore:Array<Int> = [];
 		var comboSplit:Array<String> = (combo + "").split('');
@@ -2069,29 +2070,29 @@ class PlayState extends MusicBeatState {
 
 		var daLoop:Int = 0;
 		for (i in seperatedScore) {
-			var numScore:FlxSprite = new FlxSprite().loadGraphic(Paths.image('gameObjects/nums/$thePrefix/' + 'num' + Std.int(i) + pixelShitPart2));
-			numScore.screenCenter();
-			numScore.x = coolText.x + (43 * daLoop) - 90;
-			numScore.y += 80;
+			var numbers:FlxSprite = new FlxSprite().loadGraphic(Paths.image('gameObjects/nums/$thePrefix/' + 'num' + Std.int(i) + pixelShitPart2));
+			numbers.screenCenter();
+			numbers.x = coolText.x + (43 * daLoop) - 90;
+			numbers.y += 80;
 
 			if (!curStage.startsWith('school')) {
-				numScore.antialiasing = true;
-				numScore.setGraphicSize(Std.int(numScore.width * 0.5));
+				numbers.antialiasing = true;
+				numbers.setGraphicSize(Std.int(numbers.width * 0.5));
 			} else {
-				numScore.setGraphicSize(Std.int(numScore.width * daPixelZoom));
+				numbers.setGraphicSize(Std.int(numbers.width * daPixelZoom));
 			}
-			numScore.updateHitbox();
+			numbers.updateHitbox();
 
-			numScore.acceleration.y = FlxG.random.int(200, 300);
-			numScore.velocity.y -= FlxG.random.int(140, 160);
-			numScore.velocity.x = FlxG.random.float(-5, 5);
+			numbers.acceleration.y = FlxG.random.int(150, 250) * accelScale;
+			numbers.velocity.y -= FlxG.random.int(100, 130) * velocityScale;
+			numbers.velocity.x = FlxG.random.int(-5, 5) * velocityScale;
 
 			if (combo >= 0 || combo == 0) // so much win
-				add(numScore);
+				add(numbers);
 
-			FlxTween.tween(numScore, {alpha: 0}, 0.2, {
+			FlxTween.tween(numbers, {alpha: 0}, 0.2, {
 				onComplete: function(tween:FlxTween){
-					numScore.kill();
+					numbers.destroy();
 				},
 				startDelay: Conductor.crochet * 0.00075
 			});
@@ -2101,20 +2102,20 @@ class PlayState extends MusicBeatState {
 
 		coolText.text = Std.string(seperatedScore);
 
-		FlxTween.tween(rating, {alpha: 0}, 0.2, {
+		FlxTween.tween(ratingSprite, {alpha: 0}, 0.2, {
 			onComplete: function(tween:FlxTween){
-				rating.kill();
+				ratingSprite.destroy();
 			},
 			startDelay: Conductor.crochet * 0.00075
 		});
 
 
-		FlxTween.tween(comboSpr, {alpha: 0}, 0.2, {
+		FlxTween.tween(comboSprite, {alpha: 0}, 0.2, {
 			onComplete: function(tween:FlxTween) {
-				coolText.kill();
-				comboSpr.kill();
+				coolText.destroy();
+				comboSprite.destroy();
 
-				rating.kill();
+				ratingSprite.destroy();
 			},
 			startDelay: Conductor.crochet * 0.00075
 		});

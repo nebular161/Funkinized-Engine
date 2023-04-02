@@ -43,7 +43,7 @@ class LoadingState extends MusicBeatState {
 		add(bg);
 
 		funkay = new FlxSprite();
-		funkay.loadGraphic(Paths.image('funkay'));
+		funkay.loadGraphic(Paths.image('gameObjects/loading/funkay'));
 		funkay.setGraphicSize(0, FlxG.height);
 		funkay.updateHitbox();
 		funkay.scrollFactor.set();
@@ -75,10 +75,6 @@ class LoadingState extends MusicBeatState {
 		if (!Assets.cache.hasSound(path)) {
 			var library = Assets.getLibrary('songs');
 			final symbolPath = path.split(':').pop();
-			// @:privateAccess
-			// library.types.set(symbolPath, SOUND);
-			// @:privateAccess
-			// library.pathGroups.set(symbolPath, [library.__cacheBreak(symbolPath)]);
 			var callback = callbacks.add('song:' + path);
 			Assets.loadSound(path).onComplete(function(_) {
 				callback();
