@@ -200,6 +200,8 @@ class PlayState extends MusicBeatState {
 				var splash:NoteSplash = new NoteSplash(100, 100, 0);
 				grpNoteSplashes.add(splash);
 				splash.alpha = 0.1;
+
+				grpNoteSplashes.cameras = [camHUD];
 			}
 
 		persistentUpdate = persistentDraw = true;
@@ -869,6 +871,7 @@ class PlayState extends MusicBeatState {
 
 		strumLineNotes = new FlxTypedGroup<FlxSprite>();
 		add(strumLineNotes);
+		strumLineNotes.cameras = [camHUD];
 
 		if(Options.getOption('notesplash'))
 		{
@@ -905,6 +908,7 @@ class PlayState extends MusicBeatState {
 		healthBarBG = new FlxSprite(0, FlxG.height * 0.9).loadGraphic(Paths.image('gameObjects/healthbar/healthBar'));
 		healthBarBG.screenCenter(X);
 		healthBarBG.scrollFactor.set();
+		healthBarBG.cameras = [camHUD];
 		add(healthBarBG);
 		if (Options.getOption('downscroll'))
 			{
@@ -915,16 +919,19 @@ class PlayState extends MusicBeatState {
 			'health', 0, 2);
 		healthBar.scrollFactor.set();
 		healthBar.createFilledBar(0xFFFF0000, 0xFF66FF33);
+		healthBar.cameras = [camHUD];
 		add(healthBar);
 
 		iconP1 = new HealthIcon(SONG.player1, true);
 		iconP1.y = healthBar.y - (iconP1.height / 2);
+		iconP1.cameras = [camHUD];
 		add(iconP1);
 
 		iconP2 = new HealthIcon(SONG.player2, false);
 		iconP2.y = healthBar.y - (iconP2.height / 2);
-		add(iconP2);		
-
+		iconP2.cameras = [camHUD];
+		add(iconP2);
+		
 		if (Options.getOption('accuracy'))
 			{	
 			  scoreTxt = new FlxText(0, healthBarBG.y + 36, FlxG.width, "", 20);
@@ -936,9 +943,8 @@ class PlayState extends MusicBeatState {
 		scoreTxt.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, CENTER, OUTLINE, FlxColor.BLACK);
 		scoreTxt.scrollFactor.set();
 		scoreTxt.borderSize = 1.25;
-
+		scoreTxt.cameras = [camHUD];
 		add(scoreTxt);
-		
 
 		if(Options.getOption('statistics'))
 		{
@@ -952,18 +958,6 @@ class PlayState extends MusicBeatState {
 			gameStatistics.text = 'Sicks: ${sicks}\nGoods: ${goods}\nBads: ${bads}\nShits: ${shits}\nMisses: ${misses}';
 			add(gameStatistics);
 		}
-
-		if(Options.getOption('notesplash'))
-			{
-				grpNoteSplashes.cameras = [camHUD];
-			}
-		strumLineNotes.cameras = [camHUD];
-		notes.cameras = [camHUD];
-		healthBar.cameras = [camHUD];
-		healthBarBG.cameras = [camHUD];
-		iconP1.cameras = [camHUD];
-		iconP2.cameras = [camHUD];
-		scoreTxt.cameras = [camHUD];
 
 		startingSong = true;
 
@@ -1284,6 +1278,7 @@ class PlayState extends MusicBeatState {
 
 		notes = new FlxTypedGroup<StrumNote>();
 		add(notes);
+		notes.cameras = [camHUD];
 
 		var noteData:Array<SwagSection>;
 
@@ -2018,9 +2013,8 @@ class PlayState extends MusicBeatState {
         // alexshadow's been here
 		// alexshadow's been here
 
-        var thePrefix:String = 'base';
-		// var pixelShitPart1:String = '';
-		var pixelShitPart2:String = '';
+       var thePrefix:String = 'base';
+	   var pixelShitPart2:String = '';
 
 		if (curStage.startsWith('school')) {
 			pixelShitPart2 = '-pixel';
@@ -2035,12 +2029,14 @@ class PlayState extends MusicBeatState {
 		ratingSprite.acceleration.y = 250 * accelScale;
 		ratingSprite.velocity.y -= FlxG.random.int(100, 130) * velocityScale;
 		ratingSprite.velocity.x -= FlxG.random.int(-5, 5) * velocityScale;
+		ratingSprite.cameras = [camHUD];
 
 		var comboSprite:FlxSprite = new FlxSprite().loadGraphic(Paths.image('gameObjects/ratings/$thePrefix/' + 'combo' + pixelShitPart2));
 		comboSprite.screenCenter();
 		comboSprite.x = coolText.x;
 		comboSprite.acceleration.y = 250 * accelScale;
 		comboSprite.velocity.y -= FlxG.random.int(100, 130) * velocityScale;
+		comboSprite.cameras = [camHUD];
 
 		comboSprite.velocity.x += FlxG.random.int(1, 10);
 		add(ratingSprite);
@@ -2074,7 +2070,6 @@ class PlayState extends MusicBeatState {
 			numbers.screenCenter();
 			numbers.x = coolText.x + (43 * daLoop) - 90;
 			numbers.y += 80;
-
 			if (!curStage.startsWith('school')) {
 				numbers.antialiasing = true;
 				numbers.setGraphicSize(Std.int(numbers.width * 0.5));
@@ -2082,12 +2077,12 @@ class PlayState extends MusicBeatState {
 				numbers.setGraphicSize(Std.int(numbers.width * daPixelZoom));
 			}
 			numbers.updateHitbox();
-
 			numbers.acceleration.y = FlxG.random.int(150, 250) * accelScale;
 			numbers.velocity.y -= FlxG.random.int(100, 130) * velocityScale;
 			numbers.velocity.x = FlxG.random.int(-5, 5) * velocityScale;
+			numbers.cameras = [camHUD];
 
-			if (combo >= 0 || combo == 0) // so much win
+			if (combo >= 0 || combo == 0)
 				add(numbers);
 
 			FlxTween.tween(numbers, {alpha: 0}, 0.2, {
