@@ -2085,11 +2085,11 @@ class PlayState extends MusicBeatState {
 			if (combo >= 0 || combo == 0)
 				add(numbers);
 
-			FlxTween.tween(numbers, {alpha: 0}, 0.2, {
+			FlxTween.tween(numbers, {alpha: 0}, (Conductor.stepCrochet) / 1000, {
 				onComplete: function(tween:FlxTween){
 					numbers.destroy();
 				},
-				startDelay: Conductor.crochet * 0.00075
+				startDelay: ((Conductor.crochet + Conductor.stepCrochet * 2) / 1000)
 			});
 
 			daLoop++;
@@ -2097,22 +2097,21 @@ class PlayState extends MusicBeatState {
 
 		coolText.text = Std.string(seperatedScore);
 
-		FlxTween.tween(ratingSprite, {alpha: 0}, 0.2, {
+		FlxTween.tween(ratingSprite, {alpha: 0}, (Conductor.stepCrochet) / 1000, {
 			onComplete: function(tween:FlxTween){
 				ratingSprite.destroy();
 			},
-			startDelay: Conductor.crochet * 0.00075
+			startDelay: ((Conductor.crochet + Conductor.stepCrochet * 2) / 1000)
 		});
 
 
-		FlxTween.tween(comboSprite, {alpha: 0}, 0.2, {
+		FlxTween.tween(comboSprite, {alpha: 0}, (Conductor.stepCrochet) / 1000, {
 			onComplete: function(tween:FlxTween) {
 				coolText.destroy();
 				comboSprite.destroy();
-
 				ratingSprite.destroy();
 			},
-			startDelay: Conductor.crochet * 0.00075
+			startDelay: ((Conductor.crochet + Conductor.stepCrochet * 2) / 1000)
 		});
 
 		curSection += 1;

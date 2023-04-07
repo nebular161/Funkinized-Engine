@@ -7,7 +7,7 @@ A Friday Night Funkin' engine that makes using source code feel much more easier
 
 # Building
 To get started, you need the following programs:
-- Haxe 4.2.5
+- Haxe 4.3.0
 - VS Community 2019
 - VS Code (Optional)
 
