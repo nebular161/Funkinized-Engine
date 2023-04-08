@@ -1,7 +1,6 @@
 package funkin;
 
 import flixel.addons.ui.FlxUIText;
-import funkin.system.MemoryCounter;
 import flixel.FlxG;
 import flixel.FlxGame;
 import flixel.FlxState;
@@ -25,7 +24,6 @@ import openfl.Lib;
 import openfl.display.Application;
 import openfl.display.BlendMode;
 import funkin.system.FpsCounter;
-import funkin.system.EngineVer;
 import openfl.display.Sprite;
 import openfl.display.StageScaleMode;
 import openfl.events.Event;
@@ -94,42 +92,16 @@ class Main extends Sprite
 
 			FlxG.mouse.load('assets/core/cursors/default.png');				
 	
-			fpsCounter = new FpsCounter(10, 3);
+			fpsCounter = new FpsCounter();
 			addChild(fpsCounter);
-			
-			memoryCounter = new MemoryCounter(10, 3);
-			addChild(memoryCounter);
-				   
-			engineVersion = new EngineVer(10, 3);
-			addChild(engineVersion);
 	
 			#if !mobile
 			Lib.current.stage.align = "tl";
 			Lib.current.stage.scaleMode = StageScaleMode.NO_SCALE;
 			#end
-			
-			//#if CRASH_HANDLER
-			///Lib.current.loaderInfo.uncaughtErrorEvents.addEventListener(UncaughtErrorEvent.UNCAUGHT_ERROR, onCrash);
-			//#end
 
 			#if !hl
 			Debug.onGameStart();
 			#end
-		}
-
-	public static var memoryCounter:MemoryCounter;
-	public static var engineVersion:EngineVer;
-
-	public static function toggleMem(memEnabled:Bool):Void
-	{
-		memoryCounter.visible = memEnabled;
-	}
-	public function toggleVers(enabled:Bool):Void
-		{
-			engineVersion.infoDisplayed[2] = enabled;
-		}		
-	public function getFPS():Float
-		{
-			return fpsCounter.currentFPS;
 		}
 }
