@@ -3,7 +3,9 @@
         {
             "name": "hxcpp-debug-server", "type": "haxelib", "version": null
         },
-        {"name": "hxcpp", "type": "haxelib", "version": null},     
+        {
+            "name": "hxcpp", "type": "haxelib", "version": null
+        },     
         {
             "name": "flixel-violet", "type": "git", "dir": "flixel", "ref": "master", "url": "https://github.com/violet292/flixel"
         },
@@ -39,7 +41,7 @@
         },
         {
             "name": "hashlink", "type": "haxelib", "version": null
-        },        
+        },             
         {
             "name": "linc_discord-rpc", "type": "git", "dir": "discord_rpc", "ref": "master", "url": "https://github.com/Aidan63/linc_discord-rpc"
         },

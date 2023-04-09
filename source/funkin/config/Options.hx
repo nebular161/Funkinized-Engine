@@ -44,7 +44,7 @@ class Options extends Page
 		createPrefItem('Game Statistics', 'statistics', false);
 		createPrefItem('Auto Pause', 'auto-pause', false);
 		createPrefItem('Glow Opponent Strums', 'glow-strums', true);
-		//createPrefItem('Info Display', 'display', true);
+		createPrefItem('Info Display', 'display', true);
 	/*---------------------------------------------------------------*/
 		camFollow = new FlxObject(FlxG.width / 2, 0, 140, 70);
 		if (items != null)
@@ -157,6 +157,15 @@ class Options extends Page
 			preferenceCheck('statistics', false);
 		}
 
+		if(FlxG.save.data.infoDisplay != null)
+		{	
+			preferenceCheck('display', FlxG.save.data.infoDisplay);
+		}	
+		else
+		{	
+			preferenceCheck('display', false);
+		}
+
 		FlxG.autoPause = getOption('auto-pause');
 	}
 
@@ -223,7 +232,7 @@ class Options extends Page
 		FlxG.save.data.lowEnd = getOption('low-end');
 		FlxG.save.data.autoPause = getOption('auto-pause');
 		FlxG.save.data.statistics = getOption('statistics');
-		//FlxG.save.data.display = getOption('display');
+		FlxG.save.data.infoDisplay = getOption('display');
 	/*----------------------------------------------------------------*/
 		FlxG.save.flush();
 
@@ -232,6 +241,11 @@ class Options extends Page
 		{
 			case 'auto-pause':
 				FlxG.autoPause = getOption('auto-pause');
+			case 'display':
+				if (getOption('display'))
+					Lib.current.stage.addChild(Main.fpsCounter);
+				else
+					Lib.current.stage.removeChild(Main.fpsCounter);	
 		}
 	}
 

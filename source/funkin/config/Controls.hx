@@ -419,7 +419,7 @@ class Controls extends FlxActionSet {
 				inline bindKeys(Control.NOTE_LEFT, [A, FlxKey.LEFT]);
 				inline bindKeys(Control.NOTE_RIGHT, [D, FlxKey.RIGHT]);
 				inline bindKeys(Control.ACCEPT, [Z, SPACE, ENTER]);
-				inline bindKeys(Control.BACK, [X, BACKSPACE, ESCAPE]);
+				inline bindKeys(Control.BACK, 	[BACKSPACE, ESCAPE]);
 				inline bindKeys(Control.PAUSE, [P, ENTER, ESCAPE]);
 				inline bindKeys(Control.RESET, [R]);
 			case Duo(true):
