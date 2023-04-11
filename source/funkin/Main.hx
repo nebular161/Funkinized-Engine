@@ -34,6 +34,7 @@ import funkin.menus.TitleState;
 import funkin.system.debug.Debug;
 class Main extends Sprite
 {
+	/*variables*/
 	var gameWidth:Int = 1280; // Width of the game in pixels (might be less / more in actual pixels depending on your zoom).
 	var gameHeight:Int = 720; // Height of the game in pixels (might be less / more in actual pixels depending on your zoom).
 	var initialState:Class<FlxState> = TitleState; // The FlxState the game starts with.
@@ -43,11 +44,13 @@ class Main extends Sprite
 	var startFullscreen:Bool = false; // Whether to start the game in fullscreen on desktop targets
 	var game:FlxGame; // The game
 
+	/*public variables*/
 	public static var instance:Main;
 	public static var watermarks = true;
 	public static var fpsCounter:FpsCounter;
 	static public var buildNumber:Int;
 
+	/*public functions*/
 	public static function main():Void
 		{
 			Lib.current.addChild(instance = new Main());
@@ -67,6 +70,7 @@ class Main extends Sprite
 		}
 	}
 
+	/*private functions */
 	private function init(?E:Event):Void
 		{
 			FlxG.save.bind('supernova-engine', CoolUtil.getSavePath());
