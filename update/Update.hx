@@ -8,7 +8,7 @@ class Update {
         if (!FileSystem.exists('.haxelib'))
             FileSystem.createDirectory('.haxelib');
 
-        var json:Array<Library> = Json.parse(File.getContent('./libraries.json')).dependencies;
+        var json:Array<Library> = Json.parse(File.getContent('./haxelibs.json')).dependencies;
         prettyPrint("Preparing installation...");
         for(lib in json) {
             // install libs
