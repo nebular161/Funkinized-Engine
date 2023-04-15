@@ -2008,11 +2008,7 @@ class PlayState extends MusicBeatState {
 
 		if (!practiceMode)
 			songScore += score;
-
-        // alexshadow's been here
-        // alexshadow's been here
-		// alexshadow's been here
-
+		
        var thePrefix:String = 'base';
 	   var pixelShitPart2:String = '';
 

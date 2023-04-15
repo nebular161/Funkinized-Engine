@@ -4,7 +4,7 @@ import sys.FileSystem;
 
 class Update {
     public static function main() {
-        // to prevent messing with currently installed libs
+        // Update hx code by YoshiCrafter29 (with permission given)
         if (!FileSystem.exists('.haxelib'))
             FileSystem.createDirectory('.haxelib');
 

@@ -7,7 +7,7 @@ A Friday Night Funkin' engine that makes using source code feel much more easier
 
 # Building
 To get started, you need the following programs:
-- Haxe 4.3.0
+- Haxe (latest version) (https://haxe.org/download/)
 - VS Community 2019
 - VS Code (Optional)
 
@@ -30,6 +30,5 @@ Finally we're going to install only 2 components in VS Community 2019 (Note: Thi
 # Credits
 - violet292: Creator, Programmer
 - ThatOneFoxHX: Main Menu Theme
-- AlexShadow: Additional Programming Help
 - Yoshubs: Inspiration
-- YoshiCrafter: Inspiration, Hscript Improved Git, Update Batch Code
+- YoshiCrafter29: Inspiration, Hscript Improved Git, Update Code (for haxe libraries)
