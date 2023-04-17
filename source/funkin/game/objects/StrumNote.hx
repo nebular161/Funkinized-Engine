@@ -40,8 +40,7 @@ class StrumNote extends FlxSprite {
 
 		this.prevNote = prevNote;
 		isSustainNote = sustainNote;
-		x += 50;
-		y -= 2000;
+
 		this.strumTime = strumTime;
 		this.noteData = noteData;
 
@@ -53,6 +52,9 @@ class StrumNote extends FlxSprite {
 				animation.add('redScroll', [7]);
 				animation.add('blueScroll', [5]);
 				animation.add('purpleScroll', [4]);
+
+				x += 50;
+				y -= 2000;
 
 				if (isSustainNote) {
 					var endingPath = Paths.image('gameObjects/notes/pixel/arrowEnds');
@@ -88,6 +90,9 @@ class StrumNote extends FlxSprite {
 				animation.addByPrefix('greenholdend', 'green hold end');
 				animation.addByPrefix('redholdend', 'red hold end');
 				animation.addByPrefix('blueholdend', 'blue hold end');
+
+				x += 90;
+				y + 500;
 
 				setGraphicSize(Std.int(width * 0.7));
 				updateHitbox();
@@ -140,7 +145,9 @@ class StrumNote extends FlxSprite {
 			x -= width / 2;
 
 			if (PlayState.curStage.startsWith('school'))
+			{	
 				x += 30;
+			}	
 
 			if (prevNote.isSustainNote) {
 				switch (prevNote.noteData) {

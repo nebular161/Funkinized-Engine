@@ -127,7 +127,7 @@ class DebugField extends TextField
 		{
 			if (visible) {
 				text = '${Type.getClassName(Type.getClass(FlxG.state))}';
-				appendText('\nOBJS: ${FlxG.state.countLiving()} - DEAD: ${FlxG.state.countDead()}');
+				appendText('\nOBJS: ${FlxG.state.countLiving()}');
 			}
 		});
 	}

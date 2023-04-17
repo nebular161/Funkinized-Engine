@@ -2008,7 +2008,7 @@ class PlayState extends MusicBeatState {
 
 		if (!practiceMode)
 			songScore += score;
-		
+
        var thePrefix:String = 'base';
 	   var pixelShitPart2:String = '';
 
@@ -2078,15 +2078,15 @@ class PlayState extends MusicBeatState {
 			numbers.velocity.x = FlxG.random.int(-5, 5) * velocityScale;
 			numbers.cameras = [camHUD];
 
-			if (combo >= 0 || combo == 0)
-				add(numbers);
-
 			FlxTween.tween(numbers, {alpha: 0}, (Conductor.stepCrochet) / 1000, {
 				onComplete: function(tween:FlxTween){
-					numbers.destroy();
+					numbers.kill();
 				},
-				startDelay: ((Conductor.crochet + Conductor.stepCrochet * 2) / 1000)
+				startDelay: Conductor.crochet * 0.0015
 			});
+
+			if (combo >= 0 || combo == 0)
+				add(numbers);
 
 			daLoop++;
 		}
@@ -2095,19 +2095,19 @@ class PlayState extends MusicBeatState {
 
 		FlxTween.tween(ratingSprite, {alpha: 0}, (Conductor.stepCrochet) / 1000, {
 			onComplete: function(tween:FlxTween){
-				ratingSprite.destroy();
+				ratingSprite.kill();
 			},
-			startDelay: ((Conductor.crochet + Conductor.stepCrochet * 2) / 1000)
+			startDelay: Conductor.crochet * 0.0015
 		});
 
 
 		FlxTween.tween(comboSprite, {alpha: 0}, (Conductor.stepCrochet) / 1000, {
 			onComplete: function(tween:FlxTween) {
-				coolText.destroy();
-				comboSprite.destroy();
-				ratingSprite.destroy();
+				coolText.kill();
+				comboSprite.kill();
+				ratingSprite.kill();
 			},
-			startDelay: ((Conductor.crochet + Conductor.stepCrochet * 2) / 1000)
+			startDelay: Conductor.crochet * 0.0015
 		});
 
 		curSection += 1;
