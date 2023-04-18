@@ -273,11 +273,11 @@ class TitleState extends MusicBeatState {
 					case 12:
 						deleteCoolText();
 					case 13:
-						addMoreText('FNF');
+						addMoreText('Friday');
 					case 14:
-						addMoreText('Framework');
+						addMoreText('Night');
 					case 15:
-						addMoreText('Engine');
+						addMoreText('Funkin');
 					case 16:
 						skipIntro();
 				}

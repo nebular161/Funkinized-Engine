@@ -92,7 +92,7 @@ class StrumNote extends FlxSprite {
 				animation.addByPrefix('blueholdend', 'blue hold end');
 
 				x += 90;
-				y + 500;
+				y -= 2000;
 
 				setGraphicSize(Std.int(width * 0.7));
 				updateHitbox();

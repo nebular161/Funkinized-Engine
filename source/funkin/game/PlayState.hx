@@ -1439,7 +1439,7 @@ class PlayState extends MusicBeatState {
 			babyArrow.scrollFactor.set();
 
 			if (!isStoryMode) {
-				babyArrow.y -= 10;
+				babyArrow.y -= 40;
 				babyArrow.alpha = 0;
 				FlxTween.tween(babyArrow, {y: babyArrow.y + 10, alpha: 1}, 1, {ease: FlxEase.circOut, startDelay: 0.5 + (0.2 * i)});
 			}

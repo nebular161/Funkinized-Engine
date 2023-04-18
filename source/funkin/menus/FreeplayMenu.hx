@@ -28,7 +28,6 @@ class FreeplayMenu extends MusicBeatState
 	var selector:FlxText;
 	var curSelected:Int = 0;
 	var curDifficulty:Int = 1;
-	var curDifficultyArray:Array<String> = ["Easy", "Normal", "Hard"];
 
 	var bg:FlxSprite;
 	var scoreBG:FlxSprite;
@@ -222,30 +221,24 @@ class FreeplayMenu extends MusicBeatState
 
 		if (accepted)
 		{
-			PlayState.SONG = Song.loadFromJson(curDifficultyArray[curDifficulty], songs[curSelected].songName.toLowerCase());
+			var poop:String = CoolUtil.formatSong(curDifficulty);
+			PlayState.SONG = Song.loadFromJson(poop, songs[curSelected].songName.toLowerCase());
 			PlayState.isStoryMode = false;
-			PlayState.storyDifficulty2 = curDifficultyArray[curDifficulty].toLowerCase();
+			PlayState.storyDifficulty = curDifficulty;
 			PlayState.storyWeek = songs[curSelected].week;
-			trace('CUR WEEK' + PlayState.storyWeek);
 			LoadingState.loadAndSwitchState(new PlayState());
 		}
 	}
 
 	function changeDiff(change:Int = 0)
 	{
-		curDifficulty += change;
-
-		if (curDifficulty < 0)
-			curDifficulty = 2;
-		if (curDifficulty > 2)
-			curDifficulty = 0;
+		curDifficulty = FlxMath.wrap(curDifficulty + change, 0, CoolUtil.difficultyArray.length - 1);
 
 		#if !switch
 		intendedScore = Highscore.getScore(songs[curSelected].songName, curDifficulty);
 		#end
 
-		PlayState.storyDifficulty = curDifficulty;
-		diffText.text = '< ' + CoolUtil.difficultyString() + ' >';
+		updateDiff();
 		positionHighscore();
 	}
 
@@ -286,6 +279,19 @@ class FreeplayMenu extends MusicBeatState
 			}
 		}
 	}
+
+	function updateDiff()
+		{
+			diffText.text = switch (CoolUtil.difficultyArray[curDifficulty].length)
+			{
+				case 0:
+					'';
+				case 1:
+					CoolUtil.difficultyArray[0];
+				case _:
+					'< ' + CoolUtil.difficultyArray[curDifficulty] + ' >';
+			}
+		}
 
 	function positionHighscore()
 	{

@@ -115,11 +115,11 @@ class Paths {
 	}
 
 	inline static public function voices(song:String) {
-		return 'songs:assets/funkin/music/songs/${song.toLowerCase()}/audio/Voices.$SOUND_EXT';
+		return getPreloadPath('funkin/music/songs/${song.toLowerCase()}/audio/Voices.$SOUND_EXT');
 	}
 
 	inline static public function inst(song:String) {
-		return 'songs:assets/funkin/music/songs/${song.toLowerCase()}/audio/Inst.$SOUND_EXT';
+		return getPreloadPath('funkin/music/songs/${song.toLowerCase()}/audio/Inst.$SOUND_EXT');
 	}
 
 	inline static public function image(key:String, ?library:String) {
