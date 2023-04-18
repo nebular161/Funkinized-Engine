@@ -36,19 +36,21 @@ import funkin.game.objects.backgrounds.BackgroundDancer;
 import funkin.game.objects.backgrounds.BackgroundGirls;
 import funkin.game.objects.backgrounds.TankmenBG;
 import funkin.game.objects.backgrounds.BGSprite;
-import funkin.config.Options;
-import funkin.editors.*;
+import funkin.settings.Options;
+import funkin.game.editors.*;
 import funkin.game.*;
 import funkin.game.objects.*;
 import funkin.game.Section.SwagSection;
 import funkin.game.Song.SwagSong;
-import funkin.menus.*;
-import funkin.cutscenes.*;
-import funkin.shaders.*;
-import funkin.system.*;
+import funkin.objects.menus.*;
+import funkin.game.cutscenes.*;
+import funkin.game.shaders.*;
+import funkin.game.shaders.BuildingShaders;
+import funkin.backend.*;
+import funkin.backend.system.*;
 import funkin.scripting.Script;
-import funkin.ui.objects.DialogueBox;
-import funkin.utils.*;
+import funkin.objects.ui.objects.DialogueBox;
+import funkin.backend.utils.*;
 import haxe.Json;
 import lime.utils.Assets;
 import openfl.display.BlendMode;
@@ -64,7 +66,7 @@ import sys.io.File;
 
 using StringTools;
 #if desktop
-import funkin.system.Discord.DiscordClient;
+import funkin.backend.system.Discord.DiscordClient;
 #end
 class PlayState extends MusicBeatState {
 	/*public variables*/

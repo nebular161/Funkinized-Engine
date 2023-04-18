@@ -1,13 +1,13 @@
 package funkin.game.objects;
 
-import funkin.config.Options;
-import funkin.shaders.ColorSwap;
+import funkin.settings.Options;
+import funkin.game.shaders.ColorSwap;
 import flixel.FlxSprite;
 import flixel.graphics.frames.FlxAtlasFrames;
 import flixel.math.FlxMath;
 import flixel.util.FlxColor;
 import funkin.game.PlayState;
-import funkin.system.Paths;
+import funkin.backend.system.Paths;
 
 using StringTools;
 

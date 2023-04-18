@@ -1,6 +1,6 @@
 // Game Imports //
-import funkin.system.Paths;
-import funkin.ui.Alphabet;
+import funkin.backend.system.Paths;
+import funkin.objects.ui.Alphabet;
 
 // Flixel Imports //
 import flixel.math.FlxMath;

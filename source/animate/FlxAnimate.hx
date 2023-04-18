@@ -10,7 +10,8 @@ import flixel.graphics.frames.FlxAtlasFrames;
 import flixel.FlxG;
 import lime.utils.Assets;
 import haxe.Json;
-import funkin.system.Paths;
+import funkin.backend.system.Paths;
+
 class FlxAnimate extends FlxSymbol {
 	var playingAnim:Bool = false;
 	var frameTickTypeShit:Float = 0;

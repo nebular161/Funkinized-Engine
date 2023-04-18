@@ -3,7 +3,7 @@ package funkin.game.objects.backgrounds;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import funkin.game.Conductor;
-import funkin.system.Paths;
+import funkin.backend.system.Paths;
 
 class TankmenBG extends FlxSprite
 {

@@ -2,7 +2,7 @@ package funkin.game.objects;
 
 import flixel.FlxG;
 import flixel.FlxSprite;
-import funkin.system.Paths;
+import funkin.backend.system.Paths;
 class NoteSplash extends FlxSprite
 {
     public function new(x:Float = 0, y:Float = 0, noteData:Int = 0)

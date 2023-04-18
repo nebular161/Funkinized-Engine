@@ -4,6 +4,7 @@ import funkin.game.Section.SwagSection;
 import haxe.Json;
 import haxe.format.JsonParser;
 import lime.utils.Assets;
+import funkin.backend.system.Paths;
 
 using StringTools;
 

@@ -1,20 +1,20 @@
 package funkin.game;
 
-import funkin.config.Options;
+import funkin.settings.Options;
 import flixel.FlxG;
 import flixel.FlxObject;
 import flixel.FlxSubState;
 import flixel.math.FlxPoint;
 import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
-import funkin.system.MusicBeatSubstate;
-import funkin.system.LoadingState;
-import funkin.menus.StoryMenu;
+import funkin.backend.system.MusicBeatSubstate;
+import funkin.backend.system.LoadingState;
+import funkin.objects.menus.StoryMenu;
 import funkin.game.objects.Boyfriend;
 import funkin.game.PlayState;
 import funkin.game.Conductor;
-import funkin.menus.FreeplayMenu;
-import funkin.system.Paths;
+import funkin.objects.menus.FreeplayMenu;
+import funkin.backend.system.Paths;
 class GameOverSubstate extends MusicBeatSubstate
 {
 	var bf:Boyfriend;

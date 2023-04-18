@@ -14,7 +14,7 @@ A Friday Night Funkin' engine that makes using source code feel much more easier
 
 # Building
 To get started, you need the following programs:
-- Haxe (latest version) (https://haxe.org/download/)
+- Haxe 4.2.5 (4.3.0 bugged out the flixel fork) (https://haxe.org/download/version/4.2.5/)
 - VS Community 2019
 - VS Code (Optional)
 

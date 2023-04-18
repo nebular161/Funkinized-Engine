@@ -7,8 +7,8 @@ import flixel.graphics.frames.FlxAtlasFrames;
 import funkin.game.objects.backgrounds.TankmenBG;
 import funkin.game.PlayState;
 import funkin.game.Section.SwagSection;
-import funkin.system.Paths;
-import funkin.utils.*;
+import funkin.backend.system.Paths;
+import funkin.backend.utils.*;
 import flixel.util.FlxTimer;
 
 using StringTools;

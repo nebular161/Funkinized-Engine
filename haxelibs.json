@@ -34,9 +34,6 @@
             "name": "hscript-improved", "type": "git", "dir": "hscript-improved", "ref": "custom-classes", "url": "https://www.github.com/FNF-CNE-Devs/hscript-improved"
         },
         {
-            "name": "hxCodec", "type": "haxelib", "version": null
-        },
-        {
              "name": "lime", "type": "haxelib", "version": null
         },
         {
