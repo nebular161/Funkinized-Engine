@@ -1441,7 +1441,7 @@ class PlayState extends MusicBeatState {
 			babyArrow.scrollFactor.set();
 
 			if (!isStoryMode) {
-				babyArrow.y -= 40;
+				babyArrow.y -= 44;
 				babyArrow.alpha = 0;
 				FlxTween.tween(babyArrow, {y: babyArrow.y + 10, alpha: 1}, 1, {ease: FlxEase.circOut, startDelay: 0.5 + (0.2 * i)});
 			}
@@ -1630,11 +1630,11 @@ class PlayState extends MusicBeatState {
 		}
 
 		var mult:Float = FlxMath.lerp(1, iconP1.scale.x, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1));
-		iconP1.scale.set(mult, 1);
+		iconP1.scale.set(mult, mult);
 		iconP1.updateHitbox();
 
 		var mult:Float = FlxMath.lerp(1, iconP2.scale.x, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1));
-		iconP2.scale.set(mult, 1);
+		iconP2.scale.set(mult, mult);
 		iconP2.updateHitbox();
 		
 		var iconOffset:Int = 26;
@@ -2221,10 +2221,12 @@ class PlayState extends MusicBeatState {
 			} else
 				badNoteHit();
 		}
-		if (boyfriend.holdTimer > Conductor.stepCrochet * (1/100) && !controlArray.contains(true))
+		if (boyfriend.holdTimer > Conductor.stepCrochet * (1/100) && !holdingArray.contains(true))
 			{
 				if (boyfriend.animation.curAnim.name.startsWith('sing') && !boyfriend.animation.curAnim.name.endsWith('miss'))
-				boyfriend.playAnim('idle');
+				{
+					boyfriend.playAnim('idle');
+				}
 			}
 		playerStrums.forEach(function(spr:FlxSprite) {
 			if (controlArray[spr.ID] && spr.animation.curAnim.name != 'confirm')

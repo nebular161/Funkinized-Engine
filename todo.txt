@@ -1,0 +1,7 @@
+# Todo List
+- Tankman's ugh animation
+- Fix BF & GF (stress) sprites having their idle animations moving quickly
+- Fix Tankman's "Pretty good!" animation being flipped
+- Fix BF's hold timer (fixed)
+- Week 7 video cutscenes
+- Fix hold notes
