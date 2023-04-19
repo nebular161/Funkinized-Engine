@@ -1456,6 +1456,7 @@ class PlayState extends MusicBeatState {
 
 			babyArrow.animation.play('static');
 			babyArrow.x += 50;
+			babyArrow.y -= 44;
 			babyArrow.x += ((FlxG.width / 2) * player);
 
 			dadStrums.forEach(function(spr:FlxSprite) {
