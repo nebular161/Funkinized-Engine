@@ -23,14 +23,18 @@ class Character extends FlxSprite
 	public var dontDance:Bool = false;
 	public var danceLeftAndRight:Bool = false;
 	public var holdTimer:Float = 0;
+
+	var leftPos:Bool = false;
 	
-	public function new(x:Float, y:Float, ?character:String = "bf", ?isPlayer:Bool = false)
+	public function new(x:Float, y:Float, ?character:String = "bf", ?_isPlayer:Bool = false, ?_enableDebug:Bool = false)
 	{
+		debugMode = _enableDebug;
+
 		super(x, y);
 
 		animOffsets = new Map<String, Array<Dynamic>>();
 		curCharacter = character;
-		this.isPlayer = isPlayer;
+		this.isPlayer = _isPlayer;
 
 		var tex:FlxAtlasFrames;
 
@@ -200,12 +204,14 @@ class Character extends FlxSprite
 				quickAnimAdd('singLEFT', 'Pico Note Right0');
 				quickAnimAdd('singRIGHT', 'Pico NOTE LEFT0');
 				quickAnimAdd('singRIGHTmiss', 'Pico NOTE LEFT miss');
+				quickAnimAdd('singDOWNmiss', 'Pico Down Note miss');
+				quickAnimAdd('singUPmiss', 'pico Up note miss');
 				quickAnimAdd('singLEFTmiss', 'Pico Note Right Miss');
 	
 				loadOffsetFile(curCharacter);
 	
 				playAnim('idle');			
-				flipX = true;	
+				leftPos = true;	
 
 			case 'pico-speaker':
 				frames = Paths.getSparrowAtlas('gameObjects/characters/pico/tank/Pico_Speaker');
@@ -240,7 +246,7 @@ class Character extends FlxSprite
 
 				playAnim('idle');
 
-				flipX = true;	
+				leftPos = true;	
 
 			case 'bf-dead':
 				tex = Paths.getSparrowAtlas('gameObjects/characters/bf/Boyfriend_Dead');
@@ -253,7 +259,7 @@ class Character extends FlxSprite
 	
 				playAnim('firstDeath');
 	
-				flipX = true;
+				leftPos = true;
 
 			case 'bf-christmas':
 				tex = Paths.getSparrowAtlas('gameObjects/characters/bf/christmas/bfChristmas');
@@ -273,7 +279,7 @@ class Character extends FlxSprite
 
 				playAnim('idle');
 
-				flipX = true;
+				leftPos = true;
 			case 'bf-car':
 				tex = Paths.getSparrowAtlas('gameObjects/characters/bf/limo/bfCar');
 				frames = tex;
@@ -293,7 +299,7 @@ class Character extends FlxSprite
 				
 				playAnim('idle');
 
-				flipX = true;
+				leftPos = true;
 			case 'bf-pixel':
 				tex = Paths.getSparrowAtlas('gameObjects/characters/bf/pixel/bfPixel');
 				frames = tex;
@@ -319,7 +325,7 @@ class Character extends FlxSprite
 				width -= 100;
 				height -= 100;
 
-				flipX = true;
+				leftPos = true;
 			case 'bf-pixel-dead':
 				frames = Paths.getSparrowAtlas('gameObjects/characters/bf/pixel/bfPixel_Dead');
 				quickAnimAdd('singUP', "BF Dies pixel");
@@ -333,7 +339,7 @@ class Character extends FlxSprite
 				setGraphicSize(Std.int(width * 6));
 				updateHitbox();
 				antialiasing = false;
-				flipX = true;
+				leftPos = true;
 			case 'bf-gf':
 				frames = Paths.getSparrowAtlas('gameObjects/characters/bf/tank/bfAndGF');
 				quickAnimAdd('idle', 'BF idle dance');
@@ -352,7 +358,7 @@ class Character extends FlxSprite
 
 				playAnim('idle');
 
-				flipX = true;
+				leftPos = true;
 			case 'bf-gf-dead':
 				frames = Paths.getSparrowAtlas('gameObjects/characters/bf/tank/bfAndGF_Dead');
 				quickAnimAdd('singUP', 'BF Dead with GF Loop');
@@ -364,7 +370,7 @@ class Character extends FlxSprite
 
 				playAnim('firstDeath');
 
-				flipX = true;
+				leftPos = true;
 
 			case 'senpai':
 				frames = Paths.getSparrowAtlas('gameObjects/characters/senpai/Senpai_Assets');
@@ -453,10 +459,31 @@ class Character extends FlxSprite
 		dance();
 		animation.finish();
 
-		if (isPlayer) //removed most of the unesesscary code that ninjamuffin left
-		{
-			flipX = !flipX;
+		if (((leftPos && !isPlayer) || (!leftPos && isPlayer)) && !debugMode){ //Code from FPS Plus
+
+			flipX = true;
+
+			// var animArray
+			var oldRight = animation.getByName("singRIGHT").frames;
+			var oldRightOffset = animOffsets.get("singRIGHT");
+			animation.getByName("singRIGHT").frames = animation.getByName("singLEFT").frames;
+			animOffsets.set("singRIGHT", animOffsets.get("singLEFT"));
+			animation.getByName('singLEFT').frames = oldRight;
+			animOffsets.set("singLEFT", oldRightOffset);
+
+			// IF THEY HAVE MISS ANIMATIONS??
+			if (animation.getByName('singRIGHTmiss') != null){
+				var oldMiss = animation.getByName("singRIGHTmiss").frames;
+				var oldMissOffset = animOffsets.get("singRIGHTmiss");
+				animation.getByName("singRIGHTmiss").frames = animation.getByName("singLEFTmiss").frames;
+				animOffsets.set("singRIGHTmiss", animOffsets.get("singLEFTmiss"));
+				animation.getByName('singLEFTmiss').frames = oldMiss;
+				animOffsets.set("singLEFTmiss", oldMissOffset);
+			}
 		}
+
+	//	animation.finishCallback = animationEnd;
+
 	}
 
 	function loadMappedAnims()
@@ -481,6 +508,20 @@ class Character extends FlxSprite
 	function quickAnimAdd(Name:String, Prefix:String)
 	{
 		animation.addByPrefix(Name, Prefix, 24, false);
+	}
+
+	function changeOffsets() {
+		if (animOffsets.exists(animation.curAnim.name)) { 
+			var animOffset = animOffsets.get(animation.curAnim.name);
+			var xOffsetAdjust:Float = animOffset[0];
+			if(flipX == true){
+				xOffsetAdjust *= -1;
+				xOffsetAdjust += frameWidth;
+				xOffsetAdjust -= width;
+			}
+			offset.set(xOffsetAdjust, animOffset[1]); 
+		}
+		else { offset.set(0, 0); }
 	}
 
 	function loadOffsetFile(char:String)
@@ -547,9 +588,6 @@ class Character extends FlxSprite
 
 	private var danced:Bool = false;
 
-	/**
-	 * FOR GF DANCING SHIT
-	 */
 	public function dance()
 	{
 		if (!debugMode)

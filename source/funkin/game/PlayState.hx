@@ -883,6 +883,8 @@ class PlayState extends MusicBeatState {
 			grpNoteSplashes.add(splashTest);
 		}	
 
+		var preloadSplash = new NoteSplash(-2000, -2000, 0); //To make the game less laggy when loading the splashes
+
 		playerStrums = new FlxTypedGroup<FlxSprite>();
 		dadStrums = new FlxTypedGroup<FlxSprite>();
 
@@ -1441,7 +1443,7 @@ class PlayState extends MusicBeatState {
 			babyArrow.scrollFactor.set();
 
 			if (!isStoryMode) {
-				babyArrow.y -= 44;
+				babyArrow.y -= 10;
 				babyArrow.alpha = 0;
 				FlxTween.tween(babyArrow, {y: babyArrow.y + 10, alpha: 1}, 1, {ease: FlxEase.circOut, startDelay: 0.5 + (0.2 * i)});
 			}
@@ -1456,7 +1458,6 @@ class PlayState extends MusicBeatState {
 
 			babyArrow.animation.play('static');
 			babyArrow.x += 50;
-			babyArrow.y -= 44;
 			babyArrow.x += ((FlxG.width / 2) * player);
 
 			dadStrums.forEach(function(spr:FlxSprite) {
