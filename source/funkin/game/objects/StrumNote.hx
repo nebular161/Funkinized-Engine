@@ -44,6 +44,10 @@ class StrumNote extends FlxSprite {
 		this.strumTime = strumTime;
 		this.noteData = noteData;
 
+		/* Note Positions */
+		x += 50;
+		y -= 2000;
+
 		switch (PlayState.curStage) {
 			case 'school' | 'schoolEvil':
 				var imgPath = Paths.image('gameObjects/notes/pixel/pixel-arrows');
@@ -53,8 +57,7 @@ class StrumNote extends FlxSprite {
 				animation.add('blueScroll', [5]);
 				animation.add('purpleScroll', [4]);
 
-				x += 50;
-				y -= 2000;
+
 
 				if (isSustainNote) {
 					var endingPath = Paths.image('gameObjects/notes/pixel/arrowEnds');
@@ -76,23 +79,20 @@ class StrumNote extends FlxSprite {
 			default:
 				frames = Paths.getSparrowAtlas('gameObjects/notes/base/default');
 
-				animation.addByPrefix('greenScroll', 'greenNote');
-				animation.addByPrefix('redScroll', 'redNote');
-				animation.addByPrefix('blueScroll', 'blueNote');
-				animation.addByPrefix('purpleScroll', 'purpleNote');
+				animation.addByPrefix('greenScroll', 'green0');
+				animation.addByPrefix('redScroll', 'red0');
+				animation.addByPrefix('blueScroll', 'blue0');
+				animation.addByPrefix('purpleScroll', 'purple0');
 
 				animation.addByPrefix('purplehold', 'purple hold piece');
 				animation.addByPrefix('greenhold', 'green hold piece');
 				animation.addByPrefix('redhold', 'red hold piece');
 				animation.addByPrefix('bluehold', 'blue hold piece');
 
-				animation.addByPrefix('purpleholdend', 'purple hold end');
+				animation.addByPrefix('purpleholdend', 'pruple end hold');
 				animation.addByPrefix('greenholdend', 'green hold end');
 				animation.addByPrefix('redholdend', 'red hold end');
 				animation.addByPrefix('blueholdend', 'blue hold end');
-
-				x += 90;
-				y -= 2000;
 
 				setGraphicSize(Std.int(width * 0.7));
 				updateHitbox();
