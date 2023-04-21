@@ -463,7 +463,6 @@ class Character extends FlxSprite
 
 			flipX = true;
 
-			// var animArray
 			var oldRight = animation.getByName("singRIGHT").frames;
 			var oldRightOffset = animOffsets.get("singRIGHT");
 			animation.getByName("singRIGHT").frames = animation.getByName("singLEFT").frames;
@@ -471,7 +470,6 @@ class Character extends FlxSprite
 			animation.getByName('singLEFT').frames = oldRight;
 			animOffsets.set("singLEFT", oldRightOffset);
 
-			// IF THEY HAVE MISS ANIMATIONS??
 			if (animation.getByName('singRIGHTmiss') != null){
 				var oldMiss = animation.getByName("singRIGHTmiss").frames;
 				var oldMissOffset = animOffsets.get("singRIGHTmiss");
