@@ -34,7 +34,7 @@ class Character extends FlxSprite
 
 		animOffsets = new Map<String, Array<Dynamic>>();
 		curCharacter = character;
-		this.isPlayer = _isPlayer;
+		isPlayer = _isPlayer;
 
 		var tex:FlxAtlasFrames;
 
@@ -479,9 +479,6 @@ class Character extends FlxSprite
 				animOffsets.set("singLEFTmiss", oldMissOffset);
 			}
 		}
-
-	//	animation.finishCallback = animationEnd;
-
 	}
 
 	function loadMappedAnims()

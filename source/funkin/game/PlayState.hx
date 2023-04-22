@@ -77,7 +77,7 @@ class PlayState extends MusicBeatState {
 	public static var storyWeek:Int = 0;
 	public static var storyPlaylist:Array<String> = [];
 	public static var storyDifficulty:Int = 1;
-	public static var storyDifficulty2:String = "Normal";
+	public static var storyDifficulty2:String = "Normal"; //for chart editor
 	public static var deathCounter:Int = 0;
 	public static var practiceMode:Bool = false;
 	public static var seenCutscene:Bool = false;
