@@ -9,7 +9,7 @@ class CheckboxThingie extends FlxSprite {
 	override public function new(x:Float, y:Float, state:Bool = false) {
 		super(x, y);
 
-		frames = Paths.getSparrowAtlas('menuObjects/options_menu/checkboxThingie');
+		frames = Paths.getSparrowAtlas('menu objects/options menu/checkboxThingie');
 		animation.addByPrefix('static', 'Check Box unselected', 24, false);
 		animation.addByPrefix('checked', 'Check Box selecting animation', 24, false);
 		

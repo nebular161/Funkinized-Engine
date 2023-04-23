@@ -55,8 +55,6 @@
 	
 	<assets path="assets/funkin/music/songs"    library="songs"    exclude="*.ogg" if="web"/>
 	<assets path="assets/funkin/music/songs"    library="songs"    exclude="*.mp3|*.mp4" unless="web"/>
-	
-	<assets path="assets/README.txt" rename='README.txt'/>
 
 	<!-- ______________________________ Defines _____________________________ -->
 	<!-- You can disable these if you want by commenting them out -->

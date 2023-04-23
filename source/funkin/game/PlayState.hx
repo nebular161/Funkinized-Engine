@@ -95,7 +95,7 @@ class PlayState extends MusicBeatState {
 	public static var prevCamFollow:FlxObject;
 	public var strumLineNotes:FlxTypedGroup<FlxSprite>;
 	public var playerStrums:FlxTypedGroup<FlxSprite>;
-	public var camZooming:Bool = true;
+	public var camZooming:Bool = false;
 	public var curSong:String = '';
 	public var songMisses:Int = 0;
 	public var bg:BGSprite;
@@ -264,7 +264,7 @@ class PlayState extends MusicBeatState {
 					curStage = 'spooky';
 					halloweenLevel = true;
 
-					var hallowTex = Paths.getSparrowAtlas('gameObjects/stage_assets/week2/halloween_bg');
+					var hallowTex = Paths.getSparrowAtlas('game objects/stages/week2/halloween_bg');
 
 					halloweenBG = new FlxSprite(-200, -100);
 					halloweenBG.frames = hallowTex;
@@ -285,11 +285,11 @@ class PlayState extends MusicBeatState {
 				{
 					curStage = 'philly';
 
-					var bg:FlxSprite = new FlxSprite(-100).loadGraphic(Paths.image('gameObjects/stage_assets/week3/sky'));
+					var bg:FlxSprite = new FlxSprite(-100).loadGraphic(Paths.image('game objects/stages/week3/sky'));
 					bg.scrollFactor.set(0.1, 0.1);
 					add(bg);
 
-					var city:FlxSprite = new FlxSprite(-10).loadGraphic(Paths.image('gameObjects/stage_assets/week3/city'));
+					var city:FlxSprite = new FlxSprite(-10).loadGraphic(Paths.image('game objects/stages/week3/city'));
 					city.scrollFactor.set(0.3, 0.3);
 					city.setGraphicSize(Std.int(city.width * 0.85));
 					city.updateHitbox();
@@ -299,7 +299,7 @@ class PlayState extends MusicBeatState {
 					add(phillyCityLights);
 
 					for (i in 0...5) {
-						var light:FlxSprite = new FlxSprite(city.x).loadGraphic(Paths.image('gameObjects/stage_assets/week3/win' + i));
+						var light:FlxSprite = new FlxSprite(city.x).loadGraphic(Paths.image('game objects/stages/week3/win' + i));
 						light.scrollFactor.set(0.3, 0.3);
 						light.visible = false;
 						light.setGraphicSize(Std.int(light.width * 0.85));
@@ -308,10 +308,10 @@ class PlayState extends MusicBeatState {
 						phillyCityLights.add(light);
 					}
 
-					var streetBehind:FlxSprite = new FlxSprite(-40, 50).loadGraphic(Paths.image('gameObjects/stage_assets/week3/behindTrain'));
+					var streetBehind:FlxSprite = new FlxSprite(-40, 50).loadGraphic(Paths.image('game objects/stages/week3/behindTrain'));
 					add(streetBehind);
 
-					phillyTrain = new FlxSprite(2000, 360).loadGraphic(Paths.image('gameObjects/stage_assets/week3/train'));
+					phillyTrain = new FlxSprite(2000, 360).loadGraphic(Paths.image('game objects/stages/week3/train'));
 					add(phillyTrain);
 
 					trainSound = new FlxSound().loadEmbedded(Paths.sound('train_passes'));
@@ -323,7 +323,7 @@ class PlayState extends MusicBeatState {
 							remove(city);
 						}
 
-					var street:FlxSprite = new FlxSprite(-40, streetBehind.y).loadGraphic(Paths.image('gameObjects/stage_assets/week3/street'));
+					var street:FlxSprite = new FlxSprite(-40, streetBehind.y).loadGraphic(Paths.image('game objects/stages/week3/street'));
 					add(street);
 				}
 			case 'limo':
@@ -331,12 +331,12 @@ class PlayState extends MusicBeatState {
 					curStage = 'limo';
 					defaultCamZoom = 0.90;
 
-					var skyBG:FlxSprite = new FlxSprite(-120, -50).loadGraphic(Paths.image('gameObjects/stage_assets/week4/limoSunset'));
+					var skyBG:FlxSprite = new FlxSprite(-120, -50).loadGraphic(Paths.image('game objects/stages/week4/limoSunset'));
 					skyBG.scrollFactor.set(0.1, 0.1);
 					add(skyBG);
 
 					var bgLimo:FlxSprite = new FlxSprite(-200, 480);
-					bgLimo.frames = Paths.getSparrowAtlas('gameObjects/stage_assets/week4/bgLimo');
+					bgLimo.frames = Paths.getSparrowAtlas('game objects/stages/week4/bgLimo');
 					bgLimo.animation.addByPrefix('drive', "background limo pink", 24);
 					bgLimo.animation.play('drive');
 					bgLimo.scrollFactor.set(0.4, 0.4);
@@ -351,10 +351,10 @@ class PlayState extends MusicBeatState {
 						grpLimoDancers.add(dancer);
 					}
 
-					var overlayShit:FlxSprite = new FlxSprite(-500, -600).loadGraphic(Paths.image('gameObjects/stage_assets/week4/limoOverlay'));
+					var overlayShit:FlxSprite = new FlxSprite(-500, -600).loadGraphic(Paths.image('game objects/stages/week4/limoOverlay'));
 					overlayShit.alpha = 0.5;
 
-					var limoTex = Paths.getSparrowAtlas('gameObjects/stage_assets/week4/limoDrive');
+					var limoTex = Paths.getSparrowAtlas('game objects/stages/week4/limoDrive');
 
 					limo = new FlxSprite(-120, 550);
 					limo.frames = limoTex;
@@ -362,7 +362,7 @@ class PlayState extends MusicBeatState {
 					limo.animation.play('drive');
 					limo.antialiasing = true;
 
-					fastCar = new FlxSprite(-300, 160).loadGraphic(Paths.image('gameObjects/stage_assets/week4/fastCarLol'));
+					fastCar = new FlxSprite(-300, 160).loadGraphic(Paths.image('game objects/stages/week4/fastCarLol'));
 					
 					if(Options.getOption('low-end'))
 						{
@@ -377,7 +377,7 @@ class PlayState extends MusicBeatState {
 
 					defaultCamZoom = 0.80;
 
-					var bg:FlxSprite = new FlxSprite(-1000, -500).loadGraphic(Paths.image('gameObjects/stage_assets/week5/bgWalls'));
+					var bg:FlxSprite = new FlxSprite(-1000, -500).loadGraphic(Paths.image('game objects/stages/week5/bgWalls'));
 					bg.antialiasing = true;
 					bg.scrollFactor.set(0.2, 0.2);
 					bg.active = false;
@@ -386,7 +386,7 @@ class PlayState extends MusicBeatState {
 					add(bg);
 
 					upperBoppers = new FlxSprite(-240, -90);
-					upperBoppers.frames = Paths.getSparrowAtlas('gameObjects/stage_assets/week5/upperBop');
+					upperBoppers.frames = Paths.getSparrowAtlas('game objects/stages/week5/upperBop');
 					upperBoppers.animation.addByPrefix('bop', "Upper Crowd Bob", 24, false);
 					upperBoppers.antialiasing = true;
 					upperBoppers.scrollFactor.set(0.33, 0.33);
@@ -394,7 +394,7 @@ class PlayState extends MusicBeatState {
 					upperBoppers.updateHitbox();
 					add(upperBoppers);
 
-					var bgEscalator:FlxSprite = new FlxSprite(-1100, -600).loadGraphic(Paths.image('gameObjects/stage_assets/week5/bgEscalator'));
+					var bgEscalator:FlxSprite = new FlxSprite(-1100, -600).loadGraphic(Paths.image('game objects/stages/week5/bgEscalator'));
 					bgEscalator.antialiasing = true;
 					bgEscalator.scrollFactor.set(0.3, 0.3);
 					bgEscalator.active = false;
@@ -406,7 +406,7 @@ class PlayState extends MusicBeatState {
 							remove(bgEscalator);
 						}
 				
-					var tree:FlxSprite = new FlxSprite(370, -250).loadGraphic(Paths.image('gameObjects/stage_assets/week5/christmasTree'));
+					var tree:FlxSprite = new FlxSprite(370, -250).loadGraphic(Paths.image('game objects/stages/week5/christmasTree'));
 					tree.antialiasing = true;
 					tree.scrollFactor.set(0.40, 0.40);
 					add(tree);
@@ -416,7 +416,7 @@ class PlayState extends MusicBeatState {
 						}
 
 					bottomBoppers = new FlxSprite(-300, 140);
-					bottomBoppers.frames = Paths.getSparrowAtlas('gameObjects/stage_assets/week5/bottomBop');
+					bottomBoppers.frames = Paths.getSparrowAtlas('game objects/stages/week5/bottomBop');
 					bottomBoppers.animation.addByPrefix('bop', 'Bottom Level Boppers', 24, false);
 					bottomBoppers.antialiasing = true;
 					bottomBoppers.scrollFactor.set(0.9, 0.9);
@@ -424,13 +424,13 @@ class PlayState extends MusicBeatState {
 					bottomBoppers.updateHitbox();
 					add(bottomBoppers);
 
-					var fgSnow:FlxSprite = new FlxSprite(-600, 700).loadGraphic(Paths.image('gameObjects/stage_assets/week5/fgSnow'));
+					var fgSnow:FlxSprite = new FlxSprite(-600, 700).loadGraphic(Paths.image('game objects/stages/week5/fgSnow'));
 					fgSnow.active = false;
 					fgSnow.antialiasing = true;
 					add(fgSnow);
 
 					santa = new FlxSprite(-840, 150);
-					santa.frames = Paths.getSparrowAtlas('gameObjects/stage_assets/week5/santa');
+					santa.frames = Paths.getSparrowAtlas('game objects/stages/week5/santa');
 					santa.animation.addByPrefix('idle', 'santa idle in fear', 24, false);
 					santa.antialiasing = true;
 					add(santa);
@@ -445,7 +445,7 @@ class PlayState extends MusicBeatState {
 			case 'mallEvil':
 				{
 					curStage = 'mallEvil';
-					var bg:FlxSprite = new FlxSprite(-400, -500).loadGraphic(Paths.image('gameObjects/stage_assets/week5/evilBG'));
+					var bg:FlxSprite = new FlxSprite(-400, -500).loadGraphic(Paths.image('game objects/stages/week5/evilBG'));
 					bg.antialiasing = true;
 					bg.scrollFactor.set(0.2, 0.2);
 					bg.active = false;
@@ -453,7 +453,7 @@ class PlayState extends MusicBeatState {
 					bg.updateHitbox();
 					add(bg);
 
-					var evilTree:FlxSprite = new FlxSprite(300, -300).loadGraphic(Paths.image('gameObjects/stage_assets/week5/evilTree'));
+					var evilTree:FlxSprite = new FlxSprite(300, -300).loadGraphic(Paths.image('game objects/stages/week5/evilTree'));
 					evilTree.antialiasing = true;
 					evilTree.scrollFactor.set(0.2, 0.2);
 					add(evilTree);
@@ -462,7 +462,7 @@ class PlayState extends MusicBeatState {
 							remove(evilTree);
 						}
 
-					var evilSnow:FlxSprite = new FlxSprite(-200, 700).loadGraphic(Paths.image("gameObjects/stage_assets/week5/evilSnow"));
+					var evilSnow:FlxSprite = new FlxSprite(-200, 700).loadGraphic(Paths.image("game objects/stages/week5/evilSnow"));
 					evilSnow.antialiasing = true;
 					add(evilSnow);
 				}
@@ -472,26 +472,26 @@ class PlayState extends MusicBeatState {
 
 					// defaultCamZoom = 0.9;
 
-					var bgSky = new FlxSprite().loadGraphic(Paths.image('gameObjects/stage_assets/week6/weebSky'));
+					var bgSky = new FlxSprite().loadGraphic(Paths.image('game objects/stages/week6/weebSky'));
 					bgSky.scrollFactor.set(0.1, 0.1);
 					add(bgSky);
 
 					var repositionShit = -200;
 
-					var bgSchool:FlxSprite = new FlxSprite(repositionShit, 0).loadGraphic(Paths.image('gameObjects/stage_assets/week6/weebSchool'));
+					var bgSchool:FlxSprite = new FlxSprite(repositionShit, 0).loadGraphic(Paths.image('game objects/stages/week6/weebSchool'));
 					bgSchool.scrollFactor.set(0.6, 0.90);
 					add(bgSchool);
 
-					var bgStreet:FlxSprite = new FlxSprite(repositionShit).loadGraphic(Paths.image('gameObjects/stage_assets/week6/weebStreet'));
+					var bgStreet:FlxSprite = new FlxSprite(repositionShit).loadGraphic(Paths.image('game objects/stages/week6/weebStreet'));
 					bgStreet.scrollFactor.set(0.95, 0.95);
 					add(bgStreet);
 
-					var fgTrees:FlxSprite = new FlxSprite(repositionShit + 170, 130).loadGraphic(Paths.image('gameObjects/stage_assets/week6/weebTreesBack'));
+					var fgTrees:FlxSprite = new FlxSprite(repositionShit + 170, 130).loadGraphic(Paths.image('game objects/stages/week6/weebTreesBack'));
 					fgTrees.scrollFactor.set(0.9, 0.9);
 					add(fgTrees);
 
 					var bgTrees:FlxSprite = new FlxSprite(repositionShit - 380, -800);
-					var treetex = Paths.getPackerAtlas('gameObjects/stage_assets/week6/weebTrees');
+					var treetex = Paths.getPackerAtlas('game objects/stages/week6/weebTrees');
 					bgTrees.frames = treetex;
 					bgTrees.animation.add('treeLoop', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18], 12);
 					bgTrees.animation.play('treeLoop');
@@ -499,7 +499,7 @@ class PlayState extends MusicBeatState {
 					add(bgTrees);
 
 					var treeLeaves:FlxSprite = new FlxSprite(repositionShit, -40);
-					treeLeaves.frames = Paths.getSparrowAtlas('gameObjects/stage_assets/week6/petals');
+					treeLeaves.frames = Paths.getSparrowAtlas('game objects/stages/week6/petals');
 					treeLeaves.animation.addByPrefix('leaves', 'PETALS ALL', 24, true);
 					treeLeaves.animation.play('leaves');
 					treeLeaves.scrollFactor.set(0.85, 0.85);
@@ -551,7 +551,7 @@ class PlayState extends MusicBeatState {
 					var posY = 200;
 
 					var bg:FlxSprite = new FlxSprite(posX, posY);
-					bg.frames = Paths.getSparrowAtlas('gameObjects/stage_assets/week6/animatedEvilSchool');
+					bg.frames = Paths.getSparrowAtlas('game objects/stages/week6/animatedEvilSchool');
 					bg.animation.addByPrefix('idle', 'background 2', 24);
 					bg.animation.play('idle');
 					bg.scrollFactor.set(0.8, 0.9);
@@ -564,10 +564,10 @@ class PlayState extends MusicBeatState {
 
 					curStage = 'tank';
 
-					var sky:BGSprite = new BGSprite('gameObjects/stage_assets/week7/tankSky', -400, -400, 0, 0);
+					var sky:BGSprite = new BGSprite('game objects/stages/week7/tankSky', -400, -400, 0, 0);
 					add(sky);
 
-					var clouds:BGSprite = new BGSprite('gameObjects/stage_assets/week7/tankClouds', FlxG.random.int(-700, -100), FlxG.random.int(-20, 20), 0.1, 0.1);
+					var clouds:BGSprite = new BGSprite('game objects/stages/week7/tankClouds', FlxG.random.int(-700, -100), FlxG.random.int(-20, 20), 0.1, 0.1);
 					clouds.active = true;
 					clouds.velocity.x = FlxG.random.float(5, 15);
 					add(clouds);
@@ -576,90 +576,90 @@ class PlayState extends MusicBeatState {
 							remove(clouds);
 						}
 
-					var mountains:BGSprite = new BGSprite('gameObjects/stage_assets/week7/tankMountains', -300, -20, 0.2, 0.2);
+					var mountains:BGSprite = new BGSprite('game objects/stages/week7/tankMountains', -300, -20, 0.2, 0.2);
 					mountains.setGraphicSize(Std.int(mountains.width * 1.2));
 					mountains.updateHitbox();
 					add(mountains);
 
-					var buildings:BGSprite = new BGSprite('gameObjects/stage_assets/week7/tankBuildings', -200, 0, 0.3, 0.3);
+					var buildings:BGSprite = new BGSprite('game objects/stages/week7/tankBuildings', -200, 0, 0.3, 0.3);
 					buildings.setGraphicSize(Std.int(buildings.width * 1.1));
 					buildings.updateHitbox();
 					add(buildings);
 
-					var ruins:BGSprite = new BGSprite('gameObjects/stage_assets/week7/tankRuins', -200, 0, 0.35, 0.35);
+					var ruins:BGSprite = new BGSprite('game objects/stages/week7/tankRuins', -200, 0, 0.35, 0.35);
 					ruins.setGraphicSize(Std.int(ruins.width * 1.1));
 					ruins.updateHitbox();
 					add(ruins);
 
-					var smokeL:BGSprite = new BGSprite('gameObjects/stage_assets/week7/smokeLeft', -200, -100, 0.4, 0.4, ['left smoke'], true);
+					var smokeL:BGSprite = new BGSprite('game objects/stages/week7/smokeLeft', -200, -100, 0.4, 0.4, ['left smoke'], true);
 					add(smokeL);
 					if(Options.getOption('low-end'))
 						{
 							remove(smokeL);
 						}
 
-					var smokeR:BGSprite = new BGSprite('gameObjects/stage_assets/week7/smokeRight', 1100, -100, 0.4, 0.4, ['right smoke'], true);
+					var smokeR:BGSprite = new BGSprite('game objects/stages/week7/smokeRight', 1100, -100, 0.4, 0.4, ['right smoke'], true);
 					add(smokeR);
 					if(Options.getOption('low-end'))
 						{
 							remove(smokeR);
 						}
 
-					tankWatchtower = new BGSprite('gameObjects/stage_assets/week7/tankWatchtower', 100, 50, 0.5, 0.5, ['watchtower gradient color']);
+					tankWatchtower = new BGSprite('game objects/stages/week7/tankWatchtower', 100, 50, 0.5, 0.5, ['watchtower gradient color']);
 					add(tankWatchtower);
 					if(Options.getOption('low-end'))
 						{
 							remove(tankWatchtower);
 						}
 
-					tankGround = new BGSprite('gameObjects/stage_assets/week7/tankRolling', 300, 300, 0.5, 0.5, ['BG tank w lighting'], true);
+					tankGround = new BGSprite('game objects/stages/week7/tankRolling', 300, 300, 0.5, 0.5, ['BG tank w lighting'], true);
 					add(tankGround);
 
 					tankmanRun = new FlxTypedGroup<TankmenBG>();
 					add(tankmanRun);
 
-					var ground:BGSprite = new BGSprite('gameObjects/stage_assets/week7/tankGround', -420, -150);
+					var ground:BGSprite = new BGSprite('game objects/stages/week7/tankGround', -420, -150);
 					ground.setGraphicSize(Std.int(ground.width * 1.15));
 					ground.updateHitbox();
 					add(ground);
 					moveTank();
 
-					var tankdude0:BGSprite = new BGSprite('gameObjects/stage_assets/week7/tank0', -500, 650, 1.7, 1.5, ['fg']);
+					var tankdude0:BGSprite = new BGSprite('game objects/stages/week7/tank0', -500, 650, 1.7, 1.5, ['fg']);
 					foregroundSprites.add(tankdude0);
 					if(Options.getOption('low-end'))
 						{
 							foregroundSprites.remove(tankdude0);
 						}
 
-					var tankdude1:BGSprite = new BGSprite('gameObjects/stage_assets/week7/tank1', -300, 750, 2, 0.2, ['fg']);
+					var tankdude1:BGSprite = new BGSprite('game objects/stages/week7/tank1', -300, 750, 2, 0.2, ['fg']);
 					foregroundSprites.add(tankdude1);
 					if(Options.getOption('low-end'))
 						{
 							foregroundSprites.remove(tankdude1);
 						}
 
-					var tankdude2:BGSprite = new BGSprite('gameObjects/stage_assets/week7/tank2', 450, 940, 1.5, 1.5, ['foreground']);
+					var tankdude2:BGSprite = new BGSprite('game objects/stages/week7/tank2', 450, 940, 1.5, 1.5, ['foreground']);
 					foregroundSprites.add(tankdude2);
 					if(Options.getOption('low-end'))
 						{
 							foregroundSprites.remove(tankdude2);
 						}
 
-					var tankdude3:BGSprite = new BGSprite('gameObjects/stage_assets/week7/tank3', 1300, 1200, 3.5, 2.5, ['fg']);
+					var tankdude3:BGSprite = new BGSprite('game objects/stages/week7/tank3', 1300, 1200, 3.5, 2.5, ['fg']);
 					foregroundSprites.add(tankdude3);
 					if(Options.getOption('low-end'))
 						{
 							foregroundSprites.remove(tankdude3);
 						}
 
-					var tankdude4:BGSprite = new BGSprite('gameObjects/stage_assets/week7/tank4', 1300, 900, 1.5, 1.5, ['fg']);
+					var tankdude4:BGSprite = new BGSprite('game objects/stages/week7/tank4', 1300, 900, 1.5, 1.5, ['fg']);
 					foregroundSprites.add(tankdude4);
 					if(Options.getOption('low-end'))
 						{
 							foregroundSprites.remove(tankdude4);
 						}
 
-					var tankdude5:BGSprite = new BGSprite('gameObjects/stage_assets/week7/tank5', 1620, 700, 1.5, 1.5, ['fg']);
+					var tankdude5:BGSprite = new BGSprite('game objects/stages/week7/tank5', 1620, 700, 1.5, 1.5, ['fg']);
 					foregroundSprites.add(tankdude5);
 					if(Options.getOption('low-end'))
 						{
@@ -670,13 +670,13 @@ class PlayState extends MusicBeatState {
 				{
 					defaultCamZoom = 0.9;
 					curStage = 'stage';
-					var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('gameObjects/stage_assets/week1/stageback'));
+					var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('game objects/stages/week1/stageback'));
 					bg.antialiasing = true;
 					bg.scrollFactor.set(0.9, 0.9);
 					bg.active = false;
 					add(bg);
 
-					var stageFront:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('gameObjects/stage_assets/week1/stagefront'));
+					var stageFront:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('game objects/stages/week1/stagefront'));
 					stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
 					stageFront.updateHitbox();
 					stageFront.antialiasing = true;
@@ -684,7 +684,7 @@ class PlayState extends MusicBeatState {
 					stageFront.active = false;
 					add(stageFront);
 
-					var stageCurtains:FlxSprite = new FlxSprite(-500, -300).loadGraphic(Paths.image('gameObjects/stage_assets/week1/stagecurtains'));
+					var stageCurtains:FlxSprite = new FlxSprite(-500, -300).loadGraphic(Paths.image('game objects/stages/week1/stagecurtains'));
 					stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
 					stageCurtains.updateHitbox();
 					stageCurtains.antialiasing = true;
@@ -702,17 +702,17 @@ class PlayState extends MusicBeatState {
 					defaultCamZoom = 0.9;
 					curStage = 'stage';
 
-					bg = new BGSprite('gameObjects/stage_assets/week1/stageback', -600, -200, 0.9, 0.9);
+					bg = new BGSprite('game objects/stages/week1/stageback', -600, -200, 0.9, 0.9);
 					add(bg);
 
-					var stageFront:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('gameObjects/stage_assets/week1/stagefront'));
+					var stageFront:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('game objects/stages/week1/stagefront'));
 					stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
 					stageFront.updateHitbox();
 					stageFront.scrollFactor.set(0.9, 0.9);
 					stageFront.active = false;
 					add(stageFront);
 
-					var stageCurtains:FlxSprite = new FlxSprite(-500, -300).loadGraphic(Paths.image('gameObjects/stage_assets/week1/stagecurtains'));
+					var stageCurtains:FlxSprite = new FlxSprite(-500, -300).loadGraphic(Paths.image('game objects/stages/week1/stagecurtains'));
 					stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
 					stageCurtains.updateHitbox();
 					stageCurtains.scrollFactor.set(1.3, 1.3);
@@ -909,7 +909,7 @@ class PlayState extends MusicBeatState {
 
 		FlxG.fixedTimestep = false;
 
-		healthBarBG = new FlxSprite(0, FlxG.height * 0.9).loadGraphic(Paths.image('gameObjects/healthbar/healthBar'));
+		healthBarBG = new FlxSprite(0, FlxG.height * 0.9).loadGraphic(Paths.image('game objects/healthbar/healthBar'));
 		healthBarBG.screenCenter(X);
 		healthBarBG.scrollFactor.set();
 		healthBarBG.cameras = [camHUD];
@@ -1141,9 +1141,9 @@ class PlayState extends MusicBeatState {
 			}
 
 			var introAssets:Map<String, Array<String>> = new Map<String, Array<String>>();
-			introAssets.set('default', ['gameObjects/countdowns/base/ready', 'gameObjects/countdowns/base/get', "gameObjects/countdowns/base/set", "gameObjects/countdowns/base/go"]);
-			introAssets.set('school', ['gameObjects/countdowns/pixel/ready-pixel', 'gameObjects/countdowns/pixel/get-pixel', 'gameObjects/countdowns/pixel/set-pixel', 'gameObjects/countdowns/pixel/date-pixel']);
-			introAssets.set('schoolEvil', ['gameObjects/countdowns/pixel/ready-pixel', 'gameObjects/countdowns/pixel/get-pixel', 'gameObjects/countdowns/pixel/set-pixel', 'gameObjects/countdowns/pixel/date-pixel']);
+			introAssets.set('default', ['game objects/countdowns/base/ready', 'game objects/countdowns/base/get', "game objects/countdowns/base/set", "game objects/countdowns/base/go"]);
+			introAssets.set('school', ['game objects/countdowns/pixel/ready-pixel', 'game objects/countdowns/pixel/get-pixel', 'game objects/countdowns/pixel/set-pixel', 'game objects/countdowns/pixel/date-pixel']);
+			introAssets.set('schoolEvil', ['game objects/countdowns/pixel/ready-pixel', 'game objects/countdowns/pixel/get-pixel', 'game objects/countdowns/pixel/set-pixel', 'game objects/countdowns/pixel/date-pixel']);
 
 			var introAlts:Array<String> = introAssets.get('default');
 			var altSuffix:String = '';
@@ -1370,7 +1370,7 @@ class PlayState extends MusicBeatState {
 			switch (curStage)
 			{
 				case 'school' | 'schoolEvil':
-					babyArrow.loadGraphic(Paths.image('gameObjects/notes/pixel/pixel-arrows'), true, 17, 17);
+					babyArrow.loadGraphic(Paths.image('game objects/notes/pixel/pixel-arrows'), true, 17, 17);
 					babyArrow.animation.add('green', [6]);
 					babyArrow.animation.add('red', [7]);
 					babyArrow.animation.add('blue', [5]);
@@ -1405,7 +1405,7 @@ class PlayState extends MusicBeatState {
 					}
 
 				default:
-					babyArrow.frames = Paths.getSparrowAtlas('gameObjects/notes/base/default');
+					babyArrow.frames = Paths.getSparrowAtlas('game objects/notes/base/default');
 					babyArrow.animation.addByPrefix('green', 'arrowUP');
 					babyArrow.animation.addByPrefix('blue', 'arrowDOWN');
 					babyArrow.animation.addByPrefix('purple', 'arrowLEFT');
@@ -1771,6 +1771,8 @@ class PlayState extends MusicBeatState {
 					}
 				if (!daNote.mustPress && daNote.wasGoodHit) {
 
+					camZooming = true;
+
 					var altAnim:String = '';
 
 					if (SONG.notes[Math.floor(curStep / 16)] != null) {
@@ -1814,11 +1816,6 @@ class PlayState extends MusicBeatState {
 					notes.remove(daNote, true);
 					daNote.destroy();
 				}
-
-				//var doKill = daNote.y < -daNote.height;
-				//if (Options.getOption('downscroll'))
-				//	doKill = daNote.y > FlxG.height;
-
 
 						if (daNote.isSustainNote && daNote.wasGoodHit)
 							{
@@ -2022,7 +2019,7 @@ class PlayState extends MusicBeatState {
 		}
 
 		var ratingSprite:FlxSprite = new FlxSprite();
-		ratingSprite.loadGraphic(Paths.image('gameObjects/ratings/$thePrefix/' + daRating + pixelShitPart2));
+		ratingSprite.loadGraphic(Paths.image('game objects/ratings/$thePrefix/' + daRating + pixelShitPart2));
 		ratingSprite.screenCenter();
 		ratingSprite.x = coolText.x - 40;
 		ratingSprite.y -= 60;
@@ -2031,7 +2028,7 @@ class PlayState extends MusicBeatState {
 		ratingSprite.velocity.x -= FlxG.random.int(-5, 5) * velocityScale;
 		ratingSprite.cameras = [camHUD];
 
-		var comboSprite:FlxSprite = new FlxSprite().loadGraphic(Paths.image('gameObjects/ratings/$thePrefix/' + 'combo' + pixelShitPart2));
+		var comboSprite:FlxSprite = new FlxSprite().loadGraphic(Paths.image('game objects/ratings/$thePrefix/' + 'combo' + pixelShitPart2));
 		comboSprite.screenCenter();
 		comboSprite.x = coolText.x;
 		comboSprite.acceleration.y = 250 * accelScale;
@@ -2066,7 +2063,7 @@ class PlayState extends MusicBeatState {
 
 		var daLoop:Int = 0;
 		for (i in seperatedScore) {
-			var numbers:FlxSprite = new FlxSprite().loadGraphic(Paths.image('gameObjects/nums/$thePrefix/' + 'num' + Std.int(i) + pixelShitPart2));
+			var numbers:FlxSprite = new FlxSprite().loadGraphic(Paths.image('game objects/nums/$thePrefix/' + 'num' + Std.int(i) + pixelShitPart2));
 			numbers.screenCenter();
 			numbers.x = coolText.x + (43 * daLoop) - 90;
 			numbers.y += 80;

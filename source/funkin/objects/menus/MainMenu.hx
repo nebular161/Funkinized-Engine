@@ -44,12 +44,12 @@ class MainMenu extends MusicBeatState {
 
 	override function create() {
 		super.create();
-		bg = new FNFSprite(0, 0).loadGraphic(Paths.image("menuObjects/main_menu/menuBG"));
+		bg = new FNFSprite(0, 0).loadGraphic(Paths.image("menu objects/main menu/menuBG"));
 		add(bg);
 		menuGroup = new FlxSpriteGroup();
 		for (item in 0...items.length) {
 			var newItem = new FlxSprite(0, 0);
-			newItem.frames = Paths.getSparrowAtlas('menuObjects/main_menu/${items[item]}');
+			newItem.frames = Paths.getSparrowAtlas('menu objects/main menu/${items[item]}');
 			newItem.animation.addByPrefix('idle', '${items[item]} basic');
 			newItem.animation.addByPrefix('selected', '${items[item]} white');
 			newItem.animation.play('idle', true);

@@ -108,7 +108,7 @@ class FreeplayMenu extends MusicBeatState
 		
 		songs.push(new SongMetadata("Test", 8, 'bf-pixel'));
 
-		bg = new FlxSprite().loadGraphic(Paths.image('menuObjects/main_menu/menuDesat'));
+		bg = new FlxSprite().loadGraphic(Paths.image('menu objects/main menu/menuDesat'));
 		add(bg);
 
 		grpSongs = new FlxTypedGroup<Alphabet>();

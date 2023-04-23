@@ -40,9 +40,10 @@ class StrumNote extends FlxSprite {
 
 		this.prevNote = prevNote;
 		isSustainNote = sustainNote;
-
 		this.strumTime = strumTime;
 		this.noteData = noteData;
+
+		moves = false;
 
 		/* Note Positions */
 		x += 50;
@@ -50,7 +51,7 @@ class StrumNote extends FlxSprite {
 
 		switch (PlayState.curStage) {
 			case 'school' | 'schoolEvil':
-				var imgPath = Paths.image('gameObjects/notes/pixel/pixel-arrows');
+				var imgPath = Paths.image('game objects/notes/pixel/pixel-arrows');
 				loadGraphic(imgPath, true, 17, 17);
 				animation.add('greenScroll', [6]);
 				animation.add('redScroll', [7]);
@@ -60,7 +61,7 @@ class StrumNote extends FlxSprite {
 
 
 				if (isSustainNote) {
-					var endingPath = Paths.image('gameObjects/notes/pixel/arrowEnds');
+					var endingPath = Paths.image('game objects/notes/pixel/arrowEnds');
 					loadGraphic(endingPath, true, 7, 6);
 					animation.add('purplehold', [0]);
 					animation.add('greenhold', [2]);
@@ -77,7 +78,7 @@ class StrumNote extends FlxSprite {
 				updateHitbox();
 				antialiasing = false;
 			default:
-				frames = Paths.getSparrowAtlas('gameObjects/notes/base/default');
+				frames = Paths.getSparrowAtlas('game objects/notes/base/default');
 
 				animation.addByPrefix('greenScroll', 'green0');
 				animation.addByPrefix('redScroll', 'red0');

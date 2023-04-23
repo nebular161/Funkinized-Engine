@@ -107,7 +107,7 @@ class StoryMenu extends MusicBeatState {
 		txtWeekTitle.setFormat('VCR OSD Mono', 32, FlxColor.WHITE, RIGHT);
 		txtWeekTitle.alpha = 0.7;
 
-		var ui_tex = Paths.getSparrowAtlas('menuObjects/storymenu/menu_assets');
+		var ui_tex = Paths.getSparrowAtlas('menu objects/story menu/menu_assets');
 		var yellowBG:FlxSprite = new FlxSprite(0, 56).makeGraphic(FlxG.width, 400, 0xFFF9CF51);
 
 		grpWeekText = new FlxTypedGroup<StoryItem>();
@@ -307,7 +307,7 @@ class StoryMenu extends MusicBeatState {
 
 			sprDifficulty.offset.x = 0;
 
-			sprDifficulty.loadGraphic(Paths.image("menuObjects/storymenu/difficulties/" + CoolUtil.difficultyArray[curDifficulty].toLowerCase()));
+			sprDifficulty.loadGraphic(Paths.image("menu objects/story menu/difficulties/" + CoolUtil.difficultyArray[curDifficulty].toLowerCase()));
 	
 			sprDifficulty.alpha = 0;
 

@@ -5,14 +5,19 @@ import flixel.FlxG;
 import flixel.graphics.FlxGraphic;
 import flixel.graphics.frames.FlxAtlasFrames;
 import openfl.Assets;
+import openfl.utils.AssetCache;
 import openfl.display.BitmapData;
 import openfl.utils.AssetType;
 import openfl.utils.Assets as OpenFlAssets;
+import openfl.system.System;
 
 #if sys
 import sys.FileSystem;
 import sys.io.File;
 #end
+
+using StringTools;
+
 class Paths {
 	inline public static var SOUND_EXT = #if web 'mp3' #else 'ogg' #end;
 
@@ -150,6 +155,64 @@ class Paths {
 
 	inline static public function getJSONAtlas(key:String, ?library:String) {
 		return FlxAtlasFrames.fromTexturePackerJson(image(key, library), file('funkin/images/$key.json', library));
+	}
+
+	public static var currentTrackedAssets:Map<String, FlxGraphic> = [];
+
+	public static function excludeAsset(key:String) {
+		if (!dumpExclusions.contains(key))
+			dumpExclusions.push(key);
+	}
+
+	public static var dumpExclusions:Array<String> =
+	[
+		'assets/music/menus/freakyMenu.$SOUND_EXT',
+		'assets/music/menus/breakfast.$SOUND_EXT',
+	];
+
+	public static function clearUnusedMemory() {
+		for (key in currentTrackedAssets.keys()) {
+			if (!localTrackedAssets.contains(key)
+				&& !dumpExclusions.contains(key)) {
+				// get rid of it
+				var obj = currentTrackedAssets.get(key);
+				@:privateAccess
+				if (obj != null) {
+					openfl.Assets.cache.removeBitmapData(key);
+					FlxG.bitmap._cache.remove(key);
+					obj.destroy();
+					currentTrackedAssets.remove(key);
+				}
+			}
+		}
+		// run the garbage collector
+		System.gc();
+	}
+
+	public static var localTrackedAssets:Array<String> = [];
+	public static var currentTrackedSounds:Map<String, Sound> = [];
+
+	public static function clearStoredMemory(?cleanUnused:Bool = false) {
+		@:privateAccess
+		for (key in FlxG.bitmap._cache.keys())
+		{
+			var obj = FlxG.bitmap._cache.get(key);
+			if (obj != null && !currentTrackedAssets.exists(key)) {
+				openfl.Assets.cache.removeBitmapData(key);
+				FlxG.bitmap._cache.remove(key);
+				obj.destroy();
+			}
+		}
+
+		for (key in currentTrackedSounds.keys()) {
+			if (!localTrackedAssets.contains(key)
+			&& !dumpExclusions.contains(key) && key != null) {
+				Assets.cache.clear(key);
+				currentTrackedSounds.remove(key);
+			}
+		}
+		localTrackedAssets = [];
+		#if !html5 openfl.Assets.cache.clear("songs"); #end
 	}
 
 	public static function getTextFileArray(path:String, delimeter:String = '\n'):Array<String> {
