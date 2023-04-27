@@ -92,6 +92,8 @@ class Main extends Sprite
 				#if (flixel < "5.0.0") Math.ceil(stageHeight / zoom) #else gameHeight #end, initialState, #if (flixel < "5.0.0") zoom, #end framerate, framerate,
 				skipSplash, startFullscreen));
 
+			FlxG.mouse.useSystemCursor = true;	
+
 			//FlxG.mouse.load('assets/core/cursors/default.png');				
 	
 			fpsCounter = new FpsCounter();

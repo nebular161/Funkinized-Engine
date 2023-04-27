@@ -94,7 +94,7 @@ class ChartEditor extends MusicBeatState
 	override function create()
 	{
 
-		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuObjects/chart/menuChart'));
+		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menu objects/chart/menuChart'));
 		bg.scrollFactor.set();
 		//bg.color = 0xFF3B1247;
 		add(bg);
@@ -300,8 +300,8 @@ class ChartEditor extends MusicBeatState
 			shiftNotes(Std.int(stepperShiftNoteDial.value),Std.int(stepperShiftNoteDialstep.value),Std.int(stepperShiftNoteDialms.value));
 		});
 
-		var characters:Array<String> = CoolUtil.coolTextFile(Paths.txt('character-data/characterList'));
-		var gfVersions:Array<String> = CoolUtil.coolTextFile(Paths.txt('character-data/gfList'));
+		var characters:Array<String> = CoolUtil.coolTextFile(Paths.txt('char data/characterList'));
+		var gfVersions:Array<String> = CoolUtil.coolTextFile(Paths.txt('char data/gfList'));
 		var stages:Array<String> = CoolUtil.coolTextFile(Paths.txt('meta/stages'));
 
 		var player1DropDown = new FlxUIDropDownMenuCustom(10, 100, FlxUIDropDownMenuCustom.makeStrIdLabelArray(characters, true), function(character:String)
