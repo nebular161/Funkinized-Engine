@@ -42,7 +42,7 @@ class Main extends Sprite
 	var framerate:Int = 120; // How many frames per second the game should run at.
 	var skipSplash:Bool = true; // Whether to skip the flixel splash screen that appears in release mode.
 	var startFullscreen:Bool = false; // Whether to start the game in fullscreen on desktop targets
-	var game:FlxGame; // The game
+	//var game:FlxGame; // The game
 
 	/*public variables*/
 	public static var instance:Main;
@@ -72,7 +72,7 @@ class Main extends Sprite
 	/*private functions */
 	private function init(?E:Event):Void
 		{
-			FlxG.save.bind('framework-engine', CoolUtil.getSavePath());
+			FlxG.save.bind('funkinized-engine', CoolUtil.getSavePath());
 			if (hasEventListener(Event.ADDED_TO_STAGE))
 			{	
 				removeEventListener(Event.ADDED_TO_STAGE, init);

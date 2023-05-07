@@ -1,6 +1,5 @@
 package funkin.objects.menus;
 
-import away3d.core.managers.Mouse3DManager;
 #if discord_rpc
 import funkin.system.dependency.Discord.DiscordClient;
 #end
@@ -37,7 +36,7 @@ class MainMenu extends MusicBeatState {
 	[
 		'story mode', 
 		'freeplay', 
-		'donate', 
+		//'donate', 
 		'options'
 	];
 	var curItem = 0;
@@ -118,8 +117,8 @@ class MainMenu extends MusicBeatState {
 							FlxG.switchState(new StoryMenu());
 						case 'freeplay':
 							FlxG.switchState(new FreeplayMenu());
-						case 'donate':
-							selectDonate();
+						/*case 'donate':
+							selectDonate();*/
 						case 'options':
 							FlxG.switchState(new OptionsState());
 					}

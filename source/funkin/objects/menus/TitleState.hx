@@ -69,7 +69,7 @@ class TitleState extends MusicBeatState {
 
 		super.create();
 
-		FlxG.save.bind('framework-engine', 'greyson430');
+		FlxG.save.bind('funkinized-engine', 'greyson430');
 
 		Options.initPrefs();
 		PlayerSettings.init();

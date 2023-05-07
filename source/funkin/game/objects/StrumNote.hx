@@ -78,7 +78,7 @@ class StrumNote extends FlxSprite {
 				updateHitbox();
 				antialiasing = false;
 			default:
-				frames = Paths.getSparrowAtlas('game objects/notes/base/default');
+				frames = Paths.getSparrowAtlas('game objects/notes/base/arrows');
 
 				animation.addByPrefix('greenScroll', 'green0');
 				animation.addByPrefix('redScroll', 'red0');

@@ -1,4 +1,4 @@
-# Framework Engine
+# Funkinized Engine
 A Friday Night Funkin' engine that makes using source code feel much more easier and will come with good ol' Hscript support! The engine also has organized assets making it easy to navigate them. This engine is inspired by Forever Engine and Codename Engine (mostly codename).
 
 # Features (This section is not finished yet):
@@ -29,7 +29,7 @@ Finally we're going to install only 2 components in VS Community 2019 (Note: Thi
 - Now you can make your own FNF mod, hope you enjoy!
 
 # Credits
-- violet292: Creator, Programmer
+- greyson430: Creator, Programmer
 - ThatOneFoxHX: Main Menu Theme
 - Yoshubs: Inspiration
 - YoshiCrafter29: Inspiration, Hscript Improved Git, Update Code (for haxe libraries)

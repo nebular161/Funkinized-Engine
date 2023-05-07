@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:8eb1988f6796ea8a97e95ac2ac1969e9:be655dc8cb97e53e60833e8983dff056:4b733cf571612e791d507bb4b39490a6$ -->
+<TextureAtlas imagePath="unblurred_splashes.png" width="1820" height="1428">
+    <SubTexture name="splash blue 20001" x="520" y="596" width="274" height="267"/>
+    <SubTexture name="splash blue 20002" x="794" y="596" width="274" height="267"/>
+    <SubTexture name="splash blue 20003" x="1068" y="596" width="274" height="267"/>
+    <SubTexture name="splash blue 20004" x="1342" y="596" width="274" height="267"/>
+    <SubTexture name="splash blue0001" x="0" y="0" width="260" height="298"/>
+    <SubTexture name="splash blue0002" x="260" y="0" width="260" height="298"/>
+    <SubTexture name="splash blue0003" x="520" y="0" width="260" height="298"/>
+    <SubTexture name="splash blue0004" x="780" y="0" width="260" height="298"/>
+    <SubTexture name="splash green 20001" x="0" y="894" width="274" height="267"/>
+    <SubTexture name="splash green 20002" x="274" y="894" width="274" height="267"/>
+    <SubTexture name="splash green 20003" x="548" y="894" width="274" height="267"/>
+    <SubTexture name="splash green 20004" x="822" y="894" width="274" height="267"/>
+    <SubTexture name="splash green0001" x="1040" y="0" width="260" height="298"/>
+    <SubTexture name="splash green0002" x="1300" y="0" width="260" height="298"/>
+    <SubTexture name="splash green0003" x="1560" y="0" width="260" height="298"/>
+    <SubTexture name="splash green0004" x="0" y="298" width="260" height="298"/>
+    <SubTexture name="splash purple 20001" x="1096" y="894" width="274" height="267"/>
+    <SubTexture name="splash purple 20002" x="1370" y="894" width="274" height="267"/>
+    <SubTexture name="splash purple 20003" x="0" y="1161" width="274" height="267"/>
+    <SubTexture name="splash purple 20004" x="274" y="1161" width="274" height="267"/>
+    <SubTexture name="splash purple0001" x="260" y="298" width="260" height="298"/>
+    <SubTexture name="splash purple0002" x="520" y="298" width="260" height="298"/>
+    <SubTexture name="splash purple0003" x="780" y="298" width="260" height="298"/>
+    <SubTexture name="splash purple0004" x="1040" y="298" width="260" height="298"/>
+    <SubTexture name="splash red 20001" x="548" y="1161" width="274" height="267"/>
+    <SubTexture name="splash red 20002" x="822" y="1161" width="274" height="267"/>
+    <SubTexture name="splash red 20003" x="1096" y="1161" width="274" height="267"/>
+    <SubTexture name="splash red 20004" x="1370" y="1161" width="274" height="267"/>
+    <SubTexture name="splash red0001" x="1300" y="298" width="260" height="298"/>
+    <SubTexture name="splash red0002" x="1560" y="298" width="260" height="298"/>
+    <SubTexture name="splash red0003" x="0" y="596" width="260" height="298"/>
+    <SubTexture name="splash red0004" x="260" y="596" width="260" height="298"/>
+</TextureAtlas>

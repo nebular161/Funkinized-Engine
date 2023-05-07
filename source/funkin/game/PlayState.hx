@@ -901,7 +901,7 @@ class PlayState extends MusicBeatState {
 
 		add(camFollow);
 
-		FlxG.camera.follow(camFollow, LOCKON);
+		FlxG.camera.follow(camFollow, LOCKON, 0.04);
 		FlxG.camera.zoom = defaultCamZoom;
 		FlxG.camera.focusOn(camFollow.getPosition());
 
@@ -1290,7 +1290,7 @@ class PlayState extends MusicBeatState {
 
 		var playerCounter:Int = 0;
 
-		var daBeats:Int = 0; // Not exactly representative of 'daBeats' lol, just how much it has looped
+		var daBeats:Int = 0;
 		for (section in noteData) {
 			var coolSection:Int = Std.int(section.lengthInSteps / 4);
 
@@ -1405,7 +1405,7 @@ class PlayState extends MusicBeatState {
 					}
 
 				default:
-					babyArrow.frames = Paths.getSparrowAtlas('game objects/notes/base/default');
+					babyArrow.frames = Paths.getSparrowAtlas('game objects/notes/base/arrows');
 					babyArrow.animation.addByPrefix('green', 'arrowUP');
 					babyArrow.animation.addByPrefix('blue', 'arrowDOWN');
 					babyArrow.animation.addByPrefix('purple', 'arrowLEFT');
@@ -1769,7 +1769,8 @@ class PlayState extends MusicBeatState {
 							daNote.clipRect = swagRect;
 						}
 					}
-				if (!daNote.mustPress && daNote.wasGoodHit) {
+				if (!daNote.mustPress && daNote.wasGoodHit) 
+				{
 
 					camZooming = true;
 
@@ -1879,7 +1880,9 @@ class PlayState extends MusicBeatState {
 		deathCounter = 0;
 		canPause = false;
 		FlxG.sound.music.volume = 0;
+		vocals.stop();
 		vocals.volume = 0;
+		camZooming = false;
 
 		if (SONG.validScore)
 			Highscore.saveScore(SONG.song, songScore, storyDifficulty);
@@ -2022,18 +2025,19 @@ class PlayState extends MusicBeatState {
 		ratingSprite.loadGraphic(Paths.image('game objects/ratings/$thePrefix/' + daRating + pixelShitPart2));
 		ratingSprite.screenCenter();
 		ratingSprite.x = coolText.x - 40;
-		ratingSprite.y -= 60;
-		ratingSprite.acceleration.y = 250 * accelScale;
-		ratingSprite.velocity.y -= FlxG.random.int(100, 130) * velocityScale;
-		ratingSprite.velocity.x -= FlxG.random.int(-5, 5) * velocityScale;
-		ratingSprite.cameras = [camHUD];
+		ratingSprite.y -= 90;
+		ratingSprite.acceleration.y = 550;
+		ratingSprite.velocity.y -= FlxG.random.int(140, 175);
+		ratingSprite.velocity.x -= FlxG.random.int(0, 10);
+		//ratingSprite.cameras = [camHUD];
+		ratingSprite.updateHitbox();
 
 		var comboSprite:FlxSprite = new FlxSprite().loadGraphic(Paths.image('game objects/ratings/$thePrefix/' + 'combo' + pixelShitPart2));
 		comboSprite.screenCenter();
 		comboSprite.x = coolText.x;
-		comboSprite.acceleration.y = 250 * accelScale;
-		comboSprite.velocity.y -= FlxG.random.int(100, 130) * velocityScale;
-		comboSprite.cameras = [camHUD];
+		comboSprite.acceleration.y = 600;
+		comboSprite.velocity.y -= 150;
+		//comboSprite.cameras = [camHUD];
 
 		comboSprite.velocity.x += FlxG.random.int(1, 10);
 		add(ratingSprite);
@@ -2051,7 +2055,6 @@ class PlayState extends MusicBeatState {
 		}
 
 		comboSprite.updateHitbox();
-		ratingSprite.updateHitbox();
 
 		var seperatedScore:Array<Int> = [];
 		var comboSplit:Array<String> = (combo + "").split('');
@@ -2073,11 +2076,11 @@ class PlayState extends MusicBeatState {
 			} else {
 				numbers.setGraphicSize(Std.int(numbers.width * daPixelZoom));
 			}
-			numbers.updateHitbox();
 			numbers.acceleration.y = FlxG.random.int(150, 250) * accelScale;
 			numbers.velocity.y -= FlxG.random.int(100, 130) * velocityScale;
+			//numbers.cameras = [camHUD];
 			numbers.velocity.x = FlxG.random.int(-5, 5) * velocityScale;
-			numbers.cameras = [camHUD];
+			numbers.updateHitbox();
 
 			FlxTween.tween(numbers, {alpha: 0}, (Conductor.stepCrochet) / 1000, {
 				onComplete: function(tween:FlxTween){
