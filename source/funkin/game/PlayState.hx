@@ -940,7 +940,8 @@ class PlayState extends MusicBeatState {
 			{	
 			  scoreTxt = new FlxText(0, healthBarBG.y + 36, FlxG.width, "", 20);
 			  scoreTxt.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, CENTER, OUTLINE, FlxColor.BLACK);
-			  scoreTxt.scrollFactor.set(); 			  
+			  scoreTxt.scrollFactor.set();
+			  scoreTxt.alpha = 0.7;
 			}		
 
 		scoreTxt = new FlxText(0, healthBarBG.y + 36, FlxG.width, "", 20);
@@ -948,6 +949,7 @@ class PlayState extends MusicBeatState {
 		scoreTxt.scrollFactor.set();
 		scoreTxt.borderSize = 1.25;
 		scoreTxt.cameras = [camHUD];
+		scoreTxt.alpha = 0.7;
 		add(scoreTxt);
 
 		if(Options.getOption('statistics'))
@@ -1559,25 +1561,39 @@ class PlayState extends MusicBeatState {
 	public static final iconOffset:Int = 26;
 
 	override public function update(elapsed:Float) {
-		if (startingSong) {
-			if (startedCountdown) {
-				Conductor.songPosition += FlxG.elapsed * 1000;
-				if (Conductor.songPosition >= 0.0)
-					startSong();
+		if (startingSong)
+			{
+				if (startedCountdown)
+				{
+					Conductor.songPosition += FlxG.elapsed * 1000;
+					if (Conductor.songPosition >= 0)
+					{
+						startSong();
+					}
+				}
 			}
-		} else {
-			#if USE_INST_TIME
-			Conductor.songPosition = FlxG.sound.music.time + Conductor.offset;
-			#else
-			Conductor.songPosition += FlxG.elapsed * 1000;
-			#end
-		}
+			else
+			{
+				Conductor.songPosition += FlxG.elapsed * 1000;
+	
+				if (!paused)
+				{
+					songTime += FlxG.game.ticks - previousFrameTime;
+					previousFrameTime = FlxG.game.ticks;
+	
+					// Interpolation type beat
+					if (Conductor.lastSongPos != Conductor.songPosition)
+					{
+						songTime = (songTime + Conductor.songPosition) / 2;
+						Conductor.lastSongPos = Conductor.songPosition;
+					}
+				}
+			}
 
 		switch (curStage) {
 			case 'philly':
 				if (trainMoving) {
 					trainFrameTiming += elapsed;
-
 					if (trainFrameTiming >= 1 / 24) {
 						updateTrainPos();
 						trainFrameTiming = 0;
