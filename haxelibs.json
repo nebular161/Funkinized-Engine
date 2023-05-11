@@ -7,7 +7,7 @@
             "name": "hxcpp", "type": "haxelib", "version": null
         },     
         {
-            "name": "flixel-violet", "type": "git", "dir": "flixel", "ref": "master", "url": "https://github.com/violet292/flixel"
+            "name": "flixel-greyson", "type": "git", "dir": "flixel", "ref": "master", "url": "https://github.com/greyson/flixel"
         },
         {
             "name": "flixel", "type": "haxelib", "version": null
