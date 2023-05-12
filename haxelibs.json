@@ -7,13 +7,13 @@
             "name": "hxcpp", "type": "haxelib", "version": null
         },     
         {
-            "name": "flixel-greyson", "type": "git", "dir": "flixel", "ref": "master", "url": "https://github.com/greyson/flixel"
+            "name": "flixel-greyson", "type": "git", "dir": "flixel", "ref": "master", "url": "https://github.com/greyson430/flixel"
         },
         {
             "name": "flixel", "type": "haxelib", "version": null
         },  
         {
-            "name": "flixel-addons", "type": "haxelib", "version": null
+            "name": "flixel-addons", "type": "haxelib", "version": "3.0.2"
         },                
         {
             "name": "format", "type": "haxelib", "version": null

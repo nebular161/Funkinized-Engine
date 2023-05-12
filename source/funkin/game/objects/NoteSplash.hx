@@ -29,9 +29,9 @@ class NoteSplash extends FlxSprite
 
         alpha = 0.9;
         animation.play('note' + noteData + '-' + FlxG.random.int(0, 1), false);
-        scale.set(1.05, 1.05);
+        scale.set(0.5, 0.5);
         updateHitbox();
-        offset.set(0.5 * width, 0.5 * height);
+        offset.set(1 * width, 1 * height);
     }
 
     override function update(elapsed:Float)
