@@ -109,10 +109,10 @@ class PauseMenu extends MusicBeatSubstate {
 		}
 
 		for (i in 0...menuItems.length) {
-			var menuItem:Alphabet = new Alphabet(0, (70 * i) + 30, menuItems[i], true, false);
-			menuItem.isMenuItem = true;
-			menuItem.targetY = i;
-			grpMenuShit.add(menuItem);
+			var songText:Alphabet = new Alphabet(90, 320, menuItems[i], true, false);
+			songText.isMenuItem = true;
+			songText.targetY = i - curSelected;
+			grpMenuShit.add(songText);
 		}
 
 		curSelected = 0;

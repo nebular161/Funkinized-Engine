@@ -1239,7 +1239,6 @@ class PlayState extends MusicBeatState {
 
 	function startSong():Void {
 		startingSong = false;
-
 		previousFrameTime = FlxG.game.ticks;
 		lastReportedPlayheadPosition = 0;
 
