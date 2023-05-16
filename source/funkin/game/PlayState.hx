@@ -171,6 +171,8 @@ class PlayState extends MusicBeatState {
 
 	override public function create() {
 
+		Paths.cleanUp();
+		
 		FlxG.mouse.visible = false;
 
 		if (FlxG.sound.music != null)
@@ -2040,7 +2042,7 @@ class PlayState extends MusicBeatState {
 		ratingSprite.loadGraphic(Paths.image('game objects/ratings/$thePrefix/' + daRating + pixelShitPart2));
 		ratingSprite.screenCenter();
 		ratingSprite.x = coolText.x - 40;
-		ratingSprite.y -= 90;
+		ratingSprite.y -= 60;
 		ratingSprite.acceleration.y = 550;
 		ratingSprite.velocity.y -= FlxG.random.int(140, 175);
 		ratingSprite.velocity.x -= FlxG.random.int(0, 10);

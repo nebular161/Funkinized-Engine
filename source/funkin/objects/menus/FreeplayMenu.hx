@@ -24,6 +24,7 @@ using StringTools;
 
 class FreeplayMenu extends MusicBeatState
 {
+
 	var songs:Array<SongMetadata> = [];
 
 	var selector:FlxText;
@@ -55,6 +56,7 @@ class FreeplayMenu extends MusicBeatState
 
 	override function create()
 	{
+
 		var initSonglist = CoolUtil.coolTextFile(Paths.txt('meta/freeplaySonglist'));
 
 		if (!FlxG.sound.music.playing)
@@ -102,7 +104,7 @@ class FreeplayMenu extends MusicBeatState
 
 		songs.push(new SongMetadata("Ugh", 7, 'tankman'));
 
-		songs.push(new SongMetadata( "Guns", 7, 'tankman'));
+		songs.push(new SongMetadata("Guns", 7, 'tankman'));
 
 		songs.push(new SongMetadata("Stress", 7, 'tankman'));
 		
