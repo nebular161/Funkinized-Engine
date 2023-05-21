@@ -57,12 +57,16 @@ class FreeplayMenu extends MusicBeatState
 	override function create()
 	{
 
+		Paths.clearStoredMemory();
+		Paths.clearUnusedMemory();
+
 		var initSonglist = CoolUtil.coolTextFile(Paths.txt('meta/freeplaySonglist'));
 
 		if (!FlxG.sound.music.playing)
 		{
 			FlxG.sound.playMusic(Paths.music('menus/freakyMenu'));
 		}
+		
 // This is god awful, idk how to make this shit easier, I'm shit at coding
 		songs.push(new SongMetadata("Tutorial", 0, 'gf'));
 

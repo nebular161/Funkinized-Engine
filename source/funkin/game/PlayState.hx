@@ -122,8 +122,6 @@ class PlayState extends MusicBeatState {
 	public static var campaignScore:Int = 0;
 	public static var daPixelZoom:Float = 6;
 	public var script:Script; //scripting
-	public var accelScale:Float = 1;
-	public var velocityScale:Float = 1;
 
 	/*private variables*/
 	private var songAccuracy:Float = 0.0;
@@ -170,9 +168,9 @@ class PlayState extends MusicBeatState {
 	var gameStatistics:FlxText;
 
 	override public function create() {
-
-		Paths.cleanUp();
 		
+		Paths.clearStoredMemory();
+
 		FlxG.mouse.visible = false;
 
 		if (FlxG.sound.music != null)
@@ -1114,6 +1112,8 @@ class PlayState extends MusicBeatState {
 
 		camHUD.visible = true;
 
+		Paths.clearUnusedMemory();
+
 		talking = false;
 		startedCountdown = true;
 		Conductor.songPosition = 0;
@@ -2047,7 +2047,7 @@ class PlayState extends MusicBeatState {
 		ratingSprite.velocity.y -= FlxG.random.int(140, 175);
 		ratingSprite.velocity.x -= FlxG.random.int(0, 10);
 		//ratingSprite.cameras = [camHUD];
-		ratingSprite.updateHitbox();
+		add(ratingSprite);
 
 		var comboSprite:FlxSprite = new FlxSprite().loadGraphic(Paths.image('game objects/ratings/$thePrefix/' + 'combo' + pixelShitPart2));
 		comboSprite.screenCenter();
@@ -2057,9 +2057,11 @@ class PlayState extends MusicBeatState {
 		//comboSprite.cameras = [camHUD];
 
 		comboSprite.velocity.x += FlxG.random.int(1, 10);
-		add(ratingSprite);
+
 		if (combo >= 0)
-			add(comboSprite); // adds the combo sprite
+		{	
+			add(comboSprite);
+		}	
 
 		if (!curStage.startsWith('school')) {
 			ratingSprite.setGraphicSize(Std.int(ratingSprite.width * 0.7));
@@ -2072,7 +2074,7 @@ class PlayState extends MusicBeatState {
 		}
 
 		comboSprite.updateHitbox();
-
+		ratingSprite.updateHitbox();
 		var seperatedScore:Array<Int> = [];
 		var comboSplit:Array<String> = (combo + "").split('');
 
@@ -2093,10 +2095,9 @@ class PlayState extends MusicBeatState {
 			} else {
 				numbers.setGraphicSize(Std.int(numbers.width * daPixelZoom));
 			}
-			numbers.acceleration.y = FlxG.random.int(150, 250) * accelScale;
-			numbers.velocity.y -= FlxG.random.int(100, 130) * velocityScale;
-			//numbers.cameras = [camHUD];
-			numbers.velocity.x = FlxG.random.int(-5, 5) * velocityScale;
+			numbers.acceleration.y = FlxG.random.int(200, 300);
+			numbers.velocity.y -= FlxG.random.int(140, 160);
+			numbers.velocity.x = FlxG.random.float(-5, 5);
 			numbers.updateHitbox();
 
 			FlxTween.tween(numbers, {alpha: 0}, (Conductor.stepCrochet) / 1000, {

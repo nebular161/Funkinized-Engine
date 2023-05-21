@@ -5,3 +5,4 @@
 - Fix BF's hold timer (fixed)
 - Week 7 video cutscenes
 - Fix hold notes
+- Optimize

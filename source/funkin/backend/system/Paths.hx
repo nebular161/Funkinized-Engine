@@ -47,11 +47,6 @@ class Paths {
 		return getPreloadPath(file);
 	}
 
-	static public function cleanUp()
-		{
-			FlxG.save.destroy();
-		}
-
 	static public function getLibraryPath(file:String, library = 'funkin') {
 		return if (library == 'funkin' || library == 'default') getPreloadPath(file); else getLibraryPathForce(file, library);
 	}

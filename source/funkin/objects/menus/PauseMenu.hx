@@ -144,7 +144,6 @@ class PauseMenu extends MusicBeatSubstate {
 				case 'Resume':
 					close();
 				case 'Restart Song':
-					Paths.cleanUp();
 					FlxG.resetState();
 				/*case 'Change Difficulty':
 					menuItems = curDifficultyArray;

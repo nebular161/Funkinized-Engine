@@ -1,5 +1,3 @@
-This engine will probably not be updated for a while
-
 # Funkinized Engine
 A Friday Night Funkin' engine that makes using source code feel much more easier and will come with good ol' Hscript support! The engine also has organized assets making it easy to navigate them. This engine is inspired by Forever Engine and Codename Engine (mostly codename).
 
