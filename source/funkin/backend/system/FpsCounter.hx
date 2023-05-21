@@ -67,7 +67,7 @@ class FpsCounter extends Sprite {
 		field.x = 5;
 		field.autoSize = LEFT;
 		field.selectable = false;
-		field.defaultTextFormat = new TextFormat("VCR OSD Mono", field == fps ? 20 : 16, -1);
+		field.defaultTextFormat = new TextFormat("Futura Medium", field == fps ? 20 : 16, -1);
 
 		if (lastField != null)
 			field.y = lastField.y + lastField.height + yAdd;
